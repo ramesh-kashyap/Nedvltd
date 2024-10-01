@@ -9200,7 +9200,7 @@
 
 <body class="mein_cn">
     <div id="startLogo" style="display: none;">
-        <img src="logo.png" alt="">
+        <img src="../logo.png" alt="">
     </div>
     <div id="app">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
