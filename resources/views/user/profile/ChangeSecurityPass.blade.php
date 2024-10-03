@@ -8309,8 +8309,7 @@
                                         <div data-v-7317d559="" data-v-37526a6c="" class="n"> Email address </div>
                                         <div data-v-7317d559="" data-v-37526a6c="" class="val flex disabled">
                                             <div data-v-7317d559="" data-v-37526a6c="" class="flex1">
-                                                <input data-v-7317d559="" data-v-37526a6c="" type="email"  id="emails"
-                                                name="email" readonly=""  value="{{Auth::user()->email}}">
+                                                <input data-v-7317d559="" data-v-37526a6c="" type="email" name="email" readonly=""  value="{{Auth::user()->email}}">
                                             </div>
                                         </div>
                                     </li>
@@ -8327,7 +8326,11 @@
                                                     data-v-7317d559="" data-v-37526a6c="" name="code" type="text"
                                                     placeholder="Please enter the verification code"></div>
                                             <div data-v-7317d559="" data-v-37526a6c="" class="b">
-                                            <span data-v-40856e44="" data-v-37526a6c="" class="code-btn btn on">Send</span>
+                                            <span data-v-40856e44="" data-v-37526a6c="" class="code-btn" style="    padding: 0 0.3rem;
+    border-radius: 0;
+    background: none;
+    color: var(--color1);
+    border: 0;  height: 0.88rem;">Send</span>
                                             </div>
                                             <!-- <div data-v-7317d559="" data-v-37526a6c="" class="b" style="display: none;">
                                                 <button data-v-7317d559="" data-v-37526a6c="">
@@ -8412,7 +8415,7 @@
       standalone.style.display='none'
     },3000)
   </script>
-
+<script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
 <script>
     
     $('.code-btn').click(function(e) {

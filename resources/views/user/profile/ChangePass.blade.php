@@ -8320,7 +8320,11 @@
                                                     data-v-40856e44="" data-v-37526a6c="" type="text" name="code"
                                                     placeholder="Please enter the verification code"></div>
                                             <div data-v-40856e44="" data-v-37526a6c="" class="b">
-                                              <button data-v-40856e44="" data-v-37526a6c="" class="btn on code-btn"> Send </button>
+                                            <span data-v-40856e44="" data-v-37526a6c="" class="code-btn" style="    padding: 0 0.3rem;
+    border-radius: 0;
+    background: none;
+    color: var(--color1);
+    border: 0;  height: 0.88rem;">Send</span>
                                             </div>
                                             <div data-v-40856e44="" data-v-37526a6c="" class="b" style="display: none;">
                                                 <!-- <button data-v-40856e44="" data-v-37526a6c="">
