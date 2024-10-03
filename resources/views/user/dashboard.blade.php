@@ -6964,7 +6964,7 @@
     <script charset="utf-8" src="js/30.fe08c8e8-1727377907704.js"></script>
     <style type="text/css">
         [data-v-b149b182] .head {
-            background: url(/static/img/bg_login.d4d61e22.png) no-repeat top center !important;
+            background: url({{asset('')}}static/img/bg_login.d4d61e22.png) no-repeat top center !important;
             background-size: 100% auto !important;
         }
 
@@ -6974,7 +6974,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: url(/static/img/bg_login.d4d61e22.png) no-repeat top center;
+            background: url({{asset('')}}static/img/bg_login.d4d61e22.png) no-repeat top center;
             background-size: cover;
         }
 
@@ -7792,7 +7792,7 @@
     <style type="text/css">
         .home-task[data-v-0b286867] {
             border-radius: 0.2rem;
-            background: url(/static/img/bg-task.028669fc.png) no-repeat;
+            background: url({{asset('')}}static/img/bg-task.028669fc.png) no-repeat;
             background-size: 100% 100%;
             padding: 0.4rem 0.28rem;
         }
@@ -8979,7 +8979,7 @@
 
         .popup-box .icon-logo[data-v-bfe0705e] {
             width: 100%;
-            background: url(/static/img/bg-decoration.267b4e44.png) no-repeat;
+            background: url({{asset('')}}static/img/bg-decoration.267b4e44.png) no-repeat;
             background-size: 100% 100%;
             display: flex;
             align-items: center;
@@ -9205,13 +9205,13 @@
     <div id="app">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
             <div data-v-5954443c="" data-v-37526a6c="" class="bg1"><img data-v-5954443c="" data-v-37526a6c=""
-                    src="static/img/home-bg.8d740309.png" alt=""></div>
+                    src="{{asset('')}}static/img/home-bg.8d740309.png" alt=""></div>
             <div data-v-37526a6c="" class="page-header">
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head"><!---->
                         <div data-v-0ff1fb10="" class="container flex"><!---->
                             <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
-                                    src="static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
+                                    src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
@@ -9241,12 +9241,12 @@
                                 <div data-v-5954443c="" class="van-swipe-item"
                                     style="width: 393px; transform: translateX(786px);">
                                     <div data-v-5954443c="" class="item"><img data-v-5954443c=""
-                                            src="https://obs.nedvc.com/upload/20240916/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
+                                            src="{{asset('')}}static/img/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
                                             alt=""></div>
                                 </div>
                                 <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
                                     <div data-v-5954443c="" class="item"><img data-v-5954443c=""
-                                            src="https://obs.nedvc.com/upload/20240915/b3ebfaa57240ec988a6edf1e3cae9c73.png"
+                                            src="{{asset('')}}static/img/b3ebfaa57240ec988a6edf1e3cae9c73.png"
                                             alt=""></div>
                                 </div>
                             </div>
@@ -9279,25 +9279,25 @@
                         <ul data-v-5954443c="" class="nav2">
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/e061d7f0e83b518c317796bc7a4f45de.png"
+                                        src="{{asset('')}}static/img/e061d7f0e83b518c317796bc7a4f45de.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">VIP Level</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/03089b80414851510569ef105fbf2289.png"
+                                        src="{{asset('')}}static/img/03089b80414851510569ef105fbf2289.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Platform Rules</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/4c59b8d954ba46563e2478e8c1b2d0c1.png"
+                                        src="{{asset('')}}static/img/4c59b8d954ba46563e2478e8c1b2d0c1.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Tutorial</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a11a6ea14ceef74a7e6996bcab908ecd.png"
+                                        src="{{asset('')}}static/img/a11a6ea14ceef74a7e6996bcab908ecd.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Company Profile</div>
                             </li>
@@ -9350,7 +9350,7 @@
                             <div data-v-1f37bdab="" class="content">
                                 <div data-v-1f37bdab="" class="left">
                                     <div data-v-1f37bdab="" class="level-box"><img data-v-1f37bdab=""
-                                            src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/1641f8d0d8cccc0073b670899da8fb06.png"
+                                            src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png"
                                             alt=""><span data-v-1f37bdab="">VIP0</span></div>
                                     <div data-v-1f37bdab="" class="bot">
                                         <div data-v-1f37bdab="" class="move-up">Upgrade</div>
@@ -9369,7 +9369,7 @@
                                             alt=""></div>
                                 </div>
                                 <div data-v-1f37bdab="" class="right"><img data-v-1f37bdab=""
-                                        src="../static/img/home-invite.a9ec84d6.png" alt=""></div>
+                                        src="{{asset('')}}static/img/home-invite.a9ec84d6.png" alt=""></div>
                             </div>
                             </a>
                         </div>
@@ -9405,37 +9405,37 @@
                         <div data-v-4eabb456="" class="info-list">
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/e792176976e5039b2595a48c220144f9.png"
+                                        src="{{asset('')}}static/img/e792176976e5039b2595a48c220144f9.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">disney</div>
                             </div>
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/22736bb480728b96ed2988c000efdead.png"
+                                        src="{{asset('')}}static/img/22736bb480728b96ed2988c000efdead.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">Universal Pictures</div>
                             </div>
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/695f8380cd08187e597762f1ebd5daac.png"
+                                        src="{{asset('')}}static/img/695f8380cd08187e597762f1ebd5daac.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">paramount movies</div>
                             </div>
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a2080442bc0325435710b7c51dfaa1f3.png"
+                                        src="{{asset('')}}static/img/a2080442bc0325435710b7c51dfaa1f3.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">Warner Bros</div>
                             </div>
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/52714c42d8e86d7c9a0dacd9660c7eb6.png"
+                                        src="{{asset('')}}static/img/52714c42d8e86d7c9a0dacd9660c7eb6.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">20th Century Pictures</div>
                             </div>
                             <div data-v-4eabb456="" class="info">
                                 <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a05a8e47c1051b2eb64534dd0a5e1379.png"
+                                        src="{{asset('')}}static/img/a05a8e47c1051b2eb64534dd0a5e1379.png"
                                         alt=""></div>
                                 <div data-v-4eabb456="" class="name">sony colombia</div>
                             </div>
@@ -9514,7 +9514,7 @@
         <div data-v-5954443c="" class="modal-notice-box">
             <div data-v-5954443c="" class="modal-notice">
                 <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                        src="/static/img/noticetopbg.69a72412.png" alt=""></div>
+                        src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
                 <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
                 <div data-v-5954443c="" class="notice-desc">
                     <p>Latest Activity Notification</p>
