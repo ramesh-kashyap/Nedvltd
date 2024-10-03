@@ -87,8 +87,9 @@ Route::post('/lastWithdrawal', [App\Http\Controllers\UserPanel\Dashboard::class,
 
 
 Route::get('/article', [App\Http\Controllers\UserPanel\Profile::class, 'terms'])->name('user.terms');
+Route::get('/about', [App\Http\Controllers\UserPanel\Profile::class, 'about'])->name('user.about');
 
-
+Route::get('/tutorial', [App\Http\Controllers\UserPanel\Profile::class, 'tutorial'])->name('user.tutorial');
 Route::get('/profile', [App\Http\Controllers\UserPanel\Profile::class, 'index'])->name('user.profile');
 Route::get('/showinfo', [App\Http\Controllers\UserPanel\Profile::class, 'showinfo'])->name('user.showinfo');
 Route::post('/info', [App\Http\Controllers\UserPanel\Profile::class, 'infochange'])->name('user.infochange');
