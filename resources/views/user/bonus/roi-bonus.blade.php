@@ -6259,8 +6259,150 @@
     <div id="startLogo" style="display: none;">
       <img src="/logo.png" alt="">
     </div>
-    <div id="app" style="height: 6.24rem;"><div data-v-470469c5="" class="h-full"><div data-v-37526a6c="" data-v-470469c5="" class="page"><div data-v-37526a6c="" class="headers on"><div data-v-0ff1fb10="" data-v-470469c5="" data-v-37526a6c=""><div data-v-0ff1fb10="" class="head"><div data-v-0ff1fb10="" class="name"> My income </div><div data-v-0ff1fb10="" class="container flex"><!----><div data-v-0ff1fb10="" class="logo"></div><div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII=" alt=""></div><div data-v-0ff1fb10="" class="flex1"></div><!----><!----><!----><!----><!----></div></div></div></div><div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;"><div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;"><div data-v-470469c5="" data-v-37526a6c="" class="container"><div data-v-434f210d="" data-v-470469c5="" class="assets" data-v-37526a6c=""><div data-v-434f210d="" class="info-list"><div data-v-434f210d="" class="info"><div data-v-434f210d="" class="name">Invitation subscription income to be collected <div data-v-e29c081e="" data-v-434f210d="" class="popover popover"><span data-v-e29c081e="" class="popover van-popover__wrapper"><img data-v-e29c081e="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgBzVctV8MwFH3pmaqkdrNMDjvsbLH8B7BYJBYL/wG72erpymGHLbK2vBsSTpbTwUu/wj3nnZ4ua+7NS/I+FAnRNE3KjxXbkm3BdsGWmuGa7ZPtyHZgK5VStWRe9dcfmDjjx4Zt7RBKsGfbspCKuggwK84NeR8UbLtzHlFnyLHqB7aMhgG88NzmDdVCPufH/YDkrohXFnF0f0w88mwkcjJz3hmOHyiHHHv+SHLyrfd+QzLAE0/2TMycgTyAnHiCnfvOC5AKyAzXG14S87G9alNhY7fCnoGcpodecGL2/pqmxxrc8MCK4kCHdgi4pHhYQsCC4mEOAWMEHSkyCAjJcEMjTSgyIEBUOIyEGgIqiocKuQDpMfgmcBAZInp+QMA7dYuE0uTzGw4QUNL3OQi9DV3TsYtyhrzM7kQBGZQNe6Rjiz247TUsaHpoD2oBplicUkRhC1S3IoJLr0gYmnvcgspwaShv0qHL8Tbyk/L8JBSbgRcaJzjpuf3e4P81Jp6QW4rRmnkibBkdEi1BhthSdG5OW4TY9hwlHHIHhLntOYiQVxDaxe35Fz4cjsPLrr2gAAAAAElFTkSuQmCC" alt=""></span></div></div><div data-v-434f210d="" class="value"><div data-v-434f210d="" class="num">0<span data-v-434f210d="">USDT</span></div><div data-v-434f210d="" class="check-text">View</div></div></div><div data-v-434f210d="" class="info"><div data-v-434f210d="" class="name">Invitation subscription income can be collected</div><div data-v-434f210d="" class="value">0 <span data-v-434f210d="">USDT</span></div></div><div data-v-434f210d="" class="info"><div data-v-434f210d="" class="name">Task income can be collected</div><div data-v-434f210d="" class="value">0 <span data-v-434f210d="">USDT</span></div></div></div><div data-v-434f210d="" class="btn-bg">Withdraw </div></div><div data-v-470469c5="" data-v-37526a6c="" class="income-box-list"><div data-v-470469c5="" data-v-37526a6c="" class="income-box"><div data-v-470469c5="" data-v-37526a6c="" class="module-title"><div data-v-470469c5="" data-v-37526a6c="" class="text">Personal income</div><i data-v-470469c5="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow"><!----></i></div><div data-v-470469c5="" data-v-37526a6c="" class="income-content"><div data-v-470469c5="" data-v-37526a6c="" class="income"><div data-v-470469c5="" data-v-37526a6c="" class="title">Today's income</div><div data-v-470469c5="" data-v-37526a6c="" class="info-list"><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's total income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's task income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's video release income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div></div></div><div data-v-470469c5="" data-v-37526a6c="" class="income"><div data-v-470469c5="" data-v-37526a6c="" class="title">Cumulative income</div><div data-v-470469c5="" data-v-37526a6c="" class="info-list"><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative total income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative task income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative video release income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div></div></div></div></div><div data-v-470469c5="" data-v-37526a6c="" class="income-box"><div data-v-470469c5="" data-v-37526a6c="" class="module-title"><div data-v-470469c5="" data-v-37526a6c="" class="text">Team income</div><i data-v-470469c5="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow"><!----></i></div><div data-v-470469c5="" data-v-37526a6c="" class="income-content"><div data-v-470469c5="" data-v-37526a6c="" class="income"><div data-v-470469c5="" data-v-37526a6c="" class="title">Today's income</div><div data-v-470469c5="" data-v-37526a6c="" class="info-list"><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's total income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's invitation and subscription income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Today's recommended income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div></div></div><div data-v-470469c5="" data-v-37526a6c="" class="income"><div data-v-470469c5="" data-v-37526a6c="" class="title">Cumulative income</div><div data-v-470469c5="" data-v-37526a6c="" class="info-list"><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative total income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative invitation and subscription income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div><div data-v-470469c5="" data-v-37526a6c="" class="info"><div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative recommended income</div><div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div></div></div></div></div></div></div></div></div></div><!----></div></div><div data-v-15b106f9="" class="page-loading-con" style="display: none;"><div data-v-15b106f9="" class="page-loading"></div><p data-v-15b106f9="">Loading...</p></div></div>
-  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+    <div id="app" style="height: 6.24rem;">
+   <div data-v-470469c5="" class="h-full">
+      <div data-v-37526a6c="" data-v-470469c5="" class="page">
+         <div data-v-37526a6c="" class="headers on">
+            <div data-v-0ff1fb10="" data-v-470469c5="" data-v-37526a6c="">
+               <div data-v-0ff1fb10="" class="head">
+                  <div data-v-0ff1fb10="" class="name"> My income </div>
+                  <div data-v-0ff1fb10="" class="container flex">
+                     <!---->
+                     <div data-v-0ff1fb10="" class="logo"></div>
+                     <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII=" alt=""></div>
+                     <div data-v-0ff1fb10="" class="flex1"></div>
+                     <!----><!----><!----><!----><!---->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;">
+            <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
+               <div data-v-470469c5="" data-v-37526a6c="" class="container">
+                  <div data-v-434f210d="" data-v-470469c5="" class="assets" data-v-37526a6c="">
+                     <div data-v-434f210d="" class="info-list">
+                        <div data-v-434f210d="" class="info">
+                           <div data-v-434f210d="" class="name">
+                              Invitation subscription income to be collected 
+                              <div data-v-e29c081e="" data-v-434f210d="" class="popover popover"><span data-v-e29c081e="" class="popover van-popover__wrapper"><img data-v-e29c081e="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgBzVctV8MwFH3pmaqkdrNMDjvsbLH8B7BYJBYL/wG72erpymGHLbK2vBsSTpbTwUu/wj3nnZ4ua+7NS/I+FAnRNE3KjxXbkm3BdsGWmuGa7ZPtyHZgK5VStWRe9dcfmDjjx4Zt7RBKsGfbspCKuggwK84NeR8UbLtzHlFnyLHqB7aMhgG88NzmDdVCPufH/YDkrohXFnF0f0w88mwkcjJz3hmOHyiHHHv+SHLyrfd+QzLAE0/2TMycgTyAnHiCnfvOC5AKyAzXG14S87G9alNhY7fCnoGcpodecGL2/pqmxxrc8MCK4kCHdgi4pHhYQsCC4mEOAWMEHSkyCAjJcEMjTSgyIEBUOIyEGgIqiocKuQDpMfgmcBAZInp+QMA7dYuE0uTzGw4QUNL3OQi9DV3TsYtyhrzM7kQBGZQNe6Rjiz247TUsaHpoD2oBplicUkRhC1S3IoJLr0gYmnvcgspwaShv0qHL8Tbyk/L8JBSbgRcaJzjpuf3e4P81Jp6QW4rRmnkibBkdEi1BhthSdG5OW4TY9hwlHHIHhLntOYiQVxDaxe35Fz4cjsPLrr2gAAAAAElFTkSuQmCC" alt=""></span></div>
+                           </div>
+                           <div data-v-434f210d="" class="value">
+                              <div data-v-434f210d="" class="num">0<span data-v-434f210d="">USDT</span></div>
+                              <div data-v-434f210d="" class="check-text">View</div>
+                           </div>
+                        </div>
+                        <div data-v-434f210d="" class="info">
+                           <div data-v-434f210d="" class="name">Invitation subscription income can be collected</div>
+                           <div data-v-434f210d="" class="value">0 <span data-v-434f210d="">USDT</span></div>
+                        </div>
+                        <div data-v-434f210d="" class="info">
+                           <div data-v-434f210d="" class="name">Task income can be collected</div>
+                           <div data-v-434f210d="" class="value">0 <span data-v-434f210d="">USDT</span></div>
+                        </div>
+                     </div>
+                     <div data-v-434f210d="" class="btn-bg">Withdraw </div>
+                  </div>
+                  <div data-v-470469c5="" data-v-37526a6c="" class="income-box-list">
+                     <div data-v-470469c5="" data-v-37526a6c="" class="income-box">
+                        <div data-v-470469c5="" data-v-37526a6c="" class="module-title">
+                           <div data-v-470469c5="" data-v-37526a6c="" class="text">Personal income</div>
+                           <i data-v-470469c5="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow">
+                              <!---->
+                           </i>
+                        </div>
+                        <div data-v-470469c5="" data-v-37526a6c="" class="income-content">
+                           <div data-v-470469c5="" data-v-37526a6c="" class="income">
+                              <div data-v-470469c5="" data-v-37526a6c="" class="title">Today's income</div>
+                              <div data-v-470469c5="" data-v-37526a6c="" class="info-list">
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's ROI income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0<span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's Level income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">{{currency()}}{{number_format($today_level_income,2)}} <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's Task income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-v-470469c5="" data-v-37526a6c="" class="income">
+                              <div data-v-470469c5="" data-v-37526a6c="" class="title">Cumulative income</div>
+                              <div data-v-470469c5="" data-v-37526a6c="" class="info-list">
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative ROI income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative  Level income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">{{currency()}}{{number_format($total_level_income,2)}}<span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative  Task income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- <div data-v-470469c5="" data-v-37526a6c="" class="income-box">
+                        <div data-v-470469c5="" data-v-37526a6c="" class="module-title">
+                           <div data-v-470469c5="" data-v-37526a6c="" class="text">Team income</div>
+                           <i data-v-470469c5="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow">
+                              
+                           </i>
+                        </div>
+                        <div data-v-470469c5="" data-v-37526a6c="" class="income-content">
+                           <div data-v-470469c5="" data-v-37526a6c="" class="income">
+                              <div data-v-470469c5="" data-v-37526a6c="" class="title">Today's income</div>
+                              <div data-v-470469c5="" data-v-37526a6c="" class="info-list">
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's total income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's invitation and subscription income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Today's recommended income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div data-v-470469c5="" data-v-37526a6c="" class="income">
+                              <div data-v-470469c5="" data-v-37526a6c="" class="title">Cumulative income</div>
+                              <div data-v-470469c5="" data-v-37526a6c="" class="info-list">
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative total income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative invitation and subscription income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                                 <div data-v-470469c5="" data-v-37526a6c="" class="info">
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="name">Cumulative recommended income</div>
+                                    <div data-v-470469c5="" data-v-37526a6c="" class="value">0 <span data-v-470469c5="" data-v-37526a6c="">USDT</span></div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div> -->
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!---->
+      </div>
+   </div>
+   <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
+      <div data-v-15b106f9="" class="page-loading"></div>
+      <p data-v-15b106f9="">Loading...</p>
+   </div>
+</div>  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
   <script>
     let standalone=document.getElementById('startLogo')
     standalone.style.display='flex'
