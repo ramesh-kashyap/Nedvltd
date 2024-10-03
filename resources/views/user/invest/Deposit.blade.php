@@ -6284,7 +6284,10 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+
+
+
     justify-content: space-between;
   }
   .page-header[data-v-37526a6c] {
@@ -6404,7 +6407,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    background: #e9f5f4;
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;

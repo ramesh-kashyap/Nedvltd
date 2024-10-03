@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -8049,6 +8049,10 @@ max-width: 8.5rem;
 </style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
+background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+
+
+
 }
 .page .headers[data-v-37526a6c] {
 position: fixed;
@@ -8124,9 +8128,10 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #020202;
+background: #068475;
+
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #252930;
+border-top: 0.02rem solid #068475;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
@@ -8527,7 +8532,7 @@ width: 100%;
 align-items: center;
 }
 .head[data-v-0ff1fb10] {
-background: #020202;
+background: #e9f5f4;
 height: 1.2rem;
 position: relative;
 transition: background-color 0.3s;
@@ -8977,7 +8982,7 @@ color: rgba(255, 255, 255, 0.6);
 .assets-box[data-v-14275b54] {
 text-align: center;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 position: relative;
 }
 .assets-box .assets[data-v-14275b54] {
@@ -9071,7 +9076,7 @@ font-size: 0.32rem;
 margin-bottom: 0.24rem;
 }
 [data-v-14275b54] .wallet-assets .info-list {
-background: #0f1016;
+background: #068475;
 border-radius: 0.2rem;
 text-align: center;
 padding: 0 0.32rem;
