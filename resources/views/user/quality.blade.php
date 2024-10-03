@@ -58,7 +58,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: #020503;
+    background: rgba(6, 132, 117, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1869,7 +1869,7 @@ height: 100%;
 height: -webkit-fill-available;
 overflow: hidden;
 min-width: 7.5rem;
-background: #141517;
+background: #ffffff;
 -webkit-user-select: none;
 -webkit-text-size-adjust: none;
 user-select: none;
@@ -2351,7 +2351,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -5861,7 +5861,7 @@ height: 100%;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
-background: #020202;
+background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
 justify-content: space-between;
 }
 .page-header[data-v-37526a6c] {
@@ -5883,7 +5883,7 @@ width: 100%;
 min-height: 2rem;
 max-width: 8.5rem;
 z-index: 58;
-background: #020202;
+background: ##068475;
 padding-bottom: constant(safe-area-inset-bottom);
 padding-bottom: env(safe-area-inset-bottom);
 }
@@ -5893,6 +5893,7 @@ z-index: 10;
 flex: 1;
 overflow-y: auto;
 -webkit-overflow-scrolling: touch;
+background-color: ;
 }
 .page .back-top[data-v-37526a6c] {
 position: absolute;
@@ -5927,7 +5928,7 @@ width: 100%;
 align-items: center;
 }
 .head[data-v-0ff1fb10] {
-background: #020202;
+background: #e9f5f4;
 height: 1.2rem;
 position: relative;
 transition: background-color 0.3s;
@@ -6975,9 +6976,9 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #020202;
+background: #068475;;
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #252930;
+border-top: 0.02rem solid #068475;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
@@ -9528,7 +9529,7 @@ font-size: 0.24rem;
 margin-top: 0.12rem;
 padding: 0.24rem 0.28rem;
 border-radius: 0.16rem;
-background: #1B1C21;
+background: #00fc83;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -9559,7 +9560,7 @@ border: 0.02rem solid var(--color1);
 background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
 }
 .list .item .bot .btn.status3[data-v-6d2d4c36] {
-background: #23252e;
+background: var(--color1);
 color: #FFF;
 }
 .van-field__word-num[data-v-6d2d4c36] {
@@ -10235,7 +10236,7 @@ max-width: 8.5rem;
 
 <body class="mein_cn">
 <div id="startLogo" style="display: none;">
-  <img src="logo.png" alt="">
+  <img src="/logo.png" alt="">
 </div>
 <div id="app" style="height: 5.7rem;">
   <div data-v-37526a6c="" data-v-e20b77f4="" class="page h-full">

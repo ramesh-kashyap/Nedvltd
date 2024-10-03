@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -7663,7 +7663,7 @@
   .input_big_box .title_box .title[data-v-3cceea5e] {
     line-height: 1.1;
     font-size: 0.28rem;
-    color: #fff;
+    color: #000;
   }
   .input_big_box .inp_content_box[data-v-3cceea5e] {
     margin-top: 0.2rem;

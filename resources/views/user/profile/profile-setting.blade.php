@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: #020503;
+    background: rgba(6, 132, 117, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1860,7 +1860,7 @@ height: 100%;
 height: -webkit-fill-available;
 overflow: hidden;
 min-width: 7.5rem;
-background: #141517;
+background: #ffffff
 -webkit-user-select: none;
 -webkit-text-size-adjust: none;
 user-select: none;
@@ -8049,6 +8049,7 @@ max-width: 8.5rem;
 </style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
+background: linear-gradient(0.99deg, #00ab82 12.12%, #f1f1f1 97.22%);
 }
 .page .headers[data-v-37526a6c] {
 position: fixed;
@@ -8078,7 +8079,7 @@ bottom: 0;
 width: 100%;
 max-width: 8.5rem;
 z-index: 56;
-background: #020202;
+background: #068475;
 }
 .page .content-container[data-v-37526a6c] {
 width: 100%;
@@ -8124,9 +8125,9 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #020202;
+background: #068475;
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #252930;
+border-top: 0.02rem solid #ffffff;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
@@ -8527,7 +8528,7 @@ width: 100%;
 align-items: center;
 }
 .head[data-v-0ff1fb10] {
-background: #020202;
+background: #e9f5f4;
 height: 1.2rem;
 position: relative;
 transition: background-color 0.3s;
@@ -9636,7 +9637,7 @@ max-width: 8.5rem;
 font-size: 0.32rem;
 }
 [data-v-7a3d5949] .head {
-background: #020202 url(/static/img/bg.b8ad8c52.png) no-repeat !important;
+/* background: #020202 url(/static/img/bg.b8ad8c52.png) no-repeat !important; */
 background-size: 100% auto !important;
 }
 .bg[data-v-7a3d5949] {
