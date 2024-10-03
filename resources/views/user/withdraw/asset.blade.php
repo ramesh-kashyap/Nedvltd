@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: #020503;
+    background:rgba(6, 132, 117, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1860,7 +1860,7 @@ height: 100%;
 height: -webkit-fill-available;
 overflow: hidden;
 min-width: 7.5rem;
-background: #141517;
+
 -webkit-user-select: none;
 -webkit-text-size-adjust: none;
 user-select: none;
@@ -9218,7 +9218,7 @@ max-width: 8.5rem;
 
 <body class="mein_cn">
 <div id="startLogo" style="display: none;">
-  <img src="logo.png" alt="">
+  <img src="/logo.png" alt="">
 </div>
 <div id="app" style="height: 5.7rem;">
   <div data-v-37526a6c="" data-v-14275b54="" class="page h-full">
