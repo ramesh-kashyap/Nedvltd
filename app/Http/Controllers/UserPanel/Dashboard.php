@@ -48,7 +48,7 @@ class Dashboard extends Controller
       $totalIncome = Income::where('user_id',$user->id)->sum('comm');
 
         $transaction_data = Income::where('user_id',$user->id)->orderBy('id', 'desc')->take(10)->get();
-          $this->data['todaysRoiSum'] = \DB::table('contract')->where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('c_status','-1')->sum('profit');
+        $this->data['todaysRoiSum'] = \DB::table('contract')->where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('c_status','-1')->sum('profit');
 
          $total_team=User::whereIn('id',(!empty($tolteam)?$tolteam:array()))->where('active_status','Active')->count();
         $this->data['weekly_profit'] =$weekly_profit;

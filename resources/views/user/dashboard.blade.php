@@ -53,7 +53,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: #020503;
+            background: rgba(6, 132, 117, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -2275,7 +2275,7 @@
             height: -webkit-fill-available;
             overflow: hidden;
             min-width: 7.5rem;
-            background: #141517;
+            background: #ffffff;
             -webkit-user-select: none;
             -webkit-text-size-adjust: none;
             user-select: none;
@@ -2775,7 +2775,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: rgba(23, 26, 36, 0.6);
+            background: #068475;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -7073,7 +7073,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            background: #020202;
+            background:  linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
         }
 
         .page-header[data-v-37526a6c] {
@@ -7146,7 +7146,7 @@
         }
 
         .head[data-v-0ff1fb10] {
-            background: #020202;
+            background: #e9f5f4;
             height: 1.2rem;
             position: relative;
             transition: background-color 0.3s;
@@ -8423,9 +8423,9 @@
             max-width: 10rem;
             width: 100%;
             height: fit-content;
-            background: #020202;
+            background: #068475;
             border-radius: 0.32rem 0.32rem 0 0;
-            border-top: 0.02rem solid #252930;
+            border-top: 0.02rem solid #068475;;
             z-index: 56;
         }
 
@@ -9204,8 +9204,9 @@
     </div>
     <div id="app">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
-            <div data-v-5954443c="" data-v-37526a6c="" class="bg1"><img data-v-5954443c="" data-v-37526a6c=""
-                    src="{{asset('')}}static/img/home-bg.8d740309.png" alt=""></div>
+            <div data-v-5954443c="" data-v-37526a6c="" class="bg1">
+                <!-- <img data-v-5954443c="" data-v-37526a6c=""src="{{asset('')}}static/img/home-bg.8d740309.png" alt=""> -->
+                </div>
             <div data-v-37526a6c="" class="page-header">
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head"><!---->
