@@ -8309,7 +8309,7 @@
                                     </li>
                                 </ul>
                             </div>
-                            <from method="post" action="{{ route('user.edit-password') }}">
+                            <form method="post" action="{{ route('user.edit-password') }}">
                             {{ csrf_field() }}
                             <div data-v-40856e44="" data-v-37526a6c="" class="itemBox">
                                 <ul data-v-40856e44="" data-v-37526a6c="">
@@ -8319,15 +8319,17 @@
                                             <div data-v-40856e44="" data-v-37526a6c="" class="flex1"><input
                                                     data-v-40856e44="" data-v-37526a6c="" type="text" name="code"
                                                     placeholder="Please enter the verification code"></div>
-                                            <div data-v-40856e44="" data-v-37526a6c="" class="b"><button
-                                                    data-v-40856e44="" data-v-37526a6c="" class="btn on code-btn"> Send </button>
+                                            <div data-v-40856e44="" data-v-37526a6c="" class="b">
+                                              <button data-v-40856e44="" data-v-37526a6c="" class="btn on code-btn"> Send </button>
                                             </div>
                                             <div data-v-40856e44="" data-v-37526a6c="" class="b" style="display: none;">
-                                                <button data-v-40856e44="" data-v-37526a6c="">
+                                                <!-- <button data-v-40856e44="" data-v-37526a6c="">
                                                     <div data-v-40856e44="" class="van-count-down" data-v-37526a6c="">
                                                         <span data-v-40856e44="">0 <var
-                                                                data-v-40856e44="">s</var></span></div>
-                                                </button></div>
+                                                                data-v-40856e44="">s</var></span>
+                                                              </div>
+                                                </button> -->
+                                              </div>
                                         </div>
                                     </li>
                                 </ul>
@@ -8359,8 +8361,8 @@
                                     </li>
                                 </ul>
                             </div>                            
-                                <input  class="btn" type="submit">
-                                </from>
+                                <button  class="btn" type="submit">Submit</button>
+                                </form>
                         </div>
                     </div>
                     <!---->
