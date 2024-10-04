@@ -9225,7 +9225,7 @@
                                 <div data-v-0ff1fb10="" class="count"> 2 </div>
                             </div>
                             <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
-                                    src="data:image/png;base64,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"
+                                     src="{{asset('')}}static/img/Icon/browser.png"
                                     alt=""></div><!---->
                         </div>
                     </div>
@@ -9278,7 +9278,7 @@
                         <ul data-v-5954443c="" class="nav2">
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                            src="{{asset('')}}static/img/Icon/Vip.png"
+                                            src="{{asset('')}}static/img/Icon/crowns.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">VIP Level</div>
                             </li>

@@ -9299,8 +9299,8 @@ max-width: 8.5rem;
             </div>
             <div data-v-14275b54="" data-v-37526a6c="" class="nav-list">
               <div data-v-14275b54="" data-v-37526a6c="" class="nav" onclick="location.href='{{ route('user.deposit') }}'"><img data-v-14275b54="" data-v-37526a6c=""
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAPVSURBVHgB7Zk9TBRBGIbfmeX8S1SMhY2JZ2WnZyOJBa6NnQIxxJKztAITrZTc4k9jTITEHiiNBRgLS4HKxnBYmFB5FBbGkBzGiAK74/cdzLEcx+3O3O4SE5/k9n8u7zvz7Tc/C/zjCKSN8jqxjjwgC/VrMqhCoYoOlCG8KtogHQMsOpCDUMKlM7fls0KVaVOG74/hgFeGIckaWPdcCKeEKNF7MwNHjEI8fBO3QDIGNmu8RDU+hCQQmID0Ryi8KtGPtsuql0fOeU9HeSRLhSqlDwcetAwriXZITzxq/ymDeWw8Hmj1kH0LpCu+kT50DE83u2FngGPed+aRjXimCse/2OydsAuhdWcU2YlnOElMNbthbmDNK1CpAWSNEgWsPdqV5cwNSOcFLMl9Xsbh14uwRopSLXxDdMAE7qgsOykWf/LWW8gff2rnq/3nYAENS2SR9qP6glkLKKcICxrFn7g3Y98SUvTsOIUJEldgSKN4TRsm3HAYxTew9pRHk3kYsJd4jbUJX/bqw9gGis75HhgQJV5jZUKp+tA80oBSyqXflzyOeYhJXPEaYxNSHteHe2YhEp2n3TgMs46peA2bYGJlJ7Udyk1bgGuddjxUcGHIEapJU/Gao6MfIQzL7jJA4rmX5UFaJyxYKV3GL4scv3H6KJZfXYc6dtCo3A4DWzU/0ezBThxCXKrPXSMTWrxP+1gImitsUTcQivmmXBCnYEJcE8biGV8t6MNwC3hokecLhgaYKBNW4hkh6rM0hzdRtc8cooQ1iyVquxWY8PtaHs7Xn7XsFMZaPM8NcsN39IlugUKckr2wGoDtaok2xHP875iZaQOxMs6APG/0MofRJtoSz/D6UQijwRyLHxKXYAub+P7upr14UO03LH4ZT2gG5SV604/DFtM8vwPHv9t4ydgAt8K4vIHMURhJbFLvijMoiW5kyDRlHq/ZDbMpZQhPdqMSrGByu0+hVHaKQqyrtu/EZqhw2l3AN0wHi7TwuQRjePFXBrf3vM0b6geKiOgHmlCh31Wx8aRI/1JycQZTTn/LLOUFcxhRczCAFnv9vlZL8LYGKmDxQvAez4IPU/dFV290oSrO+i8RC4UxCpvIxWKbEOLaqIvfGr1Gimcm1ac4j83UXtjc8Eych20MVBrET8QpxKHDIdQCI+EaGwMFEs7LfNx7u3EKjKty2VOzdCTCPX4FKligFbcycsF0W5+a+B1Q6eEhRdr7PhDNCIWbhxRJ00Dq4pm0DGQinknDQGbimaQNZCqeSdJA5uKZpAzsi3gmCQP7Jp7Rg7k87L68lEVoieM/FvwFds7SCGlh0VIAAAAASUVORK5CYII="
-                  alt="">
+              src="{{asset('')}}static/img/Icon/bell.png"
+              alt="">
                 <div data-v-14275b54="" data-v-37526a6c="" class="name"> Recharge </div>
               </div>
               <div data-v-14275b54="" data-v-37526a6c="" class="nav" onclick="location.href='{{ route('user.Withdraw') }}'"><img data-v-14275b54="" data-v-37526a6c=""
