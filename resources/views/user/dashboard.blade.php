@@ -7250,7 +7250,7 @@
         }
 
         .logo img[data-v-0ff1fb10] {
-            height: 0.56rem;
+            height: 60px;
         }
 
         .van-field__word-num[data-v-0ff1fb10] {
@@ -9212,7 +9212,7 @@
                     <div data-v-0ff1fb10="" class="head"><!---->
                         <div data-v-0ff1fb10="" class="container flex"><!---->
                             <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
+                                    src="{{asset('')}}static/img/logo2.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
