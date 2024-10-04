@@ -8285,10 +8285,12 @@
                         <div data-v-0ff1fb10="" class="name"> Login Password </div>
                         <div data-v-0ff1fb10="" class="container flex">
                             <div data-v-0ff1fb10="" class="logo"></div>
+                            <a href="{{route('user.profile')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
                                     alt=""></div>
-                            <div data-v-0ff1fb10="" class="flex1"></div>                            
+                            <div data-v-0ff1fb10="" class="flex1"></div>
+                            </a>                            
                         </div>
                     </div>
                 </div>

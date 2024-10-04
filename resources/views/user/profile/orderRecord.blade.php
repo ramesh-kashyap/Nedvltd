@@ -1,7 +1,7 @@
 <html style="font-size: 50px;"><head>
     <meta charset="utf-8">
     <!--    <link rel="icon" href="/logo.ico" />-->
-    <title>Change email</title>
+    <title>My order</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--  <meta name="theme-color" content="#fff" />-->
     <meta http-equiv="pragma" content="no-cache">
@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+    background: #020202;
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #fff;
+    background: #141517;
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -5910,7 +5910,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #e9f5f4;
+    background: #020202;
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
@@ -7663,7 +7663,7 @@
   .input_big_box .title_box .title[data-v-3cceea5e] {
     line-height: 1.1;
     font-size: 0.28rem;
-    color: #000;
+    color: #fff;
   }
   .input_big_box .inp_content_box[data-v-3cceea5e] {
     margin-top: 0.2rem;
@@ -8276,83 +8276,71 @@
       <img src="/logo.png" alt="">
     </div>
     <div id="app" style="height: 7.82rem;">
-        <div data-v-37526a6c="" data-v-3db22916="" class="page h-full">
-            <div data-v-37526a6c="" class="headers on">
-                <div data-v-0ff1fb10="" data-v-3db22916="" data-v-37526a6c="">
-                    <div data-v-0ff1fb10="" class="head">
-                        <div data-v-0ff1fb10="" class="name"> Change email </div>
-                        <div data-v-0ff1fb10="" class="container flex">
-                            <!---->
-                            <div data-v-0ff1fb10="" class="logo"></div>
-                            <<a href="{{route('user.profile')}}">
+        <div data-v-71c97888="" class="h-full">
+            <div data-v-37526a6c="" data-v-71c97888="" class="page">
+                <div data-v-37526a6c="" class="headers on">
+                    <div data-v-0ff1fb10="" data-v-71c97888="" data-v-37526a6c="">
+                        <div data-v-0ff1fb10="" class="head">
+                            <div data-v-0ff1fb10="" class="name"> My order </div>
+                            <div data-v-0ff1fb10="" class="container flex">
+                                <!---->
+                                <div data-v-0ff1fb10="" class="logo"></div>
+                                <a href="{{route('user.profile')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             </a>
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
-                            <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                                <!---->
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;">
-            <form  method="post" action="{{ route('user.changeEmailAction') }}">
-            {{ csrf_field() }}
-                <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
-                    <div data-v-3db22916="" data-v-37526a6c="" class="old-email">Bound email：{{Auth::user()->email}}</div>
-                    <input type="text" readonly="" value="{{Auth::user()->username}}" style="display:none">
-                    <input type="email" readonly value="{{Auth::user()->email}}" style="display:none">
-                    <div data-v-3db22916="" data-v-37526a6c="" class="container">
-                        <div data-v-3cceea5e="" data-v-3db22916="" class="input_big_box mt" data-v-37526a6c="">
-                            <div data-v-3cceea5e="" class="title_box">
-                                <div data-v-3cceea5e="" class="title">Current email verification code</div>
-                            </div>
-                            <div data-v-3cceea5e="" class="inp_content_box">
-                                <div data-v-3cceea5e="" class="input">
-                                    <input data-v-3cceea5e=""  name="first_code" type="text"placeholder="Please enter verification code"></div>
-                                <div data-v-3cceea5e="" class="inp_right send_text">
-                                        <span data-v-3cceea5e="" class="first-code-send">Send</span>
+                <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;">
+                    <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
+                        <div data-v-71c97888="" data-v-37526a6c="" class="container">
+                            <div data-v-6c3551e3="" data-v-71c97888="" class="empty db" data-v-37526a6c=""
+                                style="display: none;">
+                                <div data-v-6c3551e3="" class="flexs">
+                                    <div data-v-6c3551e3="" class="custom-image van-empty">
+                                        <div class="van-empty__image"><img src="/static/img/none.9c737031.png"></div>
+                                        <p class="van-empty__description">No data yet</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div data-v-3670e178="" data-v-3db22916="" class="input_big_box mt" data-v-37526a6c="">
-                            <div data-v-3670e178="" class="title_box">
-                                <div data-v-3670e178="" class="title">New email address</div>
-                            </div>
-                            <div data-v-3670e178="" class="inp_content_box">
-                                <div data-v-3670e178="" class="input">
-                                     <input data-v-3670e178="" placeholder="Enter the bound email address"
-                                     type="email" name="newEmail" value="" id="emailId"></div>
-                            </div>
-                        </div>
-                        <div data-v-3cceea5e="" data-v-3db22916="" class="input_big_box mt" data-v-37526a6c="">
-                            <div data-v-3cceea5e="" class="title_box">
-                                <div data-v-3cceea5e="" class="title">New email verification code</div>
-                            </div>
-                            <div data-v-3cceea5e="" class="inp_content_box">
-                                <div data-v-3cceea5e="" class="input">
-                                    <input data-v-3cceea5e="" placeholder="Please enter verification code"
-                                    name="second_code" type="text"></div>
-                                <div data-v-3cceea5e="" class="inp_right send_text">
-                                    <span data-v-3cceea5e="" class="sencond-code-send">Send</span>
+                            <div data-v-71c97888="" class="van-pull-refresh" data-v-37526a6c="">
+                                <div class="van-pull-refresh__track" style="transition-duration: 0ms;">
+                                    <div class="van-pull-refresh__head" style="height: 50px;"></div>
+                                    <div data-v-71c97888="" role="feed" class="van-list">
+                                        <div data-v-4ff1603e="" data-v-71c97888="" class="record-list">
+                                            <div data-v-4ff1603e="" class="record">
+                                                <div data-v-4ff1603e="" class="left">
+                                                    <div data-v-4ff1603e="" class="name">VIP0</div>
+                                                    <div data-v-4ff1603e="" class="time">2024-09-28 12:54:56</div>
+                                                </div>
+                                                <div data-v-4ff1603e="" class="right">
+                                                    <div data-v-4ff1603e="" class="price"><span
+                                                            data-v-4ff1603e="">0USDT</span><i data-v-4ff1603e=""
+                                                            class="arrow van-icon van-icon-arrow">
+                                                            <!----></i></div>
+                                                    <div data-v-4ff1603e="" class="status"> Paid</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="van-list__finished-text">No more</div>
+                                        <div class="van-list__placeholder"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div data-v-e9acc21a="" data-v-3db22916="" data-v-37526a6c="" style="height: 1.4rem;">
-                        <div data-v-e9acc21a="" class="big_btn_box">
-                            <div data-v-e9acc21a="" class="btn_box"><button data-v-e9acc21a=""
-                                    class="btn on" type="submit">OK</button></div>
-                        </div>
-                    </div>
                 </div>
-            </form>
+                <!---->
             </div>
-            <!---->
         </div>
         <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
             <div data-v-15b106f9="" class="page-loading"></div>
@@ -8372,79 +8360,4 @@
       standalone.style.display='none'
     },3000)
   </script>
-  <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
-  
-  <script>
-            
-            $('.first-code-send').click(function(e) {
-                var ths = $(this);
-     
-              
-                // alert(sponsor); 
-                $.ajax({
-                    type: "POST"
-                    , url: "{{ route('user.send_code') }}"
-                    , data: {
-                        "emailId": ""
-                        , "_token": "{{ csrf_token() }}"
-                    , }
-                    , success: function(response) {
-                        // alert(response);      
-                        if (response) {
-                            // alert("hh");
-                            iziToast.success({
-                            message: 'Email send Successfully',
-                            position: "topRight"
-                        });
-                        } else {
-                            // alert("hi");
-                            iziToast.error({
-                            message: 'Error!',
-                            position: "topRight"
-                        });
-                        }
-                    }
-                });
-            });
-
-            $('.sencond-code-send').click(function(e) {
-                var ths = $(this);
-                var emailId = $('#emailId').val();
-           
-                if (!emailId) 
-                {
-                    iziToast.error({
-                            message: 'Invalid Email!',
-                            position: "topRight"
-                        });
-                        return false;
-                }
-                // alert(sponsor); 
-                $.ajax({
-                    type: "POST"
-                    , url: "{{ route('user.send_code') }}"
-                    , data: {
-                        "emailId": emailId
-                        , "_token": "{{ csrf_token() }}"
-                    , }
-                    , success: function(response) {
-                        // alert(response);      
-                        if (response) {
-                            // alert("hh");
-                            iziToast.success({
-                            message: 'Email send Successfully',
-                            position: "topRight"
-                        });
-                        } else {
-                            // alert("hi");
-                            iziToast.error({
-                            message: 'Error!',
-                            position: "topRight"
-                        });
-                        }
-                    }
-                });
-            });
-
-                </script>
-  </body></html>
+  <!----><!----><!----><!----></body></html>

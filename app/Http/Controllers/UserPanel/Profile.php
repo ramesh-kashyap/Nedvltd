@@ -681,7 +681,9 @@ public function BankDetail()
 
         }
     }
-   
+   public function orderRecord(){
+      return view('user/profile/orderRecord');
+   }
 
 
 
