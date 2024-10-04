@@ -43,7 +43,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1000000;
-      background: #020503;
+      background: rgba(6, 132, 117, 0.8);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -263,7 +263,7 @@
       padding-top: constant(safe-area-inset-top);
       padding-top: env(safe-area-inset-top);
       max-height: 100vh;
-      background: #020202;
+      background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
       position: relative;
       word-wrap: break-word;
       word-break: normal;
@@ -2318,13 +2318,13 @@
         400 0.28rem/100% 'PingFangSC',
         '\5FAE\8F6F\96C5\9ED1',
         Helvetica;
-      color: #fff;
+      /* color: #fff; */
       width: 100%;
       height: 100%;
       height: -webkit-fill-available;
       overflow: hidden;
       min-width: 7.5rem;
-      background: #141517;
+      /* background: #141517; */
       -webkit-user-select: none;
       -webkit-text-size-adjust: none;
       user-select: none;
@@ -7015,12 +7015,12 @@
   <style type="text/css">
     .box-radius[data-v-1029ea9a] {
       border-radius: 0.16rem;
-      background: #020202;
+      /* background: #020202; */
     }
 
     .tab_hd[data-v-1029ea9a] {
       border-radius: 0.16rem;
-      background: #13161c;
+      background:#068475;
       height: 0.8rem;
       text-align: center;
       margin: 0.24rem 0;
@@ -7033,7 +7033,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: #8d95a6;
+      color: #ffffff;
     }
 
     .tab_hd li.on[data-v-1029ea9a] {
@@ -7188,7 +7188,7 @@
     }
 
     .head[data-v-0ff1fb10] {
-      background: #020202;
+      /* background: #020202; */
       height: 1.2rem;
       position: relative;
       transition: background-color 0.3s;
