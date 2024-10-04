@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background: rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    /* background: #141517; */
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -8321,7 +8321,7 @@
     <div id="startLogo" style="display: none;">
       <img src="/logo.png" alt="">
     </div>
-    <div id="app" style="height: 7.82rem;"><div data-v-37526a6c="" data-v-5a857e84="" class="page h-full"><div data-v-5a857e84="" data-v-37526a6c="" class="bg"></div><div data-v-37526a6c="" class="headers on"><div data-v-0ff1fb10="" data-v-5a857e84="" data-v-37526a6c=""><div data-v-0ff1fb10="" class="head"><div data-v-0ff1fb10="" class="name"> About Us </div><div data-v-0ff1fb10="" class="container flex"><!----><div data-v-0ff1fb10="" class="logo"></div><div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII=" alt=""></div><div data-v-0ff1fb10="" class="flex1"></div><!----><!----><!----><!----><!----></div></div></div></div><div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;"><div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;"><div data-v-5a857e84="" data-v-37526a6c="" class="container"><div data-v-5a857e84="" data-v-37526a6c="" class="box"><div data-v-5a857e84="" data-v-37526a6c="" class="icon1"><img data-v-5a857e84="" data-v-37526a6c="" src="/static/img/ico10.31ca04f7.png" alt=""><p data-v-5a857e84="" data-v-37526a6c="">Current version number：V1.0.0</p></div><div data-v-5a857e84="" data-v-37526a6c="" class="info"><div data-v-5a857e84="" data-v-37526a6c="" class="name"> About Us  </div><div data-v-5a857e84="" data-v-37526a6c="" class="p"><ul>
+    <div id="app" style="height: 7.82rem;"><div data-v-37526a6c="" data-v-5a857e84="" class="page h-full"><div data-v-5a857e84="" data-v-37526a6c="" class="bg"></div><div data-v-37526a6c="" class="headers on"><div data-v-0ff1fb10="" data-v-5a857e84="" data-v-37526a6c=""><div data-v-0ff1fb10="" class="head"><div data-v-0ff1fb10="" class="name"> About Us </div><div data-v-0ff1fb10="" class="container flex"><!----><div data-v-0ff1fb10="" class="logo"></div><div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10="" src="{{asset('')}}logo.png" alt=""></div><div data-v-0ff1fb10="" class="flex1"></div><!----><!----><!----><!----><!----></div></div></div></div><div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px;"><div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;"><div data-v-5a857e84="" data-v-37526a6c="" class="container"><div data-v-5a857e84="" data-v-37526a6c="" class="box"><div data-v-5a857e84="" data-v-37526a6c="" class="icon1"><img data-v-5a857e84="" data-v-37526a6c="" src="{{asset('')}}logo.png" alt=""><p data-v-5a857e84="" data-v-37526a6c="">Current version number：V1.0.0</p></div><div data-v-5a857e84="" data-v-37526a6c="" class="info"><div data-v-5a857e84="" data-v-37526a6c="" class="name"> About Us  </div><div data-v-5a857e84="" data-v-37526a6c="" class="p"><ul>
       <li><strong>Company name</strong>: NEDVLTD</li>
       <li><strong>Place of establishment</strong>: Singapore</li>
       <li><strong>Global layout</strong>: It has a R&amp;D and operations team of more than 400 people in Singapore, Japan, the United States and other places, of which more than 70% of the members graduated from prestigious Ivy League schools in the United States.</li>

@@ -9225,7 +9225,7 @@
                                 <div data-v-0ff1fb10="" class="count"> 2 </div>
                             </div>
                             <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
-                                     src="{{asset('')}}static/img/Icon/browser.png"
+                                     src="{{asset('')}}static/img/Icon/browser2.png"
                                     alt=""></div><!---->
                         </div>
                     </div>
