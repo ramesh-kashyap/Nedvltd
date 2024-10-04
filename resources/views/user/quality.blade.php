@@ -10254,10 +10254,10 @@ max-width: 8.5rem;
             <div data-v-0ff1fb10="" class="flex1"></div>
             <!---->
             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgB7ZjhdZswEIBP4Pa3uwEbJJ3AygT1BnEmqDNBaDJAvUE7QjqByQSOJ8AbmH99rynvemeEK2RhBMg2P/K9dzYPpNNxpzskCegBIkr6m5JMSCKSsXqUkbySrEmehRAJnBMybEaSojvc9hZODQ0SkaywOynraDOmcG2oPLCA/2EsSUheoAhppt2XUIReGu25zR2F/Rl8QcZNLd5YYjEHm/qy139a+vsJuRpgayifQ0u4j6Fj2zbcdYpTQ/E1dIT7GrpW0AcssrWX5yw6595CbXjvB3hCzd+SFLpAHaXxphF4wqJbQluo00JTsATPGF5c1LULjui40q5fwD+6zkldo2MG6tmagH9eteuortExA8dwWjKXsQJOczwsxAhnBg9JdyUI3VYlEjxjyWQbWw5xBMNlPDJu8Jdira69l5YGbtQ/J+f38qZp4Lpc/Z57GtaNG8DAeTewL+YcvHaeexiPQcQZeEIrZVfmAxdkpdNbLOHv0xb+PM4bXyJ/fNi1fXuSpkEuAwsuhtD8WbvZ721/xxF8CLkERerZhrZeCWD+C1B9vjCIQNDKWwS3oO+Vw/wzeX1TGgjNpWzDIb4neQDXgh0GEqovFJFhM3ow2+8Rxf6nSh5Odi/kBr/sN+dtZwX2YhjGlGKuy/WEvHdXeo8xPUgRstrSzUDQDP0YfiEP8vEHfwFKz252grTmG+ULWzIZBmZk3ycYEmRgrOVC7Vy8ZB3UV9FrGBJYHAbUl7FLg9WjkG7bzlNBBn01vHf6YzlX8PDoYzjes3jOz+FRX9Q3d4mHTF36j8AzKiO5YPOqRIL9APPe6wFmG/A4q4uHtcawdDDZqiUAe2uBPYvwPz83puiqItLgAAAAAElFTkSuQmCC"
+                   src="{{asset('')}}static/img/Icon/support.png"
                 alt=""></div>
             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZjRbYMwEECPKP9lBI+QEegkHSFkgEpUHSB0ApIJ2k7QdgLSCWCDMEDV61ngClwDdoxjKvGkCwk25sWRfeEAJBAxokgpCrweOUVGwaAPagwp9ugf7hAKr0DI0eGNYgPz4ERxGwRBJQT3dIilThXFC7iHTw6fGCadT0lwx+WYYppjuDL8ngqPiDccfMsNSKb8ZN46UYBnsLt7FCvoLoxP8M9H6z1bSY1nmBkrmDlr7Z5fj3f0mkK9LdhQUiSwvj/qdDaZwQTs5TgM6i+qhYngFHKCSrejvuA37qD+eWypaKwH7d7SxpiBZ+TEMftVvAjasgja4iKTlGCQKcZwkUkYGGSKMVxlEu1MMYaLTGKWKcZYMokli+AF3HQ+yU9R4BnJJ+cz+NpqZ56fi7fQrTCcRDULfT+8czmFBxO1Gb7zb6VrSqiLOLqb7jvVUo4DAmFzD6ZojhTnn2i8+Pdi7FYYLiUbEDQp7eXYKsG1JVO0J+sRfNa8Pv0jJw3EF8oB7WY0U4y7wf6qbdGIReACGjjRkfTKf5b0tq8qUUhO9ud1MhrJM9YLjYEFP77mDpPJ5NHvAAAAAElFTkSuQmCC"
+                    src="{{asset('')}}static/img/Icon/bell.png"
                 alt="">
               <div data-v-0ff1fb10="" class="count"> 2 </div>
             </div>

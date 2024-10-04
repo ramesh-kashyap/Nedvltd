@@ -9215,14 +9215,12 @@
                                     src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
+                            <div data-v-0ff1fb10="" class="notice"></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMCSURBVHgBzZkxc9MwFICfnTLXG6s7M9TwB1AX1mZhJl1ZyMDKJbTHnHLHnvQHcC0/gLM7c1ySjc1mYW1Ye3UeerGDn5XEktrayXenqyw96b3IT9J7LsADQUQhy1CWGAvGeZuAbSGV+7KEqCcmWWgSqTCQ5QbNIdkA7oEDluSrEcris+ZIlitZpvkz9b2ThRs1k+W54zgJ1Ik08FJZnW6FbFeRDaFOMNsQnL7BGNVIAXUhJz9nimKLcSEbdw4WuGDHIatfgDnXrP4SLLA10Gf1MZiTsLoHFuyZCMnXQpP6yuQHFv60r8wn5J+J3NEzeAj5pgixPkJZ3sB9kAMH2BwDW+OG2DxDU+N6ysAYs1dt5dwGejpYDjCIrm6Qh6tRyaMatkbfmOm7qdQnO9vKL/KhZjCLinjg0eH96jkoWP1b7Re7JNcxYU2lqEc1kC/vBJpjyuqlM9P2JqmLjQf2rhi4kaqrrkdHDmyZnV9B1cB92DFKOQlmQaifP36ELNdogjZkOQxBG+ZgJdLJr55GD2mm21N0H68TCtH24n5cI7n+UO30lV8goGFwNSHzeOeIdeiTobuzENLTMdx+0ifjJEOy6dkQsO9pjOR3cp/alruYJzLVydDtaQfozkYnACftgw53PljIInQgddsa6c+svtg0LkUwUE6GRtVzOALsKHaj/vMHT0lp4whaQZ4TRNoIpoVF6okGx9Aci5TTcY+rRPOjJWJNPTKQL/uoaoKFD9HrKmbURzxlGV/nh1B2sUC9SX5DFWlLsKcZPPkQgY5Mhh26e7rEPWF1z1Uaqn0E54I92cSLhexdeqSR9Vk9IQP5Z4lKH5E+xPxvfg2m4Hy6do718AgqIgNHrEFoQixRVN0IjHGv2EOwyQ8xy4991nTh5B1hWfnitfeB+eQX+HH4Nf31/xgYtF61A3j6Fwz4CX+89+n3y+XzW3hx8rr1LGEitKptxYaR3NUnSwPpF40V67dJIssRHXmLXZyfP+S8Np/U6iKCqk/F+aVNd3OMzRHjhn9b/ANqwWEI3dJp0AAAAABJRU5ErkJggg=="
+                                    src="{{asset('')}}static/img/Icon/support.png"
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgB7ZjhdZswEIBP4Pa3uwEbJJ3AygT1BnEmqDNBaDJAvUE7QjqByQSOJ8AbmH99rynvemeEK2RhBMg2P/K9dzYPpNNxpzskCegBIkr6m5JMSCKSsXqUkbySrEmehRAJnBMybEaSojvc9hZODQ0SkaywOynraDOmcG2oPLCA/2EsSUheoAhppt2XUIReGu25zR2F/Rl8QcZNLd5YYjEHm/qy139a+vsJuRpgayifQ0u4j6Fj2zbcdYpTQ/E1dIT7GrpW0AcssrWX5yw6595CbXjvB3hCzd+SFLpAHaXxphF4wqJbQluo00JTsATPGF5c1LULjui40q5fwD+6zkldo2MG6tmagH9eteuortExA8dwWjKXsQJOczwsxAhnBg9JdyUI3VYlEjxjyWQbWw5xBMNlPDJu8Jdira69l5YGbtQ/J+f38qZp4Lpc/Z57GtaNG8DAeTewL+YcvHaeexiPQcQZeEIrZVfmAxdkpdNbLOHv0xb+PM4bXyJ/fNi1fXuSpkEuAwsuhtD8WbvZ721/xxF8CLkERerZhrZeCWD+C1B9vjCIQNDKWwS3oO+Vw/wzeX1TGgjNpWzDIb4neQDXgh0GEqovFJFhM3ow2+8Rxf6nSh5Odi/kBr/sN+dtZwX2YhjGlGKuy/WEvHdXeo8xPUgRstrSzUDQDP0YfiEP8vEHfwFKz252grTmG+ULWzIZBmZk3ycYEmRgrOVC7Vy8ZB3UV9FrGBJYHAbUl7FLg9WjkG7bzlNBBn01vHf6YzlX8PDoYzjes3jOz+FRX9Q3d4mHTF36j8AzKiO5YPOqRIL9APPe6wFmG/A4q4uHtcawdDDZqiUAe2uBPYvwPz83puiqItLgAAAAAElFTkSuQmCC"
-                                    alt=""></div>
-                            <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZjRbYMwEECPKP9lBI+QEegkHSFkgEpUHSB0ApIJ2k7QdgLSCWCDMEDV61ngClwDdoxjKvGkCwk25sWRfeEAJBAxokgpCrweOUVGwaAPagwp9ugf7hAKr0DI0eGNYgPz4ERxGwRBJQT3dIilThXFC7iHTw6fGCadT0lwx+WYYppjuDL8ngqPiDccfMsNSKb8ZN46UYBnsLt7FCvoLoxP8M9H6z1bSY1nmBkrmDlr7Z5fj3f0mkK9LdhQUiSwvj/qdDaZwQTs5TgM6i+qhYngFHKCSrejvuA37qD+eWypaKwH7d7SxpiBZ+TEMftVvAjasgja4iKTlGCQKcZwkUkYGGSKMVxlEu1MMYaLTGKWKcZYMokli+AF3HQ+yU9R4BnJJ+cz+NpqZ56fi7fQrTCcRDULfT+8czmFBxO1Gb7zb6VrSqiLOLqb7jvVUo4DAmFzD6ZojhTnn2i8+Pdi7FYYLiUbEDQp7eXYKsG1JVO0J+sRfNa8Pv0jJw3EF8oB7WY0U4y7wf6qbdGIReACGjjRkfTKf5b0tq8qUUhO9ud1MhrJM9YLjYEFP77mDpPJ5NHvAAAAAElFTkSuQmCC"
+                                     src="{{asset('')}}static/img/Icon/bell.png"
                                     alt="">
                                 <div data-v-0ff1fb10="" class="count"> 2 </div>
                             </div>
@@ -9280,7 +9278,7 @@
                         <ul data-v-5954443c="" class="nav2">
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/Icon/Vip.png"
+                                            src="{{asset('')}}static/img/Icon/Vip.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">VIP Level</div>
                             </li>
