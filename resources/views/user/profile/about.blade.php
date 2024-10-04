@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -5910,7 +5910,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    /* background: #020202; */
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
@@ -8229,7 +8229,7 @@
     font-size: 0.26rem;
     font-weight: 400;
     line-height: 0.36rem;
-    color: #787F8E;
+    /* color: #787F8E; */
     padding-bottom: 0.3rem;
   }
   .icon1[data-v-5a857e84] {
@@ -8245,7 +8245,7 @@
   }
   .info[data-v-5a857e84] {
     border-radius: 0.16rem;
-    background: #0f1016;
+    background: #068475;
     padding: 0.24rem;
   }
   [data-v-5a857e84] .p img {

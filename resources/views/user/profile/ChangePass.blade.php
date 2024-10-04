@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background:rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    /* background: #141517; */
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -5910,7 +5910,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    /* background: #020202; */
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
@@ -8060,8 +8060,8 @@
   }
   .box ul li .val.disabled[data-v-40856e44] {
     border-radius: 0.16rem;
-    background: #13161C;
-    border: none;
+    background: none;
+    /* border: none; */
   }
   .box ul li .val[data-v-40856e44]:last-child {
     margin-bottom: 0;
@@ -8087,6 +8087,7 @@
     vertical-align: middle;
   }
   .box ul li .b[data-v-40856e44] {
+    margin-top: 12px;
     margin-left: 0.14rem;
   }
   .box ul li .b button[data-v-40856e44],
@@ -8108,7 +8109,7 @@
   }
   .box ul li .str[data-v-40856e44] {
     right: 0.3rem;
-    top: 0;
+    top: 12px;
     height: 0.8rem;
     line-height: 0.8rem;
   }

@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background:rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    /* background: #141517; */
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -2394,7 +2394,7 @@
     caret-color: var(--themeColor);
   }
   .btn-bg {
-    background: #23252E;
+    background: #00FC83;
     color: #fff;
   }
   .btn-bg.active {
@@ -5755,8 +5755,9 @@
     max-width: 8.5rem;
   }
   </style><script charset="utf-8" src="/js/23.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-434f210d] {
-    background: url({{asset('')}}static/img/bg-record-card.3130b15c.png);
+    background-color:#068475;
     background-size: 100% 100%;
+    border-radius: 0.2rem;
     padding: 0.4rem 0.32rem;
     position: relative;
   }
@@ -5846,7 +5847,7 @@
   }
   .income-box .income-content[data-v-470469c5] {
     border-radius: 0.2rem;
-    background: #0f1016;
+    background: #068475;
     padding: 0 0.28rem 0.32rem;
   }
   .income-box .income-content .income .title[data-v-470469c5] {
@@ -5980,7 +5981,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    /* background: #020202; */
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;

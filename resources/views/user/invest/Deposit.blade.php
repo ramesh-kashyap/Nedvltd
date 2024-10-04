@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background: rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -306,6 +306,7 @@
   .password_pop .van-password-input__security li i {
     background-color: #fff;
   }
+  
   .password_pop .van-password-input {
     margin: 0;
   }
@@ -1851,7 +1852,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -6407,7 +6408,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #e9f5f4;
+   
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
@@ -7057,6 +7058,7 @@
     padding: 0 0.3rem;
     line-height: 0.8rem;width: 100%;
     border: 0.02rem solid #252930;
+    background:rgb(255 0 0 / 3%);">                                
     background: transparent;">                                
                             
                         </dl>                      
