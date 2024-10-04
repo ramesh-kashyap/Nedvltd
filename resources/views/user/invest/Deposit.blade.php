@@ -7057,8 +7057,7 @@
     color:#000;
     padding: 0 0.3rem;
     line-height: 0.8rem;width: 100%;
-    border: 0.02rem solid #252930;
-    background:rgb(255 0 0 / 3%);">                                
+    border: 0.02rem solid #252930;                                   
     background: transparent;">                                
                             
                         </dl>                      
