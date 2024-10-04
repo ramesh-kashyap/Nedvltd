@@ -9280,25 +9280,25 @@
                         <ul data-v-5954443c="" class="nav2">
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/e061d7f0e83b518c317796bc7a4f45de.png"
+                                        src="{{asset('')}}static/img/Icon/Vip.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">VIP Level</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/03089b80414851510569ef105fbf2289.png"
+                                         src="{{asset('')}}static/img/Icon/rules.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Platform Rules</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/4c59b8d954ba46563e2478e8c1b2d0c1.png"
+                                        src="{{asset('')}}static/img/Icon/tutorial.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Tutorial</div>
                             </li>
                             <li data-v-5954443c="">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/a11a6ea14ceef74a7e6996bcab908ecd.png"
+                                       src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Company Profile</div>
                             </li>
