@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background: rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    /* background: #141517; */
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
