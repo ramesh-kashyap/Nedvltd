@@ -10249,7 +10249,7 @@ max-width: 8.5rem;
           <div data-v-0ff1fb10="" class="container flex">
             <!---->
             <div data-v-0ff1fb10="" class="logo"><img data-v-e20b77f4="" data-v-0ff1fb10=""
-                src="static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
+                src="../static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
             <div data-v-0ff1fb10="" class="n_home"></div>
             <div data-v-0ff1fb10="" class="flex1"></div>
             <!---->
