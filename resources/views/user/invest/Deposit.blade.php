@@ -7034,50 +7034,42 @@
                 </div>
             </div>
             <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
-                <div data-v-37526a6c="" class="container page-recharge">
-                    
+                <div data-v-37526a6c="" class="container page-recharge">                    
                     <div data-v-37526a6c="" class="page-recharge-info" style="margin-top: 10px;">
+                    <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
+                    {{ csrf_field() }}
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
-                            <dt data-v-37526a6c="">Recharge currency </dt>
-                            <dd data-v-37526a6c="" onClick="Currency">
-                                <div data-v-37526a6c="" class="flex items-center"><img data-v-37526a6c=""
-                                        src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png"
-                                        width="24" height="24" alt=""><span data-v-37526a6c=""
-                                        class="px-6px">USDT</span></div><svg data-v-37526a6c=""
-                                    xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"
-                                    fill="none">
-                                    <path data-v-37526a6c="" d="M0 2V0H8V2L4 6L0 2Z" fill="white"></path>
-                                </svg>
-                            </dd>
+                            <dt data-v-37526a6c=""style="margin-bottom: 10px;">Recharge currency </dt>                            
+                            <input data-v-37526a6c="" 
+       class="flex items-center" 
+       style="height: 0.8rem; border-radius: 0.16rem; color: #000; padding: 0 0.3rem; line-height: 0.8rem; width: 100%; border: 0.02rem solid #252930; background: transparent;" 
+       readonly 
+       id="currencyInput" 
+       value="Choose Currency"
+       type="text"  name="PSys" 
+       onClick="showPopup()">
                         </dl>
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
-                            <dt data-v-37526a6c="">Amount</dt>
+                            <dt data-v-37526a6c="" style="margin-bottom: 10px;">Amount</dt>
                             
                                 <input data-v-37526a6c="" type="number" name="Sum" placeholder="Enter Your Amount" style="    height: 0.8rem;
     border-radius: 0.16rem;
+    color:#000;
     padding: 0 0.3rem;
     line-height: 0.8rem;width: 100%;
-    border: 0.02rem solid #252930;
-    background:rgb(255 0 0 / 3%);">                                
+    border: 0.02rem solid #252930;                                   
+    background: transparent;">                                
                             
-                        </dl>
-                        <!-- <dl data-v-37526a6c="" class="page-recharge-info-item">
-                            <dt data-v-37526a6c="">Recharge address </dt>
-                            <dd data-v-37526a6c="">
-                                <div data-v-37526a6c="" class="page-recharge-info-address">
-                                    TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg</div>
-                                <div data-v-37526a6c=""><svg data-v-37526a6c="" xmlns="http://www.w3.org/2000/svg"
-                                        width="16" height="16" viewBox="0 0 16 16" fill="none">
-                                        <path data-v-37526a6c="" fill-rule="evenodd" clip-rule="evenodd"
-                                            d="M11.3787 1.5H5.5V2H4V1.5V0H5.5H12L15 3V11.5V13H13.5H13V11.5H13.5V3.62132L11.3787 1.5ZM2.5 4.5H8.37868L10.5 6.62132V14.5H2.5V4.5ZM2.5 3H9L12 6V14.5V16H10.5H2.5H1V14.5V4.5V3H2.5Z"
-                                            fill="#01FC83"></path>
-                                    </svg></div>
-                            </dd>
-                        </dl> -->
+                        </dl>                      
                         <div data-v-37526a6c="" class="flex-between-center">
                             <div data-v-37526a6c="" class="text-gray">Minimum recharge </div>
                             <div data-v-37526a6c="">1USDT</div>
                         </div>
+
+                        <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px;">
+                                <div class="van-button__content"><span class="van-button__text">Sure</span></div>
+                            </button>
+                            </form>
                     </div>
                     <!-- <div data-v-37526a6c="" class="page-recharge-tips">
                         <div data-v-37526a6c="" class="page-recharge-tips-title"><img data-v-37526a6c="" width="16"
@@ -7099,46 +7091,54 @@
                                 ERC20, Arbitrum and Optimism networks.</p>
                         </p>
                     </div> -->
-                    <div class="van-overlay" style="z-index: 2022;display: none;"></div>
+                    
+                    <div class="van-overlay" style="z-index: 2022; display: none;" id="currencyPopupOverlay"></div>
                     <div class="chain-select-popup van-popup van-popup--round van-popup--bottom" rounded=""
-                        style="display:none; z-index: 2031;">
-                        <div class="text-16px p-20px text-center"> Currency &amp; network </div>
+                        style="z-index: 2031; display: none;" id="currencyPopup">
+                        <div class="text-16px p-20px text-center">Currency &amp; network</div>
                         <div class="px-16px">
                             <ul class="chain-select-popup-tab-nav">
                                 <li class="active">
-                                    <div class="flex items-center"><img
-                                            src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png"
-                                            width="24" height="24" class="mr-6px"> USDT </div>
-                                </li>                                
+                                    <div class="flex items-center">
+                                        <img src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png"
+                                            width="24" height="24" class="mr-6px"> USDT
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="chain-item flex active"><img
-                                    src="https://obs.nedvc.com/upload/20240826/7045fd478aefa8c60727d5ad21375da1.png"
+                            <!-- TRX Option -->
+                            <div class="chain-item flex active" onclick="chooseCurrency('TRX (TRC20)')">
+                                <img src="https://obs.nedvc.com/upload/20240826/7045fd478aefa8c60727d5ad21375da1.png"
                                     width="40" height="40" alt="TRX" class="mr-6px rounded-full">
                                 <div class="flex-1 pl-12px">
-                                    <div class="mb-12px text-14px"> TRX (TRC20) </div>
+                                    <div class="mb-12px text-14px">TRX (TRC20)</div>
                                     <div class="text-12px text-gray">
-                                        <p class="mb-8px"> Expected time 1 minutes </p>
-                                        <p> Minimum recharge ≥ 1 USDT </p>
+                                        <p class="mb-8px">Expected time 1 minutes</p>
+                                        <p>Minimum recharge ≥ 1 USDT</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="chain-item flex"><img
-                                    src="https://obs.nedvc.com/upload/20240826/3400cd81031aa3e7d7cd45bfc704c8d7.png"
+                            <!-- BSC Option -->
+                            <div class="chain-item flex" onclick="chooseCurrency('BSC (BEP20)')">
+                                <img src="https://obs.nedvc.com/upload/20240826/3400cd81031aa3e7d7cd45bfc704c8d7.png"
                                     width="40" height="40" alt="BSC" class="mr-6px rounded-full">
                                 <div class="flex-1 pl-12px">
-                                    <div class="mb-12px text-14px"> BSC (BEP20) </div>
+                                    <div class="mb-12px text-14px">BSC (BEP20)</div>
                                     <div class="text-12px text-gray">
-                                        <p class="mb-8px"> Expected time 1 minutes </p>
-                                        <p> Minimum recharge ≥ 1 USDT </p>
+                                        <p class="mb-8px">Expected time 1 minutes</p>
+                                        <p>Minimum recharge ≥ 1 USDT</p>
                                     </div>
                                 </div>
-                            </div><button
-                                class="rounded-8px van-button van-button--primary van-button--normal van-button--block">
-                                <div class="van-button__content"><span class="van-button__text"> Sure </span></div>
+                            </div>
+                            <!-- Confirm Button -->
+                            <button
+                                class="rounded-8px van-button van-button--primary van-button--normal van-button--block"
+                                onclick="confirmSelection()">
+                                <div class="van-button__content"><span class="van-button__text">Sure</span></div>
                             </button>
-                        </div><i role="button" tabindex="0"
-                            class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right">
-                            <!----></i>
+                        </div>
+                        <i role="button" tabindex="0"
+                            class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right"
+                            onclick="hidePopup()">×</i>
                     </div>
                     </div>
   </div>
@@ -7161,5 +7161,50 @@
     setTimeout(() =>{
       standalone.style.display='none'
     },3000)
+  </script>
+  <script>  
+    let chosenCurrency = ''; // Store the chosen currency
+
+// Show the popup
+function showPopup() {
+    document.getElementById('currencyPopup').style.display = 'block';
+}
+
+// Hide the popup
+function hidePopup() {
+    document.getElementById('currencyPopup').style.display = 'none';
+}
+
+// Choose the currency option
+function chooseCurrency(currency) {
+    chosenCurrency = currency;
+    // Get all elements with the class 'chain-item flex'
+    const items = document.getElementsByClassName('chain-item flex');
+    
+    // Remove 'active' class from all items
+    Array.from(items).forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add 'active' class to the selected currency
+    if(currency === "BSC (BEP20)") {
+        items[1].classList.add('active'); // BSC is the second item
+    } else if(currency === "TRX (TRC20)") {
+        items[0].classList.add('active'); // TRX is the first item
+    }
+    // Optionally highlight the selected currency (if needed)
+    console.log('Selected Currency:', chosenCurrency);
+}
+
+// Confirm the selection and paste it into the input field
+function confirmSelection() {
+    if (chosenCurrency !== '') {
+        document.getElementById('currencyInput').value = chosenCurrency;
+        hidePopup(); // Close the popup after selection
+    } else {
+        alert("Please select a currency!"); // In case no selection was made
+    }
+}
+
   </script>
   <!----><!----></body></html>

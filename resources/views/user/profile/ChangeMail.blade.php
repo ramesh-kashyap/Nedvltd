@@ -1851,7 +1851,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    background: #fff;
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -5910,7 +5910,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    background: #e9f5f4;
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
