@@ -6782,9 +6782,108 @@
     <div id="startLogo" style="display: none;">
       <img src="/logo.png" alt="">
     </div>
-    <div id="app" style="height: 7.6rem;"><div data-v-37526a6c="" class="page h-full"><div data-v-37526a6c="" class="page-header"><div data-v-0ff1fb10="" data-v-37526a6c=""><div data-v-0ff1fb10="" class="head"><div data-v-0ff1fb10="" class="name"> Withdrawal  </div><div data-v-0ff1fb10="" class="container flex"><!----><div data-v-0ff1fb10="" class="logo"></div><div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII=" alt=""></div><div data-v-0ff1fb10="" class="flex1"></div><!----><!----><!----><!----><div data-v-0ff1fb10="" class="str"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKiSURBVHgBzZjtcdswDIah5HrX/lM3UCawu4G6QTeoO0GzQbRB0gnUTtAR7E5QZwJpA7u/2rteDgEkKKFpUgIpKpf3DkdbIagnAA1+ZBApRCypWZFxuybLxVhHslbsnmyXZdkOlhZB5WQ3ZAcMV0NWkxWQWgJ2i+lUa0EzBdxXaip4Tp+tIZ1749mQ7vWIH/tUlPofEKuRqHGKK+zn4dQYJdl3SbFLtxAqSel2BCyHCJHfxgP6O2hMcbB1FwtmjV1IRG1ttQO40noNicVjYmi6JQW2NrCQPO+79nXm0Deqzmkh7UgenFPJMS9qeCFhP7/9qZbomWowpuL/rQpAsnDAHM9Xpy6KF9Knsny4gLYQIoZ7c7mFB7JASHoXF/tv1uNuemXyHzTUFPKHlhyuIAbOGAMuHz5CVrXaISRizPG04SCO9xfYrwaF0XcHITqHg+5zYCQdUeS0l5zi0uqrXxvdcNGQcB6cNQOujAdH9b7NDdeKRUHKu4/Goy6ChfFgDxr54Hje/SebAWn5rmzAPzAHjn8U78jmQd4bn3MGNKv2AebADZoPeQL4qkTzcJMZYsCj2lsbGW2kNcBWkd4T9IdJrzGAf/QpEdwA+JPaT/K9q94qT3+ZgVRwLE7xL+N7jopzRidfuhPCDYB27StBKzckpIJjDZsFLi/mrcCVrI06Jdgs+DSUmZNFGmSro9ZpJJPBsYYIMpRZpMOjyOJIvuVRp+GCd+yT2+7EQqVMB9e2e7FDEyplO7nOqp9hAaFSLsc7R7/Fj59BQve9TI1L3O3FCPv56LqfaZZKeZQ86R5Aa9QuizOkucDcUHMD7oMRi2vlXlrebHyB8fHS31ig/8ps+ld3PlaQIEQGaPNSgJMpHnlRCf3Oh4+thVjO2/QJv6CoPAI0F/TSq4xL7wAAAABJRU5ErkJggg=="></div></div></div></div></div><div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;"><div data-v-37526a6c="" class="container page-withdraw"><div data-v-37526a6c="" class="mb-12px text-14px"> Cash on assets  </div><div data-v-37526a6c="" class="page-withdraw-info"><dl data-v-37526a6c="" class="page-withdraw-info-item"><dt data-v-37526a6c="">Cash on currency </dt><dd data-v-37526a6c=""><div data-v-37526a6c="" class="flex items-center"><svg data-v-37526a6c="" xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><circle data-v-37526a6c="" cx="11" cy="11" r="11" fill="#1BA27A"></circle><path data-v-37526a6c="" fill-rule="evenodd" clip-rule="evenodd" d="M6.38136 6.21094H15.45V8.40027H12.0103V9.84793C14.6923 9.9608 16.7216 10.4887 16.7216 11.1228C16.7216 11.7569 14.6922 12.2846 12.0103 12.3975V17.0151H9.82107V12.3956C7.15978 12.2791 5.15137 11.7535 5.15137 11.1228C5.15137 10.4919 7.15978 9.96628 9.82107 9.84972V8.40027H6.38136V6.21094ZM9.82107 9.97281C7.51186 10.0723 5.78432 10.4744 5.78432 10.9551C5.78432 11.5106 8.09106 11.9609 10.9365 11.9609C13.7819 11.9609 16.0886 11.5106 16.0886 10.9551C16.0886 10.4715 14.3403 10.0675 12.0103 9.97105V11.6182H9.82107V9.97281Z" fill="white"></path></svg><span data-v-37526a6c="" class="px-6px">USDT</span></div></dd></dl><dl data-v-37526a6c="" class="page-withdraw-info-item"><dt data-v-37526a6c="" class="flex-between-center"><span data-v-37526a6c="">Cash on the number</span><span data-v-37526a6c="" class="text-12px text-gray"> Available  <span data-v-37526a6c="" class="text-primary"> 0 USDT </span></span></dt><dd data-v-37526a6c=""><input data-v-37526a6c="" type="number" placeholder="Please enter the amount of withdrawal " class="page-withdraw-info-input"><span data-v-37526a6c="" class="text-primary">Max</span></dd></dl><div data-v-37526a6c="" class="mb-14px flex-between-center"><div data-v-37526a6c="" class="text-gray">Minimum withdrawal number </div><div data-v-37526a6c="">10 USDT</div></div><div data-v-37526a6c="" class="mb-14px flex-between-center"><div data-v-37526a6c="" class="text-gray">Fee</div><div data-v-37526a6c="">0 USDT</div></div><!----><div data-v-37526a6c="" class="flex-between-center"><div data-v-37526a6c="" class="text-gray">Number of accounts </div><div data-v-37526a6c=""> 0 USDT </div></div></div><div data-v-37526a6c="" class="py-16px flex-center"><svg data-v-37526a6c="" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none"><circle data-v-37526a6c="" cx="20" cy="20" r="19.5" stroke="#252930"></circle><path data-v-37526a6c="" d="M12.002 21.9056L13.8327 20.0749L15.5068 21.749L15.5068 12L18.0963 12L18.0963 28L12.002 21.9056Z" fill="#00FC83"></path><path data-v-37526a6c="" d="M21.9033 28L27.9977 21.9056L26.1669 20.0742L24.4935 21.7483L24.4928 12L21.9033 12L21.9033 28Z" fill="#00FC83"></path></svg></div><div data-v-37526a6c="" class="mb-12px text-14px"> Assets to account  </div><div data-v-37526a6c="" class="page-withdraw-info"><dl data-v-37526a6c="" class="page-withdraw-info-item"><dt data-v-37526a6c="">To account</dt><dd data-v-37526a6c=""><div data-v-37526a6c="" class="flex items-center"><img data-v-37526a6c="" src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png" width="24" height="24" alt="" class="mr-6px"><span data-v-37526a6c="">USDT</span></div><svg data-v-37526a6c="" xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none"><path data-v-37526a6c="" d="M0 2V0H8V2L4 6L0 2Z" fill="white"></path></svg></dd></dl><dl data-v-37526a6c="" class="page-withdraw-info-item"><dt data-v-37526a6c="">Network</dt><dd data-v-37526a6c=""><div data-v-37526a6c="">TRC20</div><svg data-v-37526a6c="" xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6" fill="none"><path data-v-37526a6c="" d="M0 2V0H8V2L4 6L0 2Z" fill="white"></path></svg></dd></dl><dl data-v-37526a6c="" class="page-withdraw-info-item"><dt data-v-37526a6c="" class="flex-between-center"> Withdrawal address  </dt><dd data-v-37526a6c=""><input data-v-37526a6c="" type="text" readonly="readonly" placeholder="Please add the address before you withdraw the currency" class="page-withdraw-info-input"></dd></dl><button data-v-37526a6c="" class="rounded-8px van-button van-button--primary van-button--normal van-button--block"><div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text"> Add address </span></div></button></div><div data-v-37526a6c="" class="page-withdraw-tips"><div data-v-37526a6c="" class="page-withdraw-tips-title"><img data-v-37526a6c="" width="16" height="16" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF6SURBVHgBzZeBcYMwDEW/IQOkGzgTlE6QbNCMkBEyAYQJaCZIR2g3aDdIJ4ANYAFOlYBeoeUuNri47+4bHAKSdbItKxhCRGu+7FlbVsTSrHX3uGIVrCvrjfWqlKrgAjasWU+skuy4yLuYioyYldF8si561qPOyR05mUaD/xiRW+N9J6KlRz7mhO7bVD8cyNFm903SNB30kySBIQXr4dcsIcuEC4JgIEuyQQS6sOSwIAzDQb+ua1iy4SgUQdc5YXmO0ihq52gJSxxEQHJgIxHYww/N0i4O7OCPrThwD39E4oCGP7QkIWECDpKwIYBnxAE3hcM0KnGggD+KFTcfaEssK+I4hgOukoQHvrnAD4evpVg2IquyacZ23OeuaaktOq2YuR0LTdT/x3YsN3w5YznOnU2sej+eWI8wXJpnzIKCjR9Hn5CHonTMCX9l+R9GIqcpxzSaMD1HkG/YHc1GovFMdpSdYX3r+wqG0PfxfIe2itIYP56/s15Mj+efvsFm/KMPDHIAAAAASUVORK5CYII="> Withdrawal rules  </div><p data-v-37526a6c=""><p>1. The minimum withdrawal amount is:  10 USDT</p>
-  
-  <p>2. Coin withdrawal handling fee for VIP users:</p>
+    <div id="app" style="height: 7.6rem;">
+        <div data-v-37526a6c="" class="page h-full">
+            <div data-v-37526a6c="" class="page-header">
+                <div data-v-0ff1fb10="" data-v-37526a6c="">
+                    <div data-v-0ff1fb10="" class="head">
+                        <div data-v-0ff1fb10="" class="name"> Withdrawal </div>
+                        <div data-v-0ff1fb10="" class="container flex">
+                            <!---->
+                            <div data-v-0ff1fb10="" class="logo"></div>
+                            <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
+                                    alt=""></div>
+                            <div data-v-0ff1fb10="" class="flex1"></div>
+                            <!---->
+                            <!---->
+                            <!---->
+                            <!---->
+                            <div data-v-0ff1fb10="" class="str"><img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKiSURBVHgBzZjtcdswDIah5HrX/lM3UCawu4G6QTeoO0GzQbRB0gnUTtAR7E5QZwJpA7u/2rteDgEkKKFpUgIpKpf3DkdbIagnAA1+ZBApRCypWZFxuybLxVhHslbsnmyXZdkOlhZB5WQ3ZAcMV0NWkxWQWgJ2i+lUa0EzBdxXaip4Tp+tIZ1749mQ7vWIH/tUlPofEKuRqHGKK+zn4dQYJdl3SbFLtxAqSel2BCyHCJHfxgP6O2hMcbB1FwtmjV1IRG1ttQO40noNicVjYmi6JQW2NrCQPO+79nXm0Deqzmkh7UgenFPJMS9qeCFhP7/9qZbomWowpuL/rQpAsnDAHM9Xpy6KF9Knsny4gLYQIoZ7c7mFB7JASHoXF/tv1uNuemXyHzTUFPKHlhyuIAbOGAMuHz5CVrXaISRizPG04SCO9xfYrwaF0XcHITqHg+5zYCQdUeS0l5zi0uqrXxvdcNGQcB6cNQOujAdH9b7NDdeKRUHKu4/Goy6ChfFgDxr54Hje/SebAWn5rmzAPzAHjn8U78jmQd4bn3MGNKv2AebADZoPeQL4qkTzcJMZYsCj2lsbGW2kNcBWkd4T9IdJrzGAf/QpEdwA+JPaT/K9q94qT3+ZgVRwLE7xL+N7jopzRidfuhPCDYB27StBKzckpIJjDZsFLi/mrcCVrI06Jdgs+DSUmZNFGmSro9ZpJJPBsYYIMpRZpMOjyOJIvuVRp+GCd+yT2+7EQqVMB9e2e7FDEyplO7nOqp9hAaFSLsc7R7/Fj59BQve9TI1L3O3FCPv56LqfaZZKeZQ86R5Aa9QuizOkucDcUHMD7oMRi2vlXlrebHyB8fHS31ig/8ps+ld3PlaQIEQGaPNSgJMpHnlRCf3Oh4+thVjO2/QJv6CoPAI0F/TSq4xL7wAAAABJRU5ErkJggg==">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>             
+            <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
+                <div data-v-37526a6c="" class="container page-withdraw">
+                <form action="{{ route('user.Withdraw-Request') }}" method="POST">
+                {{ csrf_field() }}
+                    <div data-v-37526a6c="" class="mb-12px text-14px"> Cash on assets </div>
+                    <div data-v-37526a6c="" class="page-withdraw-info">
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="">Cash on currency </dt>
+                            <dd data-v-37526a6c="">
+                                <div data-v-37526a6c="" class="flex items-center"><svg data-v-37526a6c=""
+                                        xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"
+                                        fill="none">
+                                        <circle data-v-37526a6c="" cx="11" cy="11" r="11" fill="#1BA27A"></circle>
+                                        <path data-v-37526a6c="" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M6.38136 6.21094H15.45V8.40027H12.0103V9.84793C14.6923 9.9608 16.7216 10.4887 16.7216 11.1228C16.7216 11.7569 14.6922 12.2846 12.0103 12.3975V17.0151H9.82107V12.3956C7.15978 12.2791 5.15137 11.7535 5.15137 11.1228C5.15137 10.4919 7.15978 9.96628 9.82107 9.84972V8.40027H6.38136V6.21094ZM9.82107 9.97281C7.51186 10.0723 5.78432 10.4744 5.78432 10.9551C5.78432 11.5106 8.09106 11.9609 10.9365 11.9609C13.7819 11.9609 16.0886 11.5106 16.0886 10.9551C16.0886 10.4715 14.3403 10.0675 12.0103 9.97105V11.6182H9.82107V9.97281Z"
+                                            fill="white"></path>
+                                    </svg><span data-v-37526a6c="" class="px-6px">USDT</span></div>
+                            </dd>
+                        </dl>                       
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="" class="flex-between-center"> @lang('Select Mainnet') </dt>
+                            <dd data-v-37526a6c=""><input data-v-37526a6c="" type="text" readonly="readonly"
+                                    placeholder="Please add the address before you withdraw the currency"
+                                    class="page-withdraw-info-input" id="currencyInput" readonly 
+       value="Choose Currency"
+       type="text"  name="PSys" 
+       onClick="showPopup()"></dd>
+                        </dl>
+
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="" class="flex-between-center"> Withdrawal address </dt>
+                            <dd data-v-37526a6c=""><input data-v-37526a6c=""  type="text"  id="walletAddress" name="walletAddress"  value="{{Auth::user()->usdtBep20}}"
+                                    placeholder=""
+                                    class="page-withdraw-info-input"></dd>
+                        </dl>
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="" class="flex-between-center"> @lang('Withdrawal Amount')</dt>
+                            <dd data-v-37526a6c=""><input data-v-37526a6c=""  type="number" min="20" name="amount"
+                                    placeholder="Please Enter Amount"
+                                    class="page-withdraw-info-input"></dd>
+                        </dl>
+                        
+                    </div>
+                    <div data-v-37526a6c="" class="py-16px flex-center">                      
+                      </div>
+                    <div data-v-37526a6c="" class="mb-12px text-14px">@lang('Available for Withdrawal') {{ number_format(Auth::user()->available_balance(), 2) }} USDT </div>
+                    
+                    <!-- <div data-v-37526a6c="" class="mb-12px text-14px"><span id="PH_days">Days</span><span id="PH_hours">Hours</span><span id="PH_minutes">Minutes</span><span id="PH_seconds">Seconds</span></div> -->
+                    <div data-v-37526a6c="" class="page-withdraw-info">
+                  
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item"  style="display :none">
+                            <dd data-v-37526a6c=""><input data-v-37526a6c="" type="hidden" name="" id="emailId" value="{{ Auth::user()->email }}"
+                                    class="page-withdraw-info-input"></dd>
+                        </dl>
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="" class="flex-between-center"> Varification Code </dt>
+                            <dd data-v-37526a6c=""><input data-v-37526a6c="" name="code" type="text" placeholder="Enter verification code" 
+                                                                        class="page-withdraw-info-input">
+                                                                                                          
+                                    <span data-v-3cceea5e="" class="code-btn" style="color:#00FC83">Send</span>                             
+                                    
+                                                                      </dd>
+                        </dl>
+                        <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                            <dt data-v-37526a6c="" class="flex-between-center"> Transaction Password </dt>
+                            <dd data-v-37526a6c=""><input data-v-37526a6c=""  name="transaction_password" id="test-input" type="password" 
+                                    class="page-withdraw-info-input"></dd>
+                        </dl>
+                        
+                    </div>
+                    <div data-v-37526a6c="" class="page-withdraw-tips">
+                        <div data-v-37526a6c="" class="page-withdraw-tips-title"><img data-v-37526a6c="" width="16"
+                                height="16"
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAF6SURBVHgBzZeBcYMwDEW/IQOkGzgTlE6QbNCMkBEyAYQJaCZIR2g3aDdIJ4ANYAFOlYBeoeUuNri47+4bHAKSdbItKxhCRGu+7FlbVsTSrHX3uGIVrCvrjfWqlKrgAjasWU+skuy4yLuYioyYldF8si561qPOyR05mUaD/xiRW+N9J6KlRz7mhO7bVD8cyNFm903SNB30kySBIQXr4dcsIcuEC4JgIEuyQQS6sOSwIAzDQb+ua1iy4SgUQdc5YXmO0ihq52gJSxxEQHJgIxHYww/N0i4O7OCPrThwD39E4oCGP7QkIWECDpKwIYBnxAE3hcM0KnGggD+KFTcfaEssK+I4hgOukoQHvrnAD4evpVg2IquyacZ23OeuaaktOq2YuR0LTdT/x3YsN3w5YznOnU2sej+eWI8wXJpnzIKCjR9Hn5CHonTMCX9l+R9GIqcpxzSaMD1HkG/YHc1GovFMdpSdYX3r+wqG0PfxfIe2itIYP56/s15Mj+efvsFm/KMPDHIAAAAASUVORK5CYII=">
+                            Withdrawal rules </div>
+                        <p data-v-37526a6c="">
+                            <p>1. The minimum withdrawal amount is: 10 USDT</p>
+  <p>2. Your Balance {{ number_format(Auth::user()->available_balance(), 2) }}</p>
   
   <p>v1 withdrawal fee 7%</p>
   
@@ -6806,8 +6905,97 @@
   
   <p>6. Be sure to confirm the security of your computer and browser to prevent information from being tampered with or leaked. </p>
   
-  <p>7. Before withdrawing coins, please confirm whether the withdrawal address is safe and whether it is the withdrawal address corresponding to the current currency. Once the address of a non-tokenType network is mentioned, the platform cannot help retrieve it, so please check carefully before withdrawing coins. </p></p></div></div><div data-v-5a60fec6="" data-v-37526a6c=""><div data-v-28719dd2="" data-v-5a60fec6=""></div></div><div data-v-28719dd2="" data-v-37526a6c=""></div><div data-v-283789fa="" data-v-37526a6c=""></div><!----><div data-v-4f302b61="" data-v-37526a6c=""></div></div><div data-v-37526a6c="" class="page-footer"><div data-v-37526a6c="" class="page-withdraw-footer p-16px van-hairline--top"><div data-v-37526a6c="" class="mb-16px flex-between-center"><span data-v-37526a6c="" class="text-gray">Actual arrival</span><span data-v-37526a6c="" class="text-primary"> 0 USDT </span></div><button data-v-37526a6c="" class="rounded-8px van-button van-button--primary van-button--normal van-button--block"><div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text"> Sure </span></div></button></div></div></div><div data-v-15b106f9="" class="page-loading-con" style="display: none;"><div data-v-15b106f9="" class="page-loading"></div><p data-v-15b106f9="">Loading...</p></div></div>
-  <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
+  <p>7. Before withdrawing coins, please confirm whether the withdrawal address is safe and whether it is the withdrawal
+      address corresponding to the current currency. Once the address of a non-tokenType network is mentioned, the
+      platform cannot help retrieve it, so please check carefully before withdrawing coins. </p>
+  </p>
+  
+  </div>
+  
+</div>
+  <div data-v-5a60fec6="" data-v-37526a6c="">
+      <div data-v-28719dd2="" data-v-5a60fec6=""></div>
+  </div>
+  <div data-v-28719dd2="" data-v-37526a6c=""></div>
+  <div data-v-283789fa="" data-v-37526a6c=""></div>
+  <!---->
+  <div data-v-4f302b61="" data-v-37526a6c=""></div>
+  </div>
+  
+  <div data-v-37526a6c="" class="page-footer">
+      <div data-v-37526a6c="" class="page-withdraw-footer p-16px van-hairline--top">
+          <div data-v-37526a6c="" class="mb-16px flex-between-center"><span data-v-37526a6c="" class="text-gray">Actual
+                  arrival</span><span data-v-37526a6c="" class="text-primary"> 0 USDT </span></div><button
+              data-v-37526a6c=""
+              class="rounded-8px van-button van-button--primary van-button--normal van-button--block">
+              <div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text">
+                      Sure </span></div>
+          </button>
+      </div>
+  </div>
+  </form>
+  </div>
+
+  <div class="van-overlay" style="z-index: 2022; display: none;" id="currencyPopupOverlay"></div>
+                    <div class="chain-select-popup van-popup van-popup--round van-popup--bottom" rounded=""
+                        style="z-index: 2031; display: none;" id="currencyPopup">
+                        <div class="text-16px p-20px text-center">Currency &amp; network</div>
+                        <div class="px-16px">
+                            <ul class="chain-select-popup-tab-nav">
+                                <li class="active">
+                                    <div class="flex items-center">
+                                        <img src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png"
+                                            width="24" height="24" class="mr-6px"> USDT
+                                    </div>
+                                </li>
+                            </ul>
+                            <!-- TRX Option -->
+                            <div class="chain-item flex active" onclick="chooseCurrency('TRX (TRC20)')">
+                                <img src="https://obs.nedvc.com/upload/20240826/7045fd478aefa8c60727d5ad21375da1.png"
+                                    width="40" height="40" alt="TRX" class="mr-6px rounded-full">
+                                <div class="flex-1 pl-12px">
+                                    <div class="mb-12px text-14px">TRX (TRC20)</div>
+                                    <div class="text-12px text-gray">
+                                        <p class="mb-8px">Expected time 1 minutes</p>
+                                        <p>Minimum recharge ≥ 1 USDT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- BSC Option -->
+                            <div class="chain-item flex" onclick="chooseCurrency('BSC (BEP20)')">
+                                <img src="https://obs.nedvc.com/upload/20240826/3400cd81031aa3e7d7cd45bfc704c8d7.png"
+                                    width="40" height="40" alt="BSC" class="mr-6px rounded-full">
+                                <div class="flex-1 pl-12px">
+                                    <div class="mb-12px text-14px">BSC (BEP20)</div>
+                                    <div class="text-12px text-gray">
+                                        <p class="mb-8px">Expected time 1 minutes</p>
+                                        <p>Minimum recharge ≥ 1 USDT</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Confirm Button -->
+                            <button
+                                class="rounded-8px van-button van-button--primary van-button--normal van-button--block"
+                                onclick="confirmSelection()">
+                                <div class="van-button__content"><span class="van-button__text">Sure</span></div>
+                            </button>
+                        </div>
+                        <i role="button" tabindex="0"
+                            class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right"
+                            onclick="hidePopup()">×</i>
+                    </div>
+
+  <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
+      <div data-v-15b106f9="" class="page-loading"></div>
+      <p data-v-15b106f9="">Loading...</p>
+  </div>
+  </div>
+  <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
+  <script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script>
+  <script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script>
+  <script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script>
+  <script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script>
+  <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
   <script>
     let standalone=document.getElementById('startLogo')
     standalone.style.display='flex'
@@ -6815,4 +7003,85 @@
       standalone.style.display='none'
     },3000)
   </script>
+   <script>  
+    let chosenCurrency = ''; // Store the chosen currency
+
+// Show the popup
+function showPopup() {
+    document.getElementById('currencyPopup').style.display = 'block';
+}
+
+// Hide the popup
+function hidePopup() {
+    document.getElementById('currencyPopup').style.display = 'none';
+}
+
+// Choose the currency option
+function chooseCurrency(currency) {
+    chosenCurrency = currency;
+    // Get all elements with the class 'chain-item flex'
+    const items = document.getElementsByClassName('chain-item flex');
+    
+    // Remove 'active' class from all items
+    Array.from(items).forEach(item => {
+        item.classList.remove('active');
+    });
+
+    // Add 'active' class to the selected currency
+    if(currency === "BSC (BEP20)") {
+        items[1].classList.add('active'); // BSC is the second item
+    } else if(currency === "TRX (TRC20)") {
+        items[0].classList.add('active'); // TRX is the first item
+    }
+    // Optionally highlight the selected currency (if needed)
+    console.log('Selected Currency:', chosenCurrency);
+}
+
+// Confirm the selection and paste it into the input field
+function confirmSelection() {
+    if (chosenCurrency !== '') {
+        document.getElementById('currencyInput').value = chosenCurrency;
+        hidePopup(); // Close the popup after selection
+    } else {
+        alert("Please select a currency!"); // In case no selection was made
+    }
+}
+
+  </script>
+
+   <script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+   <script>
+
+        $('.code-btn').click(function(e) {
+            var ths = $(this);
+            var emailId = $('#emailId').val();
+       
+          
+            // alert(sponsor); 
+            $.ajax({
+                type: "POST"
+                , url: "{{ route('user.send_code') }}"
+                , data: {
+                    "emailId": ""
+                    , "_token": "{{ csrf_token() }}"
+                , }
+                , success: function(response) {
+                    // alert(response);      
+                    if (response) {
+                        // alert("hh");
+                        iziToast.success({
+                        message: 'Email send Successfully',
+                        position: "topRight"
+                    });
+                    } else {
+                        // alert("hi");
+                        iziToast.error({
+                        message: 'Error!',
+                        position: "topRight"
+                    });
+                    }
+                }
+            });
+        });
+            </script> 
   <!----><!----><!----><!----><!----><!----></body></html>
