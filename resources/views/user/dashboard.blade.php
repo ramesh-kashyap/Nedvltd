@@ -4224,6 +4224,8 @@
             flex-shrink: 0;
             width: 100%;
             height: 100%;
+            flex: 0 0 auto;
+
         }
 
         .van-field__word-num {
@@ -4260,6 +4262,8 @@
         .van-swipe__track {
             display: flex;
             height: 100%;
+            transition: transform 0.5s ease;
+    width: calc(393px * 2); /* Total width for four items (two original and two duplicates) */
         }
 
         .van-swipe__track--vertical {
@@ -8021,6 +8025,7 @@
             height: 3rem;
             margin-bottom: 0.3rem;
             padding: 0;
+            overflow: hidden;
         }
 
         .banner[data-v-546bdba2] .van-skeleton__avatar {
@@ -9196,6 +9201,7 @@
             max-width: 8.5rem;
         }
     </style>
+     
 </head>
 
 <body class="mein_cn">
@@ -9239,12 +9245,12 @@
                                 style="transition-duration: 500ms; transform: translateX(-786px); width: 786px;">
                                 <div data-v-5954443c="" class="van-swipe-item"
                                     style="width: 393px; transform: translateX(786px);">
-                                    <div data-v-5954443c="" class="item"><img data-v-5954443c=""
+                                    <div data-v-5954443c="" class="van-item"><img data-v-5954443c=""
                                             src="{{asset('')}}static/img/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
                                             alt=""></div>
                                 </div>
                                 <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-                                    <div data-v-5954443c="" class="item"><img data-v-5954443c=""
+                                    <div data-v-5954443c="" class="van-item"><img data-v-5954443c=""
                                             src="{{asset('')}}static/img/b3ebfaa57240ec988a6edf1e3cae9c73.png"
                                             alt=""></div>
                                 </div>
@@ -9528,6 +9534,47 @@
                     alt=""></div>
         </div>
     </div><!----><!----><!----><!----><!----><!---->
+    <script>
+ document.addEventListener('DOMContentLoaded', () => {
+    const track = document.querySelector('.van-swipe__track');
+    const items = document.querySelectorAll('.van-swipe-item');
+    const indicators = document.querySelectorAll('.van-swipe__indicator');
+    const itemWidth = 393; // Width of each item
+    const totalItems = items.length - 1; // Total number of original items (excluding duplicate)
+    let currentIndex = 0; // Start from the first image
+
+    // Function to update indicators
+    function updateIndicators() {
+        indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('van-swipe__indicator--active', index === currentIndex);
+        });
+    }
+
+    // Function to move the carousel
+    function moveCarousel() {
+        currentIndex++;
+        if (currentIndex > totalItems) {
+            currentIndex = 1; // Skip to the second item (the first duplicate)
+            track.style.transition = 'none'; // Disable transition for immediate jump
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            setTimeout(() => {
+                track.style.transition = 'transform 0.5s ease'; // Re-enable transition
+            }, 50);
+        }
+
+        // Shift the track left
+        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        updateIndicators(); // Update indicators after moving the carousel
+    }
+
+    // Auto-slide every 3 seconds
+    const autoplay = setInterval(moveCarousel, 3000);
+
+    // Add event listener for the Next button
+    document.getElementById('next').addEventListener('click', moveCarousel);
+});
+
+    </script>
 </body>
 
 </html>

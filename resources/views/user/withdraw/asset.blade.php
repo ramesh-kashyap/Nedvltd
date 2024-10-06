@@ -8082,7 +8082,7 @@ bottom: 0;
 width: 100%;
 max-width: 8.5rem;
 z-index: 56;
-background: #020202;
+/* background: #020202; */
 }
 .page .content-container[data-v-37526a6c] {
 width: 100%;
@@ -8096,7 +8096,7 @@ padding-top: 0.6rem;
 transition: all 0.5s;
 }
 .page .content-container .content-scroll[data-v-37526a6c] {
-padding-bottom: 0.24rem;
+/* padding-bottom: 0.24rem; */
 }
 .page .back-top[data-v-37526a6c] {
 position: absolute;
@@ -9251,7 +9251,7 @@ max-width: 8.5rem;
       </div>
     </div>
     <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px; padding-bottom: 65px;">
-      <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 65px;">
+      <div data-v-37526a6c="" id="content" class="content-scroll" style="/*padding-bottom: 65px;*/">
         <div data-v-14275b54="" data-v-37526a6c="" class="container">
           <div data-v-555c6fae="" data-v-14275b54="" class="table_list solid tab-list" data-v-37526a6c="">
             <div data-v-555c6fae="" class="van-tabs van-tabs--line">

@@ -7042,8 +7042,8 @@
                 <div data-v-37526a6c="" class="container page-recharge">
                     <div data-v-37526a6c="" class="page-recharge-qrcode">
                         <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canvas
-                                width="655" height="655" style="display: none;"></canvas><img alt="Scan me!"
-                                src="{{$qr_code}}"
+                                width="65" height="655" style="display: block;"></canvas><img alt="Scan me!"
+                              
                                 style="display: block;"></div>
                     </div>
                     <div data-v-37526a6c="" class="page-recharge-info">
