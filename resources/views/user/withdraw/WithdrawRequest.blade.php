@@ -6776,6 +6776,10 @@
   .van-popup--bottom[data-v-f8d1bbb0] {
     max-width: 8.5rem;
   }
+  #toggle-icon {
+    width: 20px; /* Adjust the size of the icon */
+    height: auto;
+}
   </style></head>
   
   <body class="mein_cn">
@@ -6791,7 +6795,7 @@
                         <div data-v-0ff1fb10="" class="container flex">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
-                            <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
+                            <div data-v-0ff1fb10="" onclick="window.history.go(-1); return false;" class="back"><img data-v-0ff1fb10=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
@@ -6872,7 +6876,11 @@
                         <dl data-v-37526a6c="" class="page-withdraw-info-item">
                             <dt data-v-37526a6c="" class="flex-between-center"> Transaction Password </dt>
                             <dd data-v-37526a6c=""><input data-v-37526a6c=""  name="transaction_password" id="test-input" type="password" 
-                                    class="page-withdraw-info-input"></dd>
+                                    class="page-withdraw-info-input"><span id="toggle-password" 
+                                    data-v-40856e44="" data-v-37526a6c=""><img id="toggle-icon"
+                                                    data-v-40856e44="" data-v-37526a6c=""
+                                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC"></span>
+                                                    </dd>
                         </dl>
                         
                     </div>
@@ -7084,4 +7092,39 @@ function confirmSelection() {
             });
         });
             </script> 
+            <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const togglePassword = document.getElementById('toggle-password');
+    const passwordInput = document.getElementById('test-input');
+    const togglecPassword = document.getElementById('toggle-cpassword');
+    const passwordcInput = document.getElementById('test-cinput');
+
+    togglePassword.addEventListener('click', function() {
+        // Toggle the input type between password and text
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+     
+        // Optionally change the icon based on visibility
+        if (type === 'password') {
+            togglePassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC'; // replace with closed eye icon
+        } else {
+            togglePassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALVSURBVHgB7ZfdcRoxFIWPJNYzeQodBFcQUoFxBXEqcFyB8XOCI0zyHFyBTQUmFZgOgitg0wF5ygyLpNy7y08gu0gYyORhvxlj2J+7R1c6V3eBkpKSkoMisAsTXYdSJ7D2GFK+hENtdmYMZ3/QsRGseUKkB3gm2wv8pWuoiCaEPKdf1cC7YnrSANK0IXSMLQgX6HQViepC4hy7IHC/jdAwgdPOGX3eITxjPmL6u0Kl1fddKH0XwNx8os8H7E8cU0tjZrE3sjmDHMAJjUMinIa6bheeLrzRdC7JlV34Icfilv4PUDExkqgKaWuwOAter9Zd4ei6Gy6QnRqpEbyB0UNkyNF6vCHOI7AoP0WMYeUpjj4MESRw2hl5g3LWolZz+ZvEJLJB2RtDYbhwaahI4YY01W/WD/9tkmzh1rCZmKZTz4RVaUCPMJRxKcjp6iH9PjfACxLqcAEfTtSRtPVmgTxaJ97Dj15Mq1Hs8EbOAzUmN1mGo9YAvEZ9CHmZDrhQoFIa/uwh3b6YRDdyxS2ii2UZse4b/NBsiOZKiNWAeIsQjvRsMYsGfA/k/TqNLWKEwFlckfSvcGaMZ7Aq0NnboLvYsdntA8+V8SLbTtYRgkC/WGDFcbH0j3Q6M5Jv8VuxHLAUIctnnDYShQLZmSFZ5FZr7jZl3qUFe/1BVtDu8DHbHXxmmsO1da3LyS/U5uZ7Wpc2c0/dyLK+ZQW5Tm6tIrL9RRkK302otraO1w/mC5x8qdOOwEF9HUyfMnhV2Ntx5oS6Q0jpUuY4L05xszD53IR0X+En65at6aGS9nk0A6DsK24UzhDCn8shWCCTdGjHgLdn2wmHNplNF532d9SHFOkRx2zT8vN017Af2EAX+2n5GQ6UmNOccrI9/NLEhggQl12+LVw2uKmQOEF4Rrm+9tKN4GCvnXkkHWpQ8Tp9cRfyFeZlSZCbrf2ZvbjjabbjlJSUlPyP/AZ3+AnHGBsj7QAAAABJRU5ErkJggg=='; // replace with open eye icon
+        }
+    });
+
+    togglecPassword.addEventListener('click', function() {
+        // Toggle the input type between password and text
+        const type = passwordcInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordcInput.setAttribute('type', type);
+      
+        
+        // Optionally change the icon based on visibility
+        if (type === 'password') {
+            togglecPassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC'; // replace with closed eye icon
+        } else {
+            togglecPassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALVSURBVHgB7ZfdcRoxFIWPJNYzeQodBFcQUoFxBXEqcFyB8XOCI0zyHFyBTQUmFZgOgitg0wF5ygyLpNy7y08gu0gYyORhvxlj2J+7R1c6V3eBkpKSkoMisAsTXYdSJ7D2GFK+hENtdmYMZ3/QsRGseUKkB3gm2wv8pWuoiCaEPKdf1cC7YnrSANK0IXSMLQgX6HQViepC4hy7IHC/jdAwgdPOGX3eITxjPmL6u0Kl1fddKH0XwNx8os8H7E8cU0tjZrE3sjmDHMAJjUMinIa6bheeLrzRdC7JlV34Icfilv4PUDExkqgKaWuwOAter9Zd4ei6Gy6QnRqpEbyB0UNkyNF6vCHOI7AoP0WMYeUpjj4MESRw2hl5g3LWolZz+ZvEJLJB2RtDYbhwaahI4YY01W/WD/9tkmzh1rCZmKZTz4RVaUCPMJRxKcjp6iH9PjfACxLqcAEfTtSRtPVmgTxaJ97Dj15Mq1Hs8EbOAzUmN1mGo9YAvEZ9CHmZDrhQoFIa/uwh3b6YRDdyxS2ii2UZse4b/NBsiOZKiNWAeIsQjvRsMYsGfA/k/TqNLWKEwFlckfSvcGaMZ7Aq0NnboLvYsdntA8+V8SLbTtYRgkC/WGDFcbH0j3Q6M5Jv8VuxHLAUIctnnDYShQLZmSFZ5FZr7jZl3qUFe/1BVtDu8DHbHXxmmsO1da3LyS/U5uZ7Wpc2c0/dyLK+ZQW5Tm6tIrL9RRkK302otraO1w/mC5x8qdOOwEF9HUyfMnhV2Ntx5oS6Q0jpUuY4L05xszD53IR0X+En65at6aGS9nk0A6DsK24UzhDCn8shWCCTdGjHgLdn2wmHNplNF532d9SHFOkRx2zT8vN017Af2EAX+2n5GQ6UmNOccrI9/NLEhggQl12+LVw2uKmQOEF4Rrm+9tKN4GCvnXkkHWpQ8Tp9cRfyFeZlSZCbrf2ZvbjjabbjlJSUlPyP/AZ3+AnHGBsj7QAAAABJRU5ErkJggg=='; // replace with open eye icon
+        }
+    });
+});
+</script>
   <!----><!----><!----><!----><!----><!----></body></html>

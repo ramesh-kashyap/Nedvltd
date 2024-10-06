@@ -8351,7 +8351,7 @@
                     <div data-v-5a857e84="" data-v-37526a6c="" class="container">
                         <div data-v-5a857e84="" data-v-37526a6c="" class="box">
                             <div data-v-5a857e84="" data-v-37526a6c="" class="icon1"><img data-v-5a857e84=""
-                                    data-v-37526a6c="" src="/static/img/ico10.31ca04f7.png" alt="">
+                                    data-v-37526a6c="" src="{{asset('')}}logo.png" alt="">
                                 <p data-v-5a857e84="" data-v-37526a6c="">Current version number：V1.0.0</p>
                             </div>
                             <div data-v-5a857e84="" data-v-37526a6c="" class="info">
