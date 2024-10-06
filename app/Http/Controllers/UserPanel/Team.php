@@ -90,7 +90,9 @@ class Team extends Controller
       $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
       $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
       $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());
-
+      $gen_team4 =  (array_key_exists(4,$my_level_team) ? $my_level_team[4]:array());
+      $gen_team5 =  (array_key_exists(5,$my_level_team) ? $my_level_team[5]:array());
+      $gen_team6 =  (array_key_exists(6,$my_level_team) ? $my_level_team[6]:array());
       $notes = User::where(function($query) use($ids)
               {
                 if(!empty($ids)){
@@ -147,11 +149,47 @@ class Team extends Controller
                   }
                 }else{$query->where('id',null);}
               })->orderBy('id', 'DESC')->get();
+              
+              $gen_team4 = User::where(function($query) use($gen_team4)
+              {
+                if(!empty($gen_team4)){
+                  foreach ($gen_team4 as $key => $value) {
+                  //   $f = explode(",", $value);
+                  //   print_r($f)."<br>";
+                    $query->orWhere('id', $value);
+                  }
+                }else{$query->where('id',null);}
+              })->orderBy('id', 'DESC')->get(); 
+              
+              $gen_team5 = User::where(function($query) use($gen_team5)
+              {
+                if(!empty($gen_team5)){
+                  foreach ($gen_team5 as $key => $value) {
+                  //   $f = explode(",", $value);
+                  //   print_r($f)."<br>";
+                    $query->orWhere('id', $value);
+                  }
+                }else{$query->where('id',null);}
+              })->orderBy('id', 'DESC')->get();
+
+              $gen_team6 = User::where(function($query) use($gen_team6)
+              {
+                if(!empty($gen_team6)){
+                  foreach ($gen_team6 as $key => $value) {
+                  //   $f = explode(",", $value);
+                  //   print_r($f)."<br>";
+                    $query->orWhere('id', $value);
+                  }
+                }else{$query->where('id',null);}
+              })->orderBy('id', 'DESC')->get();
 
 
         $gen_team1UserName =$gen_team1->pluck('username');
         $gen_team2UserName =$gen_team2->pluck('username');
         $gen_team3UserName =$gen_team3->pluck('username');
+        $gen_team4UserName =$gen_team4->pluck('username');
+        $gen_team5UserName =$gen_team5->pluck('username');
+        $gen_team6UserName =$gen_team6->pluck('username');
 
  
    $totalrecharge=Investment::whereIn('user_id',(!empty($ids)?$ids:array()))->where('status','Active')->sum("amount");
@@ -214,11 +252,74 @@ class Team extends Controller
      {
        $gen_team3Income =0;  
      }
+
+     if($gen_team4->isNotEmpty())
+     {
+     $gen_team4Income = Income::where(function($query) use($gen_team4UserName)
+     {
+       if(!empty($gen_team4UserName)){
+         foreach ($gen_team4UserName as $key => $value) {
+         //   $f = explode(",", $value);
+         //   print_r($f)."<br>";
+           $query->orWhere('rname', $value);
+         }
+       }else{$query->where('rname',null);}
+     })->where('user_id',$user->id)->orderBy('id', 'DESC')->sum('comm');
+     
+  }
+   else
+  {
+    $gen_team4Income =0;  
+  }
+
+  if($gen_team5->isNotEmpty())
+  {
+  $gen_team5Income = Income::where(function($query) use($gen_team5UserName)
+  {
+    if(!empty($gen_team5UserName)){
+      foreach ($gen_team5UserName as $key => $value) {
+      //   $f = explode(",", $value);
+      //   print_r($f)."<br>";
+        $query->orWhere('rname', $value);
+      }
+    }else{$query->where('rname',null);}
+  })->where('user_id',$user->id)->orderBy('id', 'DESC')->sum('comm');
+  
+}
+else
+{
+ $gen_team5Income =0;  
+}
+
+
+if($gen_team6->isNotEmpty())
+{
+$gen_team6Income = Income::where(function($query) use($gen_team6UserName)
+{
+  if(!empty($gen_team6UserName)){
+    foreach ($gen_team6UserName as $key => $value) {
+    //   $f = explode(",", $value);
+    //   print_r($f)."<br>";
+      $query->orWhere('rname', $value);
+    }
+  }else{$query->where('rname',null);}
+})->where('user_id',$user->id)->orderBy('id', 'DESC')->sum('comm');
+
+}
+else
+{
+$gen_team6Income =0;  
+}
+
+
   
       $teamUserName =$gen_team1->pluck('username');
         $todaysIncome =  \DB::table('incomes')->where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('remarks','Quantify Level Income')->sum('comm');
     
         $this->data['todaysIncome'] =$todaysIncome;
+        $this->data['gen_team6Income'] =$gen_team6Income;
+        $this->data['gen_team5Income'] =$gen_team5Income;
+        $this->data['gen_team4Income'] =$gen_team4Income;
         $this->data['gen_team3Income'] =$gen_team3Income;
         $this->data['gen_team2Income'] =$gen_team2Income;
         $this->data['gen_teamIncome'] =$gen_teamIncome;
@@ -232,6 +333,14 @@ class Team extends Controller
         $this->data['gen_team3total'] =$gen_team3->count();
         $this->data['active_gen_team3total'] =$gen_team3->where('active_status','Active')->count();
 
+        $this->data['gen_team4total'] =$gen_team4->count();
+        $this->data['active_gen_team4total'] =$gen_team4->where('active_status','Active')->count();
+
+        $this->data['gen_team5total'] =$gen_team5->count();
+        $this->data['active_gen_team5total'] =$gen_team5->where('active_status','Active')->count();
+
+        $this->data['gen_team6total'] =$gen_team6->count();
+        $this->data['active_gen_team6total'] =$gen_team6->where('active_status','Active')->count();
 
         $this->data['gen_team1Income'] =$gen_team1->count();
 
@@ -239,7 +348,7 @@ class Team extends Controller
         $this->data['todaysuser'] =$notes->where('jdate',date('Y-m-d'))->count();
         $this->data['totalrecharge'] =$totalrecharge;
         $this->data['totalTeam'] =$notes->count();
-        $this->data['teamEarning'] =$gen_teamIncome+$gen_team2Income+$gen_team3Income;
+        $this->data['teamEarning'] =$gen_teamIncome+$gen_team2Income+$gen_team3Income+$gen_team4Income+$gen_team5Income+$gen_team6Income;
         $this->data['page'] = 'user.team.level-team';
         return $this->dashboard_layout();
 

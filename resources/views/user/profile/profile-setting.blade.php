@@ -9816,6 +9816,7 @@ max-width: 8.5rem;
             </a>
             </div>
             <div data-v-afc48976="" class="router bg-blur">
+              <a href="{{route('user.level-team')}}">
               <div data-v-afc48976="" class="title">My team</div>
               <div data-v-afc48976="" class="content">
                 <div data-v-afc48976="" class="left">
@@ -9827,6 +9828,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="right"><img data-v-afc48976=""
                     src="../static/img/my-icon-team.593762dd.png" alt=""></div>
               </div>
+              </a>
             </div>
           </div>
           <div data-v-73b9bcf2="" data-v-7a3d5949="" class="module-tab mt" data-v-37526a6c="">
