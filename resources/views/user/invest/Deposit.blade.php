@@ -1500,7 +1500,7 @@
     position: fixed;
     max-height: 100%;
     overflow-y: auto;
-    background-color: #0d0f13;
+    background-color: #068475;
     transition: transform 0.3s;
     -webkit-overflow-scrolling: touch;
   }
@@ -6971,8 +6971,8 @@
     margin-bottom: 0.32rem;
     padding: 0.32rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid transparent;
-    background-color: #13161c;
+    border: 0.02rem solid #000000;
+    /* background-color: #13161c; */
   }
   .chain-select-popup .chain-item.active {
     border-color: #00fc83;
@@ -7036,10 +7036,17 @@
                 </div>
             </div>
             <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
-                <div data-v-37526a6c="" class="container page-recharge">                    
-                    <div data-v-37526a6c="" class="page-recharge-info" style="margin-top: 10px;">
+                <div data-v-37526a6c="" class="container page-recharge">  
+                <div data-v-37526a6c="" class="page-recharge-qrcode">
+                        <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canvas
+                                width="655" height="655" style="display: block;"></canvas><img alt="Scan me!"
+                                
+                                style="display: none;"></div>
+                    </div>                  
+                    <div data-v-37526a6c="" class="page-recharge-info">
                     <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
                     {{ csrf_field() }}
+                    
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
                             <dt data-v-37526a6c=""style="margin-bottom: 10px;">Recharge currency </dt>                            
                             <input data-v-37526a6c="" 

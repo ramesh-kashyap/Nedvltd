@@ -8093,7 +8093,7 @@ padding-top: 0.6rem;
 transition: all 0.5s;
 }
 .page .content-container .content-scroll[data-v-37526a6c] {
-padding-bottom: 0.24rem;
+/* padding-bottom: 0.24rem; */
 }
 .page .back-top[data-v-37526a6c] {
 position: absolute;
@@ -9766,7 +9766,7 @@ max-width: 8.5rem;
       </div>
     </div>
     <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px; padding-bottom: 65px;">
-      <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 65px;">
+      <div data-v-37526a6c="" id="content" class="content-scroll" style="/*padding-bottom: 65px;*/">
         <div data-v-7a3d5949="" data-v-37526a6c="" class="container">
           <div data-v-7a3d5949="" data-v-37526a6c="" class="head1">
             <div data-v-7a3d5949="" data-v-37526a6c="" class="db">
