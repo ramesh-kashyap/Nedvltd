@@ -58,7 +58,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: #020503;
+    background: rgba(6, 132, 117, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -247,7 +247,7 @@ opacity: 0;
 padding-top: constant(safe-area-inset-top);
 padding-top: env(safe-area-inset-top);
 max-height: 100vh;
-background: #020202;
+background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
 position: relative;
 word-wrap: break-word;
 word-break: normal;
@@ -1869,7 +1869,7 @@ height: 100%;
 height: -webkit-fill-available;
 overflow: hidden;
 min-width: 7.5rem;
-background: #141517;
+/* background: #141517; */
 -webkit-user-select: none;
 -webkit-text-size-adjust: none;
 user-select: none;
@@ -5891,7 +5891,7 @@ width: 100%;
 align-items: center;
 }
 .head[data-v-0ff1fb10] {
-background: #020202;
+/* background: #020202; */
 height: 1.2rem;
 position: relative;
 transition: background-color 0.3s;
@@ -6436,7 +6436,7 @@ max-width: 8.5rem;
 font-size: 0.32rem;
 }
 [data-v-7a3d5949] .head {
-background: #020202 url(/static/img/bg.b8ad8c52.png) no-repeat !important;
+/* background: #020202 url(/static/img/bg.b8ad8c52.png) no-repeat !important; */
 background-size: 100% auto !important;
 }
 .bg[data-v-7a3d5949] {
@@ -6447,7 +6447,7 @@ height: auto;
 z-index: 0;
 }
 .home[data-v-7a3d5949] {
-background: url(/static/img/bg_my.fb0ab9a0.png) no-repeat top center;
+/* background: url(/static/img/bg_my.fb0ab9a0.png) no-repeat top center; */
 background-size: 100% auto;
 min-height: 100vh;
 }
@@ -6992,7 +6992,7 @@ position: relative;
 }
 .assets-box .assets[data-v-14275b54] {
 padding: 0.4rem;
-background: url(/static/img/bg-wallet-card.76d786ab.png) no-repeat;
+/* background: url(/static/img/bg-wallet-card.76d786ab.png) no-repeat; */
 background-size: 100% 100%;
 }
 .assets-box .assets .total .n[data-v-14275b54] {
@@ -7230,7 +7230,7 @@ line-height: 0.42rem;
 white-space: nowrap;
 }
 .record_hdrecord_hd .set[data-v-6cf94806] {
-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAuUlEQVQoU5XQMQ4BURSF4f9IqGhZACug1Gio2IDEIlR2INHMJiQ2QEWjUbICFkBLpXBlJteEMRPmle/d8+XdIzObAhOgQL7zAGYyswAY58vG00EIFIEV0MuJrIG+wpCZlYEt0PoT2QMdSbcIcKQK7IDGD+QItCVdwrkYcKTuSC0DOXv49Hr/ABxp+jqVBHL1bx/e778AR7pebMmH71Fh0ib5s1TAkSEw98BI0iJtrUzAkUFUlLTMKvYJBfg2Gqq9HMQAAAAASUVORK5CYII=) no-repeat right center;
+/* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAuUlEQVQoU5XQMQ4BURSF4f9IqGhZACug1Gio2IDEIlR2INHMJiQ2QEWjUbICFkBLpXBlJteEMRPmle/d8+XdIzObAhOgQL7zAGYyswAY58vG00EIFIEV0MuJrIG+wpCZlYEt0PoT2QMdSbcIcKQK7IDGD+QItCVdwrkYcKTuSC0DOXv49Hr/ABxp+jqVBHL1bx/e778AR7pebMmH71Fh0ib5s1TAkSEw98BI0iJtrUzAkUFUlLTMKvYJBfg2Gqq9HMQAAAAASUVORK5CYII=) no-repeat right center; */
 background-size: 0.16rem auto;
 padding-right: 0.3rem;
 margin-left: 0.5rem;
@@ -7893,7 +7893,7 @@ padding-top: 0.4rem;
 }
 .popup-box .icon-logo[data-v-bfe0705e] {
 width: 100%;
-background: url(/static/img/bg-decoration.267b4e44.png) no-repeat;
+/* background: url(/static/img/bg-decoration.267b4e44.png) no-repeat; */
 background-size: 100% 100%;
 display: flex;
 align-items: center;
@@ -10882,7 +10882,7 @@ max-width: 8.5rem;
 }
 </style><style type="text/css">.home-task[data-v-0b286867] {
 border-radius: 0.2rem;
-background: url(/static/img/bg-task.028669fc.png) no-repeat;
+/* background: url(/static/img/bg-task.028669fc.png) no-repeat; */
 background-size: 100% 100%;
 padding: 0.4rem 0.28rem;
 }
@@ -11397,7 +11397,7 @@ max-width: 8.5rem;
 }
 </style><script charset="utf-8" src="/js/30.86535a9c-1727647884855.js"></script><style type="text/css">
 [data-v-b149b182] .head {
-background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center !important;
+/* background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center !important; */
 background-size: 100% auto !important;
 }
 .bg[data-v-b149b182] {
@@ -11406,7 +11406,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center;
+/* background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center; */
 background-size: cover;
 }
 .cache_account[data-v-b149b182] {
@@ -11511,7 +11511,7 @@ border-radius: 0.12rem;
 padding: 0 0.1rem;
 }
 .area_pop .so .ico[data-v-a84105cc] {
-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAYAAAAnH9IiAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANYSURBVHgB1VmLcdswDIU0gTcoO0HdCapMkHSCphNYnqDKBLYn6HUCOxOYmSDuBFU38AR2ARlSKBKkPqdP8+50EimJfARAEgAj6InNZrPA2xKvhyiKPvDzgi/CGa+c7tfr9QXver1eaxgAEXQEkk3gRvSbQbAtaCAHHMQOB3CCnmhNmsgi0R/4mMAw0Ej+O5LPoSMaSZMZMNkUxsEWyT8h+XPbH4KkkbBCwkd8VBBGjtcJO/8LNxMgLAxbb/wf/71rK3UvaSS8ZMI+u9X4/nC5XJ6bOqPB4600L+X5jIh/bWPrUQ/COduihh7Ath8D5M8s8SDxSGjUaxI86wexbewnY/I2iPjnkPYiqyGyw1dwCZ9ZdRoGBPZHS+dPcDWaM3FxcsZmwaO2UmUaBga2SWv2HbxN3hLKo4UClaTZLP7YH7CEDzAieA84Cn2LwqokzWqyf3oamzCBiNF8set90i4kzavFq/UuT9P0I0yI7XZLmlZmnSTtUtLOioCDyGBi0FIqVD/YFQVpJHhv1eer1eoXTAyWqDbryDFjj7JCzF7bwvowg5mA0n62qkoXuAJJOrF/xK35BeaDNPFrJhKjVL9YH+R93MWhwH3nVrUyCyTpmmmgen7D/Kj5HijYT2aZSCvrhxxmBru4JuoTEdx9v7UzPiJsDg7pdwciHRzVTAhqXyKtYGZwmGYiNwtEOjhTZ8LSKtclLcxUxTHdLOC+lVnHyZ4KJOnGHWhiJEKdNguledTELzhQk0Hwoc+Oa0pxGIrf9ugSdqQmBUXq4C4EjiXEvhdSJDM2pEhFimgK0pIfi1AYSWxgIux2Oymo1lIOpNoRKR4U2kqnMBNKJWD/mV3viWTeSAeCyz3FkDASOD6VTJEWB3F3tn2PDFwvjxI4R5IGDAwjdSCRK/t1BFYjzSuJlDyhBvZsd4OA5ktDgrPs1yHeKwFJMWTfwJelS+aghNdVmtiuNxOTTanePQRSs0Se4sk2qd44ju+xYzKxxPNZqWXwCKwi/l8m1QOaLjKqrY4v8EZp2RWMAF6xMjtD6iOO36+7HBQptsUEhoHmXKEGf58OcSw/9jmSI3Wn7FR1PpJjP+fQNnVszq0yqd+ZtNVgArezFMqd0AAU1A8/6SptnfybU5dTLB/+AYy7xNVzTTGdAAAAAElFTkSuQmCC) no-repeat center center;
+/* background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAYAAAAnH9IiAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANYSURBVHgB1VmLcdswDIU0gTcoO0HdCapMkHSCphNYnqDKBLYn6HUCOxOYmSDuBFU38AR2ARlSKBKkPqdP8+50EimJfARAEgAj6InNZrPA2xKvhyiKPvDzgi/CGa+c7tfr9QXver1eaxgAEXQEkk3gRvSbQbAtaCAHHMQOB3CCnmhNmsgi0R/4mMAw0Ej+O5LPoSMaSZMZMNkUxsEWyT8h+XPbH4KkkbBCwkd8VBBGjtcJO/8LNxMgLAxbb/wf/71rK3UvaSS8ZMI+u9X4/nC5XJ6bOqPB4600L+X5jIh/bWPrUQ/COduihh7Ath8D5M8s8SDxSGjUaxI86wexbewnY/I2iPjnkPYiqyGyw1dwCZ9ZdRoGBPZHS+dPcDWaM3FxcsZmwaO2UmUaBga2SWv2HbxN3hLKo4UClaTZLP7YH7CEDzAieA84Cn2LwqokzWqyf3oamzCBiNF8set90i4kzavFq/UuT9P0I0yI7XZLmlZmnSTtUtLOioCDyGBi0FIqVD/YFQVpJHhv1eer1eoXTAyWqDbryDFjj7JCzF7bwvowg5mA0n62qkoXuAJJOrF/xK35BeaDNPFrJhKjVL9YH+R93MWhwH3nVrUyCyTpmmmgen7D/Kj5HijYT2aZSCvrhxxmBru4JuoTEdx9v7UzPiJsDg7pdwciHRzVTAhqXyKtYGZwmGYiNwtEOjhTZ8LSKtclLcxUxTHdLOC+lVnHyZ4KJOnGHWhiJEKdNguledTELzhQk0Hwoc+Oa0pxGIrf9ugSdqQmBUXq4C4EjiXEvhdSJDM2pEhFimgK0pIfi1AYSWxgIux2Oymo1lIOpNoRKR4U2kqnMBNKJWD/mV3viWTeSAeCyz3FkDASOD6VTJEWB3F3tn2PDFwvjxI4R5IGDAwjdSCRK/t1BFYjzSuJlDyhBvZsd4OA5ktDgrPs1yHeKwFJMWTfwJelS+aghNdVmtiuNxOTTanePQRSs0Se4sk2qd44ju+xYzKxxPNZqWXwCKwi/l8m1QOaLjKqrY4v8EZp2RWMAF6xMjtD6iOO36+7HBQptsUEhoHmXKEGf58OcSw/9jmSI3Wn7FR1PpJjP+fQNnVszq0yqd+ZtNVgArezFMqd0AAU1A8/6SptnfybU5dTLB/+AYy7xNVzTTGdAAAAAElFTkSuQmCC) no-repeat center center; */
 width: 0.5rem;
 height: 0.8rem;
 background-size: 0.3rem auto;
@@ -11764,7 +11764,7 @@ max-width: 8.5rem;
 }
 </style><script charset="utf-8" src="/js/51.86535a9c-1727647884855.js"></script><style type="text/css">
 [data-v-4b91ba6a] .head {
-background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center !important;
+/* background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center !important; */
 background-size: 100% auto !important;
 }
 .bg[data-v-4b91ba6a] {
@@ -11773,7 +11773,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center;
+/* background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center; */
 background-size: cover;
 }
 .container[data-v-4b91ba6a] {
@@ -12107,7 +12107,7 @@ max-width: 8.5rem;
                                 <div data-v-63783c8c="" class="input"><input data-v-63783c8c="" id="test-input" name="password" type="password"
                                         placeholder="Login password 6-20 digits and letters"></div>
                                 <div data-v-63783c8c="" class="inp_right">
-                                    <div data-v-63783c8c="" class="eye"><img data-v-63783c8c=""
+                                    <div data-v-63783c8c="" id="toggle-password" class="eye"><img data-v-63783c8c=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC"
                                             alt=""></div>
                                 </div>
@@ -12118,10 +12118,10 @@ max-width: 8.5rem;
                                 <div data-v-63783c8c="" class="title">Confirm Password</div>
                             </div>
                             <div data-v-63783c8c="" class="inp_content_box">
-                                <div data-v-63783c8c="" class="input"><input data-v-63783c8c="" name="password_confirmation" type="password"
+                                <div data-v-63783c8c="" class="input"><input data-v-63783c8c="" id="test-cinput"name="password_confirmation" type="password"
                                         placeholder="Please enter confirmation password"></div>
                                 <div data-v-63783c8c="" class="inp_right">
-                                    <div data-v-63783c8c="" class="eye"><img data-v-63783c8c=""
+                                    <div data-v-63783c8c="" id="toggle-cpassword" class="eye"><img data-v-63783c8c=""
                                             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC"
                                             alt=""></div>
                                 </div>
@@ -12444,4 +12444,39 @@ setTimeout(() =>{
         // Initialize with the current selected country's info
         document.addEventListener('DOMContentLoaded', updateCountryInfo);
     </script>
+    <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const togglePassword = document.getElementById('toggle-password');
+    const passwordInput = document.getElementById('test-input');
+    const togglecPassword = document.getElementById('toggle-cpassword');
+    const passwordcInput = document.getElementById('test-cinput');
+
+    togglePassword.addEventListener('click', function() {
+        // Toggle the input type between password and text
+        const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordInput.setAttribute('type', type);
+     
+        // Optionally change the icon based on visibility
+        if (type === 'password') {
+            togglePassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC'; // replace with closed eye icon
+        } else {
+            togglePassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALVSURBVHgB7ZfdcRoxFIWPJNYzeQodBFcQUoFxBXEqcFyB8XOCI0zyHFyBTQUmFZgOgitg0wF5ygyLpNy7y08gu0gYyORhvxlj2J+7R1c6V3eBkpKSkoMisAsTXYdSJ7D2GFK+hENtdmYMZ3/QsRGseUKkB3gm2wv8pWuoiCaEPKdf1cC7YnrSANK0IXSMLQgX6HQViepC4hy7IHC/jdAwgdPOGX3eITxjPmL6u0Kl1fddKH0XwNx8os8H7E8cU0tjZrE3sjmDHMAJjUMinIa6bheeLrzRdC7JlV34Icfilv4PUDExkqgKaWuwOAter9Zd4ei6Gy6QnRqpEbyB0UNkyNF6vCHOI7AoP0WMYeUpjj4MESRw2hl5g3LWolZz+ZvEJLJB2RtDYbhwaahI4YY01W/WD/9tkmzh1rCZmKZTz4RVaUCPMJRxKcjp6iH9PjfACxLqcAEfTtSRtPVmgTxaJ97Dj15Mq1Hs8EbOAzUmN1mGo9YAvEZ9CHmZDrhQoFIa/uwh3b6YRDdyxS2ii2UZse4b/NBsiOZKiNWAeIsQjvRsMYsGfA/k/TqNLWKEwFlckfSvcGaMZ7Aq0NnboLvYsdntA8+V8SLbTtYRgkC/WGDFcbH0j3Q6M5Jv8VuxHLAUIctnnDYShQLZmSFZ5FZr7jZl3qUFe/1BVtDu8DHbHXxmmsO1da3LyS/U5uZ7Wpc2c0/dyLK+ZQW5Tm6tIrL9RRkK302otraO1w/mC5x8qdOOwEF9HUyfMnhV2Ntx5oS6Q0jpUuY4L05xszD53IR0X+En65at6aGS9nk0A6DsK24UzhDCn8shWCCTdGjHgLdn2wmHNplNF532d9SHFOkRx2zT8vN017Af2EAX+2n5GQ6UmNOccrI9/NLEhggQl12+LVw2uKmQOEF4Rrm+9tKN4GCvnXkkHWpQ8Tp9cRfyFeZlSZCbrf2ZvbjjabbjlJSUlPyP/AZ3+AnHGBsj7QAAAABJRU5ErkJggg=='; // replace with open eye icon
+        }
+    });
+
+    togglecPassword.addEventListener('click', function() {
+        // Toggle the input type between password and text
+        const type = passwordcInput.getAttribute('type') === 'password' ? 'text' : 'password';
+        passwordcInput.setAttribute('type', type);
+      
+        
+        // Optionally change the icon based on visibility
+        if (type === 'password') {
+            togglecPassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZWtU8NAEMU3HUwrKbJIsGCppJZKsNRWxwGafwFksbXFUtnaIoltbJBFhreTvenlJpePoVHsb2bnJne37959hkhRFEVRFEVpkcCtSNO0h2KK4HIRBMGGWgTjDVCMET+IOcbb2e2dgpwLxDmCE6cQGFJ75nicEHGJuJLIcVRD5x5CfcxsQQcEmiMUd071zu0XeJJvKFt2mzVlW57Q34zx0WH9kdO0gvYb1TEoQk8oTp3qRIyumhoVY2zqmrLzndOF3kNRnm8FJ1RwHix4Kz7FaETlxvicmTPWK+m6htaMqgxCkIUmTjWvVp/8xGLarGoXcYI4LjGVSD+7nW/xh92p6JJ0ne8ZktZifOwxOqD68ETYxJKyCYSWyepLImflVowu7S303LymbKD5YmkORDNC/TtVGSwDYs+0X0Heojnt30y+UPZKfCG+EVvEUPqZtkf3QfZR5x005vqU317zl9lIe2iZ2KLt1crlyYTyyZM4o+ySVdKhmsizYi4Bl1GD3MjJjWvnUkPk2YjdLUI9nyPz+BY+Gb7cgxr0Yf0hePBlExOKoiiK8o/5BQFYmVhhxWWuAAAAAElFTkSuQmCC'; // replace with closed eye icon
+        } else {
+            togglecPassword.querySelector('img').src = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAALVSURBVHgB7ZfdcRoxFIWPJNYzeQodBFcQUoFxBXEqcFyB8XOCI0zyHFyBTQUmFZgOgitg0wF5ygyLpNy7y08gu0gYyORhvxlj2J+7R1c6V3eBkpKSkoMisAsTXYdSJ7D2GFK+hENtdmYMZ3/QsRGseUKkB3gm2wv8pWuoiCaEPKdf1cC7YnrSANK0IXSMLQgX6HQViepC4hy7IHC/jdAwgdPOGX3eITxjPmL6u0Kl1fddKH0XwNx8os8H7E8cU0tjZrE3sjmDHMAJjUMinIa6bheeLrzRdC7JlV34Icfilv4PUDExkqgKaWuwOAter9Zd4ei6Gy6QnRqpEbyB0UNkyNF6vCHOI7AoP0WMYeUpjj4MESRw2hl5g3LWolZz+ZvEJLJB2RtDYbhwaahI4YY01W/WD/9tkmzh1rCZmKZTz4RVaUCPMJRxKcjp6iH9PjfACxLqcAEfTtSRtPVmgTxaJ97Dj15Mq1Hs8EbOAzUmN1mGo9YAvEZ9CHmZDrhQoFIa/uwh3b6YRDdyxS2ii2UZse4b/NBsiOZKiNWAeIsQjvRsMYsGfA/k/TqNLWKEwFlckfSvcGaMZ7Aq0NnboLvYsdntA8+V8SLbTtYRgkC/WGDFcbH0j3Q6M5Jv8VuxHLAUIctnnDYShQLZmSFZ5FZr7jZl3qUFe/1BVtDu8DHbHXxmmsO1da3LyS/U5uZ7Wpc2c0/dyLK+ZQW5Tm6tIrL9RRkK302otraO1w/mC5x8qdOOwEF9HUyfMnhV2Ntx5oS6Q0jpUuY4L05xszD53IR0X+En65at6aGS9nk0A6DsK24UzhDCn8shWCCTdGjHgLdn2wmHNplNF532d9SHFOkRx2zT8vN017Af2EAX+2n5GQ6UmNOccrI9/NLEhggQl12+LVw2uKmQOEF4Rrm+9tKN4GCvnXkkHWpQ8Tp9cRfyFeZlSZCbrf2ZvbjjabbjlJSUlPyP/AZ3+AnHGBsj7QAAAABJRU5ErkJggg=='; // replace with open eye icon
+        }
+    });
+});
+</script>
 </body></html>

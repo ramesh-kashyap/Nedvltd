@@ -9282,7 +9282,7 @@
                             </div>
                         </div>
                         <ul data-v-5954443c="" class="nav2">
-                            <li data-v-5954443c="">
+                            <li data-v-5954443c="" onclick="location.href='{{route('user.quality')}}'">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                             src="{{asset('')}}static/img/Icon/crowns.png"
                                         alt=""></div>
@@ -9294,13 +9294,13 @@
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Platform Rules</div>
                             </li>
-                            <li data-v-5954443c="">
+                            <li data-v-5954443c="" onclick="location.href='{{route('user.tutorial')}}'">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                         src="{{asset('')}}static/img/Icon/tutorial.png"
                                         alt=""></div>
                                 <div data-v-5954443c="" class="n">Tutorial</div>
                             </li>
-                            <li data-v-5954443c="">
+                            <li data-v-5954443c="" onclick="location.href='{{route('user.about')}}'">
                                 <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                        src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
                                         alt=""></div>
@@ -9329,7 +9329,7 @@
                             </div>
                             <div data-v-5e50d7ad="" class="amount theme">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
                         </div>
-                        <div data-v-5e50d7ad="" class="check-btn">View</div>
+                        <div data-v-5e50d7ad="" class="check-btn"onclick="location.href='{{route('user.roi-bonus')}}'">View</div>
                     </div>
                     <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
                         <div data-v-aa0ccfea="" class="income">
@@ -9357,7 +9357,7 @@
                                     <div data-v-1f37bdab="" class="level-box"><img data-v-1f37bdab=""
                                             src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png"
                                             alt=""><span data-v-1f37bdab="">VIP0</span></div>
-                                    <div data-v-1f37bdab="" class="bot">
+                                    <div data-v-1f37bdab="" class="bot" onclick="location.href='{{route('user.quality')}}'">
                                         <div data-v-1f37bdab="" class="move-up">Upgrade</div>
                                     </div>
                                 </div>

@@ -9797,7 +9797,7 @@ max-width: 8.5rem;
               </div>
               <div data-v-5a5733d2="" class="time"> Current level </div>
             </div>
-            <div data-v-5a5733d2="" class="move-up">Upgrade membership</div>
+            <div data-v-5a5733d2="" class="move-up" onclick="location.href='{{route('user.quality')}}'">Upgrade membership</div>
           </div>
           <div data-v-afc48976="" data-v-7a3d5949="" class="my-router mt" data-v-37526a6c="">
             <div data-v-afc48976="" class="router bg-blur">
@@ -9842,12 +9842,12 @@ max-width: 8.5rem;
           </div>
           <div data-v-43c0c5d6="" data-v-7a3d5949="" class="my-nav-list" data-v-37526a6c="">
             <div data-v-43c0c5d6="" class="nav-list bg-blur">
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.roi-bonus')}}'"><img data-v-43c0c5d6=""
                   src="{{asset('')}}static/img/Icon/mine_icon/my-income.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">My income</div>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <div data-v-43c0c5d6="" class="nav"  onclick="location.href='{{route('user.orderRecord')}}'"><img data-v-43c0c5d6=""
                  src="{{asset('')}}static/img/Icon/mine_icon/order-record.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Order record</div>
@@ -9882,7 +9882,7 @@ max-width: 8.5rem;
                 <div data-v-43c0c5d6="" class="name">Login Password</div>
                   </a>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.tutorial')}}'"><img data-v-43c0c5d6=""
                      src="{{asset('')}}static/img/Icon/mine_icon/tutorial.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Tutorial</div>
@@ -9892,7 +9892,7 @@ max-width: 8.5rem;
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Rules</div>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.about')}}'"><img data-v-43c0c5d6=""
                    src="{{asset('')}}static/img/Icon/mine_icon/about.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">About Us</div>
