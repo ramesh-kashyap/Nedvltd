@@ -9454,21 +9454,17 @@ setTimeout(() =>{
 </script>
 
 <script>
-        // Initialize a variable to keep track of the currently active tab
         let activeTabIndex = null;
 
         function toggleTab(tabIndex) {
             const contents = document.querySelectorAll('.tab-content');
             const tabs = document.querySelectorAll('.van-tab');
 
-            // Check if the clicked tab is already active
             if (activeTabIndex === tabIndex) {
-                // If active, hide the content and deactivate the tab
-                contents[tabIndex].classList.remove('active');
-                tabs[tabIndex].classList.remove('van-tab--active');
-                activeTabIndex = null; // Reset the active tab index
+                // contents[tabIndex].classList.remove('active');
+                // tabs[tabIndex].classList.remove('van-tab--active');
+                activeTabIndex = null;
             } else {
-                // Hide all contents and remove active class from all tabs
                 contents.forEach((content) => {
                     content.classList.remove('active');
                 });
@@ -9476,10 +9472,9 @@ setTimeout(() =>{
                     tab.classList.remove('van-tab--active');
                 });
 
-                // Show the selected tab content and set the tab as active
                 contents[tabIndex].classList.add('active');
                 tabs[tabIndex].classList.add('van-tab--active');
-                activeTabIndex = tabIndex; // Set the new active tab index
+                activeTabIndex = tabIndex;
             }
         }
     </script>
