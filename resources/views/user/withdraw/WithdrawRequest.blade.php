@@ -1900,6 +1900,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    color: #022627;
   }
   
   input[type='text'],
@@ -2466,7 +2467,7 @@
   }
   .text-primary,
   .text-success {
-    color: #00fc83;
+    color: #ffffff;
   }
   .text-warn {
     color: #EEA20C;
@@ -2765,8 +2766,8 @@
     border: 0.02rem solid #23252E;
   }
   .van-button--primary {
-    color: #020202;
-    background-color: #00fc83;
+    color: #ffffff;
+    background-color: #022627;
     border: 0.02rem solid #07c160;
   }
   .van-button--info {
@@ -6455,7 +6456,7 @@
     display: flex;
     align-items: center;
     font-size: 0.3rem;
-    color: #fff;
+    color: #022627;
   }
   .page-withdraw-tips-title img {
     margin-right: 0.16rem;
@@ -6869,7 +6870,7 @@
                             <dd data-v-37526a6c=""><input data-v-37526a6c="" name="code" type="text" placeholder="Enter verification code" 
                                                                         class="page-withdraw-info-input">
                                                                                                           
-                                    <span data-v-3cceea5e="" class="code-btn" style="color:#00FC83">Send</span>                             
+                                    <span data-v-3cceea5e="" class="code-btn" style="color:#ffffff">Send</span>                             
                                     
                                                                       </dd>
                         </dl>
@@ -6936,7 +6937,7 @@
                   arrival</span><span data-v-37526a6c="" class="text-primary"> 0 USDT </span></div><button
               data-v-37526a6c=""
               class="rounded-8px van-button van-button--primary van-button--normal van-button--block">
-              <div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text">
+              <div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text" style="color: #ffffff">
                       Sure </span></div>
           </button>
       </div>

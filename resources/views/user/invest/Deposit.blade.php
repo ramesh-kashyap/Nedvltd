@@ -1901,6 +1901,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
+    color: #022627;
   }
   
   input[type='text'],
@@ -2483,7 +2484,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   .text-gray {
-    color: #787F8E;
+    color:#022627;
   }
   .text-light {
     color: #CFD5E2;
@@ -2748,6 +2749,7 @@
     border: inherit;
     border-color: #000;
     border-radius: inherit;
+    color: #ffffff;
     /* inherit parent's border radius */
     transform: translate(-50%, -50%);
     opacity: 0;
@@ -7077,8 +7079,8 @@
                             <div data-v-37526a6c="">1USDT</div>
                         </div>
 
-                        <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px;">
-                                <div class="van-button__content"><span class="van-button__text">Sure</span></div>
+                        <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px; ">
+                                <div class="van-button__content"><span class="van-button__text" style="color: #fff;">Sure</span></div>
                             </button>
                             </form>
                     </div>
