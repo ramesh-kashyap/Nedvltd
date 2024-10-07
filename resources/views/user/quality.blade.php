@@ -9386,7 +9386,7 @@ color: #fff;
 }
 .assets .level-box .level-info .level[data-v-6e05afb9] {
 margin-top: 0.12rem;
-color: #00fc83;
+color: #fff;
 font-size: 0.32rem;
 }
 .assets .info-list[data-v-6e05afb9] {
@@ -9453,7 +9453,7 @@ line-height: 1.2;
 }
 .list .item[data-v-6d2d4c36] {
 border-radius: 0.2rem;
-border: 0.03rem solid #00fc83;
+border: 0.03rem solid  #000000;
 padding: 0.32rem 0.28rem;
 }
 .list .item .head[data-v-6d2d4c36] {
@@ -9491,7 +9491,7 @@ height: 0.48rem;
 margin-right: 0.1rem;
 }
 .list .item .head .amount-box .amount span[data-v-6d2d4c36] {
-color: #00fc83;
+color: #ffffff;
 font-size: 0.48rem;
 line-height: 0.48rem;
 }
@@ -9529,7 +9529,7 @@ font-size: 0.24rem;
 margin-top: 0.12rem;
 padding: 0.24rem 0.28rem;
 border-radius: 0.16rem;
-background: #00fc83;
+background: #022627;
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -9555,8 +9555,8 @@ justify-content: center;
 text-align: center;
 }
 .list .item .bot .btn.buy[data-v-6d2d4c36] {
-color: var(--color1);
-border: 0.02rem solid var(--color1);
+color: #ffffff;
+border: 0.02rem solid #000000;
 background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
 }
 .list .item .bot .btn.status3[data-v-6d2d4c36] {
