@@ -11406,7 +11406,7 @@ top: 0;
 left: 0;
 width: 100%;
 height: 100%;
-/* background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center; */
+background: url(../static/img/bg_login.d4d61e22.png) no-repeat top center;
 background-size: cover;
 }
 .cache_account[data-v-b149b182] {

@@ -9407,7 +9407,7 @@ max-width: 8.5rem;
                     </a>
             </li>
             <li data-v-6c4d8baa="" class="item">
-                <a href="{{ route('user.video') }}">
+                <a href="{{ route('user.level-team') }}">
                 <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
                           src="{{asset('')}}static/img/Icon/Home_icon/video.png"
                         alt=""><span data-v-6c4d8baa=""> Video </span></div>
