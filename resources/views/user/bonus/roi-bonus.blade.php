@@ -5800,7 +5800,7 @@
   }
   .assets .info-list .info .value .check-text[data-v-434f210d] {
     margin-left: 0.1rem;
-    color: var(--color1);
+    color: #ffffff;
     font-size: 0.24rem;
   }
   .assets .btn-bg[data-v-434f210d] {
