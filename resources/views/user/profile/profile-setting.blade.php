@@ -9423,7 +9423,7 @@ content: "";
 display: block;
 width: 0.56rem;
 height: 0.06rem;
-background: #00FC83;
+background: #fff;
 border-radius: 0.04rem;
 position: absolute;
 bottom: -0.24rem;
@@ -9780,11 +9780,11 @@ max-width: 8.5rem;
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="n">{{Auth::user()->username}}</div>
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="s"> ID：<span data-v-7a3d5949=""
                     data-v-37526a6c="">8244615 </span><img data-v-7a3d5949="" data-v-37526a6c=""
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB7ZZhDoIwDIXbuXhNvQiKchG9ptHVkAAB0tGMdeNP3z/Y2nzZe1uKIAi/HUGGEKkNp9sjtu6gsIiwdb/nHY4CkCBQKp5bQL4R98/lPt2LHFymXowdSQ33SIIoDiBBTADF076CGO1UC6GU9nBurtx/1VsgQXDybKOMtA8QsGXHohYU1B8vBniP3yknoWbBXgjVDHAQUo36UxxLezWAVBmAARiAAVQDiA08ZoGHSooNOWYBa0HuiJ4is+APLs1nfxwSPDEAAAAASUVORK5CYII="
+                    src="{{asset('')}}static/img/Icon/copyi.png"
                     alt=""></div>
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="s"> Invitation Code：<div data-v-7a3d5949=""
                     data-v-37526a6c=""><span id="clipboardright">{{Auth::user()->username}}</span> </div><img data-v-7a3d5949="" data-v-37526a6c="" onclick="copyLink()"
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAADASURBVHgB7ZZhDoIwDIXbuXhNvQiKchG9ptHVkAAB0tGMdeNP3z/Y2nzZe1uKIAi/HUGGEKkNp9sjtu6gsIiwdb/nHY4CkCBQKp5bQL4R98/lPt2LHFymXowdSQ33SIIoDiBBTADF076CGO1UC6GU9nBurtx/1VsgQXDybKOMtA8QsGXHohYU1B8vBniP3yknoWbBXgjVDHAQUo36UxxLezWAVBmAARiAAVQDiA08ZoGHSooNOWYBa0HuiJ4is+APLs1nfxwSPDEAAAAASUVORK5CYII="
+                    src="{{asset('')}}static/img/Icon/copyi.png"
                     alt=""></div>
               </div>
             </div><i data-v-7a3d5949="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow">

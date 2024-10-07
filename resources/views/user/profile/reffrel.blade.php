@@ -7728,7 +7728,7 @@ max-width: 8.5rem;
                             <div data-v-2a224bbc="" data-v-37526a6c="" class="flex1">
                             {{asset('')}}register?ref={{ Auth::user()->username}} </div><img data-v-2a224bbc=""  onclick="copyLink()"
                                 data-v-37526a6c=""
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgB7ZZPTsJAFMa/91pQ4sK60FBcgDfgCD0CNxBOYKpxr2uj9QZyBDwB5QQewS4IqGy6MOyc8VUhkcQ4Tf9AYvglzWSSL/1m5uV7MwQDx29BW4ahfA5yojUG8zl6dgrtQxGGCUTo1GpqZDTVWh+QqBezEbJAtA+N9sLYSbPTbzsgmhyde8hAfXbjWbCHyzljAxh3WlXkoWCMppHrRyiYL1PnOXB291QHeflQ0Yt7GZpkdn0atCwLT1Le/LGwGO7k1p82Lu7/kjGz6qKgHCaQzWcmzUpNpWNcS44iZECSHOiUi18xZYVw7PohMtB4vbuSJpLKdCM53Zr+P9PUt0wW6rPAg1YtBjfXZmop3QXxaXIv/mStxyuNJ64q7pe6U2LqS5cLl3P7HYPoxI9LNR0f/t7dtjktlZWaKguBPK5jZKOZVmiTRozFs1aGNnIi/zAumis73CetH1EASQ4rQM+k+wRUrlYbtD7z2wAAAABJRU5ErkJggg=="
+                                src="{{asset('')}}static/img/Icon/copyi.png"
                                 alt="">
                         </div>
                     </div>
