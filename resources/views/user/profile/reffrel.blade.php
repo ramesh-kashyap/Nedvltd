@@ -7726,12 +7726,13 @@ max-width: 8.5rem;
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="name"> Invitation Link </div>
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="flex">
                             <div data-v-2a224bbc="" data-v-37526a6c="" class="flex1">
-                                https://nedvltd.com/user/reg?inviteCode=W87GW6J </div><img data-v-2a224bbc=""
+                            {{asset('')}}register?ref={{ Auth::user()->username}} </div><img data-v-2a224bbc=""  onclick="copyLink()"
                                 data-v-37526a6c=""
                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgB7ZZPTsJAFMa/91pQ4sK60FBcgDfgCD0CNxBOYKpxr2uj9QZyBDwB5QQewS4IqGy6MOyc8VUhkcQ4Tf9AYvglzWSSL/1m5uV7MwQDx29BW4ahfA5yojUG8zl6dgrtQxGGCUTo1GpqZDTVWh+QqBezEbJAtA+N9sLYSbPTbzsgmhyde8hAfXbjWbCHyzljAxh3WlXkoWCMppHrRyiYL1PnOXB291QHeflQ0Yt7GZpkdn0atCwLT1Le/LGwGO7k1p82Lu7/kjGz6qKgHCaQzWcmzUpNpWNcS44iZECSHOiUi18xZYVw7PohMtB4vbuSJpLKdCM53Zr+P9PUt0wW6rPAg1YtBjfXZmop3QXxaXIv/mStxyuNJ64q7pe6U2LqS5cLl3P7HYPoxI9LNR0f/t7dtjktlZWaKguBPK5jZKOZVmiTRozFs1aGNnIi/zAumis73CetH1EASQ4rQM+k+wRUrlYbtD7z2wAAAABJRU5ErkJggg=="
                                 alt="">
                         </div>
                     </div>
+                    <input type="text" value="{{asset('')}}register?ref={{ Auth::user()->username}}" style="display:none" name="link" readonly id="clipboardright">
                     <div data-v-2a224bbc="" data-v-37526a6c="" class="box rel"><img data-v-2a224bbc=""
                             data-v-37526a6c="" src="/static/img/invate_en_US.48cb7ade.png" alt="">
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="abs">
@@ -7744,7 +7745,7 @@ max-width: 8.5rem;
                                     <div data-v-2a224bbc="" data-v-37526a6c="" class="n"> {{Auth::user()->username}}</div>
                                     <div data-v-2a224bbc="" data-v-37526a6c="" class="code"> Invitation Code：<span
                                             data-v-2a224bbc="" data-v-37526a6c=""
-                                            style="display: inline-block;" id="clipboardright">{{ asset('') }}register?ref={{ Auth::user()->username }}</span><span data-v-2a224bbc=""
+                                            style="display: inline-block;">{{ asset('') }}register?ref={{ Auth::user()->username }}</span><span data-v-2a224bbc=""
                                             data-v-37526a6c=""><img data-v-2a224bbc="" data-v-37526a6c=""
                                                 src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB0AAAAcCAYAAACdz7SqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFkSURBVHgB7ZZPTsJAFMa/91pQ4sK60FBcgDfgCD0CNxBOYKpxr2uj9QZyBDwB5QQewS4IqGy6MOyc8VUhkcQ4Tf9AYvglzWSSL/1m5uV7MwQDx29BW4ahfA5yojUG8zl6dgrtQxGGCUTo1GpqZDTVWh+QqBezEbJAtA+N9sLYSbPTbzsgmhyde8hAfXbjWbCHyzljAxh3WlXkoWCMppHrRyiYL1PnOXB291QHeflQ0Yt7GZpkdn0atCwLT1Le/LGwGO7k1p82Lu7/kjGz6qKgHCaQzWcmzUpNpWNcS44iZECSHOiUi18xZYVw7PohMtB4vbuSJpLKdCM53Zr+P9PUt0wW6rPAg1YtBjfXZmop3QXxaXIv/mStxyuNJ64q7pe6U2LqS5cLl3P7HYPoxI9LNR0f/t7dtjktlZWaKguBPK5jZKOZVmiTRozFs1aGNnIi/zAumis73CetH1EASQ4rQM+k+wRUrlYbtD7z2wAAAABJRU5ErkJggg=="
                                                 alt=""></span></div>
@@ -7760,8 +7761,9 @@ max-width: 8.5rem;
                         </div>
                     </div>
                     <div data-v-2a224bbc="" data-v-37526a6c="" class="go"><button data-v-2a224bbc="" data-v-37526a6c=""
-                            class="btn btn1" onclick="copyLink()"> copy invite link </button><button data-v-2a224bbc="" data-v-37526a6c=""
-                            class="btn"> Save QR code </button></div>
+                            class="btn btn1" onclick="copyLink()"> copy invite link </button>
+                            <button data-v-2a224bbc="" data-v-37526a6c=""class="btn" onclick="downqr()"> Save QR code </button>
+                        </div>
                 </div>
             </div>
         </div>
@@ -7780,16 +7782,27 @@ setTimeout(() =>{
   standalone.style.display='none'
 },3000)
 </script>
-<script> 
-function copyLink(){
-    var copy = document.getElementById("clipboardright");
-    copyText.select();
-    copyText.setSelectionRange(0, 99999);
-    document.execCommand("copy");
-    alert("Copied the link: " + copyText.value);
-}
-
+<script>
+    function copyLink() {
+        var copyText = document.getElementById("clipboardright");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+        document.execCommand("copy");
+        alert("Copied the link: " + copyText.value);
+    }
 </script>
+<script>
+     function downqr(){
+            const imageUrl = '/static/img/drums.png';  // Replace with your image URL
+            const link = document.createElement('a');
+            link.href = imageUrl;
+            link.download = '';  // Name of the downloaded file
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
+
 <!---->
 <div class="van-overlay" style="z-index: 2005; display: none;"></div>
 <div data-v-5954443c="" class="van-popup van-popup--round van-popup--center"
