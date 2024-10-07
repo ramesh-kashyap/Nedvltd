@@ -2394,7 +2394,7 @@
     caret-color: var(--themeColor);
   }
   .btn-bg {
-    background: #00FC83;
+    background: #022627;
     color: #fff;
   }
   .btn-bg.active {
@@ -5795,7 +5795,7 @@
     padding-left: 0.1rem;
   }
   .assets .info-list .info .value .num[data-v-434f210d] {
-    color: var(--color1);
+    color: #fff;
     text-decoration: underline;
   }
   .assets .info-list .info .value .check-text[data-v-434f210d] {
@@ -5841,7 +5841,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: #FFF;
+    color: #022627;
     font-size: 0.32rem;
     margin-bottom: 0.24rem;
   }
@@ -5998,7 +5998,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #022627;
     position: absolute;
     width: 70%;
     text-align: center;

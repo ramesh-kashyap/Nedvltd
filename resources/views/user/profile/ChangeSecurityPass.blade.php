@@ -5927,7 +5927,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #022627;
     position: absolute;
     width: 70%;
     text-align: center;
@@ -7981,7 +7981,7 @@
     margin-bottom: 0.16rem;
     font-size: 0.26rem;
     font-weight: 500;
-    color: rgba(255, 255, 255, 0.9);
+    color: #022627;
   }
   .bot[data-v-7317d559] {
     padding-top: 0.3rem;
