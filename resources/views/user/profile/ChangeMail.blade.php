@@ -7865,8 +7865,8 @@
     border: 0;
   }
   .big_btn_box .btn_box .on[data-v-e9acc21a] {
-    background: #00fc83;
-    color: #020202;
+    background: #022627;
+    color: #ffffff;
   }
   .van-field__word-num[data-v-e9acc21a] {
     color: #fff;
