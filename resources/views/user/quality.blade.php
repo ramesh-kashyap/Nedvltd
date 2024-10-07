@@ -2369,7 +2369,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 backdrop-filter: blur(0.3rem);
 z-index: -1;
 }
@@ -9511,7 +9511,7 @@ text-align: right;
 }
 .list .item .info-list .info .name[data-v-6d2d4c36] {
 margin-top: 0.32rem;
-color: #787f8e;
+color: #fff;
 font-size: 0.28rem;
 }
 .list .item .info-list .info .value[data-v-6d2d4c36] {
