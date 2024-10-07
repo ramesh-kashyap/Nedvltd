@@ -380,8 +380,8 @@ font-size: 0.3rem;
 background-image: linear-gradient(180deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)), linear-gradient(0deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)) !important;
 }
 :root {
---color: #5952f5;
---color1: #00fc83;
+--color: #ffffff;
+--color1: #FFF;
 --color2: #8f9aae;
 --border-bottom: 0.02rem solid #47464a;
 --border: 0.02rem solid #5952f5;
@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }

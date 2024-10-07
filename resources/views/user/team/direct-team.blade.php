@@ -440,7 +440,7 @@
         }
 
         :root {
-            --color: #5952f5;
+            --color: #ffffff;
             --color1: #00fc83;
             --color2: #8f9aae;
             --border-bottom: 0.02rem solid #47464a;
