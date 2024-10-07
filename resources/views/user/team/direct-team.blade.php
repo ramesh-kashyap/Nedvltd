@@ -2989,7 +2989,7 @@
 
         .text-primary,
         .text-success {
-            color: #00fc83;
+            color: #ffffff;
         }
 
         .text-warn {
@@ -3764,7 +3764,7 @@
         }
 
         .van-cell--clickable:active {
-            background-color: #23252e;
+            /* background-color: #23252e; */
         }
 
         .van-cell--required {
@@ -9343,7 +9343,7 @@
 
         .page-team-crew-tab li.active {
             color: #fff;
-            border-bottom: 0.08rem solid #00fc83;
+            border-bottom: 0.08rem solid #ffffff;
         }
 
         .page-team-crew-list {
@@ -9376,7 +9376,7 @@
 
     </style>
     <script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant/lib/index.css">
+    <link rel="stylesheet" href="{{asset('')}}css/index.css">
 
 </head>
 

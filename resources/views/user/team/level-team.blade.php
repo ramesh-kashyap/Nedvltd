@@ -9550,7 +9550,7 @@
                         <div data-v-37526a6c="" class="flex-1 overflow-y-auto">
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px" > LV 1
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
