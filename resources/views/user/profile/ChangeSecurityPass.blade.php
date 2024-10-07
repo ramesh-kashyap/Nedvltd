@@ -372,7 +372,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #00fc83;
+    --color1: #ffffff;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -2216,11 +2216,11 @@
   
   .btn {
     width: 100%;
-    color: #020202;
+    color: #ffffff;
     border: 0;
     height: 0.88rem;
     border-radius: 0.16rem;
-    background: #00fc83;
+    background: #022627;
   }
   
   .btn.on {
@@ -7999,7 +7999,7 @@
   .doc[data-v-7317d559] {
     line-height: 1.4;
     margin-top: 0.2rem;
-    color: #787F8E;
+    color: #022627;
   }
   .doc[data-v-7317d559] span {
     color: var(--color1);
@@ -8289,7 +8289,7 @@
                             <div data-v-0ff1fb10="" class="logo"></div>
                             <a href="{{route('user.profile')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
+                                    src="{{asset('')}}static/img/icon/leftarrow.png"
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             </a>
@@ -8333,7 +8333,7 @@
                                             <span data-v-40856e44="" data-v-37526a6c="" class="code-btn" style="    padding: 0 0.3rem;
     border-radius: 0;
     background: none;
-    color: var(--color1);
+    color: #022627;
     border: 0;  height: 0.88rem;">Send</span>
                                             </div>
                                             <!-- <div data-v-7317d559="" data-v-37526a6c="" class="b" style="display: none;">
