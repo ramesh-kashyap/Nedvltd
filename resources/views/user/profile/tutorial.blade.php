@@ -7038,8 +7038,8 @@
 
     .tab_hd li.on[data-v-1029ea9a] {
       border-radius: 0.16rem;
-      background: #00fc83;
-      color: #020202;
+      background:#022627;
+      color: #ffffff;
     }
 
     .list li[data-v-1029ea9a] {

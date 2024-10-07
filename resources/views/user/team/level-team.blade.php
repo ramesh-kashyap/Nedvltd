@@ -3000,7 +3000,7 @@
 
         .text-primary,
         .text-success {
-            color: #00fc83;
+            color: #ffffff;
         }
 
         .text-warn {
@@ -3708,7 +3708,7 @@
             color: #f3f3f3;
             font-size: 0.28rem;
             line-height: 0.48rem;
-            background-color: #0D0F13;
+            background-color: #068475;;
         }
 
         .van-cell::after {
@@ -9487,7 +9487,9 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
- 
+        .mb-12px.rounded-6px.border-solid-dark.van-cell.van-cell--borderless.van-field{
+          background-color: #068475;;
+        }
     </style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant/lib/index.css">
 </head>
