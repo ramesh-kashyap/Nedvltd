@@ -9546,8 +9546,8 @@ color: rgba(255, 255, 255, 0.8);
 height: 0.72rem !important;
 margin-top: 0.32rem;
 border-radius: 0.16rem;
-background: var(--color1);
-color: #020202;
+background: #022627;
+color: #ffffff;
 font-size: 0.28rem;
 display: flex;
 align-items: center;
@@ -9560,7 +9560,7 @@ border: 0.02rem solid #000000;
 background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
 }
 .list .item .bot .btn.status3[data-v-6d2d4c36] {
-background: var(--color1);
+background: #022627;
 color: #FFF;
 }
 .van-field__word-num[data-v-6d2d4c36] {

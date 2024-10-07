@@ -2202,7 +2202,7 @@ color: #999;
 color: #fff;
 }
 .theme {
-color: #00fc83 !important;
+color: #fff;
 }
 
 i.iconfont {
@@ -9121,7 +9121,7 @@ max-width: 8.5rem;
 </style><script charset="utf-8" src="/js/32.86535a9c-1727647884855.js"></script><style type="text/css">.table_list[data-v-555c6fae] {
 width: 100%;
 padding: 0.06rem;
-background: #13161c;
+background: #068475;
 border-radius: 0.12rem;
 overflow: hidden;
 }
