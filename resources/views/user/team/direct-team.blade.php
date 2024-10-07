@@ -3697,7 +3697,7 @@
             color: #f3f3f3;
             font-size: 0.28rem;
             line-height: 0.48rem;
-            background-color: #068475;
+            /* background-color: #068475; */
         }
 
         .van-cell::after {

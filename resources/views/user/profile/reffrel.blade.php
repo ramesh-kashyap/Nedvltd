@@ -2225,11 +2225,11 @@ vertical-align: middle;
 
 .btn {
 width: 100%;
-color: #020202;
+color: #ffffff;
 border: 0;
 height: 0.88rem;
 border-radius: 0.16rem;
-background: #00fc83;
+background: #022627;
 }
 
 .btn.on {
@@ -3034,7 +3034,7 @@ overflow: hidden;
 color: #f3f3f3;
 font-size: 0.28rem;
 line-height: 0.48rem;
-background-color: #0D0F13;
+/* background-color: #068475; */
 }
 .van-cell::after {
 position: absolute;
@@ -7667,8 +7667,8 @@ background: var(--color1);
 }
 .btn1[data-v-2a224bbc] {
 background: transparent;
-border: 0.02rem solid var(--color1);
-color: var(--color1);
+border: 0.02rem solid #022627;
+color: #fff;
 }
 .van-field__word-num[data-v-2a224bbc] {
 color: #fff;
