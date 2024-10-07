@@ -380,8 +380,8 @@ font-size: 0.3rem;
 background-image: linear-gradient(180deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)), linear-gradient(0deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)) !important;
 }
 :root {
---color: #5952f5;
---color1: #00fc83;
+--color: #ffffff;
+--color1: #FFF;
 --color2: #8f9aae;
 --border-bottom: 0.02rem solid #47464a;
 --border: 0.02rem solid #5952f5;
@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: rgba(23, 26, 36, 0.6);
+background: #068475;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -9245,8 +9245,8 @@ margin-left: auto;
 min-height: 0.52rem;
 padding: 0 0.12rem;
 border-radius: 1.2rem;
-background: #00FC83;
-color: #020202;
+/* background: #fff; */
+color: #022627;
 font-size: 0.24rem;
 display: flex;
 align-items: center;
@@ -9810,7 +9810,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Invite friends to mine together</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAoCAYAAACxbNkLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARSSURBVHgB1VnRUdtAEN072UzyFUpQKgAqQFSQSQUhFQDfibHAyXecCjAVMKkApQJMBTEV4L/MIEuXfbcSsmxhJFkC581oJN1Ip33avbvdd4rqIvQ90s4OGfL4bpeP7eSogykpMyGj+IhviUxAXT+gGlCVnjb+NsX6iD98TPWNL4sJWxeQjs5I+ZOyL5UjJET6CZHsgyb+xW1j6sYB2b/sT6kO0H/YdUnHLvfpkdIfuNWds3JUltjzhKIBe4R8Sj2CzmO6pG4voDbx8J3DOD4mTZ+SlgkfPnV6l6teW00oOv8x55WAnOhzFfc3gr++S47jPxJTZkjO6clTjxcTQghEzhVfeYRQitUZbX0d0mvi4Rt7y/QJkaLMmMPzoCjEdeHLsb4mITPh64NXJwPAhjDaIzt21W7yw5ewTEjCbNe+6ERM5suYNgVvOdxDtknGk2dtXUA+5B7OD0mrC0KYOfw3Xnq8lAUmDB0jinj2NSe0dfoYQZmHMPi06ttrjJlNJQMgamAjAJsx5hNkhDCTYO7HtLwJY+Y5iI0BWS/pftoshKx3kmkRC9j/gpCXEQBLS+IlISTekUWzzVCLzvs0G9zz8YcNcGldYJLAIg/MZL0UQpr25YPRT2oL+ING+SQZh8vT7nUjpOAEe+Yc094ia1YOZowJpxXvqU3AM/M5Wro0rBsVab+GDthDyrONSDTbRraGpGjGU6ntxuxqdtWOvelYL7WL/MKYYn1SyPgBRR4TMq69CWd39BJog1RkyxcmpHY0s3PtTTf3gXbRNKk3lCap24oHlLGXnV616hXphxNd8A9Zp3ItKtvrTRQJjw7VhY7TJLZpuMmackw1gHVI3DWXD5VEvXK7DJS+qfR8ZvsUHoJhqevLGxlGJ9RRd6T1O6oLUYzcXBtW/q3VZfayLVaPQDU7AaGx7TTSHp9HpTt5a2O8VlhYzAbIHQ9zbULmkKoC4oq8f6e5nvhtb3hRopeCkBnl2uqSAaAUycWY16F0UbLSUftomgzwaLsOVPKRe8IY4lyoVXmqDTJSvWISsbmoZNsmliw708Dawih3ty4Z6UTGsbLFXlI+dIxUqIYHaRMp/dPIZtEmyBQUpkII+pYh8VLkXFB7QIUZ8LfO1vcMFRamWboj4iLqiiUlZSMhEjVszKVKmUgCL80rKVZb3lAg1ERvB/z5vC8vNEJJkdDb5pnjquXxVA8g03VEk4OtC+J9cYY9G2RScBMlclOQKRoSsGv1bed0b/GRYm3biT7aF6RGuWFFtX6K0xQwZkQtdQkTC8T6AqyugcLBkJ84Sp4cVd1NawQSYph5PXuPMOv2nvzBzxd1ondDmXSTN0ZW7try2xXxoUYZ53BusS+1rVOuSl3cdBLIlqTiDd6Yr1HCr7MliUEeapbUOEle3JK0gz/yy/RfrezOiO3TYh3TPKYJkWGVH1WN0DzCgcf5i2dlMChHIrbU39aXY2xzsphu6ybJ/wBp/+TjfqzhXQAAAABJRU5ErkJggg=="
+                      src="{{asset('')}}static/img/icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976="" src="../static/img/home-invite.a9ec84d6.png"
@@ -9825,7 +9825,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Team member list</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAoCAYAAACxbNkLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARSSURBVHgB1VnRUdtAEN072UzyFUpQKgAqQFSQSQUhFQDfibHAyXecCjAVMKkApQJMBTEV4L/MIEuXfbcSsmxhJFkC581oJN1Ip33avbvdd4rqIvQ90s4OGfL4bpeP7eSogykpMyGj+IhviUxAXT+gGlCVnjb+NsX6iD98TPWNL4sJWxeQjs5I+ZOyL5UjJET6CZHsgyb+xW1j6sYB2b/sT6kO0H/YdUnHLvfpkdIfuNWds3JUltjzhKIBe4R8Sj2CzmO6pG4voDbx8J3DOD4mTZ+SlgkfPnV6l6teW00oOv8x55WAnOhzFfc3gr++S47jPxJTZkjO6clTjxcTQghEzhVfeYRQitUZbX0d0mvi4Rt7y/QJkaLMmMPzoCjEdeHLsb4mITPh64NXJwPAhjDaIzt21W7yw5ewTEjCbNe+6ERM5suYNgVvOdxDtknGk2dtXUA+5B7OD0mrC0KYOfw3Xnq8lAUmDB0jinj2NSe0dfoYQZmHMPi06ttrjJlNJQMgamAjAJsx5hNkhDCTYO7HtLwJY+Y5iI0BWS/pftoshKx3kmkRC9j/gpCXEQBLS+IlISTekUWzzVCLzvs0G9zz8YcNcGldYJLAIg/MZL0UQpr25YPRT2oL+ING+SQZh8vT7nUjpOAEe+Yc094ia1YOZowJpxXvqU3AM/M5Wro0rBsVab+GDthDyrONSDTbRraGpGjGU6ntxuxqdtWOvelYL7WL/MKYYn1SyPgBRR4TMq69CWd39BJog1RkyxcmpHY0s3PtTTf3gXbRNKk3lCap24oHlLGXnV616hXphxNd8A9Zp3ItKtvrTRQJjw7VhY7TJLZpuMmackw1gHVI3DWXD5VEvXK7DJS+qfR8ZvsUHoJhqevLGxlGJ9RRd6T1O6oLUYzcXBtW/q3VZfayLVaPQDU7AaGx7TTSHp9HpTt5a2O8VlhYzAbIHQ9zbULmkKoC4oq8f6e5nvhtb3hRopeCkBnl2uqSAaAUycWY16F0UbLSUftomgzwaLsOVPKRe8IY4lyoVXmqDTJSvWISsbmoZNsmliw708Dawih3ty4Z6UTGsbLFXlI+dIxUqIYHaRMp/dPIZtEmyBQUpkII+pYh8VLkXFB7QIUZ8LfO1vcMFRamWboj4iLqiiUlZSMhEjVszKVKmUgCL80rKVZb3lAg1ERvB/z5vC8vNEJJkdDb5pnjquXxVA8g03VEk4OtC+J9cYY9G2RScBMlclOQKRoSsGv1bed0b/GRYm3biT7aF6RGuWFFtX6K0xQwZkQtdQkTC8T6AqyugcLBkJ84Sp4cVd1NawQSYph5PXuPMOv2nvzBzxd1ondDmXSTN0ZW7try2xXxoUYZ53BusS+1rVOuSl3cdBLIlqTiDd6Yr1HCr7MliUEeapbUOEle3JK0gz/yy/RfrezOiO3TYh3TPKYJkWGVH1WN0DzCgcf5i2dlMChHIrbU39aXY2xzsphu6ybJ/wBp/+TjfqzhXQAAAABJRU5ErkJggg=="
+                      src="{{asset('')}}static/img/icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976=""
@@ -9890,11 +9890,11 @@ max-width: 8.5rem;
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Tutorial</div>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <!-- <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
                     src="{{asset('')}}static/img/Icon/rules.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Rules</div>
-              </div>
+              </div> -->
               <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.about')}}'"><img data-v-43c0c5d6=""
                    src="{{asset('')}}static/img/Icon/mine_icon/about.png"
                   alt="">

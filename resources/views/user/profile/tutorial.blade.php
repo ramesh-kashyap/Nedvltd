@@ -435,8 +435,8 @@
     }
 
     :root {
-      --color: #5952f5;
-      --color1: #00fc83;
+      --color: #ffffff;
+      --color1: #FFF;
       --color2: #8f9aae;
       --border-bottom: 0.02rem solid #47464a;
       --border: 0.02rem solid #5952f5;

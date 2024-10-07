@@ -380,7 +380,7 @@ font-size: 0.3rem;
 background-image: linear-gradient(180deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)), linear-gradient(0deg, rgba(13, 15, 19, 0.9), rgba(13, 15, 19, 0.4)) !important;
 }
 :root {
---color: #5952f5;
+--color: #ffffff;
 --color1: #00fc83;
 --color2: #8f9aae;
 --border-bottom: 0.02rem solid #47464a;
