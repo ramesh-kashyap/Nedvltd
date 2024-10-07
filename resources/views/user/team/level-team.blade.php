@@ -9487,8 +9487,9 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
-
+ 
     </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant/lib/index.css">
 </head>
 
 <body class="mein_cn">
@@ -9745,6 +9746,7 @@
     <div class="van-toast van-toast--middle van-toast--text" style="z-index: 2007; display: none;">
         <div class="van-toast__text">Copy the invitation link successfully</div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vant/lib/index.js"></script>
 </body>
 
 </html>
