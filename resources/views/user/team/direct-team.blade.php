@@ -43,7 +43,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: #020503;
+            background: rgba(6, 132, 117, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -268,7 +268,7 @@
             padding-top: constant(safe-area-inset-top);
             padding-top: env(safe-area-inset-top);
             max-height: 100vh;
-            background: #020202;
+            background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
             position: relative;
             word-wrap: break-word;
             word-break: normal;
@@ -2325,7 +2325,7 @@
             height: -webkit-fill-available;
             overflow: hidden;
             min-width: 7.5rem;
-            background: #141517;
+            /* background: #141517; */
             -webkit-user-select: none;
             -webkit-text-size-adjust: none;
             user-select: none;
@@ -3697,7 +3697,7 @@
             color: #f3f3f3;
             font-size: 0.28rem;
             line-height: 0.48rem;
-            background-color: #0D0F13;
+            background-color: #068475;
         }
 
         .van-cell::after {
@@ -7251,7 +7251,7 @@
         }
 
         .head[data-v-0ff1fb10] {
-            background: #020202;
+            /* background: #020202; */
             height: 1.2rem;
             position: relative;
             transition: background-color 0.3s;
