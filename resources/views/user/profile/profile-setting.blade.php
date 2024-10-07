@@ -8618,7 +8618,7 @@ height: 0.4rem;
 vertical-align: top;
 }
 .logo img[data-v-0ff1fb10] {
-height: 0.56rem;
+height: 60px;
 }
 .van-field__word-num[data-v-0ff1fb10] {
 color: #fff;
