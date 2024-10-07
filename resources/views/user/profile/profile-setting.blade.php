@@ -9745,7 +9745,9 @@ max-width: 8.5rem;
           <div data-v-0ff1fb10="" class="container flex">
             <!---->
             <div data-v-0ff1fb10="" class="logo">
-              <div data-v-7a3d5949="" data-v-0ff1fb10="" class="page-title">mine</div>
+              <img data-v-7a3d5949="" data-v-37526a6c=""
+                  src="/static/img/logo2.png"
+                  alt="" style="width:150px;height:auto">
             </div>
             <div data-v-0ff1fb10="" class="n_home"></div>
             <div data-v-0ff1fb10="" class="flex1"></div>
@@ -9772,7 +9774,7 @@ max-width: 8.5rem;
           <div data-v-7a3d5949="" data-v-37526a6c="" class="head1">
             <div data-v-7a3d5949="" data-v-37526a6c="" class="db">
               <div data-v-7a3d5949="" data-v-37526a6c="" class="photo rel"><img data-v-7a3d5949="" data-v-37526a6c=""
-                  src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240708/7694db40a9acbd4dd605dd13fa201be1.png"
+                  src="/static/img/logo1.bed352ca.png"
                   alt=""></div>
               <div data-v-7a3d5949="" data-v-37526a6c="" class="flexs">
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="n">{{Auth::user()->username}}</div>
