@@ -9245,8 +9245,8 @@ margin-left: auto;
 min-height: 0.52rem;
 padding: 0 0.12rem;
 border-radius: 1.2rem;
-background: #00FC83;
-color: #020202;
+/* background: #fff; */
+color: #022627;
 font-size: 0.24rem;
 display: flex;
 align-items: center;
