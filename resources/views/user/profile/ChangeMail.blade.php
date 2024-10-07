@@ -372,7 +372,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #00fc83;
+    --color1: #fff;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -2214,14 +2214,14 @@
     vertical-align: middle;
   }
   
-  .btn {
-    width: 100%;
-    color: #020202;
-    border: 0;
-    height: 0.88rem;
-    border-radius: 0.16rem;
-    background: #00fc83;
-  }
+ .btn {
+            width: 100%;
+            color: #ffffff;
+            border: 0;
+            height: 0.88rem;
+            border-radius: 0.16rem;
+            background: #022627;
+        }
   
   .btn.on {
     background: #cda349;
@@ -5927,7 +5927,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #022627;
     position: absolute;
     width: 70%;
     text-align: center;
@@ -7654,7 +7654,7 @@
   }
   </style><script charset="utf-8" src="/js/61.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/60.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/79.86535a9c-1727647884855.js"></script><style type="text/css">.input_big_box[data-v-3cceea5e] {
     position: relative;
-    --themeColor: #00fc83;
+    --themeColor: #022627;
   }
   .input_big_box .title_box[data-v-3cceea5e] {
     background: transparent;
@@ -7761,7 +7761,7 @@
   .input_big_box .title_box .title[data-v-3670e178] {
     line-height: 1.1;
     font-size: 0.28rem;
-    color: #fff;
+    color: #022627;
   }
   .input_big_box .inp_content_box[data-v-3670e178] {
     margin-top: 0.2rem;
@@ -7865,8 +7865,8 @@
     border: 0;
   }
   .big_btn_box .btn_box .on[data-v-e9acc21a] {
-    background: #00fc83;
-    color: #020202;
+    background: #022627;
+    color: #ffffff;
   }
   .van-field__word-num[data-v-e9acc21a] {
     color: #fff;

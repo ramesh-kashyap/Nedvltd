@@ -2214,14 +2214,14 @@
     vertical-align: middle;
   }
   
-  .btn {
-    width: 100%;
-    color: #020202;
-    border: 0;
-    height: 0.88rem;
-    border-radius: 0.16rem;
-    background: #00fc83;
-  }
+ .btn {
+            width: 100%;
+            color: #ffffff;
+            border: 0;
+            height: 0.88rem;
+            border-radius: 0.16rem;
+            background: #022627;
+        }
   
   .btn.on {
     background: #cda349;
@@ -5927,7 +5927,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #022627;
     position: absolute;
     width: 70%;
     text-align: center;
@@ -8121,7 +8121,7 @@
     margin-bottom: 0.16rem;
     font-size: 0.26rem;
     font-weight: 500;
-    color: #ffffff;
+    color: #022627;
   }
   .bot[data-v-40856e44] {
     padding: 0.48rem 0 0;
