@@ -54,7 +54,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: #020503;
+            background: rgba(6, 132, 117, 0.8);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -279,7 +279,7 @@
             padding-top: constant(safe-area-inset-top);
             padding-top: env(safe-area-inset-top);
             max-height: 100vh;
-            background: #020202;
+            background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
             position: relative;
             word-wrap: break-word;
             word-break: normal;
@@ -2336,7 +2336,7 @@
             height: -webkit-fill-available;
             overflow: hidden;
             min-width: 7.5rem;
-            background: #141517;
+            /* background: #141517; */
             -webkit-user-select: none;
             -webkit-text-size-adjust: none;
             user-select: none;
@@ -7334,7 +7334,7 @@
         }
 
         .head[data-v-0ff1fb10] {
-            background: #020202;
+            /* background: #020202; */
             height: 1.2rem;
             position: relative;
             transition: background-color 0.3s;
@@ -9504,12 +9504,12 @@
                         <div data-v-0ff1fb10="" class="container flex">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
-                            <a href="{{route('user.profile')}}">
-                            <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
+                          
+                            <div data-v-0ff1fb10=""onclick="location.href='{{route('user.profile')}}'" class="back"><img data-v-0ff1fb10=""
                                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
-                            </a>
+                        
                             <!---->
                             <!---->
                             <!---->
@@ -9547,7 +9547,7 @@
                         <div data-v-37526a6c="" class="flex-1 overflow-y-auto">
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 1
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span onclick="location.href='{{route('user.referral-team')}}'"class="text-12px"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
@@ -9571,7 +9571,7 @@
                             </div>
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 2
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
@@ -9595,7 +9595,7 @@
                             </div>
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 3
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
@@ -9619,7 +9619,7 @@
                             </div>
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 4
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
@@ -9643,7 +9643,7 @@
                             </div>
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 5
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
@@ -9667,7 +9667,7 @@
                             </div>
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
                                 <div class="flex-between-center" data-v-37526a6c=""><span class="text-14px"> LV 6
-                                    </span><span class="text-12px"> Check <i class="van-icon van-icon-arrow">
+                                    </span><span class="text-12px" onclick="location.href='{{route('user.referral-team')}}'"> Check <i class="van-icon van-icon-arrow">
                                             <!----></i></span></div>
                                 <div data-v-37526a6c="" role="separator" class="van-divider van-divider--hairline">
                                 </div>
