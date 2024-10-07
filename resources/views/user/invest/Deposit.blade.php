@@ -7039,10 +7039,11 @@
             <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
                 <div data-v-37526a6c="" class="container page-recharge">  
                 <div data-v-37526a6c="" class="page-recharge-qrcode">
-                        <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canvas
-                                width="655" height="655" style="display: block;"></canvas><img alt="Scan me!"
-                                
-                                style="display: none;"></div>
+                        <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canva
+                                width="655" height="655" style="display: block;"><img alt="Scan me!"
+                                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TYqW7dSArJmd8XRGjFuQg3MbP4VgXH4h9Y" style="width: 160px"
+
+                                ></canva></div>
                     </div>                  
                     <div data-v-37526a6c="" class="page-recharge-info">
                     <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
