@@ -9376,6 +9376,8 @@
 
     </style>
     <script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vant/lib/index.css">
+
 </head>
 
 <body class="mein_cn">
@@ -9558,6 +9560,7 @@
             <!---->
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/vant/lib/index.js"></script>
 </body>
 
 </html>
