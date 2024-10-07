@@ -2628,7 +2628,7 @@
         }
 
         .theme {
-            color: #00fc83 !important;
+            color: #fff !important;
         }
 
         i.iconfont {
@@ -7752,7 +7752,7 @@
             width: fit-content;
             border-radius: 0.8rem;
             border: 0.02rem solid #fff;
-            color: #00fc83;
+            color: 	#FFFFFF;
             font-size: 0.24rem;
             padding: 0.08rem 0.16rem;
         }
@@ -8159,9 +8159,9 @@
 
         .income-box .check-btn[data-v-5e50d7ad] {
             border-radius: 1.2rem;
-            background: #00FC83;
+            background: #022627;
             padding: 0.16rem 0.32rem;
-            color: #020202;
+            color: 	#FFFFFF;
             font-size: 0.26rem;
             line-height: 1.2;
         }
@@ -9370,7 +9370,7 @@
                                 <div data-v-1f37bdab="" class="left">
                                     <div data-v-1f37bdab="" class="text">Invite friends to earn income</div>
                                     <div data-v-1f37bdab="" class="bot"><img data-v-1f37bdab=""
-                                            src="{{asset('')}}static/img/icon/arrow.png"
+                                            src="{{asset('')}}static/img/icon/arrow-right.png"
                                             alt=""></div>
                                 </div>
                                 <div data-v-1f37bdab="" class="right"><img data-v-1f37bdab=""
@@ -9384,8 +9384,8 @@
                             <div data-v-7fb36d82="" class="title">My team</div>
                             <a href="{{route('user.level-team')}}">
                             <img data-v-7fb36d82=""
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAAoCAYAAACxbNkLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARSSURBVHgB1VnRUdtAEN072UzyFUpQKgAqQFSQSQUhFQDfibHAyXecCjAVMKkApQJMBTEV4L/MIEuXfbcSsmxhJFkC581oJN1Ip33avbvdd4rqIvQ90s4OGfL4bpeP7eSogykpMyGj+IhviUxAXT+gGlCVnjb+NsX6iD98TPWNL4sJWxeQjs5I+ZOyL5UjJET6CZHsgyb+xW1j6sYB2b/sT6kO0H/YdUnHLvfpkdIfuNWds3JUltjzhKIBe4R8Sj2CzmO6pG4voDbx8J3DOD4mTZ+SlgkfPnV6l6teW00oOv8x55WAnOhzFfc3gr++S47jPxJTZkjO6clTjxcTQghEzhVfeYRQitUZbX0d0mvi4Rt7y/QJkaLMmMPzoCjEdeHLsb4mITPh64NXJwPAhjDaIzt21W7yw5ewTEjCbNe+6ERM5suYNgVvOdxDtknGk2dtXUA+5B7OD0mrC0KYOfw3Xnq8lAUmDB0jinj2NSe0dfoYQZmHMPi06ttrjJlNJQMgamAjAJsx5hNkhDCTYO7HtLwJY+Y5iI0BWS/pftoshKx3kmkRC9j/gpCXEQBLS+IlISTekUWzzVCLzvs0G9zz8YcNcGldYJLAIg/MZL0UQpr25YPRT2oL+ING+SQZh8vT7nUjpOAEe+Yc094ia1YOZowJpxXvqU3AM/M5Wro0rBsVab+GDthDyrONSDTbRraGpGjGU6ntxuxqdtWOvelYL7WL/MKYYn1SyPgBRR4TMq69CWd39BJog1RkyxcmpHY0s3PtTTf3gXbRNKk3lCap24oHlLGXnV616hXphxNd8A9Zp3ItKtvrTRQJjw7VhY7TJLZpuMmackw1gHVI3DWXD5VEvXK7DJS+qfR8ZvsUHoJhqevLGxlGJ9RRd6T1O6oLUYzcXBtW/q3VZfayLVaPQDU7AaGx7TTSHp9HpTt5a2O8VlhYzAbIHQ9zbULmkKoC4oq8f6e5nvhtb3hRopeCkBnl2uqSAaAUycWY16F0UbLSUftomgzwaLsOVPKRe8IY4lyoVXmqDTJSvWISsbmoZNsmliw708Dawih3ty4Z6UTGsbLFXlI+dIxUqIYHaRMp/dPIZtEmyBQUpkII+pYh8VLkXFB7QIUZ8LfO1vcMFRamWboj4iLqiiUlZSMhEjVszKVKmUgCL80rKVZb3lAg1ERvB/z5vC8vNEJJkdDb5pnjquXxVA8g03VEk4OtC+J9cYY9G2RScBMlclOQKRoSsGv1bed0b/GRYm3biT7aF6RGuWFFtX6K0xQwZkQtdQkTC8T6AqyugcLBkJ84Sp4cVd1NawQSYph5PXuPMOv2nvzBzxd1ondDmXSTN0ZW7try2xXxoUYZ53BusS+1rVOuSl3cdBLIlqTiDd6Yr1HCr7MliUEeapbUOEle3JK0gz/yy/RfrezOiO3TYh3TPKYJkWGVH1WN0DzCgcf5i2dlMChHIrbU39aXY2xzsphu6ybJ/wBp/+TjfqzhXQAAAABJRU5ErkJggg=="
-                                alt="">
+                            src="{{asset('')}}static/img/icon/arrow-right.png"
+                                                            alt="">
                             </a>
                         </div>
                         <div data-v-7fb36d82="" class="info-list">
