@@ -9126,7 +9126,7 @@ border-radius: 0.12rem;
 overflow: hidden;
 }
 [data-v-555c6fae] .van-tabs__nav {
-background-color: #13161c;
+background-color: #068475;;
 display: flex;
 align-items: stretch;
 justify-content: center;
@@ -9181,8 +9181,8 @@ display: none;
 height: 0.7rem;
 }
 .solid[data-v-555c6fae] .van-tab--active {
-color: #020202 !important;
-background: var(--color1);
+color: #ffffff !important;
+background: #022627;
 border-radius: 0.12rem;
 }
 .solid[data-v-555c6fae] .van-tabs {
