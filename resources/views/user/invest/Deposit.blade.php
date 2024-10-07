@@ -2766,8 +2766,8 @@
     border: 0.02rem solid #23252E;
   }
   .van-button--primary {
-    color: #020202;
-    background-color: #00fc83;
+    color: #ffffff;
+    background-color: #022627;
     border: 0.02rem solid #07c160;
   }
   .van-button--info {
@@ -7029,7 +7029,8 @@
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             
                             <div data-v-0ff1fb10="" class="str"><img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKiSURBVHgBzZjtcdswDIah5HrX/lM3UCawu4G6QTeoO0GzQbRB0gnUTtAR7E5QZwJpA7u/2rteDgEkKKFpUgIpKpf3DkdbIagnAA1+ZBApRCypWZFxuybLxVhHslbsnmyXZdkOlhZB5WQ3ZAcMV0NWkxWQWgJ2i+lUa0EzBdxXaip4Tp+tIZ1749mQ7vWIH/tUlPofEKuRqHGKK+zn4dQYJdl3SbFLtxAqSel2BCyHCJHfxgP6O2hMcbB1FwtmjV1IRG1ttQO40noNicVjYmi6JQW2NrCQPO+79nXm0Deqzmkh7UgenFPJMS9qeCFhP7/9qZbomWowpuL/rQpAsnDAHM9Xpy6KF9Knsny4gLYQIoZ7c7mFB7JASHoXF/tv1uNuemXyHzTUFPKHlhyuIAbOGAMuHz5CVrXaISRizPG04SCO9xfYrwaF0XcHITqHg+5zYCQdUeS0l5zi0uqrXxvdcNGQcB6cNQOujAdH9b7NDdeKRUHKu4/Goy6ChfFgDxr54Hje/SebAWn5rmzAPzAHjn8U78jmQd4bn3MGNKv2AebADZoPeQL4qkTzcJMZYsCj2lsbGW2kNcBWkd4T9IdJrzGAf/QpEdwA+JPaT/K9q94qT3+ZgVRwLE7xL+N7jopzRidfuhPCDYB27StBKzckpIJjDZsFLi/mrcCVrI06Jdgs+DSUmZNFGmSro9ZpJJPBsYYIMpRZpMOjyOJIvuVRp+GCd+yT2+7EQqVMB9e2e7FDEyplO7nOqp9hAaFSLsc7R7/Fj59BQve9TI1L3O3FCPv56LqfaZZKeZQ86R5Aa9QuizOkucDcUHMD7oMRi2vlXlrebHyB8fHS31ig/8ps+ld3PlaQIEQGaPNSgJMpHnlRCf3Oh4+thVjO2/QJv6CoPAI0F/TSq4xL7wAAAABJRU5ErkJggg==">
+                              src="{{asset('')}}static/img/Icon/mine_icon/task-record.png"
+                            >
                             </div>
                         </div>
                     </div>
@@ -7038,10 +7039,11 @@
             <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
                 <div data-v-37526a6c="" class="container page-recharge">  
                 <div data-v-37526a6c="" class="page-recharge-qrcode">
-                        <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canvas
-                                width="655" height="655" style="display: block;"></canvas><img alt="Scan me!"
-                                
-                                style="display: none;"></div>
+                        <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canva
+                                width="655" height="655" style="display: block;"><img alt="Scan me!"
+                                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TYqW7dSArJmd8XRGjFuQg3MbP4VgXH4h9Y" style="width: 160px"
+
+                                ></canva></div>
                     </div>                  
                     <div data-v-37526a6c="" class="page-recharge-info">
                     <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
