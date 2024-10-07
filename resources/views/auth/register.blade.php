@@ -12031,7 +12031,7 @@ max-width: 8.5rem;
                         <!---->
                         <div data-v-0ff1fb10="" class="logo"></div>
                         <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAgCAYAAABgrToAAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAC3SURBVHgB7dLdDcIgFIbhj8YBHKGb2Q10g+IobqAbsEnd5PgR04YLiokhcDTnTU7/wsUTKPCviciZM0JjhM3yblGHTHCiDpnBbUj0roCLTeiZ4QxnOMN9n0OC483vrAucG9oVnHPP7e3DzvVoWm2DlHeuewOSY9bYwLP2vF+htEO8RCSPOj7OO+vunAfaFbJfifSFH/cEDRmyVoaslSFr9evIhXOEhjLIiBuhqQSpD7dG2EUtrmUvDDshFrSMeXwAAAAASUVORK5CYII="
+                                src="{{asset('')}}static/img/icon/leftarrow.png"
                                 alt=""></div>
                         <div data-v-0ff1fb10="" class="flex1"></div>
                         <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
