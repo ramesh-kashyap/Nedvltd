@@ -2214,14 +2214,14 @@
     vertical-align: middle;
   }
   
-  .btn {
-    width: 100%;
-    color: #020202;
-    border: 0;
-    height: 0.88rem;
-    border-radius: 0.16rem;
-    background: #00fc83;
-  }
+ .btn {
+            width: 100%;
+            color: #ffffff;
+            border: 0;
+            height: 0.88rem;
+            border-radius: 0.16rem;
+            background: #022627;
+        }
   
   .btn.on {
     background: #cda349;
