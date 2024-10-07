@@ -372,7 +372,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #00fc83;
+    --color1: #ffffff;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -2216,11 +2216,11 @@
   
   .btn {
     width: 100%;
-    color: #020202;
+    color: #ffffff;
     border: 0;
     height: 0.88rem;
     border-radius: 0.16rem;
-    background: #00fc83;
+    background: #022627;
   }
   
   .btn.on {
@@ -7999,7 +7999,7 @@
   .doc[data-v-7317d559] {
     line-height: 1.4;
     margin-top: 0.2rem;
-    color: #787F8E;
+    color: #022627;
   }
   .doc[data-v-7317d559] span {
     color: var(--color1);
@@ -8333,7 +8333,7 @@
                                             <span data-v-40856e44="" data-v-37526a6c="" class="code-btn" style="    padding: 0 0.3rem;
     border-radius: 0;
     background: none;
-    color: var(--color1);
+    color: #022627;
     border: 0;  height: 0.88rem;">Send</span>
                                             </div>
                                             <!-- <div data-v-7317d559="" data-v-37526a6c="" class="b" style="display: none;">
