@@ -9810,7 +9810,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Invite friends to mine together</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="/static/img/icon/arrow-right.png"
+                      src="{{asset('')}}static/img/icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976="" src="../static/img/home-invite.a9ec84d6.png"
@@ -9825,7 +9825,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Team member list</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="/static/img/icon/arrow-right.png"
+                      src="{{asset('')}}static/img/icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976=""
@@ -9890,11 +9890,11 @@ max-width: 8.5rem;
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Tutorial</div>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <!-- <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
                     src="{{asset('')}}static/img/Icon/rules.png"
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Rules</div>
-              </div>
+              </div> -->
               <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.about')}}'"><img data-v-43c0c5d6=""
                    src="{{asset('')}}static/img/Icon/mine_icon/about.png"
                   alt="">
