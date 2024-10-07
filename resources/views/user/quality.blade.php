@@ -6018,7 +6018,7 @@ height: 0.4rem;
 vertical-align: top;
 }
 .logo img[data-v-0ff1fb10] {
-height: 0.56rem;
+height: 60px;
 }
 .van-field__word-num[data-v-0ff1fb10] {
 color: #fff;
@@ -10273,7 +10273,7 @@ max-width: 8.5rem;
       <div data-v-e20b77f4="" data-v-37526a6c="" class="container">
         <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
           <div data-v-6e05afb9="" class="level-box"><img data-v-6e05afb9=""
-              src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/1641f8d0d8cccc0073b670899da8fb06.png"
+              src="/static/img/1641f8d0d8cccc0073b670899da8fb06.png"
               alt="">
             <div data-v-6e05afb9="" class="level-info">
               <div data-v-6e05afb9="" class="text">My level</div>
@@ -10589,7 +10589,7 @@ max-width: 8.5rem;
                     </a>
             </li>
             <li data-v-6c4d8baa="" class="item">
-                <a href="{{ route('user.video') }}">
+                <a href="{{ route('user.level-team') }}">
                 <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
                          src="{{asset('')}}static/img/Icon/Home_icon/video.png"
                         alt=""><span data-v-6c4d8baa=""> Video </span></div>
