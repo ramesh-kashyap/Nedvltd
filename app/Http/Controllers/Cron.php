@@ -152,7 +152,6 @@ if ($allResult)
      $income = Income::create($data);   
      }
   }
-
  }
  
 }
@@ -161,8 +160,6 @@ if ($allResult)
 
 
 }
-
-
 
 
 
