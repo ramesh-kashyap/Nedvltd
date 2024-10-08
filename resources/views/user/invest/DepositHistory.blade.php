@@ -2383,6 +2383,7 @@ type="text/javascript"
       margin: 0;
       padding: 0;
       box-sizing: inherit;
+      color: #022627;
     }
 
     input[type='text'],
@@ -7937,7 +7938,7 @@ type="text/javascript"
     .head .name[data-v-0ff1fb10] {
       font-size: 0.32rem;
       font-weight: 500;
-      color: #ffffff;
+      color: #022627;
       position: absolute;
       width: 70%;
       text-align: center;
@@ -9726,7 +9727,8 @@ type="text/javascript"
     .itemBox li .time[data-v-6cf94806],
     .itemBox li .status[data-v-6cf94806] {
       font-size: 0.24rem;
-      color: #57ff14;
+
+      color: #022627;
     }
 
     .itemBox li .time[data-v-6cf94806],
@@ -9915,7 +9917,7 @@ type="text/javascript"
                         <li data-v-6cf94806="">
                           <div data-v-6cf94806="" class="wrap bet">
                             <div data-v-6cf94806="" class="name">
-                              <div data-v-6cf94806="" class="n">Recharge</div>
+                              <div data-v-6cf94806="" class="n" style="color: #ffffff">Recharge</div>
                               <div data-v-6cf94806="" class="time">{{date("D, d M Y H:i:s ", strtotime($value->created_at))}}</div>
                             </div>
                             <div data-v-6cf94806="" class="s">{{ $value->amount }}USDT <div data-v-6cf94806="" class="status"><?php echo ($value->status=="Approved")?'completed':$value->status?>
