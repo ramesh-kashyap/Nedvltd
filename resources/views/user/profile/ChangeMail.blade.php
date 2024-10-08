@@ -372,7 +372,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #fff;
+    --color1: #00fc83;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -7628,7 +7628,7 @@
     padding: 0.28rem 0.32rem;
     border-radius: 0 0 0.32rem 0.32rem;
     background: rgba(0, 252, 131, 0.1);
-    color: var(--color1);
+    color: #022627;
     font-size: 0.24rem;
   }
   .mt[data-v-3db22916] {

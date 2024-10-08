@@ -2225,7 +2225,7 @@ vertical-align: middle;
 
 .btn {
 width: 100%;
-color: #ffffff;
+color: #022627;
 border: 0;
 height: 0.88rem;
 border-radius: 0.16rem;
@@ -6006,7 +6006,7 @@ color: #ffffff;
 .head .name[data-v-0ff1fb10] {
 font-size: 0.32rem;
 font-weight: 500;
-color: #ffffff;
+color: #022627;
 position: absolute;
 width: 70%;
 text-align: center;
@@ -7667,7 +7667,7 @@ background: var(--color1);
 }
 .btn1[data-v-2a224bbc] {
 background: transparent;
-border: 0.02rem solid #022627;
+border: 0.02rem solid #fff;
 color: #fff;
 }
 .van-field__word-num[data-v-2a224bbc] {
