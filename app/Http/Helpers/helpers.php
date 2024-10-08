@@ -363,6 +363,49 @@ return true;
               $cnt = 1;
 
               $amount = $amt/100;
+                  
+
+// Initialize collections to hold user IDs for two levels and three levels
+$twoLevelUsers = collect();
+$threeLevelUsers = collect();
+
+// Get the first level sponsored users
+$firstLevelUsers = User::where('ParentId', $data->id)->where('active_status', 'Active')->pluck('id');
+
+// Collect the first level users
+$twoLevelUsers = $twoLevelUsers->merge($firstLevelUsers);
+
+// Get the second level sponsored users
+if ($firstLevelUsers->isNotEmpty()) {
+    $secondLevelUsers = User::whereIn('ParentId', $firstLevelUsers)
+        ->where('active_status', 'Active')
+        ->pluck('id');
+
+    // Collect the second level users
+    $twoLevelUsers = $twoLevelUsers->merge($secondLevelUsers);
+    $threeLevelUsers = $threeLevelUsers->merge($firstLevelUsers)->merge($secondLevelUsers);
+} else {
+    $secondLevelUsers = collect(); // Initialize as an empty collection
+}
+
+// Get the third level sponsored users
+if ($secondLevelUsers->isNotEmpty()) {
+    $thirdLevelUsers = User::whereIn('ParentId', $secondLevelUsers)
+        ->where('active_status', 'Active')
+        ->pluck('id');
+
+    // Collect the third level users
+    $threeLevelUsers = $threeLevelUsers->merge($thirdLevelUsers);
+} else {
+    $thirdLevelUsers = collect(); // Initialize as an empty collection
+}
+
+// Combine all collected user IDs for three levels
+$allThreeLevelUsers = $threeLevelUsers->merge($firstLevelUsers)->merge($secondLevelUsers);
+
+// Output the collected user IDs
+dd($firstLevelUsers);
+
 
 
                 while ($user_mid!="" && $user_mid!="1"){

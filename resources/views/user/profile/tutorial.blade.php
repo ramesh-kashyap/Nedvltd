@@ -8261,7 +8261,9 @@
                   <div data-v-1029ea9a="" class="custom-image van-empty" data-v-37526a6c="">
                     <div class="van-empty__image"><img src="/static/img/none.9c737031.png"></div>
                     <p class="van-empty__description">No data yet</p>
+                    <p class="van-empty__description">{{$check}}</p>
                   </div>
+
                 </div>
               </div>
               <div data-v-1029ea9a="" class="van-pull-refresh" data-v-37526a6c="">
