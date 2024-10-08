@@ -151,11 +151,6 @@ if ($allResult)
       $data['user_id']=$userDetail->id;
      $income = Income::create($data);   
      }
-    
-
-
-      
-
   }
 
  }
