@@ -6301,15 +6301,22 @@
                            <div data-v-434f210d="" class="value">0 <span data-v-434f210d="">USDT</span></div>
                         </div>
                      </div>
-                     <div data-v-434f210d="" class="btn-bg">Withdraw </div>
+                     <a href="{{ route('user.Withdraw') }}">
+                     <div data-v-434f210d="" class="btn-bg">
+                      Withdraw 
+
+          </div>
+                     </a>
                   </div>
                   <div data-v-470469c5="" data-v-37526a6c="" class="income-box-list">
                      <div data-v-470469c5="" data-v-37526a6c="" class="income-box">
                         <div data-v-470469c5="" data-v-37526a6c="" class="module-title">
                            <div data-v-470469c5="" data-v-37526a6c="" class="text">Personal income</div>
+                           <a href="{{ route('user.activitiesBonus') }}">
                            <i data-v-470469c5="" data-v-37526a6c="" class="arrow van-icon van-icon-arrow">
                               <!---->
                            </i>
+                          </a>
                         </div>
                         <div data-v-470469c5="" data-v-37526a6c="" class="income-content">
                            <div data-v-470469c5="" data-v-37526a6c="" class="income">
