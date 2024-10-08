@@ -2768,7 +2768,7 @@
   .van-button--primary {
     color: #ffffff;
     background-color: #022627;
-    border: 0.02rem solid #07c160;
+    border: 0.02rem solid #022627;
   }
   .van-button--info {
     color: #fff;

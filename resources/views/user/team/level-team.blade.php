@@ -2330,7 +2330,7 @@
                 400 0.28rem/100% 'PingFangSC',
                 '\5FAE\8F6F\96C5\9ED1',
                 Helvetica;
-            color: #fff;
+            color: #022627;
             width: 100%;
             height: 100%;
             height: -webkit-fill-available;
@@ -3000,7 +3000,7 @@
 
         .text-primary,
         .text-success {
-            color: #ffffff;
+            color: #022627;
         }
 
         .text-warn {
@@ -3017,7 +3017,7 @@
         }
 
         .text-secondary {
-            color: rgba(255, 255, 255, 0.6);
+            color: #022627;
         }
 
         .text-gray {
@@ -7354,7 +7354,7 @@
         .head .name[data-v-0ff1fb10] {
             font-size: 0.32rem;
             font-weight: 500;
-            color: #ffffff;
+            color: #022627;
             position: absolute;
             width: 70%;
             text-align: center;
@@ -9529,23 +9529,23 @@
                             <ul data-v-37526a6c=""
                                 class="p-16px bg-light rounded-10px flex justify-between items-center">
                                 <li data-v-37526a6c="" class="mb-10px h-full flex flex-col justify-between">
-                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px"> Team size (people)
+                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px" style="color: #ffffff"> Team size (people)
                                     </div>
-                                    <div data-v-37526a6c="" class="text-14px"> {{$todaysuser}} </div>
+                                    <div data-v-37526a6c="" class="text-14px" style="color: #ffffff"> {{$todaysuser}} </div>
                                 </li>
                                 <li data-v-37526a6c="" class="mb-10px h-full flex flex-col justify-between">
-                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px"> Team
+                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px" style="color: #ffffff" > Team
                                         benefits(USDT) </div>
-                                    <div data-v-37526a6c="" class="text-14px">{{number_format($teamEarning,2)}}</div>
+                                    <div data-v-37526a6c="" class="text-14px" style="color: #ffffff">{{number_format($teamEarning,2)}}</div>
                                 </li>
                                 <li data-v-37526a6c="" class="mb-10px h-full flex flex-col justify-between">
-                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px"> Today's team
+                                    <div data-v-37526a6c="" class="mb-12px text-secondary text-12px" style="color: #ffffff"> Today's team
                                         earnings(USDT) </div>
-                                    <div data-v-37526a6c="" class="text-14px">{{number_format($todaysIncome,2)}}</div>
+                                    <div data-v-37526a6c="" class="text-14px" style="color: #ffffff">{{number_format($todaysIncome,2)}}</div>
                                 </li>
                             </ul>
                         </div>
-                        <div data-v-37526a6c="" class="mb-12px text-primary text-16px"> Team data within six generations
+                        <div data-v-37526a6c="" class="mb-12px text-primary text-16px" style="color: #000000"> Team data within six generations
                         </div>
                         <div data-v-37526a6c="" class="flex-1 overflow-y-auto">
                             <div data-v-37526a6c="" class="mb-16px p-12px border-solid-dark rounded-10px">
