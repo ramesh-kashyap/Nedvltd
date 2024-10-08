@@ -6883,7 +6883,7 @@
     overflow: hidden;
   }
   .page-recharge-info {
-    margin-top: -1.6rem;
+    margin-top: 0.4rem;
     padding: 2rem 0.32rem 0.32rem;
     border-radius: 0.16rem;
     border: 0.02rem solid #252930;
@@ -6966,7 +6966,8 @@
   }
   .chain-select-popup-tab-nav li.active {
     color: #020202;
-    background-color: #00FC83;
+    background-color: #00ab82;
+    border-color:#020202;
   }
   .chain-select-popup .chain-item {
     position: relative;
@@ -7040,9 +7041,9 @@
             </div>
             <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
                 <div data-v-37526a6c="" class="container page-recharge">  
-                <div data-v-37526a6c="" class="page-recharge-qrcode">
+                <div data-v-37526a6c="" class="page-recharge-qrcode"style="display: none;">
                         <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canva
-                                width="655" height="655" style="display: block;"><img alt="Scan me!"
+                                width="655" height="655" style="display: none;"><img alt="Scan me!"
                                 src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TYqW7dSArJmd8XRGjFuQg3MbP4VgXH4h9Y" style="width: 160px"
 
                                 ></canva></div>
@@ -7065,20 +7066,24 @@
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
                             <dt data-v-37526a6c="" style="margin-bottom: 10px;">Amount</dt>
                             
-                                <input data-v-37526a6c="" type="number" name="Sum" placeholder="Enter Your Amount" style="    height: 0.8rem;
-    border-radius: 0.16rem;
-    color:#000;
-    padding: 0 0.3rem;
-    line-height: 0.8rem;width: 100%;
-    border: 0.02rem solid #252930;                                   
-    background: transparent;">                                
+                            <select data-v-37526a6c="" name="Sum" id="amountSelect"
+  style="height: 0.8rem; border-radius: 0.16rem; color:#000; padding: 0 0.3rem; 
+  line-height: 0.8rem; width: 100%; border: 0.02rem solid #252930; background: transparent;">
+  <option value="">Select your amount</option>
+  <option value="50">$50</option>
+  <option value="100">$100</option>
+  <option value="200">$200</option>
+  <option value="600">$600</option>
+  <option value="1200">$1200</option>
+  <option value="3000">$3000</option>
+  <option value="6000">$6000</option>
+</select>                              
                             
                         </dl>                      
                         <div data-v-37526a6c="" class="flex-between-center">
                             <div data-v-37526a6c="" class="text-gray">Minimum recharge </div>
                             <div data-v-37526a6c="">1USDT</div>
                         </div>
-
                         <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px; ">
                                 <div class="van-button__content"><span class="van-button__text" style="color: #fff;">Sure</span></div>
                             </button>
@@ -7146,7 +7151,7 @@
                             <button
                                 class="rounded-8px van-button van-button--primary van-button--normal van-button--block"
                                 onclick="confirmSelection()">
-                                <div class="van-button__content"><span class="van-button__text">Sure</span></div>
+                                <div class="van-button__content"><span class="van-button__text"style="color: #fff;">Sure</span></div>
                             </button>
                         </div>
                         <i role="button" tabindex="0"
@@ -7220,4 +7225,21 @@ function confirmSelection() {
 }
 
   </script>
+  <script>
+  // Function to extract query parameters from the URL
+  function getQueryParam(param) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  window.onload = function() {
+    var amount = getQueryParam('amount'); // Get the 'amount' from the URL
+
+    if (amount) {
+      var selectField = document.getElementById('amountSelect');
+      selectField.value = amount; // Set the selected amount in the dropdown
+    }
+  };
+</script>
+
   <!----><!----></body></html>

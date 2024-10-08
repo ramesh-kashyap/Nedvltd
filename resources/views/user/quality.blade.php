@@ -10305,7 +10305,7 @@ max-width: 8.5rem;
                 <div data-v-6d2d4c36="" class="amount-box">
                   <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
                       src="/static/img/icon/usdt.png"
-                      alt=""><span data-v-6d2d4c36="">0</span></div>
+                      alt=""><span data-v-6d2d4c36="">50</span></div>
                 </div>
               </div>
               <div data-v-6d2d4c36="" class="info-list">
@@ -10343,7 +10343,7 @@ max-width: 8.5rem;
                     class="block">34</span><span data-v-6d2d4c36="" class="colon">S</span></div>
               </div>
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn buy"> Like and comment to get income </div>
+                <div data-v-6d2d4c36="" class="btn buy"  data-amount="50"> Like and comment to get income </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10354,7 +10354,7 @@ max-width: 8.5rem;
                 <div data-v-6d2d4c36="" class="amount-box">
                   <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
                       src="{{asset('')}}static/img/Icon/usdt.png"
-                      alt=""><span data-v-6d2d4c36="">50</span></div>
+                      alt=""><span data-v-6d2d4c36="">100</span></div>
                 </div>
               </div>
               <div data-v-6d2d4c36="" class="info-list">
@@ -10378,7 +10378,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn" data-amount="100"> Subscription </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10413,7 +10413,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn" data-amount="200"> Subscription </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10424,7 +10424,7 @@ max-width: 8.5rem;
                 <div data-v-6d2d4c36="" class="amount-box">
                   <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
                       src="{{asset('')}}static/img/Icon/usdt.png"
-                      alt=""><span data-v-6d2d4c36="">500</span></div>
+                      alt=""><span data-v-6d2d4c36="">600</span></div>
                 </div>
               </div>
               <div data-v-6d2d4c36="" class="info-list">
@@ -10448,7 +10448,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn" data-amount="600"> Subscription </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10459,7 +10459,7 @@ max-width: 8.5rem;
                 <div data-v-6d2d4c36="" class="amount-box">
                   <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
                       src="{{asset('')}}static/img/Icon/usdt.png"
-                      alt=""><span data-v-6d2d4c36="">1500</span></div>
+                      alt=""><span data-v-6d2d4c36="">1200</span></div>
                 </div>
               </div>
               <div data-v-6d2d4c36="" class="info-list">
@@ -10486,7 +10486,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn status3"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn status3"data-amount="1200"> Subscription </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10524,7 +10524,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn status3"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn status3" data-amount="3000"> Subscription </div>
               </div>
             </div>
             <div data-v-6d2d4c36="" class="item bg-blur mt">
@@ -10535,7 +10535,7 @@ max-width: 8.5rem;
                 <div data-v-6d2d4c36="" class="amount-box">
                   <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
                       src="{{asset('')}}static/img/Icon/usdt.png"
-                      alt=""><span data-v-6d2d4c36="">7000</span></div>
+                      alt=""><span data-v-6d2d4c36="">6000</span></div>
                 </div>
               </div>
               <div data-v-6d2d4c36="" class="info-list">
@@ -10562,7 +10562,7 @@ max-width: 8.5rem;
               </div>
               <!---->
               <div data-v-6d2d4c36="" class="bot">
-                <div data-v-6d2d4c36="" class="btn status3"> Subscription </div>
+                <div data-v-6d2d4c36="" class="btn status3" data-amount="6000"> Subscription </div>
               </div>
             </div>
           </div>
@@ -10634,6 +10634,17 @@ setTimeout(() =>{
   standalone.style.display='none'
 },3000)
 </script>
+
+<script>
+  document.querySelectorAll('.btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var amount = this.getAttribute('data-amount');
+      // Redirect to /user/deposit with the amount as a query parameter
+      window.location.href = '/user/deposit?amount=' + amount;
+    });
+  });
+</script>
+
 <!----><div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i class="van-icon van-icon-success van-toast__icon"><!----></i><div class="van-toast__text">Login successful</div></div><div class="van-overlay" style="z-index: 2004; display: none;"></div><div data-v-5954443c="" class="van-popup van-popup--round van-popup--center" style="background: none; z-index: 2005; display: none;"><div data-v-5954443c="" class="modal-notice-box"><div data-v-5954443c="" class="modal-notice"><div data-v-5954443c="" class="notice-top"><img data-v-5954443c="" src="/static/img/noticetopbg.69a72412.png" alt=""></div><div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div><div data-v-5954443c="" class="notice-desc"><p>Latest Activity Notification</p>
 
 <p>From September 26 00:00 to September 30 23:59 (France time) inviting new friends to subscribe to VIP membership will earn an additional reward of 3 USDT while new VIP members will receive an additional reward of 5 USDT Please contact the manager to claim your rewards</p></div></div><div data-v-5954443c="" class="close"><img data-v-5954443c="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUgSURBVHgB1VuxUhsxEN3zZEgTN4GGNLk00MBMBioqXKVKQZsq0OQ78idxqrQpqKhMRWUmE2igidNAAzSmgcbZZ++edfLdWdLJcHkz4izdnaR3u9KupCWhyBiNRi/5sszpNacV+b3EqW09OuR0z+mB0xWnuyRJrigyEooAIbXKaYMmhF5SGED2mtOAyV5SBNQiKMQ2JNmk0FlI6JYm0kL+Ue4tyfP6MVYLqsc7INtnskMKRBDBCmLoCL68qtyDR50g+Y7TW5pV5z7qDSHqTZA7kvJll/LEQOqCO3BNESBk1zmtGcUg1/dVXWeCIrUtTptG8YDTSR0VmtMmJLlNeaJnNCH66FKHE0Fp6ANNxgwAQr1YEnNoHxLt0FR10f6hy4edS1DIfTQqxxc89RlfMcD9wMQEaaoGOZFM5lRqk4M6ntEzgvsEktuSnUsyqajIJnfMFV1QA8B9w5jsSLaSZKukAkwojSQHyEzak+x4fhAVnkGrpI4tmpLrN4mcQkieSBaT33bRczMERfw6kM+4oj41FDIf6JywKTY6hxxBw+4A0OlTaj4gAB1/O7aq2hKE9FQ1e09tCkIgBr8nWfTddESmBC3pXT6VEY8B6etAspumFE0JmoO0seOuAjrhgFwmRZOgLlmCvHb+ah1OXzm9p0AYdaTkCemzOuI5KY5nTk5fJL0hT6BDozw+kyfwjlVHhzwBn9XgkaJMJZjKdRi4bbBv5bs+JOXZrlXcIU/IWFTtG6upElT1HFAYegVlTiRLyAE/KQyqpstQ05YsRXTx+pcCwF+ux5eDgluVJCvIHXCdvygMqoEYgyuQ4IreqbOrxe92yYPkHHJF5a7AHpDa72UQVPWsbfdcSS6QnBr+e8kuv6CpejptATg0ADL4+c26peXj3wWv1iZnAFKEAz4m+EoKbygSqkiWvBKTHKAz6RJUVH3PKBJUVKirjdjkAOXSNj2Z6I61A8lFkAMyLi1aPEaB96LAJBh6nlCKitlS4eXxeCDjAoLZgKSIcCCnWARJ5TIEwWxAUiRU2TkK8HgCoBvU9zATmc2gCHAx4lV2kp/5TvWR2XZI8FYy7bKtN1e4eii+bl0A1Du7AkE18GPnlALh634tiqQsHhS3KkG1G6sUAFnFdwtuVdq5OSQ7FIZUro9YPLTEOb2TwjUKw15BmZMRryDZoTCkch0vHtQO/pZrO2TLgmYXvF4eSgnJLnlC1FOtwR/8eSEZsIWaYvaBFL3WhVjwcuU4ft6nyX5qjzwhDjoWuXtSx4D8sS7XoZ4EZ6dL1rHUj0Wd2i4Ksq/7SbKX+pFNVw17/DrZ7ND/h8J93YygTDbnkk0Dx+KzQPqqE2Qu7MReTZhS3K1r+J8Ccpa5K1lz83eMHMGCg4xtaj7ss8zc3DGzHuQHsHVonrltUkMhE6N5ljkTQ1O24MUgVR91Rw5FGwXuE0zC3LPMQoKiqkc0XSt2mkRSyJnj7rDsLNM3jKT/3EfaMmTUjIWHkRgVFgUCOYdSxUJBKFn9QCCjcpskKj1OFhDAWtI+7Nyu0T7mh6MooVxGI3YoFYBZq1Y855w2QQjqmBrFXqFkIeGUmGxA1NzDAdHLWBI1PBNzYgOhY18nPDQgti2N244AJAk7OvAhO5rGea9SPtIDADG4kOdJQNRH3ZBm9XbMdZgJXYbproEd0ox3QOwVFYdEBxNTRAlKB0R1U5qQrROUjo8BYtdJhDidaARNyMoaksFYAllIqOjfCiBRELqR610SOfjoH2I9hEu3ystMAAAAAElFTkSuQmCC" alt=""></div></div></div><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----></body></html>

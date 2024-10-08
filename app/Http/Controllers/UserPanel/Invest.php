@@ -136,10 +136,20 @@ public function viewdetail($txnId)
    try{
      $validation =  Validator::make($request->all(), [
         'Sum' => 'required|numeric|min:10',
-        'PSys' => 'required',
+        'PSys' => 'required',       
      ]);
-
-
+     $amountToLevel = [
+      50 =>  'Accelerators_1',
+      100 => 'Accelerators_2',
+      200 => 'Accelerators_3',
+      600 => 'Accelerators_4',
+      1200 => 'Accelerators_5',
+      3000 => 'Accelerators_6',
+      6000 => 'Accelerators_7',
+  ];
+  $selectedSum = $request->input('Sum');
+  $plan = isset($amountToLevel[$selectedSum]) ? $amountToLevel[$selectedSum] : null;
+ 
     //  dd($request->all());
     if($validation->fails()) {
         Log::info($validation->getMessageBag()->first());
@@ -148,14 +158,12 @@ public function viewdetail($txnId)
     }
 
 
-
-
     $user=Auth::user();
 
 
     $min_amount = $request->minimum_deposit;
     $max_amount = $request->maximum_deposit;
-    $plan = $request->Plan;
+    // $plan = $request->Plan;
     $paymentMode = $request->PSys;
     $amount = $request->Sum;
 

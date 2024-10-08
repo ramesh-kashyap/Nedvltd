@@ -9792,7 +9792,7 @@ max-width: 8.5rem;
           </div>
           <div data-v-5a5733d2="" data-v-7a3d5949="" class="level-info" data-v-37526a6c="">
             <div data-v-5a5733d2="" class="level-icon"><img data-v-5a5733d2="" alt=""
-                src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/1641f8d0d8cccc0073b670899da8fb06.png">
+                src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png">
             </div>
             <div data-v-5a5733d2="" class="info">
               <div data-v-5a5733d2="" class="top">
