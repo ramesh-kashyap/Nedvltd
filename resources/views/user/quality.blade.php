@@ -10626,6 +10626,7 @@ max-width: 8.5rem;
     <p data-v-15b106f9="">Loading...</p>
   </div>
 </div>
+@include('partials.notify');
 <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script><script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
 <script>
 let standalone=document.getElementById('startLogo')

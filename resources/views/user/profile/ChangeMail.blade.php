@@ -8365,6 +8365,7 @@
     <script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script>
     <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
     <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+    @include('partials.notify');
   <script>
     let standalone=document.getElementById('startLogo')
     standalone.style.display='flex'

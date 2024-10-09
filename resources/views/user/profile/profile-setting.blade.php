@@ -9778,8 +9778,8 @@ max-width: 8.5rem;
                   alt=""></div>
               <div data-v-7a3d5949="" data-v-37526a6c="" class="flexs">
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="n">{{Auth::user()->username}}</div>
-                <div data-v-7a3d5949="" data-v-37526a6c="" class="s"> ID：<span data-v-7a3d5949=""
-                    data-v-37526a6c="">8244615 </span><img data-v-7a3d5949="" data-v-37526a6c=""
+                <div data-v-7a3d5949="" data-v-37526a6c="" class="s"> ID：<span data-v-7a3d5949="" id="clipboardright2" 
+                    data-v-37526a6c="">8244615 </span><img data-v-7a3d5949="" data-v-37526a6c="" onclick="copyLink2()"
                     src="{{asset('')}}static/img/Icon/copyi.png"
                     alt=""></div>
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="s"> Invitation Code：<div data-v-7a3d5949=""
@@ -9865,6 +9865,7 @@ max-width: 8.5rem;
                   alt="">
                   @if (empty(Auth::user()->email))
               <a href="{{route('user.bindMail')}}">
+              <div data-v-43c0c5d6="" class="name">Email</div>
               @else
                <a href="{{route('user.ChangeMail')}}">
                 <div data-v-43c0c5d6="" class="name">Email</div>
@@ -9984,26 +9985,40 @@ setTimeout(() =>{
 },3000)
 </script>
 <script>
-    function copyLink() {
-        // Get the span element
-        var copyText = document.getElementById("clipboardright").innerText;
-
-        // Create a temporary textarea to copy the text from the span
-        var tempInput = document.createElement("textarea");
-        tempInput.value = copyText;
-        document.body.appendChild(tempInput);
+   function copyLink() {
+        var copyText = document.getElementById("clipboardright");
         
-        // Select and copy the text from the textarea
-        tempInput.select();
-        tempInput.setSelectionRange(0, 99999); // For mobile devices
-        document.execCommand("copy");
-
-        // Remove the temporary textarea
-        document.body.removeChild(tempInput);
-
-        // Alert the copied text
-        alert("Copied the username: " + copyText);
+        // Create a range to select the text
+        var range = document.createRange();
+        range.selectNode(copyText); // Select the text content
+        window.getSelection().removeAllRanges();  // Clear any existing selection
+        window.getSelection().addRange(range);    // Add new selection
+         
+        
+        // Use Clipboard API to copy selected text
+        navigator.clipboard.writeText(copyText.textContent).then(function() {
+            alert("Copied the link: " + copyText.textContent);
+        }).catch(function(error) {
+            alert("Failed to copy the link. Please try again.");
+           
+        });
+       
+       
     }
-</script>
+    function copyLink2() {
+      var copyText2 = document.getElementById("clipboardright2");
 
+      var range2 = document.createRange();
+        range2.selectNode(copyText2); // Select the text content
+        window.getSelection().removeAllRanges();  // Clear any existing selection
+        window.getSelection().addRange(range2); 
+
+        navigator.clipboard.writeText(copyText2.textContent).then(function() {
+            alert("Copied the link: " + copyText2.textContent);
+        }).catch(function(error) {
+            alert("Failed to copy the link. Please try again.");
+           
+        });
+    }
+    </script>
 <!----><!----><!----><!----><!----><!----></body></html>

@@ -131,7 +131,7 @@ class Profile extends Controller
 
     public function tutorial()
     {
-        $this->data['check']= add_level_income(799,10000);;
+        $this->data['check']= add_level_income(825,100);;
     $this->data['page'] = 'user.profile.tutorial';
     return $this->dashboard_layout();
    

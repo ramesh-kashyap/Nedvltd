@@ -9452,7 +9452,7 @@ setTimeout(() =>{
   standalone.style.display='none'
 },3000)
 </script>
-
+@include('partials.notify');
 <script>
         let activeTabIndex = null;
 

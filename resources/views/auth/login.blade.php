@@ -12126,6 +12126,7 @@ setTimeout(() =>{
   standalone.style.display='none'
 },3000)
 </script>
+@include('partials.notify');
 <div class="van-overlay" style="z-index: 2028; display: none;"></div>
 <div data-v-28719dd2="" class="van-popup van-popup--center" style="background: none; z-index: 2029; display: none;">
     <div data-v-28719dd2="" class="popup-box bg-blur">
@@ -12354,6 +12355,8 @@ setTimeout(() =>{
 
 <p>From September 26 00:00 to September 30 23:59 (France time) inviting new friends to subscribe to VIP membership will earn an additional reward of 3 USDT while new VIP members will receive an additional reward of 5 USDT Please contact the manager to claim your rewards</p></div></div><div data-v-5954443c="" class="close"><img data-v-5954443c="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUgSURBVHgB1VuxUhsxEN3zZEgTN4GGNLk00MBMBioqXKVKQZsq0OQ78idxqrQpqKhMRWUmE2igidNAAzSmgcbZZ++edfLdWdLJcHkz4izdnaR3u9KupCWhyBiNRi/5sszpNacV+b3EqW09OuR0z+mB0xWnuyRJrigyEooAIbXKaYMmhF5SGED2mtOAyV5SBNQiKMQ2JNmk0FlI6JYm0kL+Ue4tyfP6MVYLqsc7INtnskMKRBDBCmLoCL68qtyDR50g+Y7TW5pV5z7qDSHqTZA7kvJll/LEQOqCO3BNESBk1zmtGcUg1/dVXWeCIrUtTptG8YDTSR0VmtMmJLlNeaJnNCH66FKHE0Fp6ANNxgwAQr1YEnNoHxLt0FR10f6hy4edS1DIfTQqxxc89RlfMcD9wMQEaaoGOZFM5lRqk4M6ntEzgvsEktuSnUsyqajIJnfMFV1QA8B9w5jsSLaSZKukAkwojSQHyEzak+x4fhAVnkGrpI4tmpLrN4mcQkieSBaT33bRczMERfw6kM+4oj41FDIf6JywKTY6hxxBw+4A0OlTaj4gAB1/O7aq2hKE9FQ1e09tCkIgBr8nWfTddESmBC3pXT6VEY8B6etAspumFE0JmoO0seOuAjrhgFwmRZOgLlmCvHb+ah1OXzm9p0AYdaTkCemzOuI5KY5nTk5fJL0hT6BDozw+kyfwjlVHhzwBn9XgkaJMJZjKdRi4bbBv5bs+JOXZrlXcIU/IWFTtG6upElT1HFAYegVlTiRLyAE/KQyqpstQ05YsRXTx+pcCwF+ux5eDgluVJCvIHXCdvygMqoEYgyuQ4IreqbOrxe92yYPkHHJF5a7AHpDa72UQVPWsbfdcSS6QnBr+e8kuv6CpejptATg0ADL4+c26peXj3wWv1iZnAFKEAz4m+EoKbygSqkiWvBKTHKAz6RJUVH3PKBJUVKirjdjkAOXSNj2Z6I61A8lFkAMyLi1aPEaB96LAJBh6nlCKitlS4eXxeCDjAoLZgKSIcCCnWARJ5TIEwWxAUiRU2TkK8HgCoBvU9zATmc2gCHAx4lV2kp/5TvWR2XZI8FYy7bKtN1e4eii+bl0A1Du7AkE18GPnlALh634tiqQsHhS3KkG1G6sUAFnFdwtuVdq5OSQ7FIZUro9YPLTEOb2TwjUKw15BmZMRryDZoTCkch0vHtQO/pZrO2TLgmYXvF4eSgnJLnlC1FOtwR/8eSEZsIWaYvaBFL3WhVjwcuU4ft6nyX5qjzwhDjoWuXtSx4D8sS7XoZ4EZ6dL1rHUj0Wd2i4Ksq/7SbKX+pFNVw17/DrZ7ND/h8J93YygTDbnkk0Dx+KzQPqqE2Qu7MReTZhS3K1r+J8Ccpa5K1lz83eMHMGCg4xtaj7ss8zc3DGzHuQHsHVonrltUkMhE6N5ljkTQ1O24MUgVR91Rw5FGwXuE0zC3LPMQoKiqkc0XSt2mkRSyJnj7rDsLNM3jKT/3EfaMmTUjIWHkRgVFgUCOYdSxUJBKFn9QCCjcpskKj1OFhDAWtI+7Nyu0T7mh6MooVxGI3YoFYBZq1Y855w2QQjqmBrFXqFkIeGUmGxA1NzDAdHLWBI1PBNzYgOhY18nPDQgti2N244AJAk7OvAhO5rGea9SPtIDADG4kOdJQNRH3ZBm9XbMdZgJXYbproEd0ox3QOwVFYdEBxNTRAlKB0R1U5qQrROUjo8BYtdJhDidaARNyMoaksFYAllIqOjfCiBRELqR610SOfjoH2I9hEu3ystMAAAAAElFTkSuQmCC" alt="">
 </div></div></div>
+
+
 <script>
 
     function eye(){
