@@ -7725,8 +7725,7 @@ max-width: 8.5rem;
                     <div data-v-2a224bbc="" data-v-37526a6c="" class="itemBox url">
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="name"> Invitation Link </div>
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="flex">
-                            <div data-v-2a224bbc="" data-v-37526a6c="" class="flex1">
-                            {{asset('')}}register?ref={{ Auth::user()->username}} </div><img data-v-2a224bbc=""  onclick="copyLink()"
+                            <div data-v-2a224bbc="" data-v-37526a6c="" class="flex1" id="clipboardright"> {{asset('')}}register?ref={{ Auth::user()->username}} </div><img data-v-2a224bbc=""  onclick="copyLink()"
                                 data-v-37526a6c=""
                                 src="{{asset('')}}static/img/Icon/copyi.png"
                                 alt="">
@@ -7783,13 +7782,28 @@ setTimeout(() =>{
 },3000)
 </script>
 <script>
-    function copyLink() {
+   function copyLink() {
         var copyText = document.getElementById("clipboardright");
-        copyText.select();
-        copyText.setSelectionRange(0, 99999); /* For mobile devices */
-        document.execCommand("copy");
-        alert("Copied the link: " + copyText.value);
+
+        // Create a range to select the text
+        var range = document.createRange();
+        range.selectNode(copyText); // Select the text content
+        window.getSelection().removeAllRanges();  // Clear any existing selection
+        window.getSelection().addRange(range);    // Add new selection
+
+        // Use Clipboard API to copy selected text
+        navigator.clipboard.writeText(copyText.textContent).then(function() {
+            alert("Copied the link: " + copyText.textContent);
+        }).catch(function(error) {
+            alert("Failed to copy the link. Please try again.");
+           
+        });
+
+       
     }
+    </script>
+
+
 </script>
 <script>
      function downqr(){

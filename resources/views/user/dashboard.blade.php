@@ -9534,6 +9534,7 @@
                     alt=""></div>
         </div>
     </div><!----><!----><!----><!----><!----><!---->
+    @include('partials.notify');
     <script>
  document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.van-swipe__track');
