@@ -12622,17 +12622,15 @@
         <div data-v-37526a6c="" data-v-e20b77f4="" class="page h-full">
             <div data-v-e20b77f4="" data-v-37526a6c="" class="bg1"><img data-v-e20b77f4="" data-v-37526a6c=""
                     src="static/img/home-bg.8d740309.png" alt=""></div>
-            <div data-v-37526a6c="" class="page-header">
+            <!-- <div data-v-37526a6c="" class="page-header">
                 <div data-v-0ff1fb10="" data-v-e20b77f4="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head">
-                        <!---->
                         <div data-v-0ff1fb10="" class="container flex">
-                            <!---->
                             <div data-v-0ff1fb10="" class="logo"><img data-v-e20b77f4="" data-v-0ff1fb10=""
                                     src="../static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
-                            <!---->
+                            
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
                                     src="{{ asset('') }}static/img/Icon/support.png" alt=""></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
@@ -12641,14 +12639,14 @@
                             </div>
                             <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
                                     src="{{ asset('') }}static/img/Icon/browser2.png" alt=""></div>
-                            <!---->
+                            
                         </div>
                     </div>
                 </div>
-            </div>
-            <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 75px;">
+            </div> -->
+            <div data-v-37526a6c="" id="scroll" class="page-container">
                 <div data-v-e20b77f4="" data-v-37526a6c="" class="container">
-                    <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
+                    <!-- <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
                         <div data-v-6e05afb9="" class="level-box"><img data-v-6e05afb9=""
                                 src="/static/img/1641f8d0d8cccc0073b670899da8fb06.png" alt="">
                             <div data-v-6e05afb9="" class="level-info">
@@ -12670,28 +12668,25 @@
                                 <div data-v-6e05afb9="" class="value">0USDT</div>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div data-v-6d2d4c36="" data-v-e20b77f4="" class="list-box" data-v-37526a6c="">
                         <div data-v-6d2d4c36="" class="list">
                             <div data-v-6d2d4c36="" class="item bg-blur mt">
                                 <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
+                                    <div data-v-6d2d4c36="" class="level-box">
+                                        <img data-v-6d2d4c36=""
                                             src="/static/img/task1.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="/static/img/icon/usdt.png" alt=""><span
-                                                data-v-6d2d4c36="">50</span></div>
+                                            alt="">
+                                        </div>
+                                        <div data-v-6d2d4c36="" class="info">
+                                        <div data-v-6d2d4c36="" class="name">Accelerator 1</div>
+                                        <div data-v-6d2d4c36="" class="value"> </div>
                                     </div>
                                 </div>
                                 <div data-v-6d2d4c36="" class="info-list">
                                     <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Accelerator 1</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">50.00USDT </div>
+                                        <div data-v-6d2d4c36="" class="value" id="amountSelect"></div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Deadlines:</div>
@@ -12710,7 +12705,7 @@
                                         <div data-v-6d2d4c36="" class="value min">96.00 USDT</div>
                                     </div>
                                 </div>
-                                <div data-v-6d2d4c36="" class="count-down">
+                                <!-- <div data-v-6d2d4c36="" class="count-down">
                                     <div data-v-6d2d4c36="" class="text">Buy After</div>
                                     <div data-v-6d2d4c36="" class="van-count-down van-count-down"><span
                                             data-v-6d2d4c36="" class="block">01</span><span data-v-6d2d4c36=""
@@ -12719,318 +12714,15 @@
                                             class="block">59</span><span data-v-6d2d4c36="" class="colon">Min
                                         </span><span data-v-6d2d4c36="" class="block">34</span><span data-v-6d2d4c36=""
                                             class="colon">S</span></div>
-                                </div>
-                                <!-- <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn buy" Data-Amount="50"> Like and comment to get
-                                        income </div>
                                 </div> -->
+                                <div data-v-6d2d4c36="" class="bot">
+                                    <div data-v-6d2d4c36="" class="btn" data-amount="100"> Buy Now </div>
+                                </div>
                             </div>
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task2.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">100</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Accelerator 1</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">100.00USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 3.40 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">204.00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="100"> Buy Now </div>
-                                </div>
-                            </div> 
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task2.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">200</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Primary Text Task：</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">200.00USDT </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 7.00 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">420.00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="200"> Buy Now </div>
-                                </div>
-                            </div> 
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task3.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">600</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Primary Text Task：</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">600.00USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 22.00 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">1320 .00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="600"> Buy Now </div>
-                                </div>
-                            </div> 
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task2.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">1200</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Primary Text Task：</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">1200.00USDT </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 46.00 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">2760.00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="1200"> Buy Now </div>
-                                </div>
-                            </div> 
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task2.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">3000</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Primary Text Task：</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">3000.00USDT </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 120.00 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">7200.00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="3000"> Buy Now </div>
-                                </div>
-                            </div> 
-                            <div data-v-6d2d4c36="" class="item bg-blur mt">
-                                <div data-v-6d2d4c36="" class="head">
-                                    <div data-v-6d2d4c36="" class="level-box"><img data-v-6d2d4c36=""
-                                            src="/static/img/task2.png"
-                                            alt=""><span data-v-6d2d4c36="">LV 0-6</span></div>
-                                    <div data-v-6d2d4c36="" class="amount-box">
-                                        <div data-v-6d2d4c36="" class="amount"><img data-v-6d2d4c36=""
-                                                src="{{ asset('') }}static/img/Icon/usdt.png"
-                                                alt=""><span data-v-6d2d4c36="">6000</span></div>
-                                    </div>
-                                </div>
-                                <div data-v-6d2d4c36="" class="info-list">
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Accelerator 7</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value">6000.00USDT </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Deadlines:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 60Days </div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily training hours:</div>
-                                        <div data-v-6d2d4c36="" class="value">2 H</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 250.00 USDT</div>
-                                    </div>
-                                    <div data-v-6d2d4c36="" class="info">
-                                        <div data-v-6d2d4c36="" class="name">Total earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value min">1500.00 USDT</div>
-                                    </div>
-                                </div>
-                                <!---->
-                                <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" Data-Amount="6000"> Buy Now </div>
-                                </div>
-                            </div>                             
+                                                      
                         </div>
                     </div>
-                </div>
-                <div data-v-3c12fe9a="" data-v-e20b77f4="" data-v-37526a6c=""></div>
-                <div data-v-5a60fec6="" data-v-e20b77f4="" data-v-37526a6c="">
-                    <div data-v-28719dd2="" data-v-5a60fec6=""></div>
-                </div>
-                <div data-v-5a60fec6="" data-v-e20b77f4="" data-v-37526a6c="">
-                    <div data-v-28719dd2="" data-v-5a60fec6=""></div>
-                </div>
-                <div data-v-bfe0705e="" data-v-e20b77f4="" data-v-37526a6c=""></div>
-                <div data-v-4f302b61="" data-v-e20b77f4="" data-v-37526a6c=""></div>
-            </div>
-            <div data-v-37526a6c="" class="page-footer">
-                <div data-v-6c4d8baa="" data-v-5954443c="" class="footers" data-v-37526a6c="">
-                    <ul data-v-6c4d8baa="" class="flex tac">
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.dashboard') }}">
-                                <div data-v-6c4d8baa="" class="on"><img data-v-6c4d8baa=""
-                                        src="{{ asset('') }}static/img/Icon/Home_icon/home.png"
-                                        alt=""><span data-v-6c4d8baa=""> Home </span></div>
-                            </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.level-team') }}">
-                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                        src="{{ asset('') }}static/img/Icon/Home_icon/video.png"
-                                        alt=""><span data-v-6c4d8baa=""> Video </span></div>
-                            </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.quality') }}">
-                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                        src="{{ asset('') }}static/img/Icon/Home_icon/vip.png"
-                                        alt=""><span data-v-6c4d8baa=""> VIP </span></div>
-                            </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.asset') }}">
-                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                        src="{{ asset('') }}static/img/Icon/Home_icon/wallet.png"
-                                        alt=""><span data-v-6c4d8baa=""> Assets </span></div>
-                            </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.profile') }}">
-                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                        src="{{ asset('') }}static/img/Icon/Home_icon/profile.png"
-                                        alt=""><span data-v-6c4d8baa=""> mine </span></div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+                </div>          
         </div>
         <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
             <div data-v-15b106f9="" class="page-loading"></div>
@@ -13054,10 +12746,10 @@
 
    
 
-    <!---->
+    
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
-            <!----></i>
+            </i>
         <div class="van-toast__text">Login successful</div>
     </div>
     <div class="van-overlay" style="z-index: 2004; display: none;"></div>
@@ -13081,23 +12773,31 @@
                     alt=""></div>
         </div>
     </div>
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
-    <!---->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <script>
-  document.querySelectorAll('.btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-      var amount = this.getAttribute('Data-Amount');
-      window.location.href = '/user/productDetail?amount=' + amount;
-    });
-  });
+  // Function to extract query parameters from the URL
+  function getQueryParam(param) {
+    var urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+  }
+
+  window.onload = function() {
+    var amount = getQueryParam('amount'); // Get the 'amount' from the URL
+
+    if (amount) {
+      var selectField = document.getElementById('amountSelect');
+      selectField.value = amount; // Set the selected amount in the dropdown
+    }
+  };
 </script>
 </body>
 

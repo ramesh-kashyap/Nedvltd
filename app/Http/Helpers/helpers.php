@@ -419,16 +419,12 @@ return true;
 
 //     // Count second and third level users
 //     $secondLevelUserCount = 0;
-//     $thirdLevelUserCount = 0;
+//     $thirdLevelUserCount = 0;              
 
-<<<<<<< HEAD
-              $cnt = 1;              
-=======
 //     if ($firstLevelUserCount > 0) {
 //         $firstLevelUserIds = User::where('sponsor', $user->id)
 //             ->where(column: 'active_status', 'Active')
 //             ->pluck('id');
->>>>>>> e85080d5b6962f8141d1ae1934fd0a145bbd4d00
 
 //         $secondLevelUserCount = User::whereIn('sponsor', $firstLevelUserIds)
 //             ->where('active_status', 'Active')
