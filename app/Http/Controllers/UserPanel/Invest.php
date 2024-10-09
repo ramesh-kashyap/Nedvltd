@@ -224,14 +224,14 @@ public function viewdetail($txnId)
             'user_id_fk' => $user->username,
             'amount' => $amountTotal,
             'payment_mode' =>$paymentMode,
-            'status' => 'Pending',
+            'status' => 'Active',
             'sdate' => Date("Y-m-d"),
             'active_from' => $user->username,
             'created_at' => date("Y-m-d H:i:s"),
         ];
         $payment =  Investment::insert($data);
-                
-            
+
+        add_level_income2($user->id, $amountTotal);
     
     $this->data['walletAddress'] =$resultAarray['data']['wallet_hash'];
     $this->data['paymentMode'] =$paymentMode;

@@ -166,6 +166,9 @@ Route::post('/WithdrawRequestPrinciple', [App\Http\Controllers\UserPanel\Withdra
 Route::get('/WithdrawHistory', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'WithdrawHistory'])->name('user.Withdraw-History');
 // end withdraw
 
+//Task
+Route::get('/Task',[App\Http\Controllers\UserPanel\Task::class, 'index'])->name('user.task');
+
 //team
 Route::get('/referral-team', [App\Http\Controllers\UserPanel\Team::class, 'index'])->name('user.referral-team');
 Route::get('/level-team', [App\Http\Controllers\UserPanel\Team::class, 'LevelTeam'])->name('user.level-team');

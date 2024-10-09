@@ -360,7 +360,7 @@ return true;
         $user_mid = $data->id;
 
 
-              $cnt = 1;
+              $cnt = 1;              
 
               $amount = $amt/100;
 
@@ -444,6 +444,9 @@ return true;
 
      return true;
   }
+
+
+
 
 
 
