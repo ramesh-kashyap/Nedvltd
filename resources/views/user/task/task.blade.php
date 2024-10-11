@@ -1,6 +1,8 @@
 <html style="font-size: 50px;">
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="{{ csrf_token() }}">
     <style class="vjs-styles-defaults">
         .video-js {
             width: 300px;
@@ -13058,7 +13060,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">]</div>
     </div>
     <div class="van-overlay" style="z-index: 2004; display: none;"></div>
     <div data-v-5954443c="" class="van-popup van-popup--round van-popup--center"
@@ -13092,13 +13094,53 @@
     <!---->
     <!---->
     <script>
-  document.querySelectorAll('.btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-      var amount = this.getAttribute('Data-Amount');
-      window.location.href = '/user/productDetail?amount=' + amount;
+// JavaScript to send amount and image
+// document.querySelectorAll('.btn').forEach(function(button) {
+//   button.addEventListener('click', function() {
+//     var amount = this.getAttribute('Data-Amount'); // Get the amount
+//     var imageUrl = this.closest('.item').querySelector('img').getAttribute('src'); // Get the image URL
+//     window.location.href = `/user/productDetail?amount=${amount}&image=${encodeURIComponent(imageUrl)}`; // Navigate to the next page with amount and image URL
+//   });
+// });
+document.querySelectorAll('.btn').forEach(function(button) {
+  button.addEventListener('click', function() {
+    var amount = this.getAttribute('data-amount'); // Get the amount
+    var imageUrl = this.closest('.item').querySelector('img').getAttribute('src'); // Get the image URL
+    
+    // Create data to send in the request
+    var requestData = {
+      amount: amount,
+      image: imageUrl
+    };
+    // Send a POST request to your API
+    fetch('/user/productDetail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // For CSRF protection
+      },
+      body: JSON.stringify(requestData) // Send the amount and image as JSON
+    })
+    .then(response => response.json()) // Parse JSON response
+    .then(data => {
+      if(data.success) {
+        console.log('Data sent successfully');
+        // Optionally redirect to the next page if necessary
+        window.location.href = '/user/productDetail';
+      } else {
+        console.log('Failed to send data');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
     });
   });
+});
+
+
 </script>
+
+
 </body>
 
 </html>

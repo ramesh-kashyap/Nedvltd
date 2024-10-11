@@ -17,8 +17,17 @@ class Task extends Controller
         return view('user/task/productDetail');
     }
 
-    public function productinfo(){
+
+    public function productinfo(Request $request){
         $user = Auth::user();
+        $amount = $request->input('amount');
+        $image = $request->input('image');
+
+        $data =[
+            'amount' => $amount,
+             
+        ]
+        return response()->json(['success' => true]);
     }
 }
 

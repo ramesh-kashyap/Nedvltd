@@ -12761,8 +12761,8 @@
                             <div data-v-6d2d4c36="" class="item bg-blur mt">
                                 <div data-v-6d2d4c36="" class="head">
                                     <div data-v-6d2d4c36="" class="level-box">
-                                        <img data-v-6d2d4c36=""
-                                            src="/static/img/task1.png"
+                                        <img data-v-6d2d4c36="" id="productImage"
+                                            src=""
                                             alt="">
                                         </div>
                                         <div data-v-6d2d4c36="" class="info">
@@ -12803,7 +12803,6 @@
                     </div>
                 </div>          
         </div>
-        <!--  -->
         <div class="van-overlay" style="z-index: 2022; display: none;" id="currencyPopupOverlay"></div>
 
         <div data-v-15b106f9="" class="page-loading-con">
@@ -12870,10 +12869,22 @@
     
     
     
-    
-    
-    
     <script>
+// Get URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const amount = urlParams.get('amount');
+const imageUrl = urlParams.get('image');
+
+// Display the amount and image on the next page
+if (amount) {
+      var selectField = document.getElementById('amountSelect');
+      selectField.value = amount; // Set the selected amount in the dropdown
+    }
+document.getElementById('productImage').setAttribute('src', imageUrl);
+</script>
+    
+    
+    <!-- <script>
   // Function to extract query parameters from the URL
   function getQueryParam(param) {
     var urlParams = new URLSearchParams(window.location.search);
@@ -12888,7 +12899,7 @@
       selectField.value = amount; // Set the selected amount in the dropdown
     }
   };
-</script>
+</script> -->
 </body>
 
 </html>

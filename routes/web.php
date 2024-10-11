@@ -112,7 +112,7 @@ Route::get('/bindMail', [App\Http\Controllers\UserPanel\Profile::class, 'bindMai
 Route::post('/bindemail-action', [App\Http\Controllers\UserPanel\Profile::class, 'bindemail_action'])->name('user.bindemail-action');
 Route::post('/changeEmailAction', [App\Http\Controllers\UserPanel\Profile::class, 'changeEmailAction'])->name('user.changeEmailAction');
 Route::get('/order', [App\Http\Controllers\UserPanel\Profile::class, 'orderRecord'])->name('user.orderRecord');
-Route::get('/Video',[App\Http\Controllers\UserPanel\Video::class, 'video'])->name('user.video');
+// Route::get('/Video',[App\Http\Controllers\UserPanel\Video::class, 'video'])->name('user.video');
 
 
 
