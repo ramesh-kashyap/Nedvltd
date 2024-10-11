@@ -12757,7 +12757,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 3.40 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value"data-Profit="3.40 USDT"> 3.40 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12799,7 +12799,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 7.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value"data-Profit="7.00 USDT"> 7.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12841,7 +12841,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 22.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value"data-Profit="22.00 USDT"> 22.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12883,7 +12883,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 46.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" data-Profit="46.00 USDT"> 46.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12925,7 +12925,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 120.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value"data-Profit="120.00 USDT"> 120.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12967,7 +12967,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 250.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" data-Profit="250.00 USDT"> 250.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -13105,13 +13105,16 @@
 document.querySelectorAll('.btn').forEach(function(button) {
   button.addEventListener('click', function() {
     var amount = this.getAttribute('data-amount'); // Get the amount
+    var profit = this.getAttribute('data-profit'); // 'data-Profit' is case-sensitive, use lowercase
     var imageUrl = this.closest('.item').querySelector('img').getAttribute('src'); // Get the image URL
     
     // Create data to send in the request
     var requestData = {
       amount: amount,
-      image: imageUrl
+      image: imageUrl,
+      profit: profit,
     };
+
     // Send a POST request to your API
     fetch('/user/productDetail', {
       method: 'POST',
@@ -13123,7 +13126,7 @@ document.querySelectorAll('.btn').forEach(function(button) {
     })
     .then(response => response.json()) // Parse JSON response
     .then(data => {
-      if(data.success) {
+      if (data.success) {
         console.log('Data sent successfully');
         // Optionally redirect to the next page if necessary
         window.location.href = '/user/productDetail';
