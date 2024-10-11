@@ -41,7 +41,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: #020503;
+        background: rgba(6, 132, 117, 0.8);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -230,7 +230,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -1852,7 +1852,7 @@
     height: -webkit-fill-available;
     overflow: hidden;
     min-width: 7.5rem;
-    background: #141517;
+    /* background: #141517; */
     -webkit-user-select: none;
     -webkit-text-size-adjust: none;
     user-select: none;
@@ -2766,8 +2766,8 @@
     border: 0.02rem solid #23252E;
   }
   .van-button--primary {
-    color: #020202;
-    background-color: #00fc83;
+    color: #ffffff;
+    background-color:#022627;
     border: 0.02rem solid #07c160;
   }
   .van-button--info {
@@ -6285,7 +6285,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #020202;
+    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
     justify-content: space-between;
   }
   .page-header[data-v-37526a6c] {
@@ -6405,7 +6405,7 @@
     align-items: center;
   }
   .head[data-v-0ff1fb10] {
-    background: #020202;
+    /* background: #020202; */
     height: 1.2rem;
     position: relative;
     transition: background-color 0.3s;
@@ -7051,7 +7051,7 @@
                             <dt data-v-37526a6c="">Recharge currency </dt>
                             <dd data-v-37526a6c="">
                                 <div data-v-37526a6c="" class="flex items-center"><img data-v-37526a6c=""
-                                        src="https://obs.nedvc.com/upload/20240826/ea3ebfe36a82dcb2a01985c01ab7c5fe.png"
+                                        src="{{asset('')}}static/img/Icon/usdt.png"
                                         width="24" height="24" alt=""><span data-v-37526a6c=""
                                         class="px-6px">{{$paymentMode}}</span></div><svg data-v-37526a6c=""
                                     xmlns="http://www.w3.org/2000/svg" width="8" height="6" viewBox="0 0 8 6"

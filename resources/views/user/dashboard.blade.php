@@ -65,12 +65,7 @@
         }
     </style>
 
-    <link href="js/app.fe08c8e8-1727377907704.js" rel="preload" as="script">
-    <link href="js/chunk-echarts.fe08c8e8-1727377907704.js" rel="preload" as="script">
-    <link href="js/chunk-moment.fe08c8e8-1727377907704.js" rel="preload" as="script">
-    <link href="js/chunk-vant.fe08c8e8-1727377907704.js" rel="preload" as="script">
-    <link href="js/chunk-vue.fe08c8e8-1727377907704.js" rel="preload" as="script">
-    <link href="js/vendors~app.fe08c8e8-1727377907704.js" rel="preload" as="script">
+  
     <style type="text/css">
         @keyframes loading-animation-15b106f9 {
             from {
@@ -6965,7 +6960,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/30.fe08c8e8-1727377907704.js"></script>
+    
     <style type="text/css">
         [data-v-b149b182] .head {
             background: url({{asset('')}}static/img/bg_login.d4d61e22.png) no-repeat top center !important;
@@ -7070,7 +7065,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/75.fe08c8e8-1727377907704.js"></script>
+    
     <style type="text/css">
         .page[data-v-37526a6c] {
             width: 100%;
@@ -7137,9 +7132,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/32.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/19.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/41.fe08c8e8-1727377907704.js"></script>
+    
     <style type="text/css">
         .w856 .head[data-v-0ff1fb10] {
             width: 100%;
@@ -7625,7 +7618,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/3.fe08c8e8-1727377907704.js"></script>
+
     <style type="text/css">
         .income-box[data-v-aa0ccfea] {
             display: flex;
@@ -8422,7 +8415,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/21.fe08c8e8-1727377907704.js"></script>
+ \
     <style type="text/css">
         .footers[data-v-6c4d8baa] {
             max-width: 10rem;
@@ -8489,7 +8482,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/57.fe08c8e8-1727377907704.js"></script>
+ 
     <style type="text/css">
         .popover[data-v-e29c081e] {
             width: 0.28rem;
@@ -8518,8 +8511,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/0.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/6.fe08c8e8-1727377907704.js"></script>
+    
     <style type="text/css">
         .popup-box[data-v-3c12fe9a] {
             width: 6rem;
@@ -8941,10 +8933,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/94.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/48.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/80.fe08c8e8-1727377907704.js"></script>
-    <script charset="utf-8" src="js/79.fe08c8e8-1727377907704.js"></script>
+ 
     <style type="text/css">
         [data-v-4f302b61] .van-popup {
             top: 50% !important;
@@ -9055,7 +9044,7 @@
             max-width: 8.5rem;
         }
     </style>
-    <script charset="utf-8" src="js/76.fe08c8e8-1727377907704.js"></script>
+   
     <style type="text/css">
         .popup-box[data-v-28719dd2] {
             width: 6.4rem;
@@ -9495,12 +9484,7 @@
             <p data-v-15b106f9="">Loading...</p>
         </div>
     </div>
-    <script type="text/javascript" src="js/chunk-vue.fe08c8e8-1727377907704.js"></script>
-    <script type="text/javascript" src="js/chunk-echarts.fe08c8e8-1727377907704.js"></script>
-    <script type="text/javascript" src="js/chunk-vant.fe08c8e8-1727377907704.js"></script>
-    <script type="text/javascript" src="js/chunk-moment.fe08c8e8-1727377907704.js"></script>
-    <script type="text/javascript" src="js/vendors~app.fe08c8e8-1727377907704.js"></script>
-    <script type="text/javascript" src="js/app.fe08c8e8-1727377907704.js"></script>
+    
     <script>
         let standalone = document.getElementById('startLogo')
         standalone.style.display = 'flex'

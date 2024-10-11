@@ -126,12 +126,7 @@
         }
 
     </script>
-    <link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script">
-    <link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script">
-    <link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script">
-    <link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script">
-    <link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script">
-    <link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script">
+   
     <style type="text/css">
         @keyframes loading-animation-15b106f9 {
             from {
@@ -7055,7 +7050,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/23.86535a9c-1727647884855.js"></script>
+
     <style type="text/css">
         .assets[data-v-434f210d] {
             background: url(/static/img/bg-record-card.3130b15c.png);
@@ -7234,7 +7229,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script>
+   
     <style type="text/css">
         .page[data-v-37526a6c] {
             min-height: 100vh;
@@ -7322,8 +7317,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script>
+
     <style type="text/css">
         .w856 .head[data-v-0ff1fb10] {
             width: 100%;
@@ -7493,7 +7487,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/10.86535a9c-1727647884855.js"></script>
+    
     <style type="text/css">
         .assets[data-v-57772884] {
             background: url(/static/img/bg-record-card.3130b15c.png);
@@ -7668,8 +7662,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script>
+    
     <style type="text/css">
         .income-box[data-v-aa0ccfea] {
             display: flex;
@@ -8473,7 +8466,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script>
+    
     <style type="text/css">
         .footers[data-v-6c4d8baa] {
             max-width: 10rem;
@@ -8541,8 +8534,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/5.86535a9c-1727647884855.js"></script>
+
     <style type="text/css">
         .popup-box[data-v-3c12fe9a] {
             width: 6rem;
@@ -8973,10 +8965,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/96.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/49.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/82.86535a9c-1727647884855.js"></script>
-    <script charset="utf-8" src="/js/81.86535a9c-1727647884855.js"></script>
+
     <style type="text/css">
         [data-v-4f302b61] .van-popup {
             top: 50% !important;
@@ -9089,7 +9078,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script>
+    
     <style type="text/css">
         .popup-box[data-v-28719dd2] {
             width: 6.4rem;
@@ -9237,7 +9226,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/6.86535a9c-1727647884855.js"></script>
+   
     <style type="text/css">
         ul[data-v-41fee272] {
             border-radius: 0.16rem;
@@ -9439,7 +9428,7 @@
         }
 
     </style>
-    <script charset="utf-8" src="/js/50.86535a9c-1727647884855.js"></script>
+    
     <style type="text/css">
         .page-team {
             height: 100%;
@@ -9703,12 +9692,7 @@
             <p data-v-15b106f9="">Loading...</p>
         </div>
     </div>
-    <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script>
-    <script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script>
-    <script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script>
-    <script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script>
-    <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
-    <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+
     <script>
         let standalone = document.getElementById('startLogo')
         standalone.style.display = 'flex'

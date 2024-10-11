@@ -7271,7 +7271,7 @@
         .head .name[data-v-0ff1fb10] {
             font-size: 0.32rem;
             font-weight: 500;
-            color: #ffffff;
+            color: #000000;
             position: absolute;
             width: 70%;
             text-align: center;
@@ -9377,7 +9377,7 @@
     </style>
     <script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script>
     <link rel="stylesheet" href="{{asset('')}}css/index.css">
-
+    
 </head>
 
 <body class="mein_cn">
@@ -9470,8 +9470,8 @@
                                         </div>
                                         @endforeach
                                         <?php }?>
-                                        
-                                      {{ $direct_team->withQueryString()->links() }}
+                                          {{ $direct_team->withQueryString()->links() }}
+                                    
                                         <div class="van-list__finished-text">No more</div>
                                         <div class="van-list__placeholder"></div>
                                     </div>

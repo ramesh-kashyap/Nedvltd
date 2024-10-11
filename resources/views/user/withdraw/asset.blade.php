@@ -117,7 +117,7 @@
     );
   }
 </script>
-<link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script"><style type="text/css">@keyframes loading-animation-15b106f9 {
+<style type="text/css">@keyframes loading-animation-15b106f9 {
 from {
   transform: rotate(0deg);
 }
@@ -5763,7 +5763,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/2.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/1.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/25.86535a9c-1727647884855.js"></script><style type="text/css">.page-video-header {
+</style><style type="text/css">.page-video-header {
 height: 1.2rem;
 }
 .page-video-header.absolute {
@@ -8046,7 +8046,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
+</style><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
 background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
@@ -8124,7 +8124,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-37526a6c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/98.86535a9c-1727647884855.js"></script><style type="text/css">.footers[data-v-6c4d8baa] {
+</style><style type="text/css">.footers[data-v-6c4d8baa] {
 max-width: 10rem;
 width: 100%;
 height: fit-content;
@@ -8179,7 +8179,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-6c4d8baa] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/5.86535a9c-1727647884855.js"></script><style type="text/css">.popup-box[data-v-3c12fe9a] {
+</style><style type="text/css">.popup-box[data-v-3c12fe9a] {
 width: 6rem;
 }
 .popup-box .image-box[data-v-3c12fe9a] {
@@ -8525,7 +8525,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-e20b77f4] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/96.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/49.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/82.86535a9c-1727647884855.js"></script><style type="text/css">.w856 .head[data-v-0ff1fb10] {
+</style><style type="text/css">.w856 .head[data-v-0ff1fb10] {
 width: 100%;
 }
 .flex[data-v-0ff1fb10] {
@@ -8709,7 +8709,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-bfe0705e] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script><style type="text/css">
+</style><style type="text/css">
 [data-v-4f302b61] .van-popup {
 top: 50% !important;
 left: 50% !important;
@@ -8733,7 +8733,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-4f302b61] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/81.86535a9c-1727647884855.js"></script><style type="text/css">.btn_box[data-v-f8d1bbb0] {
+</style><style type="text/css">.btn_box[data-v-f8d1bbb0] {
 margin-top: 0.48rem;
 }
 .btn_box.min .btn[data-v-f8d1bbb0] {
@@ -8855,7 +8855,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-28719dd2] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/7.86535a9c-1727647884855.js"></script><style type="text/css">.select-list[data-v-18e3de10] {
+</style><style type="text/css">.select-list[data-v-18e3de10] {
 margin-top: 0.24rem;
 line-height: 1.2;
 display: flex;
@@ -9118,7 +9118,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-14275b54] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/32.86535a9c-1727647884855.js"></script><style type="text/css">.table_list[data-v-555c6fae] {
+</style><style type="text/css">.table_list[data-v-555c6fae] {
 width: 100%;
 padding: 0.06rem;
 background: #068475;
@@ -9444,7 +9444,7 @@ max-width: 8.5rem;
     <p data-v-15b106f9="">Loading...</p>
   </div>
 </div>
-<script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+
 <script>
 let standalone=document.getElementById('startLogo')
 standalone.style.display='flex'

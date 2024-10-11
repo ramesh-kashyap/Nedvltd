@@ -1,4 +1,4 @@
-<!-- @include('layouts.upnl.header') -->
+@include('layouts.upnl.header')
 <style>
 	a:hover {
     text-decoration: none;

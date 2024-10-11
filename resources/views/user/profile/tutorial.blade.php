@@ -112,12 +112,7 @@
       );
     }
   </script>
-  <link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script">
+ 
   <style type="text/css">
     @keyframes loading-animation-15b106f9 {
       from {
@@ -7011,7 +7006,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/72.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .box-radius[data-v-1029ea9a] {
       border-radius: 0.16rem;
@@ -7090,7 +7085,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script>
+
   <style type="text/css">
     .page[data-v-37526a6c] {
       min-height: 100vh;
@@ -7177,7 +7172,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .w856 .head[data-v-0ff1fb10] {
       width: 100%;
@@ -7317,7 +7312,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script>
+ 
   <style type="text/css">
     .income-box[data-v-aa0ccfea] {
       display: flex;
@@ -8113,7 +8108,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script>
+
   <style type="text/css">
     .footers[data-v-6c4d8baa] {
       max-width: 10rem;
@@ -8180,7 +8175,7 @@
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script>
+ 
   <style type="text/css">
     .popover[data-v-e29c081e] {
       width: 0.28rem;
@@ -8261,7 +8256,7 @@
                   <div data-v-1029ea9a="" class="custom-image van-empty" data-v-37526a6c="">
                     <div class="van-empty__image"><img src="/static/img/none.9c737031.png"></div>
                     <p class="van-empty__description">No data yet</p>
-                    <p class="van-empty__description">{{$check}}</p>
+                   
                   </div>
 
                 </div>
@@ -8476,12 +8471,7 @@
     <p data-v-15b106f9="">Loading...</p>
   </div>
   </div>
-  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+  
   <script>
     let standalone = document.getElementById('startLogo')
     standalone.style.display = 'flex'
