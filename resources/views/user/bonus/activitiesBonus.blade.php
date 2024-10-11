@@ -117,7 +117,7 @@
     );
   }
 </script>
-<link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script"><style type="text/css">@keyframes loading-animation-15b106f9 {
+<style type="text/css">@keyframes loading-animation-15b106f9 {
 from {
   transform: rotate(0deg);
 }
@@ -5763,7 +5763,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script><style type="text/css">.income-box[data-v-aa0ccfea] {
+</style><style type="text/css">.income-box[data-v-aa0ccfea] {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -6414,7 +6414,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-5954443c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
+</style><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
 }
@@ -6488,7 +6488,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-37526a6c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script><style type="text/css">.w856 .head[data-v-0ff1fb10] {
+</style><style type="text/css">.w856 .head[data-v-0ff1fb10] {
 width: 100%;
 }
 .flex[data-v-0ff1fb10] {
@@ -6681,7 +6681,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-e29c081e] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/4.86535a9c-1727647884855.js"></script><style type="text/css">.level-info[data-v-5a5733d2] {
+</style><style type="text/css">.level-info[data-v-5a5733d2] {
 margin-top: 0.48rem;
 background: url(/static/img/bg-level-card.8bcd51f7.png) no-repeat;
 background-size: 100% 100%;
@@ -7206,7 +7206,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-7a3d5949] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/30.86535a9c-1727647884855.js"></script><style type="text/css">
+</style><style type="text/css">
 [data-v-b149b182] .head {
 background: url(/static/img/bg_login.d4d61e22.png) no-repeat top center !important;
 background-size: 100% auto !important;
@@ -7290,7 +7290,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-b149b182] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/19.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/42.86535a9c-1727647884855.js"></script><style type="text/css">.input_big_box[data-v-63783c8c] {
+</style><style type="text/css">.input_big_box[data-v-63783c8c] {
 position: relative;
 --themeColor: #00fc83;
 }
@@ -7573,7 +7573,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-fa37b51c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/7.86535a9c-1727647884855.js"></script><style type="text/css">.select-list[data-v-18e3de10] {
+</style><style type="text/css">.select-list[data-v-18e3de10] {
 margin-top: 0.24rem;
 line-height: 1.2;
 display: flex;
@@ -7836,7 +7836,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-14275b54] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/32.86535a9c-1727647884855.js"></script><style type="text/css">.table_list[data-v-555c6fae] {
+</style><style type="text/css">.table_list[data-v-555c6fae] {
 width: 100%;
 padding: 0.06rem;
 background: #13161c;
@@ -7924,7 +7924,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-555c6fae] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/36.86535a9c-1727647884855.js"></script><style type="text/css">.record_hdrecord_hd[data-v-6cf94806] {
+</style><style type="text/css">.record_hdrecord_hd[data-v-6cf94806] {
 margin-top: 0.36rem;
 display: flex;
 width: 100%;
@@ -8047,7 +8047,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-6cf94806] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script><style type="text/css">.btn_box[data-v-f8d1bbb0] {
+</style><style type="text/css">.btn_box[data-v-f8d1bbb0] {
 margin-top: 0.48rem;
 }
 .btn_box.min .btn[data-v-f8d1bbb0] {
@@ -8088,7 +8088,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-f8d1bbb0] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/35.86535a9c-1727647884855.js"></script><style type="text/css">.record-list .record[data-v-4ff1603e] {
+</style><style type="text/css">.record-list .record[data-v-4ff1603e] {
 padding: 0.32rem 0.28rem;
 border-radius: 0.16rem;
 background: #0f1117;
@@ -8153,7 +8153,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-4ff1603e] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/50.86535a9c-1727647884855.js"></script><style type="text/css">.page-team {
+</style><style type="text/css">.page-team {
 height: 100%;
 display: flex;
 flex-direction: column;
@@ -8191,7 +8191,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/23.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-434f210d] {
+</style><style type="text/css">.assets[data-v-434f210d] {
 background: url(/static/img/bg-record-card.3130b15c.png);
 background-size: 100% 100%;
 padding: 0.4rem 0.32rem;
@@ -8336,7 +8336,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-470469c5] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/10.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-57772884] {
+</style><style type="text/css">.assets[data-v-57772884] {
 background: url(/static/img/bg-record-card.3130b15c.png);
 background-size: 100% 100%;
 }
@@ -8572,7 +8572,7 @@ max-width: 8.5rem;
     </div>
 </div>
 
-<script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+
 <script>
 let standalone=document.getElementById('startLogo')
 standalone.style.display='flex'

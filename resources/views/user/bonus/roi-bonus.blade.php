@@ -108,7 +108,7 @@
         );
       }
     </script>
-  <link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script"><style type="text/css">@keyframes loading-animation-15b106f9 {
+  <style type="text/css">@keyframes loading-animation-15b106f9 {
   from {
       transform: rotate(0deg);
   }
@@ -5754,7 +5754,7 @@
   .van-popup--bottom {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/23.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-434f210d] {
+  </style><style type="text/css">.assets[data-v-434f210d] {
     background-color:#068475;
     background-size: 100% 100%;
     border-radius: 0.2rem;
@@ -5900,7 +5900,7 @@
   .van-popup--bottom[data-v-470469c5] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
+  </style><style type="text/css">.page[data-v-37526a6c] {
     min-height: 100vh;
     background-size: cover;
   }
@@ -5974,7 +5974,7 @@
   .van-popup--bottom[data-v-37526a6c] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script><style type="text/css">.w856 .head[data-v-0ff1fb10] {
+  </style><style type="text/css">.w856 .head[data-v-0ff1fb10] {
     width: 100%;
   }
   .flex[data-v-0ff1fb10] {
@@ -6113,7 +6113,7 @@
   .van-popup--bottom[data-v-e29c081e] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/10.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-57772884] {
+  </style><style type="text/css">.assets[data-v-57772884] {
     background: url(../static/img/bg-record-card.3130b15c.png);
     background-size: 100% 100%;
   }
@@ -6254,7 +6254,7 @@
   .van-popup--bottom[data-v-1e017342] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script></head>
+  </style></head>
   
   <body class="mein_cn">
     <div id="startLogo" style="display: none;">
@@ -6410,7 +6410,7 @@
       <div data-v-15b106f9="" class="page-loading"></div>
       <p data-v-15b106f9="">Loading...</p>
    </div>
-</div>  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+</div> 
   <script>
     let standalone=document.getElementById('startLogo')
     standalone.style.display='flex'

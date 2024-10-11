@@ -108,7 +108,7 @@
         );
       }
     </script>
-  <link href="/js/app.35b764a7-1727614688907.js" rel="preload" as="script"><link href="/js/chunk-echarts.35b764a7-1727614688907.js" rel="preload" as="script"><link href="/js/chunk-moment.35b764a7-1727614688907.js" rel="preload" as="script"><link href="/js/chunk-vant.35b764a7-1727614688907.js" rel="preload" as="script"><link href="/js/chunk-vue.35b764a7-1727614688907.js" rel="preload" as="script"><link href="/js/vendors~app.35b764a7-1727614688907.js" rel="preload" as="script"><style type="text/css">@keyframes loading-animation-15b106f9 {
+<style type="text/css">@keyframes loading-animation-15b106f9 {
   from {
       transform: rotate(0deg);
   }
@@ -1499,7 +1499,7 @@
     position: fixed;
     max-height: 100%;
     overflow-y: auto;
-    background-color: #0d0f13;
+    background-color: #068475;
     transition: transform 0.3s;
     -webkit-overflow-scrolling: touch;
   }
@@ -5754,7 +5754,7 @@
   .van-popup--bottom {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/7.35b764a7-1727614688907.js"></script><style type="text/css">.select-list[data-v-18e3de10] {
+  </style><style type="text/css">.select-list[data-v-18e3de10] {
     margin-top: 0.24rem;
     line-height: 1.2;
     display: flex;
@@ -6017,7 +6017,7 @@
   .van-popup--bottom[data-v-14275b54] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/77.35b764a7-1727614688907.js"></script><style type="text/css">.page[data-v-37526a6c] {
+  </style><style type="text/css">.page[data-v-37526a6c] {
     width: 100%;
     height: 100%;
     min-height: 100vh;
@@ -6082,7 +6082,7 @@
   .van-popup--bottom[data-v-37526a6c] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/33.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/32.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/21.35b764a7-1727614688907.js"></script><style type="text/css">.footers[data-v-6c4d8baa] {
+  </style><style type="text/css">.footers[data-v-6c4d8baa] {
     max-width: 10rem;
     width: 100%;
     height: fit-content;
@@ -6341,7 +6341,7 @@
   .van-popup--bottom[data-v-555c6fae] {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/16.35b764a7-1727614688907.js"></script><style type="text/css">.mt[data-v-283789fa] {
+  </style><style type="text/css">.mt[data-v-283789fa] {
     margin-top: 0.32rem;
   }
   .popup-box[data-v-283789fa] {
@@ -6479,7 +6479,7 @@
   .van-popup--bottom {
     max-width: 8.5rem;
   }
-  </style><script charset="utf-8" src="/js/52.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/96.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/81.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/82.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/60.35b764a7-1727614688907.js"></script><script charset="utf-8" src="/js/78.35b764a7-1727614688907.js"></script><style type="text/css">.chain-select-popup {
+  </style><style type="text/css">.chain-select-popup {
     padding-bottom: 0.32rem;
   }
   .chain-select-popup-tab-nav {
@@ -6506,8 +6506,8 @@
     margin-bottom: 0.32rem;
     padding: 0.32rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid transparent;
-    background-color: #13161c;
+    border: 0.02rem solid #000000;
+    /* background-color: #13161c; */
   }
   .chain-select-popup .chain-item.active {
     border-color: #00fc83;
@@ -6999,12 +6999,7 @@
       <p data-v-15b106f9="">Loading...</p>
   </div>
   </div>
-  <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
-  <script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script>
-  <script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script>
-  <script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script>
-  <script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script>
-  <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
+  
   <script>
     let standalone=document.getElementById('startLogo')
     standalone.style.display='flex'

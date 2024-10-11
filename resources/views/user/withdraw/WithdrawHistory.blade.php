@@ -9932,7 +9932,9 @@ type="text/javascript"
                                                                             
                      <?php }?>  
 
-                    <div class="van-list__finished-text"> {{ $withdraw_report->withQueryString()->links() }}</div>
+                     
+                     {{ $withdraw_report->withQueryString()->links() }}
+                    <div class="van-list__finished-text"> </div>
                     <div class="van-list__placeholder"></div>
                   </div>
                 </div>

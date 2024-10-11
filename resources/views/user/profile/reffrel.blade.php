@@ -117,7 +117,7 @@
     );
   }
 </script>
-<link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script"><link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script"><style type="text/css">@keyframes loading-animation-15b106f9 {
+<style type="text/css">@keyframes loading-animation-15b106f9 {
 from {
   transform: rotate(0deg);
 }
@@ -5763,7 +5763,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/23.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-434f210d] {
+</style><style type="text/css">.assets[data-v-434f210d] {
 background: url(/static/img/bg-record-card.3130b15c.png);
 background-size: 100% 100%;
 padding: 0.4rem 0.32rem;
@@ -5908,7 +5908,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-470469c5] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script><style type="text/css">.page[data-v-37526a6c] {
+</style><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
 }
@@ -5982,7 +5982,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-37526a6c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script><style type="text/css">.w856 .head[data-v-0ff1fb10] {
+</style><style type="text/css">.w856 .head[data-v-0ff1fb10] {
 width: 100%;
 }
 .flex[data-v-0ff1fb10] {
@@ -6121,7 +6121,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-e29c081e] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/10.86535a9c-1727647884855.js"></script><style type="text/css">.assets[data-v-57772884] {
+</style><style type="text/css">.assets[data-v-57772884] {
 background: url(/static/img/bg-record-card.3130b15c.png);
 background-size: 100% 100%;
 }
@@ -6262,7 +6262,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-1e017342] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/95.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script><style type="text/css">.income-box[data-v-aa0ccfea] {
+</style><style type="text/css">.income-box[data-v-aa0ccfea] {
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -6913,7 +6913,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-5954443c] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script><style type="text/css">.footers[data-v-6c4d8baa] {
+</style><style type="text/css">.footers[data-v-6c4d8baa] {
 max-width: 10rem;
 width: 100%;
 height: fit-content;
@@ -6967,7 +6967,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-6c4d8baa] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/5.86535a9c-1727647884855.js"></script><style type="text/css">.popup-box[data-v-3c12fe9a] {
+</style><style type="text/css">.popup-box[data-v-3c12fe9a] {
 width: 6rem;
 }
 .popup-box .image-box[data-v-3c12fe9a] {
@@ -7313,7 +7313,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-e20b77f4] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/96.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/49.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/82.86535a9c-1727647884855.js"></script><script charset="utf-8" src="/js/81.86535a9c-1727647884855.js"></script><style type="text/css">
+</style><style type="text/css">
 [data-v-4f302b61] .van-popup {
 top: 50% !important;
 left: 50% !important;
@@ -7404,7 +7404,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-bfe0705e] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script><style type="text/css">.popup-box[data-v-28719dd2] {
+</style><style type="text/css">.popup-box[data-v-28719dd2] {
 width: 6.4rem;
 padding: 0.48rem;
 position: relative;
@@ -7526,7 +7526,7 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-f8d1bbb0] {
 max-width: 8.5rem;
 }
-</style><script charset="utf-8" src="/js/6.86535a9c-1727647884855.js"></script><style type="text/css">ul[data-v-41fee272] {
+</style><style type="text/css">ul[data-v-41fee272] {
 border-radius: 0.16rem;
 background: rgba(23, 26, 36, 0.6);
 padding: 0 0.24rem;
@@ -7773,7 +7773,7 @@ max-width: 8.5rem;
         <p data-v-15b106f9="">Loading...</p>
     </div>
 </div>
-<script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script><script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+
 <script>
 let standalone=document.getElementById('startLogo')
 standalone.style.display='flex'
