@@ -4,6 +4,7 @@ namespace App\Http\Controllers\UserPanel;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class Task extends Controller
 {
@@ -15,4 +16,10 @@ class Task extends Controller
     public function product(){
         return view('user/task/productDetail');
     }
+
+    public function productinfo(){
+        $user = Auth::user();
+    }
 }
+
+

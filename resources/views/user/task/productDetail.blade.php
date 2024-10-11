@@ -12611,6 +12611,93 @@
             max-width: 8.5rem;
         }
 
+        /* loader */
+
+        /* From Uiverse.io by andrew-demchenk0 */ 
+.cube-loader {
+  position: relative;
+/* u can choose any size */
+  width: 75px;
+  height: 75px;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0);
+  }
+
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube-loader .cube-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+  transform-style: preserve-3d;
+}
+
+.cube-loader .cube-wrapper .cube-span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* top: 0;
+  left: 0; */
+                                     /* width 75px / 2 = 37.5px */
+  transform: rotateY(calc(90deg * var(--i))) translateZ(37.5px);
+  background: linear-gradient(
+    to bottom,
+    hsl(330, 3.13%, 25.1%) 0%,
+    hsl(177.27, 21.71%, 32.06%) 5.5%,
+    hsl(176.67, 34.1%, 36.88%) 12.1%,
+    hsl(176.61, 42.28%, 40.7%) 19.6%,
+    hsl(176.63, 48.32%, 43.88%) 27.9%,
+    hsl(176.66, 53.07%, 46.58%) 36.6%,
+    hsl(176.7, 56.94%, 48.91%) 45.6%,
+    hsl(176.74, 62.39%, 50.91%) 54.6%,
+    hsl(176.77, 69.86%, 52.62%) 63.4%,
+    hsl(176.8, 76.78%, 54.08%) 71.7%,
+    hsl(176.83, 83.02%, 55.29%) 79.4%,
+    hsl(176.85, 88.44%, 56.28%) 86.2%,
+    hsl(176.86, 92.9%, 57.04%) 91.9%,
+    hsl(176.88, 96.24%, 57.59%) 96.3%,
+    hsl(176.88, 98.34%, 57.93%) 99%,
+    hsl(176.89, 99.07%, 58.04%) 100%
+  );
+}
+
+.cube-top {
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  background: hsl(330, 3.13%, 25.1%) 0%;
+                      /* width 75px / 2 = 37.5px */
+  transform: rotateX(90deg) translateZ(37.5px);
+  transform-style: preserve-3d;
+}
+
+.cube-top::before {
+  content: '';
+  position: absolute;
+/* u can choose any size */
+  width: 75px;
+  height: 75px;
+  background: hsl(176.61, 42.28%, 40.7%) 19.6%;
+  transform: translateZ(-90px);
+  filter: blur(10px);
+  box-shadow: 0 0 10px #323232,
+              0 0 20px hsl(176.61, 42.28%, 40.7%) 19.6%,
+              0 0 30px #323232,
+              0 0 40px hsl(176.61, 42.28%, 40.7%) 19.6%;
+}
+
+
     </style>
 </head>
 
@@ -12669,7 +12756,7 @@
                             </div>
                         </div>
                     </div> -->
-                    <div data-v-6d2d4c36="" data-v-e20b77f4="" class="list-box" data-v-37526a6c="">
+                    <div data-v-6d2d4c36="" data-v-e20b77f4="" class="list-box" data-v-37526a6c="" style="margin-top: 100px;">
                         <div data-v-6d2d4c36="" class="list">
                             <div data-v-6d2d4c36="" class="item bg-blur mt">
                                 <div data-v-6d2d4c36="" class="head">
@@ -12686,7 +12773,7 @@
                                 <div data-v-6d2d4c36="" class="info-list">
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <div data-v-6d2d4c36="" class="value" id="amountSelect"></div>
+                                        <input data-v-6d2d4c36="" class="value" id="amountSelect" name="" style="color: red; background:none; border:none" readonly>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Deadlines:</div>
@@ -12705,16 +12792,8 @@
                                         <div data-v-6d2d4c36="" class="value min">96.00 USDT</div>
                                     </div>
                                 </div>
-                                <!-- <div data-v-6d2d4c36="" class="count-down">
-                                    <div data-v-6d2d4c36="" class="text">Buy After</div>
-                                    <div data-v-6d2d4c36="" class="van-count-down van-count-down"><span
-                                            data-v-6d2d4c36="" class="block">01</span><span data-v-6d2d4c36=""
-                                            class="colon">D </span><span data-v-6d2d4c36="" class="block">05</span><span
-                                            data-v-6d2d4c36="" class="colon">H </span><span data-v-6d2d4c36=""
-                                            class="block">59</span><span data-v-6d2d4c36="" class="colon">Min
-                                        </span><span data-v-6d2d4c36="" class="block">34</span><span data-v-6d2d4c36=""
-                                            class="colon">S</span></div>
-                                </div> -->
+                                
+
                                 <div data-v-6d2d4c36="" class="bot">
                                     <div data-v-6d2d4c36="" class="btn" data-amount="100"> Buy Now </div>
                                 </div>
@@ -12724,10 +12803,21 @@
                     </div>
                 </div>          
         </div>
-        <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
-            <div data-v-15b106f9="" class="page-loading"></div>
-            <p data-v-15b106f9="">Loading...</p>
+        <!--  -->
+        <div class="van-overlay" style="z-index: 2022; display: none;" id="currencyPopupOverlay"></div>
+
+        <div data-v-15b106f9="" class="page-loading-con">
+            <div class="cube-loader">
+                <div class="cube-top"></div>
+                <div class="cube-wrapper">
+                    <span style="--i:0" class="cube-span"></span>
+                    <span style="--i:1" class="cube-span"></span>
+                    <span style="--i:2" class="cube-span"></span>
+                    <span style="--i:3" class="cube-span"></span>
+                </div>
+            </div>
         </div>
+        <!--  -->
     </div>
     <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
     <script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script>

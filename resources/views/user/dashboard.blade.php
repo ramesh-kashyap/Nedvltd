@@ -9382,7 +9382,7 @@
                     <div data-v-7fb36d82="" data-v-5954443c="" class="home-team mt">
                         <div data-v-7fb36d82="" class="head">
                             <div data-v-7fb36d82="" class="title">My team</div>
-                            <a href="{{route('user.level-team')}}">
+                            <a href="{{route('user.task')}}">
                             <img data-v-7fb36d82=""
                             src="{{asset('')}}static/img/icon/arrow-right.png"
                                                             alt="">
@@ -9459,7 +9459,7 @@
                                 </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.level-team') }}">
+                            <a href="{{ route('user.task') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
                                     src="{{asset('')}}static/img/Icon/Home_icon/video.png"
                                     alt=""><span data-v-6c4d8baa=""> Video </span></div>

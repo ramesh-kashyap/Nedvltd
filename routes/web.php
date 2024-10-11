@@ -169,7 +169,7 @@ Route::get('/WithdrawHistory', [App\Http\Controllers\UserPanel\WithdrawRequest::
 //Task
 Route::get('/Task',[App\Http\Controllers\UserPanel\Task::class, 'index'])->name('user.task');
 Route::get('/productDetail',[App\Http\Controllers\UserPanel\Task::class, 'product'])->name('user.productDetails');
-// Route::post('/productDetail',[App\Http\Controllers\UserPanel\Task::class, 'productinfo'])->name('user.productinfo');
+Route::post('/productDetail',[App\Http\Controllers\UserPanel\Task::class, 'productinfo'])->name('user.productinfo');
 //team
 Route::get('/referral-team', [App\Http\Controllers\UserPanel\Team::class, 'index'])->name('user.referral-team');
 Route::get('/level-team', [App\Http\Controllers\UserPanel\Team::class, 'LevelTeam'])->name('user.level-team');
