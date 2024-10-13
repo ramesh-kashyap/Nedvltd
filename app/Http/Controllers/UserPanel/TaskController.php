@@ -18,31 +18,64 @@ class TaskController extends Controller // Renamed to TaskController to avoid co
         return view('user/task/productDetail');
     }
 
-    public function productinfo(Request $request) {
+    public function productinfo(Request $request)
+    {
+        // Validate incoming request
+        // dd($request->all());
         $request->validate([
             'amount' => 'required|numeric',
-            'profit' => 'required|numeric',
+            // 'profit' => 'required|numeric',
             'image' => 'required|string',
         ]);
-        
+    
+        // Get the current logged-in user
+        // dd($request->all());
         $user = Auth::user();
         $user_id = $user->id;
-        
-        $amount = $request->input('amount'); // Retrieving 'amount' from request
-        $image = $request->input('image');   // Retrieving 'image' from request
-        $profit = $request->input('profit'); // Retrieving 'profit' from request
-
-        // Create data array to insert
+         
+    
+        // Retrieve data from the request
+        $amount = $request->input('amount');
+        $profit = $request->input('profit');
+        $image = $request->input('image');
+        // dd($image);
+    
+        // Prepare data to save to the database
         $data = [
             'user_id' => $user_id,
             'price' => $amount,
             'profit' => $profit,
-            // 'image' is not included because it's not part of Task table
+            'status' =>'0',
         ];
-
-        // Insert the data into the Task table
+    
+        // Save data to the Task model
         Task::create($data);
-
-        return response()->json(['success' => true]); // Return success response
+    
+        // Redirect to the product details page and pass the data
+        return redirect()->route('user.productDetail')->with('amount', $amount)
+            ->with('profit', $profit)->with('status','0')
+            ->with('image', $image);
     }
+    
+
+
+
+    public function updateTaskStatus(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'task_id' => 'required|integer',
+        ]);
+
+        // Find the task and update the status to 1
+        $task = Task::find($request->input('task_id'));
+        if ($task) {
+            $task->status = 1;
+            $task->save();
+            return response()->json(['message' => 'Task status updated successfully!']);
+        } else {
+            return response()->json(['message' => 'Task not found!'], 404);
+        }
+    }
+    
 }

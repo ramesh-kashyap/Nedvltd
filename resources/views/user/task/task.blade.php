@@ -12757,7 +12757,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"data-Profit="3.40 USDT"> 3.40 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="3.40 USDT"> 3.40 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12799,7 +12799,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"data-Profit="7.00 USDT"> 7.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="7.00 USDT"> 7.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12841,7 +12841,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"data-Profit="22.00 USDT"> 22.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="22.00 USDT"> 22.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12883,7 +12883,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value" data-Profit="46.00 USDT"> 46.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="46.00 USDT"> 46.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12925,7 +12925,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"data-Profit="120.00 USDT"> 120.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="120.00 USDT"> 120.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12967,7 +12967,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value" data-Profit="250.00 USDT"> 250.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="250.00 USDT"> 250.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -13039,12 +13039,12 @@
             <p data-v-15b106f9="">Loading...</p>
         </div>
     </div>
-    <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
+    <!-- <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
     <script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script>
     <script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script>
     <script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script>
     <script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script>
-    <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script> -->
     <script>
         let standalone = document.getElementById('startLogo')
         standalone.style.display = 'flex'
@@ -13083,6 +13083,17 @@
                     alt=""></div>
         </div>
     </div>
+    <form action="{{ route('user.productDetails') }}" method="POST" id="productForm">
+        @csrf <!-- CSRF token for security -->
+        
+        <!-- Hidden inputs to send values from JavaScript -->
+        <input type="hidden" name="amount" id="amount">
+        <!-- <input type="hidden" name="profit" id="profit"> -->
+        <input type="hidden" name="image" id="imageUrl">
+        
+        <button type="submit">Submit</button>
+    </form>
+    
     <!---->
     <!---->
     <!---->
@@ -13093,7 +13104,7 @@
     <!---->
     <!---->
     <!---->
-    <script>
+    <!-- <script>
 // JavaScript to send amount and image
 // document.querySelectorAll('.btn').forEach(function(button) {
 //   button.addEventListener('click', function() {
@@ -13104,32 +13115,32 @@
 // });
 document.querySelectorAll('.btn').forEach(function(button) {
   button.addEventListener('click', function() {
-    var amount = this.getAttribute('data-amount'); // Get the amount
-    var profit = this.getAttribute('data-profit'); // 'data-Profit' is case-sensitive, use lowercase
-    var imageUrl = this.closest('.item').querySelector('img').getAttribute('src'); // Get the image URL
-    
-    // Create data to send in the request
+    // Retrieve data attributes
+    var amount = this.getAttribute('data-amount');
+    var profit = this.getAttribute('data-profit');
+    var imageUrl = this.closest('.item').querySelector('img').getAttribute('src');
+
+    // Create data object to send in the POST request
     var requestData = {
       amount: amount,
-      image: imageUrl,
       profit: profit,
+      image: imageUrl,
     };
 
-    // Send a POST request to your API
+    // Send the data to the controller via POST request using fetch
     fetch('/user/productDetail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // For CSRF protection
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // CSRF token for security
       },
-      body: JSON.stringify(requestData) // Send the amount and image as JSON
+      body: JSON.stringify(requestData) // Send the data as JSON
     })
-    .then(response => response.json()) // Parse JSON response
+    .then(response => response.json())
     .then(data => {
       if (data.success) {
         console.log('Data sent successfully');
-        // Optionally redirect to the next page if necessary
-        window.location.href = '/user/productDetail';
+        window.location.href = '/user/productDetail'; 
       } else {
         console.log('Failed to send data');
       }
@@ -13141,8 +13152,25 @@ document.querySelectorAll('.btn').forEach(function(button) {
 });
 
 
-</script>
+</script> -->
+<script>
+        document.querySelectorAll('.btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Retrieve data attributes
+                var amount = this.getAttribute('data-amount');
+                // var profit = this.getAttribute('data-profit');
+                var imageUrl = this.closest('.item').querySelector('img').getAttribute('src');
 
+                // Populate the hidden inputs in the form
+                document.getElementById('amount').value = amount;
+                // document.getElementById('profit').value = profit;
+                document.getElementById('imageUrl').value = imageUrl;
+
+                // Optionally, submit the form
+                document.getElementById('productForm').submit();
+            });
+        });
+    </script>
 
 </body>
 

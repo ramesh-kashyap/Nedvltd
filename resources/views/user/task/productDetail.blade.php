@@ -43,6 +43,8 @@
     <meta name="renderer" content="webkit">
     <meta name="robots" content="noindex">
     <meta name="google-site-verification" content="x8_reKU6_3PaglKaT38m0O1-s5dy888cStewhS7kQak">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
     <style>
         .page-enter-active,
         .page-leave-active {
@@ -12698,6 +12700,127 @@
 }
 
 
+/* From Uiverse.io by timlmit */ 
+.loader {
+  display: block;
+  position: relative;
+  height: 32px;
+  width: 200px;
+  background: #fff;
+  border: 2px solid #fff;
+  color: rgb(0, 255, 255);
+  overflow: hidden;
+  top: -25%;
+  left: 25%;
+}
+
+.loader::before {
+  content: '';
+  background: rgb(0, 255, 255);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  animation: loading_302 10s linear infinite;
+}
+
+.loader:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  color: rgb(0,255,255);
+  mix-blend-mode: difference;
+  animation: percentage_302 10s linear infinite;
+}
+
+@keyframes loading_302 {
+  0% {
+    width: 0
+  }
+
+  100% {
+    width: 100%
+  }
+}
+
+@keyframes percentage_302 {
+  0% {
+    content: "0%"
+  }
+
+  5% {
+    content: "5%"
+  }
+
+  10% {
+    content: "10%"
+  }
+
+  20% {
+    content: "20%"
+  }
+
+  30% {
+    content: "30%"
+  }
+
+  40% {
+    content: "40%"
+  }
+
+  50% {
+    content: "50%"
+  }
+
+  60% {
+    content: "60%"
+  }
+
+  70% {
+    content: "70%"
+  }
+
+  80% {
+    content: "80%"
+  }
+
+  90% {
+    content: "90%"
+  }
+
+  95% {
+    content: "95%"
+  }
+
+  96% {
+    content: "96%"
+  }
+
+  97% {
+    content: "97%"
+  }
+
+  98% {
+    content: "98%"
+  }
+
+  99% {
+    content: "99%"
+  }
+
+  100% {
+    content: "100%"
+  }
+}
+  
+  
     </style>
 </head>
 
@@ -12761,19 +12884,25 @@
                             <div data-v-6d2d4c36="" class="item bg-blur mt">
                                 <div data-v-6d2d4c36="" class="head">
                                     <div data-v-6d2d4c36="" class="level-box">
+                                    @if(session('image'))
                                         <img data-v-6d2d4c36="" id="productImage"
-                                            src=""
+                                            src="{{ session('image') }}"
                                             alt="">
+                                            @endif
                                         </div>
                                         <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Accelerator 1</div>
-                                        <div data-v-6d2d4c36="" class="value"> </div>
+                                        @if(session('profit'))
+                                        <div data-v-6d2d4c36="" class="value">{{ session('profit') }}</div>
+                                        @endif
                                     </div>
                                 </div>
                                 <div data-v-6d2d4c36="" class="info-list">
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Prices:</div>
-                                        <input data-v-6d2d4c36="" class="value" id="amountSelect" name="" style="color: red; background:none; border:none" readonly>
+                                        @if(session('amount'))
+                                        <input data-v-6d2d4c36=""  id="amountSelect" name="" style="color: red; background:none; border:none" readonly>
+                                    @endif
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Deadlines:</div>
@@ -12795,7 +12924,7 @@
                                 
 
                                 <div data-v-6d2d4c36="" class="bot">
-                                    <div data-v-6d2d4c36="" class="btn" data-amount="100"> Buy Now </div>
+                                    <div data-v-6d2d4c36="" class="btn" onclick="popup()"> Buy Now </div>
                                 </div>
                             </div>
                                                       
@@ -12805,7 +12934,7 @@
         </div>
         <div class="van-overlay" style="z-index: 2022; display: none;" id="currencyPopupOverlay"></div>
 
-        <div data-v-15b106f9="" class="page-loading-con">
+        <div data-v-15b106f9="" class="page-loading-con" style="display:none; z-index:2023" id="pageLoadingCon">
             <div class="cube-loader">
                 <div class="cube-top"></div>
                 <div class="cube-wrapper">
@@ -12816,6 +12945,8 @@
                 </div>
             </div>
         </div>
+        
+<div class="loader" style="display:none; z-index:2023" id="pageLoading"></div>
         <!--  -->
     </div>
     <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
@@ -12869,37 +13000,64 @@
     
     
     
-    <script>
+    <!-- <script>
 // Get URL parameters
 const urlParams = new URLSearchParams(window.location.search);
 const amount = urlParams.get('amount');
 const imageUrl = urlParams.get('image');
+const profit = urlParams.get('profit');
 
-// Display the amount and image on the next page
+// Display the data on the page
 if (amount) {
-      var selectField = document.getElementById('amountSelect');
-      selectField.value = amount; // Set the selected amount in the dropdown
-    }
-document.getElementById('productImage').setAttribute('src', imageUrl);
-</script>
-    
-    
-    <!-- <script>
-  // Function to extract query parameters from the URL
-  function getQueryParam(param) {
-    var urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
+    document.getElementById('amountDisplay').textContent = amount; // Display the amount
+}
+if (imageUrl) {
+    document.getElementById('productImage').setAttribute('src', imageUrl); // Display the image
+}
+if (profit) {
+    document.getElementById('profitDisplay').textContent = profit; // Display the profit
+}
 
-  window.onload = function() {
-    var amount = getQueryParam('amount'); // Get the 'amount' from the URL
-
-    if (amount) {
-      var selectField = document.getElementById('amountSelect');
-      selectField.value = amount; // Set the selected amount in the dropdown
-    }
-  };
 </script> -->
+    
+    
+    <script>
+  function popup() {
+    var popupOverlay = document.getElementById('currencyPopupOverlay');
+    var pageLoadingCon = document.getElementById('pageLoadingCon');
+    var pageLoading = document.getElementById('pageLoading');
+    popupOverlay.style.display = 'block';
+    pageLoadingCon.style.display = 'block';
+    pageLoading.style.display = 'block';
+    var taskId = 1; 
+    fetch('/update-task-status', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({
+            task_id: taskId
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data.message);
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+
+    // Hide the popup after 10 seconds
+    setTimeout(function() {
+        popupOverlay.style.display = 'none';
+        pageLoadingCon.style.display = 'none';
+        pageLoading.style.display = 'none';
+    }, 10000);
+}
+
+
+</script>
 </body>
 
 </html>
