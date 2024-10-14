@@ -128,6 +128,22 @@ class Profile extends Controller
     return $this->dashboard_layout();
 
     }
+
+    public function tutorial()
+    {
+        
+    $this->data['page'] = 'user.profile.tutorial';
+    return $this->dashboard_layout();
+   
+    }
+
+    public function about()
+    {
+    $this->data['page'] = 'user.profile.about';
+    return $this->dashboard_layout();
+
+    }
+    
     
    public function codeVerify()
     {
@@ -666,7 +682,9 @@ public function BankDetail()
 
         }
     }
-   
+   public function orderRecord(){
+      return view('user/profile/orderRecord');
+   }
 
 
 

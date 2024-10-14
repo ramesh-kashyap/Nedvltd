@@ -331,11 +331,13 @@ class WithdrawRequest extends Controller
     public function WithdrawHistory(Request $request){
 
         $user=Auth::user();
+        
         $limit = $request->limit ? $request->limit : paginationLimit();
          $status = $request->status ? $request->status : null;
          $search = $request->search ? $request->search : null;
          $notes = Withdraw::where('user_id',$user->id)->orderBy('wdate','DESC');
-        if($search <> null && $request->reset!="Reset"){
+         
+         if($search <> null && $request->reset!="Reset"){
          $notes = $notes->where(function($q) use($search){
             $q->Where('wdate', 'LIKE', '%' . $search . '%')
               ->orWhere('amount', 'LIKE', '%' . $search . '%')
@@ -344,7 +346,7 @@ class WithdrawRequest extends Controller
          });
 
         }
-
+ 
          $notes = $notes->paginate($limit)->appends(['limit' => $limit ]);
 
        $this->data['search'] =$search;

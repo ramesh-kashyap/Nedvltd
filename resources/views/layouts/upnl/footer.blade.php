@@ -47,13 +47,13 @@
                     data-v-672149cf="">@lang('Home')</span></div>
         </a>
 
-        <a href="{{ route('user.quality') }}">
-            <div data-v-672149cf="{{ route('user.quality') }}" class="item"><img data-v-672149cf=""
+        <a href="{{ route('user.level-team') }}">
+            <div data-v-672149cf="" class="item"><img data-v-672149cf=""
                     src="{{ asset('') }}assets/images/qualt.png"><span
                     data-v-672149cf="">@lang('Quantify')</span></div>
         </a>
 
-        <a href="{{ route('user.level-team') }}">
+        <a href="{{ route('user.quality') }}">
             <div data-v-672149cf="" class="item"><img data-v-672149cf=""
                     src="{{ asset('') }}assets/images/iconsteam.png"><span
                     data-v-672149cf="">@lang('Team')</span></div>

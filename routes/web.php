@@ -61,7 +61,7 @@ Route::get('/about-us', [App\Http\Controllers\FrontController::class, 'about'])-
 Route::get('/services', [App\Http\Controllers\FrontController::class, 'services'])->name('services');
 Route::get('/contact-us', [App\Http\Controllers\FrontController::class, 'contact'])->name('contact-us');
 Route::get('/faq', [App\Http\Controllers\FrontController::class, 'faq'])->name('faq');
-Route::get('/tutorial', [App\Http\Controllers\FrontController::class, 'tutorial'])->name('tutorial');
+Route::get('/tutorial', [App\Http\Controllers\FrontController::class, 'tutorial'])->name(name: 'tutorial');
 Route::get('/team', [App\Http\Controllers\FrontController::class, 'team'])->name('team');
 Route::get('/privacy-policy', [App\Http\Controllers\FrontController::class, 'termcandition'])->name('privacy-policy');
 Route::get('/news', [App\Http\Controllers\FrontController::class, 'news'])->name('news');
@@ -87,8 +87,9 @@ Route::post('/lastWithdrawal', [App\Http\Controllers\UserPanel\Dashboard::class,
 
 
 Route::get('/article', [App\Http\Controllers\UserPanel\Profile::class, 'terms'])->name('user.terms');
+Route::get('/about', [App\Http\Controllers\UserPanel\Profile::class, 'about'])->name('user.about');
 
-
+Route::get('/tutorial', [App\Http\Controllers\UserPanel\Profile::class, 'tutorial'])->name('user.tutorial');
 Route::get('/profile', [App\Http\Controllers\UserPanel\Profile::class, 'index'])->name('user.profile');
 Route::get('/showinfo', [App\Http\Controllers\UserPanel\Profile::class, 'showinfo'])->name('user.showinfo');
 Route::post('/info', [App\Http\Controllers\UserPanel\Profile::class, 'infochange'])->name('user.infochange');
@@ -110,6 +111,9 @@ Route::get('/ChangeMail', [App\Http\Controllers\UserPanel\Profile::class, 'Chang
 Route::get('/bindMail', [App\Http\Controllers\UserPanel\Profile::class, 'bindMail'])->name('user.bindMail');
 Route::post('/bindemail-action', [App\Http\Controllers\UserPanel\Profile::class, 'bindemail_action'])->name('user.bindemail-action');
 Route::post('/changeEmailAction', [App\Http\Controllers\UserPanel\Profile::class, 'changeEmailAction'])->name('user.changeEmailAction');
+Route::get('/order', [App\Http\Controllers\UserPanel\Profile::class, 'orderRecord'])->name('user.orderRecord');
+// Route::get('/Video',[App\Http\Controllers\UserPanel\Video::class, 'video'])->name('user.video');
+
 
 
 Route::post('/edit-password', [App\Http\Controllers\UserPanel\Profile::class, 'change_password_post'])->name('user.edit-password');
@@ -161,6 +165,12 @@ Route::post('/WithdrawRequest', [App\Http\Controllers\UserPanel\WithdrawRequest:
 Route::post('/WithdrawRequestPrinciple', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'WithdrawRequestPrinciple'])->name('user.WithdrawRequestPrinciple');
 Route::get('/WithdrawHistory', [App\Http\Controllers\UserPanel\WithdrawRequest::class, 'WithdrawHistory'])->name('user.Withdraw-History');
 // end withdraw
+
+//Task
+Route::get('/Task', [App\Http\Controllers\UserPanel\TaskController::class, 'index'])->name('user.task');
+Route::get('/productDetail', [App\Http\Controllers\UserPanel\TaskController::class, 'product'])->name('user.productDetail');
+Route::post('/productDetails', [App\Http\Controllers\UserPanel\TaskController::class, 'productinfo'])->name('user.productDetails');
+Route::post('/update-task-status', [App\Http\Controllers\UserPanel\TaskController::class, 'updateTaskStatus'])->name('update.task.status');
 
 //team
 Route::get('/referral-team', [App\Http\Controllers\UserPanel\Team::class, 'index'])->name('user.referral-team');
