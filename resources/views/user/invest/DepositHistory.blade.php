@@ -122,12 +122,7 @@ type="text/javascript"
       );
     }
   </script>
-  <link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script">
+  
   <style type="text/css">
     @keyframes loading-animation-15b106f9 {
       from {
@@ -7022,7 +7017,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .income-box[data-v-aa0ccfea] {
       display: flex;
@@ -7818,7 +7813,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .page[data-v-37526a6c] {
       min-height: 100vh;
@@ -7905,9 +7899,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .w856 .head[data-v-0ff1fb10] {
       width: 100%;
@@ -8141,7 +8133,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/4.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .level-info[data-v-5a5733d2] {
       margin-top: 0.48rem;
@@ -8775,7 +8766,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/30.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     [data-v-b149b182] .head {
       background: url(/static/img/bg_login.d4d61e22.png) no-repeat top center !important;
@@ -8880,8 +8870,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/19.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/42.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .input_big_box[data-v-63783c8c] {
       position: relative;
@@ -9228,7 +9217,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/7.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .select-list[data-v-18e3de10] {
       margin-top: 0.24rem;
@@ -9546,7 +9534,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/32.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .table_list[data-v-555c6fae] {
       width: 100%;
@@ -9656,8 +9643,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/36.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .record_hdrecord_hd[data-v-6cf94806] {
       margin-top: 0.36rem;
@@ -9808,7 +9794,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .btn_box[data-v-f8d1bbb0] {
       margin-top: 0.48rem;
@@ -9938,21 +9923,28 @@ type="text/javascript"
                 </div>
               </div>
             </div><!----><!---->
-          </div>
+            <div class="van-overlay" style="z-index: 2003; display: none;"></div>
+            <div data-v-6cf94806="" class="van-popup van-popup--round van-popup--bottom" style="z-index: 2004; display: none;">
+    <div data-v-6cf94806="" class="van-picker">
+        <div class="van-picker__toolbar">
+            <button type="button" class="van-picker__cancel">Cancel</button>
+            <div class="van-ellipsis van-picker__title">Select Category</div>
+            <button type="button" class="van-picker__confirm">Confirm</button>
+        </div>
+        <!---->
+       
+        <!---->
+   
         </div><!---->
       </div>
+    </div>
     </div>
     <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
       <div data-v-15b106f9="" class="page-loading"></div>
       <p data-v-15b106f9="">Loading...</p>
     </div>
   </div>
-  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+  
   <script>
     let standalone = document.getElementById('startLogo')
     standalone.style.display = 'flex'
@@ -9960,6 +9952,7 @@ type="text/javascript"
       standalone.style.display = 'none'
     }, 3000)
   </script>
+  
   <iframe frameborder="0" scrolling="no" style="background-color: transparent; border: 0px; display: none;"></iframe>
   <div id="GOOGLE_INPUT_CHEXT_FLAG" input=""
     input_stat="{&quot;tlang&quot;:true,&quot;tsbc&quot;:true,&quot;pun&quot;:true,&quot;mk&quot;:true,&quot;ss&quot;:true}"
@@ -9968,6 +9961,50 @@ type="text/javascript"
       class="van-icon van-icon-success van-toast__icon"><!----></i>
     <div class="van-toast__text">Login successful</div>
   </div><!----><!---->
+  <script>
+    const overlay = document.getElementById('overlay');
+    const popup = document.getElementById('popup');
+    const cancelBtn = document.getElementById('cancelBtn');
+    const confirmBtn = document.getElementById('confirmBtn');
+    const categoryList = document.getElementById('categoryList');
+    const openPicker = document.getElementById('openPicker');
+    
+    let selectedValue = 'all'; // Default selection
+
+    // Open the picker
+    openPicker.addEventListener('click', () => {
+        overlay.style.display = 'block';
+        popup.style.display = 'block';
+    });
+
+    // Close the picker
+    cancelBtn.addEventListener('click', () => {
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    });
+
+    // Confirm selection
+    confirmBtn.addEventListener('click', () => {
+        console.log(`Selected Category: ${selectedValue}`);
+        overlay.style.display = 'none';
+        popup.style.display = 'none';
+    });
+
+    // Select category
+    categoryList.addEventListener('click', (e) => {
+        if (e.target && e.target.matches('.van-picker-column__item')) {
+            // Deselect previous item
+            const previouslySelected = categoryList.querySelector('.van-picker-column__item--selected');
+            if (previouslySelected) {
+                previouslySelected.classList.remove('van-picker-column__item--selected');
+            }
+            // Select new item
+            e.target.classList.add('van-picker-column__item--selected');
+            selectedValue = e.target.dataset.value;
+        }
+    });
+</script>
+
 </body>
 
 </html>
