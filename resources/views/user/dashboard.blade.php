@@ -9530,12 +9530,36 @@
 </div> -->
 <div class="carousel-wrap">
   <div class="owl-carousel">
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="font-size:10px; font-weight:300">Don't Challange The Lady Billionaire</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Challange The Lady Billionaire</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">My Seconds Husbend's A Prince</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Return of the glam Queen</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
 
   </div>
 </div>
@@ -9672,8 +9696,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+<link rel="stylesheet" href="/assets/owl.carousel.min.css">
 <!-- Owl Carousel Default Theme CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
