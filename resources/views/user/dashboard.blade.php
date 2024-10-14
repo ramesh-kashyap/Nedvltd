@@ -9211,7 +9211,7 @@
 .carousel-wrap {
   margin: 5px auto;
   padding: 0 5%;
-  width: 840px;
+  /* width: 840px; */
   position: relative;
 }
 
@@ -9528,7 +9528,7 @@
         </div>
     </div>
 </div> -->
-<div class="carousel-wrap"style="overflow:hidden !importent">
+<div class="carousel-wrap">
   <div class="owl-carousel">
     <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
     <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
@@ -9695,7 +9695,7 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 6
+      items: 3
     },
     600: {
       items: 6
