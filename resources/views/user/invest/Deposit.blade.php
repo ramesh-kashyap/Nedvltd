@@ -1500,7 +1500,7 @@
     position: fixed;
     max-height: 100%;
     overflow-y: auto;
-    background-color: #068475;
+    background-color: #12244a;
     transition: transform 0.3s;
     -webkit-overflow-scrolling: touch;
   }
@@ -6287,7 +6287,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+    background: #04103a;
 
 
 

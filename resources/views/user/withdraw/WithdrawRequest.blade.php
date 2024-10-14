@@ -229,7 +229,7 @@
     padding-top: constant(safe-area-inset-top);
     padding-top: env(safe-area-inset-top);
     max-height: 100vh;
-    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+    background: #04103a;
     position: relative;
     word-wrap: break-word;
     word-break: normal;
@@ -1499,7 +1499,7 @@
     position: fixed;
     max-height: 100%;
     overflow-y: auto;
-    background-color: #068475;
+    background-color: #12244a;
     transition: transform 0.3s;
     -webkit-overflow-scrolling: touch;
   }
@@ -6023,7 +6023,7 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+    background: #04103a;
     justify-content: space-between;
   }
   .page-header[data-v-37526a6c] {
@@ -6045,7 +6045,7 @@
     min-height: 2rem;
     max-width: 8.5rem;
     z-index: 58;
-    background: #068475;
+    background: #12244a;
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
   }

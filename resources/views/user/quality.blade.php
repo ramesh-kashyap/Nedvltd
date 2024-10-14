@@ -2351,7 +2351,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: #068475;
+background: #12244a;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -2369,7 +2369,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: #068475;
+background: #12244a;
 backdrop-filter: blur(0.3rem);
 z-index: -1;
 }
@@ -5861,7 +5861,7 @@ height: 100%;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
-background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+background: #04103a;
 justify-content: space-between;
 }
 .page-header[data-v-37526a6c] {
@@ -5883,7 +5883,7 @@ width: 100%;
 min-height: 2rem;
 max-width: 8.5rem;
 z-index: 58;
-background: ##068475;
+background: ##12244a;
 padding-bottom: constant(safe-area-inset-bottom);
 padding-bottom: env(safe-area-inset-bottom);
 }
@@ -6018,7 +6018,7 @@ height: 0.4rem;
 vertical-align: top;
 }
 .logo img[data-v-0ff1fb10] {
-height: 60px;
+height: 30px;
 }
 .van-field__word-num[data-v-0ff1fb10] {
 color: #fff;
@@ -6976,9 +6976,9 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #068475;;
+background: #12244a;;
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #068475;
+border-top: 0.02rem solid #12244a;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
