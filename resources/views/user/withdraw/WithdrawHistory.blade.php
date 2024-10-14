@@ -122,12 +122,7 @@ type="text/javascript"
       );
     }
   </script>
-  <link href="/js/app.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-echarts.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-moment.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vant.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/chunk-vue.86535a9c-1727647884855.js" rel="preload" as="script">
-  <link href="/js/vendors~app.86535a9c-1727647884855.js" rel="preload" as="script">
+ 
   <style type="text/css">
     @keyframes loading-animation-15b106f9 {
       from {
@@ -7022,7 +7017,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/3.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .income-box[data-v-aa0ccfea] {
       display: flex;
@@ -7818,7 +7812,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/77.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .page[data-v-37526a6c] {
       min-height: 100vh;
@@ -7905,9 +7898,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/33.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/21.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/59.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .w856 .head[data-v-0ff1fb10] {
       width: 100%;
@@ -8141,7 +8132,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/4.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .level-info[data-v-5a5733d2] {
       margin-top: 0.48rem;
@@ -8775,7 +8765,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/30.86535a9c-1727647884855.js"></script>
+ 
   <style type="text/css">
     [data-v-b149b182] .head {
       background: url(/static/img/bg_login.d4d61e22.png) no-repeat top center !important;
@@ -8880,8 +8870,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/19.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/42.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .input_big_box[data-v-63783c8c] {
       position: relative;
@@ -9228,7 +9217,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/7.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .select-list[data-v-18e3de10] {
       margin-top: 0.24rem;
@@ -9546,7 +9535,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/32.86535a9c-1727647884855.js"></script>
+  
   <style type="text/css">
     .table_list[data-v-555c6fae] {
       width: 100%;
@@ -9656,8 +9645,7 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/0.86535a9c-1727647884855.js"></script>
-  <script charset="utf-8" src="/js/36.86535a9c-1727647884855.js"></script>
+ 
   <style type="text/css">
     .record_hdrecord_hd[data-v-6cf94806] {
       margin-top: 0.36rem;
@@ -9807,7 +9795,6 @@ type="text/javascript"
       max-width: 8.5rem;
     }
   </style>
-  <script charset="utf-8" src="/js/78.86535a9c-1727647884855.js"></script>
   <style type="text/css">
     .btn_box[data-v-f8d1bbb0] {
       margin-top: 0.48rem;
@@ -9949,12 +9936,7 @@ type="text/javascript"
       <p data-v-15b106f9="">Loading...</p>
     </div>
   </div>
-  <script type="text/javascript" src="/js/chunk-vue.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-echarts.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-vant.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/chunk-moment.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
-  <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
+ 
   <script>
     let standalone = document.getElementById('startLogo')
     standalone.style.display = 'flex'
