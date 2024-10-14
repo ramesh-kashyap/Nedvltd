@@ -9225,7 +9225,7 @@
     width:840px;
 }
 .owl-item .active{
-    width:125px;
+    width:110px;
 }
 /* end fix */
 .owl-nav > div {
@@ -9530,14 +9530,13 @@
 </div> -->
 <div class="carousel-wrap">
   <div class="owl-carousel">
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images3.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
+
   </div>
 </div>
                     </div>
@@ -9698,10 +9697,10 @@ $(".owl-carousel").owlCarousel({
       items: 3
     },
     600: {
-      items: 6
+      items: 3
     },
     1000: {
-      items: 6
+      items: 3
     }
   }
 });
