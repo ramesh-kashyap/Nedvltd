@@ -9530,12 +9530,12 @@
 </div> -->
 <div class="carousel-wrap">
   <div class="owl-carousel">
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="font-size:10px; font-weight:300">Don't Challange The Lady Billionaire</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="font-size:10px; font-weight:300">Don't Change</div></div>
 
   </div>
 </div>
