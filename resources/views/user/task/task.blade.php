@@ -1,6 +1,8 @@
 <html style="font-size: 50px;">
 
 <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="csrf-token" content="{{ csrf_token() }}">
     <style class="vjs-styles-defaults">
         .video-js {
             width: 300px;
@@ -12735,7 +12737,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 3.40 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="3.40 USDT"> 3.40 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12777,7 +12779,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 7.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="7.00 USDT"> 7.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12819,7 +12821,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 22.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="22.00 USDT"> 22.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12861,7 +12863,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 46.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="46.00 USDT"> 46.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12903,7 +12905,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 120.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="120.00 USDT"> 120.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12945,7 +12947,7 @@
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Daily earnings:</div>
-                                        <div data-v-6d2d4c36="" class="value"> 250.00 USDT</div>
+                                        <div data-v-6d2d4c36="" class="value" Data-Profit="250.00 USDT"> 250.00 USDT</div>
                                     </div>
                                     <div data-v-6d2d4c36="" class="info">
                                         <div data-v-6d2d4c36="" class="name">Total earnings:</div>
@@ -12981,7 +12983,7 @@
                             </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.level-team') }}">
+                            <a href="{{ route('user.task') }}">
                                 <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
                                         src="{{ asset('') }}static/img/Icon/Home_icon/video.png"
                                         alt=""><span data-v-6c4d8baa=""> Video </span></div>
@@ -13017,7 +13019,12 @@
             <p data-v-15b106f9="">Loading...</p>
         </div>
     </div>
-    
+    <script type="text/javascript" src="/js/chunk-vue.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/chunk-echarts.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/chunk-vant.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/chunk-moment.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script>
+    <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
     <script>
         let standalone = document.getElementById('startLogo')
         standalone.style.display = 'flex'
@@ -13033,7 +13040,7 @@
     <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i
             class="van-icon van-icon-success van-toast__icon">
             <!----></i>
-        <div class="van-toast__text">Login successful</div>
+        <div class="van-toast__text">]</div>
     </div>
     <div class="van-overlay" style="z-index: 2004; display: none;"></div>
     <div data-v-5954443c="" class="van-popup van-popup--round van-popup--center"
@@ -13056,6 +13063,17 @@
                     alt=""></div>
         </div>
     </div>
+    <form action="{{ route('user.productDetails') }}" method="POST" id="productForm">
+        @csrf <!-- CSRF token for security -->
+        
+        <!-- Hidden inputs to send values from JavaScript -->
+        <input type="hidden" name="amount" id="amount">
+        <!-- <input type="hidden" name="profit" id="profit"> -->
+        <input type="hidden" name="image" id="imageUrl">
+        
+        <button type="submit">Submit</button>
+    </form>
+    
     <!---->
     <!---->
     <!---->
@@ -13066,14 +13084,74 @@
     <!---->
     <!---->
     <!---->
-    <script>
-  document.querySelectorAll('.btn').forEach(function(button) {
-    button.addEventListener('click', function() {
-      var amount = this.getAttribute('Data-Amount');
-      window.location.href = '/user/productDetail?amount=' + amount;
+    <!-- <script>
+// JavaScript to send amount and image
+// document.querySelectorAll('.btn').forEach(function(button) {
+//   button.addEventListener('click', function() {
+//     var amount = this.getAttribute('Data-Amount'); // Get the amount
+//     var imageUrl = this.closest('.item').querySelector('img').getAttribute('src'); // Get the image URL
+//     window.location.href = `/user/productDetail?amount=${amount}&image=${encodeURIComponent(imageUrl)}`; // Navigate to the next page with amount and image URL
+//   });
+// });
+document.querySelectorAll('.btn').forEach(function(button) {
+  button.addEventListener('click', function() {
+    // Retrieve data attributes
+    var amount = this.getAttribute('data-amount');
+    var profit = this.getAttribute('data-profit');
+    var imageUrl = this.closest('.item').querySelector('img').getAttribute('src');
+
+    // Create data object to send in the POST request
+    var requestData = {
+      amount: amount,
+      profit: profit,
+      image: imageUrl,
+    };
+
+    // Send the data to the controller via POST request using fetch
+    fetch('/user/productDetail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content') // CSRF token for security
+      },
+      body: JSON.stringify(requestData) // Send the data as JSON
+    })
+    .then(response => response.json())
+    .then(data => {
+      if (data.success) {
+        console.log('Data sent successfully');
+        window.location.href = '/user/productDetail'; 
+      } else {
+        console.log('Failed to send data');
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
     });
   });
-</script>
+});
+
+
+</script> -->
+<script>
+        document.querySelectorAll('.btn').forEach(function(button) {
+            button.addEventListener('click', function() {
+                // Retrieve data attributes
+                var amount = this.getAttribute('data-amount');
+                // var profit = this.getAttribute('data-profit');
+                var imageUrl = this.closest('.item').querySelector('img').getAttribute('src');
+
+                // Populate the hidden inputs in the form
+                document.getElementById('amount').value = amount;
+                // document.getElementById('profit').value = profit;
+                document.getElementById('imageUrl').value = imageUrl;
+
+                // Optionally, submit the form
+                document.getElementById('productForm').submit();
+            });
+        });
+    </script>
+
 </body>
 
 </html>

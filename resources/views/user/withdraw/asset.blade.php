@@ -9444,7 +9444,16 @@ max-width: 8.5rem;
     <p data-v-15b106f9="">Loading...</p>
   </div>
 </div>
+<script>
+// Get URL parameters
+const urlParams = new URLSearchParams(window.location.search);
+const amount = urlParams.get('amount');
+const imageUrl = urlParams.get('image');
 
+// Display the amount and image on the next page
+document.getElementById('productAmount').innerText = amount + " USDT";
+document.getElementById('productImage').setAttribute('src', imageUrl);
+</script>
 <script>
 let standalone=document.getElementById('startLogo')
 standalone.style.display='flex'
