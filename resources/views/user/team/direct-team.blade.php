@@ -268,7 +268,7 @@
             padding-top: constant(safe-area-inset-top);
             padding-top: env(safe-area-inset-top);
             max-height: 100vh;
-            background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+            background: #04103a;
             position: relative;
             word-wrap: break-word;
             word-break: normal;
@@ -3697,7 +3697,7 @@
             color: #f3f3f3;
             font-size: 0.28rem;
             line-height: 0.48rem;
-            /* background-color: #068475; */
+            /* background-color: #12244a; */
         }
 
         .van-cell::after {

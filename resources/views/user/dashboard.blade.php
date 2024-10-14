@@ -13,7 +13,7 @@
     </style>
     <meta charset="utf-8">
     <!--    <link rel="icon" href="/logo.ico" />-->
-    <title>NEDVLTD</title>
+    <title>VIRERO</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--  <meta name="theme-color" content="#fff" />-->
     <meta http-equiv="pragma" content="no-cache">
@@ -7247,7 +7247,7 @@
         }
 
         .logo img[data-v-0ff1fb10] {
-            height: 15px;
+            height: 30px;
         }
 
         .van-field__word-num[data-v-0ff1fb10] {
@@ -7858,7 +7858,7 @@
     <style type="text/css">
         .home-team[data-v-7fb36d82] {
             border-radius: 0.2rem;
-            background: #068475;
+            background: #12244a;
             padding: 0.4rem 0.28rem;
         }
 
@@ -8424,7 +8424,7 @@
             height: fit-content;
             background: #201845;
             border-radius: 0.32rem 0.32rem 0 0;
-            border-top: 0.02rem solid #068475;;
+            border-top: 0.02rem solid #12244a;;
             z-index: 56;
         }
 
@@ -9297,7 +9297,7 @@
                     <div data-v-0ff1fb10="" class="head"><!---->
                         <div data-v-0ff1fb10="" class="container flex"><!---->
                             <div data-v-0ff1fb10="" class="logo" style="padding-left: 10px"><img data-v-5954443c="" data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/logo2.png" alt="" class="logo"></div>
+                                    src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             <div data-v-0ff1fb10="" class="notice"></div>
@@ -9359,7 +9359,7 @@
                             <div data-v-5954443c="" role="alert" class="van-notice-bar"
                                 style="color: rgb(255, 255, 255); background: none;"><i
                                     class="van-icon van-notice-bar__left-icon"><img
-                                        src="/static/img/icon/icons8-bell-100.png"
+                                        src="/static/img/logo1.bed352ca.png"
                                         class="van-icon__image"><!----></i>
                                 <div role="marquee" class="van-notice-bar__wrap">
                                     <div class="van-notice-bar__content van-ellipsis" style="transition-duration: 0s;">
@@ -9367,7 +9367,7 @@
                                             <div class="van-swipe__track van-swipe__track--vertical"
                                                 style="transition-duration: 0ms; transform: translateY(0px); height: 36px;">
                                                 <div data-v-5954443c="" class="van-swipe-item" style="height: 36px;">
-                                                    Dear NEDVLTD Users </div>
+                                                    Dear VIRERO Users </div>
                                             </div>
                                         </div>
                                     </div>
@@ -9652,7 +9652,7 @@
             <div data-v-5954443c="" class="modal-notice">
                 <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
                         src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
-                <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
+                <div data-v-5954443c="" class="notice-title"> Dear VIRERO Users </div>
                 <div data-v-5954443c="" class="notice-desc">
                     <p>Latest Activity Notification</p>
 
