@@ -9707,74 +9707,64 @@ $(".owl-carousel").owlCarousel({
 });
 
 </script>
-<script>  
-    const videoList = document.querySelector('.video-list');
-const videoItems = document.querySelectorAll('.video');
-let currentPosition = -7; // Start at -7px
-const itemWidth = 147 + 10; // Item width (147px) + margin-right (10px)
-let isFirstScroll = true;
+<script>
+// This function initializes the swipe effect
+function initializeSwipe() {
+    const swipeContainer = document.querySelector('.van-swipe__track');
+    const swipeItems = document.querySelectorAll('.van-swipe-item');
+    const indicators = document.querySelectorAll('.van-swipe__indicator');
 
-// Scroll left (by 147px)
-function scrollLeft() {
-    if (isFirstScroll) {
-        currentPosition += 7; // Scroll by 7px on first scroll
-        isFirstScroll = false;
-    } else {
-        currentPosition += itemWidth; // Subsequent scrolls move by itemWidth
+    let currentIndex = 0;
+    let swipeInterval;
+
+    function goToSlide(index) {
+        const slideWidth = swipeItems[0].offsetWidth;
+        swipeContainer.style.transition = 'transform 0.5s ease';
+        swipeContainer.style.transform = `translateX(${-slideWidth * index}px)`;
+
+        // Update active indicator
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('van-swipe__indicator--active');
+            } else {
+                indicator.classList.remove('van-swipe__indicator--active');
+            }
+        });
+
+        currentIndex = index;
     }
-    updateCarouselPosition();
+
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % swipeItems.length;
+        goToSlide(nextIndex);
+    }
+
+    function previousSlide() {
+        const prevIndex = (currentIndex - 1 + swipeItems.length) % swipeItems.length;
+        goToSlide(prevIndex);
+    }
+
+    // Automatically move to the next slide every 3 seconds
+    function startAutoSwipe() {
+        swipeInterval = setInterval(nextSlide, 3000); // Adjust the interval as needed
+    }
+
+    // Stop auto swipe on user interaction (swipe)
+    swipeContainer.addEventListener('touchstart', () => {
+        clearInterval(swipeInterval);
+    });
+
+    swipeContainer.addEventListener('touchend', startAutoSwipe);
+
+    // Initialize first slide
+    goToSlide(currentIndex);
+    startAutoSwipe();
 }
 
-// Scroll right (by 147px)
-function scrollRight() {
-    if (isFirstScroll) {
-        currentPosition -= 7; // Scroll by 7px on first scroll
-        isFirstScroll = false;
-    } else {
-        currentPosition -= itemWidth; // Subsequent scrolls move by itemWidth
-    }
-    updateCarouselPosition();
-}
-
-// Update the carousel position using transform
-function updateCarouselPosition() {
-    videoList.style.transform = `translate3d(${currentPosition}px, 0px, 0px)`;
-}
-
-// Optional: Add event listeners for mouse drag (to allow scrolling via dragging)
-let isDragging = false;
-let startPosition = 0;
-
-videoList.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startPosition = e.pageX;
-    videoList.style.transitionDuration = '0ms'; // Disable smooth transition during drag
-});
-
-videoList.addEventListener('mousemove', (e) => {
-    if (!isDragging) return;
-    const moveDistance = e.pageX - startPosition;
-
-    // Scroll left or right based on drag movement
-    if (moveDistance > 147) {
-        scrollRight();
-        startPosition = e.pageX; // Reset start position
-    } else if (moveDistance < -147) {
-        scrollLeft();
-        startPosition = e.pageX;
-    }
-});
-
-videoList.addEventListener('mouseup', () => {
-    isDragging = false;
-    videoList.style.transitionDuration = '300ms'; // Re-enable smooth transition
-});
-
-videoList.addEventListener('mouseleave', () => {
-    isDragging = false;
-});
-
+// Initialize the swipe carousel when the page loads
+document.addEventListener('DOMContentLoaded', initializeSwipe);
 </script>
+
 
 </body>
 
