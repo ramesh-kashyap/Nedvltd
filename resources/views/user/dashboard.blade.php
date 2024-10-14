@@ -8281,7 +8281,8 @@
 
         .banner img[data-v-5954443c] {
             width: 100%;
-            border-radius: 0.1rem;
+            height:90%;
+            border-radius: 0.4rem;
         }
 
         .banner .one_line[data-v-5954443c] {
@@ -9189,6 +9190,95 @@
         .van-popup--bottom[data-v-f8d1bbb0] {
             max-width: 8.5rem;
         }
+        /* .video-list {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);    
+    transition: transform 0.5s;
+    width: 840px;
+    overflow-x: scroll; 
+    
+}
+
+.video {
+    width: 125px;
+    border-radius: 0.16rem;
+    overflow: hidden;
+    border: 0.02rem solid #252930;
+    text-align: center;
+    flex-shrink: 0;
+} */
+
+.carousel-wrap {
+  margin: 5px auto;
+  padding: 0 5%;
+  width: 840px;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100;
+  -webkit-backface-visibility: hidden;
+}
+.owl-stage{
+    width:840px;
+}
+.owl-item .active{
+    width:125px;
+}
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+  display:none;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+
+
+.main-text, .sub-text, .image-text {
+    position: absolute; /* Position the text over the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+    padding: 0 10px; /* Add some padding to the text */
+    width: 100%; /* Ensure it spans the width of the image */
+}
+
+.main-text {
+    top: 10%; /* Position the "Premium" text towards the top */
+    font-size: 20px; /* Set font size for main text */
+    font-weight: bold; /* Make it bold for prominence */
+}
+
+.image-text {
+    top: 68%; /* Position this text towards the middle of the image */
+    font-size: 16px; /* Slightly smaller text */
+    font-weight: normal; /* Normal font weight */
+    font-style: italic; /* Italicize the description */
+}
+
+.sub-text {
+    bottom: 12%; /* Position this text towards the bottom */
+    font-size: 14px; /* Smaller font size for the subtitle */
+    font-weight: lighter; /* Lighter weight for a less prominent text */
+}
+
     </style>
      
 </head>
@@ -9230,20 +9320,34 @@
                 <div data-v-5954443c="" class="container">
                     <div data-v-5954443c="" class="banner" style="height:200px">
                         <div data-v-5954443c="" class="my-swipe van-swipe">
-                            <div class="van-swipe__track"
-                                style="transition-duration: 500ms; transform: translateX(-786px); width: 786px;">
-                                <div data-v-5954443c="" class="van-swipe-item"
-                                    style="width: 393px; transform: translateX(786px);">
-                                    <div data-v-5954443c="" class="van-item"><img data-v-5954443c=""
-                                            src="{{asset('')}}static/img/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
-                                            alt=""></div>
-                                </div>
-                                <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-                                    <div data-v-5954443c="" class="van-item"><img data-v-5954443c=""
-                                            src="{{asset('')}}static/img/b3ebfaa57240ec988a6edf1e3cae9c73.png"
-                                            alt=""></div>
-                                </div>
-                            </div>
+                        <div class="van-swipe__track" style="transition-duration: 500ms; width: 1179px;">
+    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+            <img data-v-5954443c="" src="{{asset('')}}static/img/series1.png" alt="">
+            <div class="overlay"></div>
+            <p class="main-text">Premium</p>
+                            <p class="image-text">Fated Deal with mafia King</p>
+                            <p class="sub-text">A family show</p>
+        </div>
+    </div>
+    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+            <img data-v-5954443c="" src="{{asset('')}}static/img/series2.png" alt="">
+            <p class="main-text">Premium</p>
+                            <p class="image-text">Fated Deal with mafia King</p>
+                            <p class="sub-text">A family show</p>
+        </div>
+    </div>
+    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+            <img data-v-5954443c="" src="{{asset('')}}static/img/series3.png" alt="">
+            <p class="main-text">Premium</p>
+                            <p class="image-text">Fated Deal with mafia King</p>
+                            <p class="sub-text">A family show</p>
+        </div>
+    </div>
+</div>
+
                             <div class="van-swipe__indicators"><i
                                     class="van-swipe__indicator van-swipe__indicator--active"
                                     style="background-color: white;"></i><i class="van-swipe__indicator" style=""></i>
@@ -9297,7 +9401,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div data-v-5e50d7ad="" data-v-5954443c="" class="bg-blur income-box mt">
+                    <!-- <div data-v-5e50d7ad="" data-v-5954443c="" class="bg-blur income-box mt">
                         <div data-v-5e50d7ad="" class="income">
                             <div data-v-5e50d7ad="" class="head"><img data-v-5e50d7ad=""
                                     src="/static/img/icon/deposit.png"
@@ -9319,7 +9423,7 @@
                             <div data-v-5e50d7ad="" class="amount theme">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
                         </div>
                         <div data-v-5e50d7ad="" class="check-btn"onclick="location.href='{{route('user.roi-bonus')}}'">View</div>
-                    </div>
+                    </div> -->
                     <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
                         <div data-v-aa0ccfea="" class="income">
                             <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
@@ -9338,7 +9442,7 @@
                             <div data-v-aa0ccfea="" class="amount">0 USDT</div>
                         </div>
                     </div>
-                    <div data-v-1f37bdab="" data-v-5954443c="" class="home-router mt">
+                    <!-- <div data-v-1f37bdab="" data-v-5954443c="" class="home-router mt">
                         <div data-v-1f37bdab="" class="router bg-blur">
                             <div data-v-1f37bdab="" class="title">My level</div>
                             <div data-v-1f37bdab="" class="content">
@@ -9367,8 +9471,8 @@
                             </div>
                             </a>
                         </div>
-                    </div>
-                    <div data-v-7fb36d82="" data-v-5954443c="" class="home-team mt">
+                    </div> -->
+                    <!-- <div data-v-7fb36d82="" data-v-5954443c="" class="home-team mt">
                         <div data-v-7fb36d82="" class="head">
                             <div data-v-7fb36d82="" class="title">My team</div>
                             <a href="{{route('user.task')}}">
@@ -9391,6 +9495,51 @@
                                 <div data-v-7fb36d82="" class="value"><span data-v-7fb36d82="">0</span> /0 </div>
                             </div>
                         </div>
+                    </div> -->
+                    <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
+                        <div data-v-4eabb456="" class="head">
+                            <div data-v-4eabb456="" class="title">Latest Treanding</div>
+                        </div>
+                        <!-- <div class="scroll-container">
+    <div class="video-list" style="transition-duration: 0ms; transform: translate3d(-7px, 0px, 0px); transition-delay: 0ms;">
+        <div class="video">
+            <img src="{{asset('')}}static/img/images1.png" alt="">
+            <div class="name">Don't Change</div>
+        </div>
+        <div class="video">
+            <img src="{{asset('')}}static/img/images2.png" alt="">
+            <div class="name">Aprime Charming</div>
+        </div>
+        <div class="video">
+            <img src="{{asset('')}}static/img/images1.png" alt="">
+            <div class="name">Don't Change</div>
+        </div>
+        <div class="video">
+            <img src="{{asset('')}}static/img/images1.png" alt="">
+            <div class="name">Don't Change</div>
+        </div>
+        <div class="video">
+            <img src="{{asset('')}}static/img/images1.png" alt="">
+            <div class="name">Don't Change</div>
+        </div>
+        <div class="video">
+            <img src="{{asset('')}}static/img/images1.png" alt="">
+            <div class="name">Don't Change</div>
+        </div>
+    </div>
+</div> -->
+<div class="carousel-wrap"style="overflow:hidden !importent">
+  <div class="owl-carousel">
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+  </div>
+</div>
                     </div>
                     <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
                         <div data-v-4eabb456="" class="head">
@@ -9519,47 +9668,104 @@
         </div>
     </div><!----><!----><!----><!----><!----><!---->
     @include('partials.notify');
+
+    <!-- jQuery (make sure this is loaded first) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+<!-- Owl Carousel Default Theme CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS (make sure this is loaded AFTER jQuery) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
     <script>
- document.addEventListener('DOMContentLoaded', () => {
-    const track = document.querySelector('.van-swipe__track');
-    const items = document.querySelectorAll('.van-swipe-item');
-    const indicators = document.querySelectorAll('.van-swipe__indicator');
-    const itemWidth = 393; // Width of each item
-    const totalItems = items.length - 1; // Total number of original items (excluding duplicate)
-    let currentIndex = 0; // Start from the first image
-
-    // Function to update indicators
-    function updateIndicators() {
-        indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('van-swipe__indicator--active', index === currentIndex);
-        });
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 1,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 6
+    },
+    600: {
+      items: 6
+    },
+    1000: {
+      items: 6
     }
-
-    // Function to move the carousel
-    function moveCarousel() {
-        currentIndex++;
-        if (currentIndex > totalItems) {
-            currentIndex = 1; // Skip to the second item (the first duplicate)
-            track.style.transition = 'none'; // Disable transition for immediate jump
-            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-            setTimeout(() => {
-                track.style.transition = 'transform 0.5s ease'; // Re-enable transition
-            }, 50);
-        }
-
-        // Shift the track left
-        track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
-        updateIndicators(); // Update indicators after moving the carousel
-    }
-
-    // Auto-slide every 3 seconds
-    const autoplay = setInterval(moveCarousel, 3000);
-
-    // Add event listener for the Next button
-    document.getElementById('next').addEventListener('click', moveCarousel);
+  }
 });
 
-    </script>
+</script>
+<script>
+// This function initializes the swipe effect
+function initializeSwipe() {
+    const swipeContainer = document.querySelector('.van-swipe__track');
+    const swipeItems = document.querySelectorAll('.van-swipe-item');
+    const indicators = document.querySelectorAll('.van-swipe__indicator');
+
+    let currentIndex = 0;
+    let swipeInterval;
+
+    function goToSlide(index) {
+        const slideWidth = swipeItems[0].offsetWidth;
+        swipeContainer.style.transition = 'transform 0.5s ease';
+        swipeContainer.style.transform = `translateX(${-slideWidth * index}px)`;
+
+        // Update active indicator
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('van-swipe__indicator--active');
+            } else {
+                indicator.classList.remove('van-swipe__indicator--active');
+            }
+        });
+
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % swipeItems.length;
+        goToSlide(nextIndex);
+    }
+
+    function previousSlide() {
+        const prevIndex = (currentIndex - 1 + swipeItems.length) % swipeItems.length;
+        goToSlide(prevIndex);
+    }
+
+    // Automatically move to the next slide every 3 seconds
+    function startAutoSwipe() {
+        swipeInterval = setInterval(nextSlide, 3000); // Adjust the interval as needed
+    }
+
+    // Stop auto swipe on user interaction (swipe)
+    swipeContainer.addEventListener('touchstart', () => {
+        clearInterval(swipeInterval);
+    });
+
+    swipeContainer.addEventListener('touchend', startAutoSwipe);
+
+    // Initialize first slide
+    goToSlide(currentIndex);
+    startAutoSwipe();
+}
+
+// Initialize the swipe carousel when the page loads
+document.addEventListener('DOMContentLoaded', initializeSwipe);
+</script>
+
+
 </body>
 
 </html>
