@@ -2770,7 +2770,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #068475;
+            background:#12244a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -7072,7 +7072,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            background:  linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+            background: #04103a;
         }
 
         .page-header[data-v-37526a6c] {
@@ -7247,7 +7247,7 @@
         }
 
         .logo img[data-v-0ff1fb10] {
-            height: 60px;
+            height: 15px;
         }
 
         .van-field__word-num[data-v-0ff1fb10] {
@@ -7957,7 +7957,7 @@
         }
 
         .home-partner .info-list .info[data-v-4eabb456] {
-            background: #068475;
+            background: #12244a;
             width: 32%;
             border-radius: 0.16rem;
             overflow: hidden;
@@ -7980,7 +7980,7 @@
         }
 
         .home-partner .info-list .info .name[data-v-4eabb456] {
-            background: #079987;
+            /* background: #079987; */
             color: #fff;
             font-size: 0.22rem;
             padding: 0.16rem 0.08rem;
@@ -8422,7 +8422,7 @@
             max-width: 10rem;
             width: 100%;
             height: fit-content;
-            background: #068475;
+            background: #201845;
             border-radius: 0.32rem 0.32rem 0 0;
             border-top: 0.02rem solid #068475;;
             z-index: 56;
@@ -9296,7 +9296,7 @@
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head"><!---->
                         <div data-v-0ff1fb10="" class="container flex"><!---->
-                            <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
+                            <div data-v-0ff1fb10="" class="logo" style="padding-left: 10px"><img data-v-5954443c="" data-v-0ff1fb10=""
                                     src="{{asset('')}}static/img/logo2.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
