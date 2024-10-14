@@ -9716,15 +9716,8 @@ function initializeSwipe() {
     let currentIndex = 0;
     let swipeInterval;
 
-    // Get the total number of slides
-    const totalSlides = swipeItems.length;
-
     function goToSlide(index) {
         const slideWidth = swipeItems[0].offsetWidth;
-        
-        // If index is beyond bounds, do nothing
-        if (index < 0 || index >= totalSlides) return;
-
         swipeContainer.style.transition = 'transform 0.5s ease';
         swipeContainer.style.transform = `translateX(${-slideWidth * index}px)`;
 
@@ -9741,18 +9734,12 @@ function initializeSwipe() {
     }
 
     function nextSlide() {
-        // Check if we're at the last slide
-        const nextIndex = (currentIndex + 1) % totalSlides;
-        
-        // If we are at the last slide, stop the transition
-        if (nextIndex !== 0) {
-            goToSlide(nextIndex);
-        }
+        const nextIndex = (currentIndex + 1) % swipeItems.length;
+        goToSlide(nextIndex);
     }
 
     function previousSlide() {
-        // Loop backward, ensuring we stay within bounds
-        const prevIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+        const prevIndex = (currentIndex - 1 + swipeItems.length) % swipeItems.length;
         goToSlide(prevIndex);
     }
 
@@ -9776,8 +9763,6 @@ function initializeSwipe() {
 // Initialize the swipe carousel when the page loads
 document.addEventListener('DOMContentLoaded', initializeSwipe);
 </script>
-
-
 
 
 </body>
