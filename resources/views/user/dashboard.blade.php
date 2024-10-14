@@ -9532,10 +9532,10 @@
   <div class="owl-carousel">
     <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
     <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images3.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name">Don't Change</div></div>
     <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name">Don't Change</div></div>
 
   </div>
 </div>
