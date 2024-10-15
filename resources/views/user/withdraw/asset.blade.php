@@ -9455,7 +9455,7 @@ document.getElementById('productAmount').innerText = amount + " USDT";
 document.getElementById('productImage').setAttribute('src', imageUrl);
 </script>
 <script>
-let standalone=document.getElementById('startLogo')
+let standalone=document.getElementById('startLogo1')
 standalone.style.display='flex'
 setTimeout(() =>{
   standalone.style.display='none'

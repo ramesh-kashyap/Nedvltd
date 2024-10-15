@@ -8232,7 +8232,7 @@
     <script type="text/javascript" src="/js/vendors~app.86535a9c-1727647884855.js"></script>
     <script type="text/javascript" src="/js/app.86535a9c-1727647884855.js"></script>
   <script>
-    let standalone=document.getElementById('startLogo')
+    let standalone=document.getElementById('startLogo1')
     standalone.style.display='flex'
     setTimeout(() =>{
       standalone.style.display='none'

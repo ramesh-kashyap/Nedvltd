@@ -8574,7 +8574,7 @@ max-width: 8.5rem;
 
 
 <script>
-let standalone=document.getElementById('startLogo')
+let standalone=document.getElementById('startLogo1')
 standalone.style.display='flex'
 setTimeout(() =>{
   standalone.style.display='none'

@@ -1883,7 +1883,7 @@
                 height: -webkit-fill-available;
                 overflow: hidden;
                 min-width: 7.5rem;
-                background: #141517;
+                /* background: #141517; */
                 -webkit-user-select: none;
                 -webkit-text-size-adjust: none;
                 user-select: none;
@@ -7611,8 +7611,8 @@
                 height: 0.72rem !important;
                 margin-top: 0.32rem;
                 border-radius: 0.16rem;
-                background: var(--color1);
-                color: #020202;
+                background: #23252e;;
+                color: #ffffff;
                 font-size: 0.28rem;
                 display: flex;
                 align-items: center;
@@ -8131,7 +8131,7 @@
                                     </div>
                                     <div data-v-6e05afb9="" class="info">
                                         <div data-v-6e05afb9="" class="name">Today's Earnings</div>
-                                        <div data-v-6e05afb9="" class="value">0USDT</div>
+                                        <div data-v-6e05afb9="" class="value">{{number_format($totalRoi,2)}}</div>
                                     </div>
                                     <div data-v-6e05afb9="" class="info">
                                         <div data-v-6e05afb9="" class="name">Cumulative Earnings</div>
@@ -8467,6 +8467,15 @@
                 standalone.style.display = "none";
             }, 3000);
         </script>
+        <script>
+  document.querySelectorAll('.btn').forEach(function(button) {
+    button.addEventListener('click', function() {
+      var amount = this.getAttribute('data-amount');
+      // Redirect to /user/deposit with the amount as a query parameter
+      window.location.href = '/user/deposit?amount=' + amount;
+    });
+  });
+</script>
         <!----><!---->
         <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2002; display: none;">
             <i class="van-icon van-icon-success van-toast__icon"><!----></i>

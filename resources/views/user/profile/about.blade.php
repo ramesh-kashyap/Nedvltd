@@ -8406,7 +8406,7 @@
   </div></div></div></div></div></div><!----></div><div data-v-15b106f9="" class="page-loading-con" style="display: none;"><div data-v-15b106f9="" class="page-loading"></div><p data-v-15b106f9="">Loading...</p></div></div>
   
   <script>
-    let standalone=document.getElementById('startLogo')
+    let standalone=document.getElementById('startLogo1')
     standalone.style.display='flex'
     setTimeout(() =>{
       standalone.style.display='none'
