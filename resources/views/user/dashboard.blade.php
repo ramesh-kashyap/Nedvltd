@@ -8590,24 +8590,40 @@
                 <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 65px;">
                     <!---->
                     <div data-v-5954443c="" class="container">
-                        <div data-v-5954443c="" class="banner" style="height:35%">
+                        <div data-v-5954443c="" class="banner" style="height:200px">
                             <div data-v-5954443c="" class="my-swipe van-swipe">
-                                <div class="van-swipe__track"
-                                    style="transition-duration: 500ms; transform: translateX(-393px); width: 786px;">
-                                    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-                                        <div data-v-5954443c="" class="item"><img data-v-5954443c=""
-                                                src="https://obs.nedvc.com/upload/20240916/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
-                                                alt=""></div>
-                                    </div>
-                                    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-                                        <div data-v-5954443c="" class="item"><img data-v-5954443c=""
-                                                src="https://obs.nedvc.com/upload/20240915/b3ebfaa57240ec988a6edf1e3cae9c73.png"
-                                                alt=""></div>
-                                    </div>
-                                </div>
-                                <div class="van-swipe__indicators"><i class="van-swipe__indicator" style=""></i><i
+                            <div class="van-swipe__track" style="transition-duration: 500ms; width: 1179px;">
+        <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+            <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+                <img data-v-5954443c="" src="{{asset('')}}static/img/series1.png" alt="">
+                <div class="overlay"></div>
+                <p class="main-text">Premium</p>
+                                <p class="image-text">Fated Deal with mafia King</p>
+                                <p class="sub-text">A family show</p>
+            </div>
+        </div>
+        <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+            <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+                <img data-v-5954443c="" src="{{asset('')}}static/img/series2.png" alt="">
+                <p class="main-text">Premium</p>
+                                <p class="image-text">Fated Deal with mafia King</p>
+                                <p class="sub-text">A family show</p>
+            </div>
+        </div>
+        <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+            <div data-v-5954443c="" class="van-item" style="border-radius:5%">
+                <img data-v-5954443c="" src="{{asset('')}}static/img/series3.png" alt="">
+                <p class="main-text">Premium</p>
+                                <p class="image-text">Fated Deal with mafia King</p>
+                                <p class="sub-text">A family show</p>
+            </div>
+        </div>
+    </div>
+    
+                                <div class="van-swipe__indicators"><i
                                         class="van-swipe__indicator van-swipe__indicator--active"
-                                        style="background-color: white;"></i></div>
+                                        style="background-color: white;"></i><i class="van-swipe__indicator" style=""></i>
+                                </div>
                             </div>
                         </div>
                         <div data-v-5954443c="" class="module bg-blur">
@@ -8631,7 +8647,7 @@
                                 </div>
                             </div>
                             <ul data-v-5954443c="" class="nav2">
-                                <li data-v-5954443c="">
+                                <li data-v-5954443c="" onclick="location.href='{{route('user.quality')}}'">
                                     <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                             src="{{asset('')}}static/img/Icon/crowns.png"
                                             alt=""></div>
@@ -8643,13 +8659,13 @@
                                         alt=""></div>
                                     <div data-v-5954443c="" class="n">Platform Rules</div>
                                 </li>
-                                <li data-v-5954443c="">
+                                <li data-v-5954443c="" onclick="location.href='{{route('user.tutorial')}}'">
                                     <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                         src="{{asset('')}}static/img/Icon/tutorial.png"
                                             alt=""></div>
                                     <div data-v-5954443c="" class="n">Tutorial</div>
                                 </li>
-                                <li data-v-5954443c="">
+                                <li data-v-5954443c=""  onclick="location.href='{{route('user.about')}}'">
                                     <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                         src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
                                         alt=""></div>
@@ -8675,6 +8691,75 @@
                                 </div>
                                 <div data-v-aa0ccfea="" class="amount">2.1 USDT</div>
                             </div>
+                        </div>
+
+                        <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
+                            <div data-v-4eabb456="" class="head">
+                                <div data-v-4eabb456="" class="title">Latest Treanding</div>
+                            </div>
+                            <!-- <div class="scroll-container">
+        <div class="video-list" style="transition-duration: 0ms; transform: translate3d(-7px, 0px, 0px); transition-delay: 0ms;">
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images2.png" alt="">
+                <div class="name">Aprime Charming</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+        </div>
+    </div> -->
+    <div class="carousel-wrap">
+      <div class="owl-carousel">
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Challange The Lady Billionaire</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">My Seconds Husbend's A Prince</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Return of the glam Queen</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+    
+      </div>
+    </div>
                         </div>
                         
                         <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
@@ -8727,29 +8812,39 @@
                 <div data-v-6c4d8baa="" data-v-5954443c="" class="footers" data-v-37526a6c="">
                     <ul data-v-6c4d8baa="" class="flex tac">
                         <li data-v-6c4d8baa="" class="item">
+                            <a href="{{ route('user.dashboard') }}">
                             <div data-v-6c4d8baa="" class="on"><img data-v-6c4d8baa=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI6SURBVHgB7ZnRbdswEIb/o+Sib80I7gYZQd2gmaDpBHHfa4SN0ec6E7SZIO0EyQbNCOwETd6C2CRDxZBF2rJDKlJyBvIBMkhZMj6c7kiKBl7pF0JXWLkHI45gqXC9YvHr9sr1p8jHZ+iIboTvTg4h6Ni1hhuuUO6QXYg/TXgmC1BWihaRdyhkNAJ9/YOWtBO++74PYX4gXnSV38j0F5BUSCRNuMzTWTaFwCd0AeEXhP6WIh4nXBfUyPX20DVkpXtiZzHijwvriRN1BdOHaIhCRGFuFl4U1E9srvy+UNgivi6cXvl9oWD0Ad7IK/+kCC7RJ8dO9gIvL1syhMj+Pjh51BFeRPYCHLH4gMH4smzWEV6kAU8ISzc/JQrwZb9qCOwGyyHVF1bgi6oaXg7ba/BFVY1a2JLCDlALG3MDrlBjSoBvShjzr2r6RcdX2NLSbTdyWKBBWBDnCKuq6UVYMxbWDRGeM544Bk0p8ZZx0XmvTt6wJrkKB16rix8FbpBVfpf/as2Go1e+8rVC6kunxSlyLaNSajaZuhn1CClYGywZwgh7U2A0sbLVtcl0nRKzhCdy22pvY0tKUIuiE9m522yZQtvtq72M3rn0GSEVCpcMoXA5BaZvDw6diNtve+RGi3Zk4r/f5T9KzLcVHRkFbuRa+d1QmOd6Iii69cSbT8qc6XunMhblNgXf+yfWc9iaU/BBrp5oLu355Nx9fsRLUs6gg/HaMNg8SuTjAxj7+eFvq+fn0h2HTbKvPAf33Iazqhqp6FIAAAAASUVORK5CYII="
+                                    src="{{asset('')}}static/img/Icon/Home_icon/home.png"
                                     alt=""><span data-v-6c4d8baa=""> Home </span></div>
+                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
+                            <a href="{{ route('user.task') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUrSURBVHgB7VldcuJGEO4eiL1vcW6gPYHxCdY+QdYniPchVTbrH3wBMzgHWDAOUJWHJSeIcwLjE4ScwNobsI/Gy/R2CySNBiEkft72q3KVkGamv+np6T8D/MB2gbAmTs/1oQLcJ8RDAKrwgnsw/ROMWIJPhD6S+d8ADHr3egBrYCXCtZreGxt1BUQ1i1xe+Cx2YF5No9fTPhREIcJC9JVUnUxAdAPAflHiuQlXL/9gjRoNaRolGoKCJ0MwBBINJiR4CqECBt4BYiVlaR8R9J939b9hU4Q/Xt1+StHqiIm2dsrQbDb1KM86pzXtqW9QY3v/lQV79jdS2Oy2bq6XrZFJWEzgZYL/8KBDWINo2rpjJs4arztshjuKjrLWLUMGxgYfmax9jL55paNVLouNGSHNGu/jJJDhBR8IKqIgfjpaNFct+iBmIAuEv4losFOig3XJ2ug1tb/LaxK7u/CdnOaZyF6AVJM4vdAn7Fs/g0W2e68X7noTOLtoPNqmR2Cuu+1G0x03p2G5GAgJ2/J3y3AMWwZr+pgg9jAIqi627o6bI4zfQNs3WGx21ctVBCKDSiSnGMrae2Gf745LmETgdib4HL0ganTutYYliCMfbxTNVzOG5qq2Xj1neZb34Hvzi62whIZFu9ZPX1wXLMHvVV0ZyyaJeC6dAOGV+gmfqxe3n09PtQcFMZMZEQzcn4WkSSC+Cx/ZkT/kMYVyKXBDKfkEnTDxx7OLeqEwHshkP29xuoI0wpJ12bZLL6a1ZO25OYDUsi8Ogy+w+lS9aDx/vGz8BjnhnOyeyAGXsLKjGUecXDaIifDqd+50Tfyq2L4z0iOCfl4zmWqZ85JQDFFljjAL34+eDT3BihBhclFNid6y/3YSmsBMniUwpLksZ2zEgc3zEOYIE3rRM8a7WxUSxTjYnBiiI8dM2JFQTcJ+FmljcZACIX6OSXrRYDdFXANSYXTb9bcG6EOCOId91wMkkOQQbUylvdwGem3dl8BAgA/hO4NQyTk9lfDW8cbyrwIk+BkKwia81fB7dq7fc+r4HwK9j14i/ZtzesQtyofZvkazihdU0l2thcBXc6h1igABp5bYXzjR5oCxPZfjd1yXAU4HUW7bWojsghX7OyVznRVJlXCYZTrsab6AS5gXfkKF0+NScYheBdXL2/p4IkQpcZElr+aTbPTu64Plq8QclBVEYsKIwyh1492JhpbmEuJ64nzP40yrKQUmM/OckUFl3GnrXJWxZI0wiU/ZWBVJdOlmHZmFWVIa3pSDnceb4kTFqYYlkWlIaZW3jBeUJspOeHy7W5R0a06WtCx8ygm8ThJJd7wU+1tO/g8kTBcpAESmsT0Jd4ns7wnCbpaUR8t/dfTQSMIjmRrJ0XE3h8Nxt31zvEoSL4VAsuIxiURqrggVO7Ry0JFoaZOVchbmKh7efKd988EeMxfpWMsarLpKkvDlmdX6EBnSo7Be+a52BXOEg2LQJAZ6s+bGVjHrMHnhb/EqaSe7sFXlmIZEwoGU4puuoFPbYXz5+bKm3p/M3prb3IANtapCBD0Qu1U1ZTTs3NUPFs3J7K2JRiXRtkK1F1TEl7d6R5nWWs1AaQtMkg1xiYS7peymTaaGQ7jmMYPPofxhwsVqXo1ndu4zzKAwYYH026SF5fZ1Z6sMpQbLbGhLbrAwqeIgQ+lV+sTASHx9vFwBBDYnrSzE3CX7ZoAP7I8DUylEOERIXBovqRrfAjrtesB1JcI2pv/2gkMCtY9guLeGHmy6PszZ4/uBTeA7XeyTjCXSRf8AAAAASUVORK5CYII="
+                                    src="{{asset('')}}static/img/Icon/Home_icon/video.png"
                                     alt=""><span data-v-6c4d8baa=""> Video </span></div>
+                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
+                            <a href="{{ route('user.quality') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVaSURBVHgB7VjNUhtHEO4eCfAt8i23iDfAVTgVVw5gn3KLeYKIQ6r4NeIJtJAHQJgfU5UD4gkEpyQnKTcnpoJ4AuuYW+RDqozQzqR79m92tatdSUt88VdFsfOj2W97ur/uGYDPeFgg5Ihq1Sr1pdgBparULCmAtrpXq2dnVhdygoAccWeLcyJr0WOJ22SNZTGDN2trVhlyQm6EN17t1xDUy5ihkpjFJlsfckAuhH/csBZcyzpA6FB7z28rWLhTogY5YGrCa1WrXCxg0+jqyr5aOT22LKXUhdeJUlU3X/30A0yJqQmjLQ7IV8tem0juekE2V4QqBV43GJP1af15KsJDfktu8ObYuvSa9brVG9hqhR57bpf2Z5gCBZgQ7Aoo4dLo6pIbrETn/fWu/ffi06U7RPzO7fpy8dmL0vUfrd9gAsTqMEf0v31nm38+tToQR9bGluEKXXmvno/S2/Xt/aa5G+Q6K+ZueO/9aIMzR0H37NhqwyjC/IN7imYltfB76AKKuuzbVx6h9S2rQRbzAwgRKievaxcwArz2nY03xkf26COf8JraAAOwzDW9d0cNgSMWjAE2UEAv9EHkt6wIkAEsfzMFvAmWI/kDvPQyY8LPQqT9oOOUOpqsZleJWj8rWQa7l5JyN1gOFszM6KJHfaYblgWpjdfwCZNPVYJ18HK2oB7Lgpo3tTQC/eUwJt6c7NV5/ZghJrpH750nIzyh50N/xHCVot8X0lJ5yJIEjhxVyMcssGEZAWvePPJba9KiZq4gV8n9Fty1mOjhbJFU0HmnhgS4JGvuuM3SEGFwyOkBIfAL8wVndU2swX9r21ZFKCifHFkXMCGY2NqWtcrFUZRoAnrDhBWrAfmUflaPk355dmQ1IAe4ktVOnIBGPGGQLYNMh8rvJPJl+MQQBgcK9GELKwUf0BM5FF9lWBNoW5f5f5zAx0FL5wCW1QA6Gfzf91tE4c/1LYzhIqUMKdjc2T8QiC3+W9+uVdPmc3Lo2/iekkOTivpW2nwiFBhNyQ8QJSwNP6FFy5ACKYM0iyBquiYeQZZTOQRWK6dVbSR9YW2OEtZBFyD1dIBKXZnzKYM1k0gIic1QUsJ0l0BlcIgNumKYcNqRhsSda9220VXGGTyPzmPX0RktgC7wIQ2GSkgVQ/iRYXaGV62NgiqoVbNAZ11dZ4IuuF6OpHJIq+oM+AazZYxLGJlNY6aIqUrBCSVSoOujEAfh0DkPOHbkbhay7PNmuxBH2FnRcIsRycOEW9DsmX0chJFznnMaoToiy5owCO+u+ZFhwhMmD03ELFZoOyPnvPY4VV0EIVcNEebk4TcyJg8PMUHooUuJYhXGQUJaZkRcwqhDUSXqahKiQQjOqeL5uFVdUlrWY6GZiN3g7ePXE14QuqR75AoT3aspxCWfEsCtOTZ0pqP0+Y/Xloqsk7FOyAsuh/fgyRrCy9PXNT9JhSzM0mb6IaXoXK6XxoF7avY1eFao383x4YsUKf2v4UTgVWT/B3TNAaaRsBEt7ocIz81gwwwcqsbO87p5TIM+6htyKO/D+q75RDv0F9H9mNFV7ktsPTRpfe1l3kuQrscFbOIN/MaWVScn3jG6upNIVBqcIBMHfIVgvuv0qDYfNz/xbu3dn+1fF79enqev9vS4hAWsPP3mxaNvny3dvn3b/ghTguPDVvgLx4rRrQ1zfd2OPZgipCDG0oyee2PTkaBuYRxQFhN82FV6+0uRsQ6XnqN2MZUwY32zVkWhb9Afzo+duwkr7cifiTBjxIXdVODCiFRpL2uCykzYg65V+RZIie8R6LAa+Hg2gkAVoRIdunpty4G6yjuIP2Na/AfDQbMkgMZzqgAAAABJRU5ErkJggg=="
+                                    src="{{asset('')}}static/img/Icon/Home_icon/vip.png"
                                     alt=""><span data-v-6c4d8baa=""> VIP </span></div>
+                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
+                            <a href="{{ route('user.asset') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgB7ZjfcdpAEMZ3LzivoQTcQVKBcQd0YHgjnjCQBqJLKtCExNFbcAdOBeAK4lQQleBXG6PNrtE/giQksE6yR78ZRjppBR+nve/2DqCh4XmD/1+YTHT73lNjIuryzS6UAAFe0dL76DjahYJsCB5OdAdXOOeLHSifW29J74qKVvGGQbFCG4/wJxSkFZwMR7q/KRZnRN4v4p6AJ4R7qAeI48dfAHgLBQkFK+IvCRMEZxfTTwMogeEHLaLHfrMNBYlSAqN/65F3CTUl7NPz0WeCqkC4YSH296/W5e5Qn0oFR7jsHKdZzqGgXnTUEc5lLkgLaCVeJZh4QH/AEPya+4h45jc79w8w4aNOik0ULGKdb3oB5li8Z/cIRBPiSVpgnVLiKjjJKglqIzjvBFW3QbeTZye4BRWxq4yVeYHTZEFLGsR9uZIeljL2boW/gUhnDTC5x778l+uPMKYSwUXLWLY7Kzg3nhJ5y1glPe8Ljb8F44LzlrF+GWptPQ+mObCMrdTWlMI3UBDjgsWqogb2oCDGcxiJrnkwddct6p+PviSmhlLqBGi7RDcu+HUL7LsVnEVOQX2F2N8KjInlyWURnBtPCdvWt/SKTlmOm/cZeoDQSSoZdI6t3R9T65jr7gF3301anPSsR5tLpspqCcGZ6hkf5CO+2+XUmAf3LqYWJj3TlJdlkyh4H0M3RSj4UEM/FFk5xxqpAzEcdHkN/anB9f5aL7bMl2t2RvwaWQFIUW1wuzUNlx3iOO1mmBL7GHoJPG5VZQUkep0U2Yp4SxSx8P7tPsgEwUKuZdqWjoOGhhfMPww07DiKFGxtAAAAAElFTkSuQmCC"
+                                    src="{{asset('')}}static/img/Icon/Home_icon/wallet.png"
                                     alt=""><span data-v-6c4d8baa=""> Assets </span></div>
+                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
+                            <a href="{{ route('user.profile') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARgSURBVHgB7VlLctNAEO0em2RJuIFuEAMFxQ7nBMAJYEOVMYSYC+AxHAAHQuwdZskKbhCzY8HCnABxAsKOfDxNt6zPSJZkyZ+YRV5VKqPRaOa51dPT/QRwidUCYUE0num6AtwmxDoA1XjCLZj8CY55BZcIXSTzwwAM+wd6CAtgLsKtlt46NWoPiFoWuaJwedmhOTOdfl+7UBKlCAvRM1JtMh7RJQAHZYkXJtx8/potajSkWZRoBAq+GoIRkFgwtoKjEGpg4C4g1lKmdhFBv3/b/gjLIvx079WbFKseM9H9jSp0u119XGSeRks76hxa7O/3eGHHvkcKu739ly9mzZFLWFzgZIyfeVAdFiCaNu8pE2eLtxNsRhuKdvLmrUIOTg0eMVn7NbrmjHbm2Sw2fEKaLT7AsbeG490gqImBuLWT9azKuiFuIBME10Q03KjQ9UXJ2uh3tbvJcxKHu6BP3uYTWTsDqS7R2NWPOLZ+AIts70Bn/upl4Mlu58h2PQLzoveu002Om7KwbAyEmG+5m1V4ACsGW/oBQRRhEFRbfD05boownoO2d7D47LybqwxkDaqQvMVgra0TjvnJcTHCnnURH4YdRJ1l+uwsiE9LBAqukUNp0soxwmJd69KV0JWcNO01ZaHM2AD+muEb9cKfhbhLIN4NmhzIvyRdofn8Vft0jL+bu52fj5u6BjmwxzYa2oGC8Na0rMyc9lIJS9Zl+y6dmP2p2Qzd91vOlYragzwQ6WCsqkKp3CPxZreEGyQJK/s04xMnzXcJozyCyDhQFKiuQglMrMx5SfA4Uc3iGZLcDtuGvsLaEXFg96wH7YgwoRO2Mfp164KxOEiBELUDoBV7kyniOhDnELqiSuv8D5FKuBR4A/6ZMSQKiWRmjS0MlbpABgio45/3LpzlhyoypgOT3HlkzqcPoJIIuVUjMnDsV7ygMF4NBOi/0wP+N4AC6L33Mq35idocMPJnFfVRFBkIarBmKIuDIfoV9gcNsmOvio7o9SHioMgOcT64MIxZeJ7EZVmQrBHQsrBVkYSEfUUmM0u6SFTGsTzFtdWieFhLZEnrsLKsaSBMsoTI0L4fI5zMktZhZZHA4hWPFx5DVOyLb9+Gf2/drl9j697xOlipuXmj/un79+HKSySBV/EY+BL14KB3GFeEpk46trIGq65SV/DoIlxD1hCNwupyk9YVTBH2ikETG+j44sZK4StMTnAteltaTp4pVTWf6a5dnojYIaX4sivoVDmMN//hgU7dP7naWlLcgCVJVQE8n7Wlqgmj0eHb9vWsZ3K1NbGo6GvWUe2wT//kAlNvKLO/kBgogvg4LoiLwrRZyRdtCsmtSffw4SJX1mMuVotaPFe5z3GD0oQForeJhJXUdf1ZRlKD5QrakhukJ1XeJvezu5ko9cnA8zmRsmx1aBFMdGZdxrXm+igTEBfhJdXi+VhIEF/SZy+oE6htBNYqEB2wPntxlcIE1Yjz7SHnCD8W/ex1iVXjHzYJEer1ZwIHAAAAAElFTkSuQmCC"
+                                    src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
                                     alt=""><span data-v-6c4d8baa=""> mine </span></div>
+                                </a>
                         </li>
                     </ul>
                 </div>
@@ -8775,6 +8870,101 @@
 
     </script>
     <!---->
+     <!-- jQuery (make sure this is loaded first) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Owl Carousel CSS -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+<link rel="stylesheet" href="/assets/owl.carousel.min.css">
+<!-- Owl Carousel Default Theme CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+<!-- Owl Carousel JS (make sure this is loaded AFTER jQuery) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script>
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 1,
+  nav: true,
+  navText: [
+    "<i class='fa fa-caret-left'></i>",
+    "<i class='fa fa-caret-right'></i>"
+  ],
+  autoplay: true,
+  autoplayHoverPause: true,
+  responsive: {
+    0: {
+      items: 3
+    },
+    600: {
+      items: 3
+    },
+    1000: {
+      items: 3
+    }
+  }
+});
+
+</script>
+<script>
+// This function initializes the swipe effect
+function initializeSwipe() {
+    const swipeContainer = document.querySelector('.van-swipe__track');
+    const swipeItems = document.querySelectorAll('.van-swipe-item');
+    const indicators = document.querySelectorAll('.van-swipe__indicator');
+
+    let currentIndex = 0;
+    let swipeInterval;
+
+    function goToSlide(index) {
+        const slideWidth = swipeItems[0].offsetWidth;
+        swipeContainer.style.transition = 'transform 0.5s ease';
+        swipeContainer.style.transform = `translateX(${-slideWidth * index}px)`;
+
+        // Update active indicator
+        indicators.forEach((indicator, i) => {
+            if (i === index) {
+                indicator.classList.add('van-swipe__indicator--active');
+            } else {
+                indicator.classList.remove('van-swipe__indicator--active');
+            }
+        });
+
+        currentIndex = index;
+    }
+
+    function nextSlide() {
+        const nextIndex = (currentIndex + 1) % swipeItems.length;
+        goToSlide(nextIndex);
+    }
+
+    function previousSlide() {
+        const prevIndex = (currentIndex - 1 + swipeItems.length) % swipeItems.length;
+        goToSlide(prevIndex);
+    }
+
+    // Automatically move to the next slide every 3 seconds
+    function startAutoSwipe() {
+        swipeInterval = setInterval(nextSlide, 3000); // Adjust the interval as needed
+    }
+
+    // Stop auto swipe on user interaction (swipe)
+    swipeContainer.addEventListener('touchstart', () => {
+        clearInterval(swipeInterval);
+    });
+
+    swipeContainer.addEventListener('touchend', startAutoSwipe);
+
+    // Initialize first slide
+    goToSlide(currentIndex);
+    startAutoSwipe();
+}
+
+// Initialize the swipe carousel when the page loads
+document.addEventListener('DOMContentLoaded', initializeSwipe);
+</script>
     <!---->
     <!---->
 </body>
