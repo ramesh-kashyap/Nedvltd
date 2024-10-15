@@ -9844,10 +9844,10 @@ type="text/javascript"
     .van-popup--bottom[data-v-f8d1bbb0] {
       max-width: 8.5rem;
     }
-    #month {
-    height: 200px; /* or any height you need */
-    overflow-y: auto;
+    .van-picker-column__wrapper {
+  transition: transform 0.3s ease-in-out;
 }
+
   </style>
 </head>
 
@@ -9977,7 +9977,7 @@ type="text/javascript"
                                             </ul>
                                         </div>
                                         <div class="van-picker-column">
-                                            <ul class="van-picker-column__wrapper" id="month" style="transform: translate3d(0px, -88px, 0px); transition-duration: 0ms; transition-property: none;">
+                                            <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, -88px, 0px); transition-duration: 0ms; transition-property: none;">
                                                 <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">06</div></li>
                                                 <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">07</div></li>
                                                 <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">08</div></li>
@@ -9986,7 +9986,7 @@ type="text/javascript"
                                             </ul>
                                         </div>
                                         <div class="van-picker-column">
-                                            <ul class="van-picker-column__wrapper" id="date" style="transform: translate3d(0px, 88px, 0px); transition-duration: 0ms; transition-property: none;">
+                                            <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, 88px, 0px); transition-duration: 0ms; transition-property: none;">
                                                 <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;"><div class="van-ellipsis">01</div></li>
                                                 <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">02</div></li>
                                                 <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">03</div></li>
@@ -10127,53 +10127,59 @@ type="text/javascript"
        });
    });
 </script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 <script>
-   
-    const closeButton2 = document.querySelector('.cross'); // Close button in the title
-    const okButton = document.querySelector('.btn.submit'); // OK button
-    const timeBoxes = document.querySelectorAll('.time_box'); // Time boxes
-    const selectedDateDisplay = document.getElementById('selectedDateDisplay'); 
-   $(document).ready(function() {
-    // Open the popup
-    function openPopup2() {
-        $('#overlay2').show();
-        $('#popup2').show();
-    }
+    document.addEventListener('DOMContentLoaded', function () {
+        const overlay2 = document.getElementById('overlay2');
+        const popup2 = document.getElementById('popup2');
+        const closeButton2 = document.querySelector('.cross'); // Close button in the title
+        const okButton = document.querySelector('.btn.submit'); // OK button
+        const timeBoxes = document.querySelectorAll('.time_box'); // Time boxes
+        const selectedDateDisplay = document.getElementById('selectedDateDisplay'); // Element to show selected date
 
-    // Close the popup
-    function closePopup2() {
-        $('#overlay2').hide();
-        $('#popup2').hide();
-    }
+        let selectedDate = '2024-10-01'; // Default selected date
 
-    // Event listener for closing the popup
-    $('.cross').on('click', closePopup2);
-    $('#select').on('click', openPopup2);
+        // Function to open the popup
+        function openPopup2() {
+            overlay2.style.display = 'block';
+            popup2.style.display = 'block';
+        }
 
-    // Event listener for selecting a time
-    $('.van-picker-column__item').on('click', function() {
-        // Remove the selected class from all items
-        $('.van-picker-column__item').removeClass('van-picker-column__item--selected');
-        // Add selected class to the clicked item
-        $(this).addClass('van-picker-column__item--selected');
-        // Scroll the selected item into view
-        const monthElement = document.getElementById('month');
-const targetItem = monthElement.querySelector('li:nth-child(14)');
-monthElement.scrollTop = targetItem.offsetTop; 
+        // Function to close the popup
+        function closePopup2() {
+            overlay2.style.display = 'none';
+            popup2.style.display = 'none';
+        }
+        const selectItem = document.getElementById('select'); // Select the "All" item
+       selectItem.addEventListener('click', openPopup2);
+
+
+        // Event listener for time box selection
+        timeBoxes.forEach(box => {
+            box.addEventListener('click', function () {
+                // Remove active class from all boxes
+                timeBoxes.forEach(b => b.classList.remove('active'));
+                // Add active class to the clicked box
+                this.classList.add('active');
+                // Update the selected date
+                selectedDate = this.textContent.trim();
+            });
+        });
+
+        // Event listener for the OK button
+        okButton.addEventListener('click', function () {
+            // Update the display of the selected date
+            selectedDateDisplay.textContent = `Selected Date: ${selectedDate}`;
+            closePopup(); // Close the popup after selection
+        });
+
+        // Event listener for the close button
+        closeButton2.addEventListener('click', closePopup2);
+
+        // Example of opening the popup
+        // Call this function when you want to show the time selection popup
+        // openPopup();
     });
-   
-    // Confirm button functionality
-    $('#confirmSelection').on('click', function() {
-        const selectedItem = $('.van-picker-column__item--selected').text();
-        alert(`Selected Time: ${selectedItem}`);
-        closePopup();
-    });
-});
-
-// Example to trigger the popup
-// You can call openPopup() where needed, e.g., on a button click.
-
 </script>
 
 
