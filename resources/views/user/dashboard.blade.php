@@ -1,19 +1,9 @@
 <html style="font-size: 50px;">
 
 <head>
-    <style class="vjs-styles-defaults">
-        .video-js {
-            width: 300px;
-            height: 150px;
-        }
-
-        .vjs-fluid {
-            padding-top: 56.25%
-        }
-    </style>
     <meta charset="utf-8">
     <!--    <link rel="icon" href="/logo.ico" />-->
-    <title>VIRERO</title>
+    <title>NEDVLTD</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--  <meta name="theme-color" content="#fff" />-->
     <meta http-equiv="pragma" content="no-cache">
@@ -22,7 +12,7 @@
     <meta name="google" content="notranslate">
     <meta name="google" value="notranslate">
     <meta name="viewport"
-        content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no,viewport-fit=cover">
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="full-screen" content="true">
@@ -53,7 +43,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: rgba(6, 132, 117, 0.8);
+            background: #020503;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -63,9 +53,74 @@
         #startLogo img {
             width: 50%;
         }
-    </style>
 
-  
+    </style>
+    <script>
+        window.addEventListener('error', function (event) {
+            if (event.message.indexOf("Unexpected token '<'") > -1) {
+                location.reload();
+            }
+        });
+        window.onload = function () {
+            document.addEventListener('touchstart', function (event) {
+                if (event.touches.length > 1) {
+                    event.preventDefault();
+                }
+            });
+            var lastTouchEnd = 0;
+            document.addEventListener(
+                'touchend',
+                function (event) {
+                    var now = new Date().getTime();
+                    if (now - lastTouchEnd <= 300) {
+                        event.preventDefault();
+                    }
+                    lastTouchEnd = now;
+                },
+                false
+            );
+            document.addEventListener('gesturestart', function (event) {
+                event.preventDefault();
+            });
+        };
+
+    </script>
+    <!-- <script
+      src="https://res.wx.qq.com/open/js/jweixin-1.0.0.js"
+      type="text/javascript"
+    ></script> -->
+
+    <script>
+        if ('standalone' in window.navigator && window.navigator.standalone) {
+            var noddy,
+                remotes = false;
+            document.addEventListener(
+                'click',
+                function (event) {
+                    noddy = event.target;
+                    while (noddy.nodeName !== 'A' && noddy.nodeName !== 'HTML') {
+                        noddy = noddy.parentNode;
+                    }
+                    if (
+                        'href' in noddy &&
+                        noddy.href.indexOf('http') !== -1 &&
+                        (noddy.href.indexOf(document.location.host) !== -1 || remotes)
+                    ) {
+                        event.preventDefault();
+                        document.location.href = noddy.href;
+                    }
+                },
+                false
+            );
+        }
+
+    </script>
+    <link href="/js/app.11610479-1728557826908.js" rel="preload" as="script">
+    <link href="/js/chunk-echarts.11610479-1728557826908.js" rel="preload" as="script">
+    <link href="/js/chunk-moment.11610479-1728557826908.js" rel="preload" as="script">
+    <link href="/js/chunk-vant.11610479-1728557826908.js" rel="preload" as="script">
+    <link href="/js/chunk-vue.11610479-1728557826908.js" rel="preload" as="script">
+    <link href="/js/vendors~app.11610479-1728557826908.js" rel="preload" as="script">
     <style type="text/css">
         @keyframes loading-animation-15b106f9 {
             from {
@@ -138,6 +193,7 @@
         .van-popup--bottom[data-v-15b106f9] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .page-enter-active[data-v-b65f27fe],
@@ -191,6 +247,7 @@
         .van-popup--bottom[data-v-b65f27fe] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .videoList .van-rate__icon {
@@ -210,11 +267,13 @@
         #app {
             padding-top: constant(safe-area-inset-top);
             padding-top: env(safe-area-inset-top);
-            background: #020202;
+            max-height: 100vh;
+            background: #04103a;
             position: relative;
             word-wrap: break-word;
             word-break: normal;
             width: 100%;
+            min-height: 100vh;
             max-width: 8.5rem;
             margin: 0 auto;
             background-size: 100% 100%;
@@ -381,8 +440,8 @@
         }
 
         :root {
-            --color: #ffffff;
-            --color1: #FFF;
+            --color: #5952f5;
+            --color1: #00fc83;
             --color2: #8f9aae;
             --border-bottom: 0.02rem solid #47464a;
             --border: 0.02rem solid #5952f5;
@@ -411,11 +470,12 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         /**
- * Entry of basic styles
- */
+   * Entry of basic styles
+   */
         html {
             -webkit-tap-highlight-color: transparent;
         }
@@ -668,6 +728,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-overlay {
@@ -701,6 +762,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-info {
@@ -752,6 +814,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-icon {
@@ -1832,6 +1895,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-overflow-hidden {
@@ -1989,6 +2053,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-loading {
@@ -2164,6 +2229,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-toast {
@@ -2254,6 +2320,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         @charset "utf-8";
@@ -2270,7 +2337,7 @@
             height: -webkit-fill-available;
             overflow: hidden;
             min-width: 7.5rem;
-            background: #ffffff;
+            /* background: #141517; */
             -webkit-user-select: none;
             -webkit-text-size-adjust: none;
             user-select: none;
@@ -2559,8 +2626,8 @@
 
         /*移动端点击的时候有背景问题*/
         /* * {
-  -webkit-overflow-scrolling: touch;
-} */
+    -webkit-overflow-scrolling: touch;
+  } */
 
         .xc180 {
             transform: rotate(180deg);
@@ -2622,9 +2689,9 @@
             color: #fff;
         }
 
-        .theme {
-            color: #fff !important;
-        }
+        /* .theme {
+            color: #00fc83 !important;
+        } */
 
         i.iconfont {
             font-size: 0.48rem;
@@ -2649,11 +2716,11 @@
 
         .btn {
             width: 100%;
-            color: #ffffff;
+            color: #020202;
             border: 0;
             height: 0.88rem;
             border-radius: 0.16rem;
-            background: #022627;
+            background: #00fc83;
         }
 
         .btn.on {
@@ -2688,11 +2755,11 @@
         }
 
         /*
-组件动画
-调用<transition name="相应类名">
-必须加上相应的定位类名
-从下面滑出在根元素加上类名pop_bottom
-*/
+  组件动画
+  调用<transition name="相应类名">
+  必须加上相应的定位类名
+  从下面滑出在根元素加上类名pop_bottom
+  */
         .pop_bottom {
             bottom: 0;
         }
@@ -2753,6 +2820,7 @@
         .mt {
             margin-top: 0.32rem;
         }
+
     </style>
     <style type="text/css">
         .bg-blur {
@@ -2770,7 +2838,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background:#12244a;
+            background: #12244a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -2866,7 +2934,8 @@
         }
 
         .h-full {
-            height: 100% !important;
+            height: 100%;
+            overflow-y: scroll;
         }
 
         .h-screen {
@@ -3269,6 +3338,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-button {
@@ -3476,6 +3546,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-image {
@@ -3545,6 +3616,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-divider {
@@ -3625,6 +3697,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-cell {
@@ -3757,6 +3830,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-field__label {
@@ -3938,6 +4012,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-popover {
@@ -4212,6 +4287,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-swipe-item {
@@ -4219,8 +4295,6 @@
             flex-shrink: 0;
             width: 100%;
             height: 100%;
-            flex: 0 0 auto;
-
         }
 
         .van-field__word-num {
@@ -4244,6 +4318,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-swipe {
@@ -4257,8 +4332,6 @@
         .van-swipe__track {
             display: flex;
             height: 100%;
-            transition: transform 0.5s ease;
-    width: calc(393px * 2); /* Total width for four items (two original and two duplicates) */
         }
 
         .van-swipe__track--vertical {
@@ -4324,6 +4397,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-slider {
@@ -4438,6 +4512,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-picker {
@@ -4572,6 +4647,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-image-preview {
@@ -4694,6 +4770,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-uploader {
@@ -4878,6 +4955,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-checkbox {
@@ -4980,6 +5058,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-checkbox-group--horizontal {
@@ -5008,6 +5087,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-empty {
@@ -5062,6 +5142,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-calendar {
@@ -5274,6 +5355,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-sticky--fixed {
@@ -5305,6 +5387,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-tab {
@@ -5471,6 +5554,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-password-input {
@@ -5575,6 +5659,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-number-keyboard {
@@ -5737,6 +5822,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-rate {
@@ -5806,6 +5892,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-tab__pane,
@@ -5841,6 +5928,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-radio-group--horizontal {
@@ -5869,6 +5957,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-radio {
@@ -5971,6 +6060,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-notice-bar {
@@ -6051,6 +6141,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-stepper {
@@ -6208,6 +6299,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-cell-group {
@@ -6252,6 +6344,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-pull-refresh {
@@ -6299,6 +6392,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-list__loading,
@@ -6336,6 +6430,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-switch {
@@ -6415,6 +6510,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-progress {
@@ -6469,6 +6565,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-count-down {
@@ -6498,6 +6595,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-action-sheet {
@@ -6642,6 +6740,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-goods-action-button {
@@ -6700,6 +6799,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-goods-action {
@@ -6741,6 +6841,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-dialog {
@@ -6877,6 +6978,7 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .van-skeleton {
@@ -6959,666 +7061,9 @@
         .van-popup--bottom {
             max-width: 8.5rem;
         }
+
     </style>
-    
-    <style type="text/css">
-        [data-v-b149b182] .head {
-            background: url({{asset('')}}static/img/bg_login.d4d61e22.png) no-repeat top center !important;
-            background-size: 100% auto !important;
-        }
-
-        .bg[data-v-b149b182] {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url({{asset('')}}static/img/bg_login.d4d61e22.png) no-repeat top center;
-            background-size: cover;
-        }
-
-        .cache_account[data-v-b149b182] {
-            display: flex;
-            align-items: center;
-        }
-
-        .cache_account img[data-v-b149b182] {
-            width: 0.32rem;
-            height: 0.32rem;
-            margin-right: 0.1rem;
-        }
-
-        .cache_account span[data-v-b149b182] {
-            color: #FFF;
-            font-size: 0.28rem;
-        }
-
-        .container[data-v-b149b182] {
-            color: #ffffff;
-        }
-
-        .logo[data-v-b149b182] {
-            padding: 0.6rem 0;
-        }
-
-        .info[data-v-b149b182] {
-            margin-top: 0.244rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .info .flex1[data-v-b149b182] {
-            text-align: right;
-        }
-
-        .go[data-v-b149b182] {
-            margin-top: 0.65rem;
-        }
-
-        .txt[data-v-b149b182] {
-            text-align: center;
-            margin-top: 0.24rem;
-        }
-
-        .footers[data-v-b149b182] {
-            text-align: center;
-            padding: 0.24rem 0;
-        }
-
-        .footers[data-v-b149b182] .van-checkbox__label {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.24rem;
-        }
-
-        .footers[data-v-b149b182] .van-checkbox {
-            justify-content: center;
-        }
-
-        .logo[data-v-b149b182] {
-            text-align: center;
-        }
-
-        .logo img[data-v-b149b182] {
-            width: 2.4rem;
-        }
-
-        .van-field__word-num[data-v-b149b182] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-b149b182]:active,
-        .van-action-sheet__cancel[data-v-b149b182]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-b149b182] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-b149b182] {
-            max-width: 8.5rem;
-        }
-    </style>
-    
-    <style type="text/css">
-        .page[data-v-37526a6c] {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            background: #04103a;
-        }
-
-        .page-header[data-v-37526a6c] {
-            height: 1.2rem;
-            z-index: 56;
-        }
-
-        .page-header.fixed[data-v-37526a6c] {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-        }
-
-        .page-footer[data-v-37526a6c] {
-            min-height: 1.4rem;
-            max-width: 8.5rem;
-            z-index: 58;
-        }
-
-        .page-container[data-v-37526a6c] {
-            position: relative;
-            z-index: 10;
-            flex: 1;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
-        }
-
-        .page .back-top[data-v-37526a6c] {
-            position: absolute;
-            bottom: 3rem;
-            right: 0.1rem;
-            z-index: 99;
-            width: 1.4rem;
-            height: 1.6rem;
-        }
-
-        .van-field__word-num[data-v-37526a6c] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-37526a6c]:active,
-        .van-action-sheet__cancel[data-v-37526a6c]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-37526a6c] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-37526a6c] {
-            max-width: 8.5rem;
-        }
-    </style>
-    
-    <style type="text/css">
-        .w856 .head[data-v-0ff1fb10] {
-            width: 100%;
-        }
-
-        .flex[data-v-0ff1fb10] {
-            align-items: center;
-        }
-
-        .head[data-v-0ff1fb10] {
-            /* background: #e9f5f4; */
-            height: 1.2rem;
-            position: relative;
-            transition: background-color 0.3s;
-        }
-
-        .head.on[data-v-0ff1fb10] {
-            background: #020202 !important;
-        }
-
-        .head .n_home[data-v-0ff1fb10] {
-            font-size: 0.32rem;
-            line-height: 0.44rem;
-            font-weight: 500;
-            color: #ffffff;
-        }
-
-        .head .name[data-v-0ff1fb10] {
-            font-size: 0.32rem;
-            font-weight: 500;
-            color: #ffffff;
-            position: absolute;
-            width: 70%;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            top: 0;
-            left: 50%;
-            height: 100%;
-            margin-left: -35%;
-            display: flex;
-            z-index: 0;
-        }
-
-        .head .notice[data-v-0ff1fb10] {
-            position: relative;
-        }
-
-        .head .notice img[data-v-0ff1fb10] {
-            height: 0.4rem;
-        }
-
-        .head .notice span[data-v-0ff1fb10] {
-            position: absolute;
-            background: #ee594b;
-            border-radius: 50%;
-            box-shadow: 0 0.04rem 0.08rem 0 rgba(245, 56, 49, 0.31);
-            color: #fff;
-            font-size: 0.2rem;
-            padding: 0 0.08rem;
-            top: -0.1rem;
-            right: -0.1rem;
-        }
-
-        .head .back img[data-v-0ff1fb10] {
-            height: 0.36rem;
-        }
-
-        .head img[data-v-0ff1fb10] {
-            height: 0.4rem;
-            vertical-align: middle;
-        }
-
-        .head .lang[data-v-0ff1fb10],
-        .head .notice[data-v-0ff1fb10] {
-            margin-left: 0.28rem;
-        }
-
-        .head .notice[data-v-0ff1fb10] {
-            position: relative;
-        }
-
-        .head .notice .count[data-v-0ff1fb10] {
-            min-width: 0.32rem;
-            min-height: 0.32rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform: translate(50%, -40%);
-            background: #e72a2a;
-            padding: 0.02rem 0.04rem;
-            line-height: 1.2;
-            border-radius: 50%;
-            color: #fff;
-            font-size: 0.2rem;
-        }
-
-        .head .str[data-v-0ff1fb10] {
-            margin-left: 0.26rem;
-            font-size: 0.28rem;
-            font-weight: 500;
-            color: #fff;
-            line-height: 0.4rem;
-        }
-
-        .head .str[data-v-0ff1fb10] img {
-            height: 0.4rem;
-            vertical-align: top;
-        }
-
-        .logo img[data-v-0ff1fb10] {
-            height: 30px;
-        }
-
-        .van-field__word-num[data-v-0ff1fb10] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-0ff1fb10]:active,
-        .van-action-sheet__cancel[data-v-0ff1fb10]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-0ff1fb10] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-0ff1fb10] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .input_big_box[data-v-63783c8c] {
-            position: relative;
-            --themeColor: #00fc83;
-        }
-
-        .input_big_box .title_box[data-v-63783c8c] {
-            background: transparent;
-            z-index: 2;
-        }
-
-        .input_big_box .title_box .title[data-v-63783c8c] {
-            line-height: 1.1;
-            font-size: 0.28rem;
-            color: #fff;
-        }
-
-        .input_big_box .inp_content_box[data-v-63783c8c] {
-            margin-top: 0.2rem;
-            height: 0.96rem;
-            padding: 0 0.32rem;
-            color: #fff;
-            border-radius: 0.16rem;
-            display: flex;
-            align-items: center;
-            border: 0.02rem solid #252930;
-        }
-
-        .input_big_box .inp_content_box[data-v-63783c8c]:focus-within {
-            border: 0.02rem solid var(--themeColor);
-        }
-
-        .input_big_box .inp_content_box .input[data-v-63783c8c] {
-            flex: 1;
-        }
-
-        .input_big_box .inp_content_box .input input[data-v-63783c8c] {
-            height: 0.48rem;
-            background: none;
-            border: 0;
-            width: 100%;
-            color: #fff;
-        }
-
-        .input_big_box .inp_content_box .input input[data-v-63783c8c]::placeholder {
-            color: #4c5361;
-            font-size: 0.28rem;
-        }
-
-        .input_big_box .inp_content_box .inp_right[data-v-63783c8c] {
-            margin-left: 0.2rem;
-        }
-
-        .user .inp_content_box[data-v-63783c8c] {
-            background: transparent;
-            position: relative;
-            z-index: 10;
-            border-color: transparent;
-        }
-
-        .user .inp_content_box[data-v-63783c8c]:before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 0.16rem;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(0.2rem);
-            z-index: -1;
-        }
-
-        .user .inp_content_box .input input[data-v-63783c8c]::placeholder {
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .wallet .inp_content_box[data-v-63783c8c] {
-            background: #15181f;
-            border-color: transparent;
-        }
-
-        .wallet .inp_content_box input[data-v-63783c8c]::placeholder {
-            color: #4C5361 !important;
-        }
-
-        .eye[data-v-63783c8c] {
-            width: 0.4rem;
-        }
-
-        .van-field__word-num[data-v-63783c8c] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-63783c8c]:active,
-        .van-action-sheet__cancel[data-v-63783c8c]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-63783c8c] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-63783c8c] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        [data-v-a84105cc] .van-popup {
-            margin-left: -0.4rem;
-        }
-
-        .area_pop[data-v-a84105cc] {
-            color: #FFF;
-        }
-
-        .area_pop .title[data-v-a84105cc] {
-            font-size: 0.32rem;
-            text-align: center;
-            padding: 0.3rem;
-        }
-
-        .area_pop .title .abs[data-v-a84105cc] {
-            right: 0.3rem;
-            top: 0.35rem;
-        }
-
-        .area_pop .title .abs i[data-v-a84105cc] {
-            font-size: 0.32rem;
-        }
-
-        .area_pop .tip[data-v-a84105cc] {
-            padding: 0.2rem 0.3rem;
-            border-top: 0.02rem solid #eee;
-            display: none;
-        }
-
-        .area_pop .so[data-v-a84105cc] {
-            height: 0.8rem;
-            background: #15181f;
-            margin: 0 0.3rem;
-            border-radius: 0.12rem;
-            padding: 0 0.1rem;
-        }
-
-        .area_pop .so .ico[data-v-a84105cc] {
-            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC0AAAAqCAYAAAAnH9IiAAAACXBIWXMAACE4AAAhOAFFljFgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANYSURBVHgB1VmLcdswDIU0gTcoO0HdCapMkHSCphNYnqDKBLYn6HUCOxOYmSDuBFU38AR2ARlSKBKkPqdP8+50EimJfARAEgAj6InNZrPA2xKvhyiKPvDzgi/CGa+c7tfr9QXver1eaxgAEXQEkk3gRvSbQbAtaCAHHMQOB3CCnmhNmsgi0R/4mMAw0Ej+O5LPoSMaSZMZMNkUxsEWyT8h+XPbH4KkkbBCwkd8VBBGjtcJO/8LNxMgLAxbb/wf/71rK3UvaSS8ZMI+u9X4/nC5XJ6bOqPB4600L+X5jIh/bWPrUQ/COduihh7Ath8D5M8s8SDxSGjUaxI86wexbewnY/I2iPjnkPYiqyGyw1dwCZ9ZdRoGBPZHS+dPcDWaM3FxcsZmwaO2UmUaBga2SWv2HbxN3hLKo4UClaTZLP7YH7CEDzAieA84Cn2LwqokzWqyf3oamzCBiNF8set90i4kzavFq/UuT9P0I0yI7XZLmlZmnSTtUtLOioCDyGBi0FIqVD/YFQVpJHhv1eer1eoXTAyWqDbryDFjj7JCzF7bwvowg5mA0n62qkoXuAJJOrF/xK35BeaDNPFrJhKjVL9YH+R93MWhwH3nVrUyCyTpmmmgen7D/Kj5HijYT2aZSCvrhxxmBru4JuoTEdx9v7UzPiJsDg7pdwciHRzVTAhqXyKtYGZwmGYiNwtEOjhTZ8LSKtclLcxUxTHdLOC+lVnHyZ4KJOnGHWhiJEKdNguledTELzhQk0Hwoc+Oa0pxGIrf9ugSdqQmBUXq4C4EjiXEvhdSJDM2pEhFimgK0pIfi1AYSWxgIux2Oymo1lIOpNoRKR4U2kqnMBNKJWD/mV3viWTeSAeCyz3FkDASOD6VTJEWB3F3tn2PDFwvjxI4R5IGDAwjdSCRK/t1BFYjzSuJlDyhBvZsd4OA5ktDgrPs1yHeKwFJMWTfwJelS+aghNdVmtiuNxOTTanePQRSs0Se4sk2qd44ju+xYzKxxPNZqWXwCKwi/l8m1QOaLjKqrY4v8EZp2RWMAF6xMjtD6iOO36+7HBQptsUEhoHmXKEGf58OcSw/9jmSI3Wn7FR1PpJjP+fQNnVszq0yqd+ZtNVgArezFMqd0AAU1A8/6SptnfybU5dTLB/+AYy7xNVzTTGdAAAAAElFTkSuQmCC) no-repeat center center;
-            width: 0.5rem;
-            height: 0.8rem;
-            background-size: 0.3rem auto;
-        }
-
-        .area_pop .so .flexs[data-v-a84105cc] {
-            margin-left: 0.16rem;
-        }
-
-        .area_pop .so input[data-v-a84105cc] {
-            width: 100%;
-            background: none;
-            border: 0;
-        }
-
-        .area_pop .so input[data-v-a84105cc]::placeholder {
-            color: #909090;
-        }
-
-        .area_pop .so .closes[data-v-a84105cc] {
-            margin-right: 0.1rem;
-        }
-
-        .area_pop .so .closes img[data-v-a84105cc] {
-            height: 0.32rem;
-        }
-
-        .area_pop ul[data-v-a84105cc] {
-            height: 7rem;
-            overflow: auto;
-            margin: 0.2rem 0.3rem;
-        }
-
-        .area_pop ul li[data-v-a84105cc] {
-            border-bottom: 0.02rem solid rgba(255, 255, 255, 0.1);
-            padding: 0.28rem 0;
-        }
-
-        .area_pop ul li[data-v-a84105cc]:last-child {
-            border-bottom: none;
-        }
-
-        .area_pop ul li .ico[data-v-a84105cc] {
-            margin-right: 0.2rem;
-        }
-
-        .area_pop ul li .ico img[data-v-a84105cc] {
-            height: 0.32rem;
-        }
-
-        .van-field__word-num[data-v-a84105cc] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-a84105cc]:active,
-        .van-action-sheet__cancel[data-v-a84105cc]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-a84105cc] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-a84105cc] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .input_big_box[data-v-fa37b51c] {
-            position: relative;
-            --themeColor: #00fc83;
-        }
-
-        .input_big_box .title_box[data-v-fa37b51c] {
-            background: transparent;
-            z-index: 2;
-        }
-
-        .input_big_box .title_box .title[data-v-fa37b51c] {
-            line-height: 1.1;
-            font-size: 0.28rem;
-            color: #fff;
-        }
-
-        .input_big_box .inp_content_box[data-v-fa37b51c] {
-            margin-top: 0.2rem;
-            height: 0.96rem;
-            padding: 0 0.32rem;
-            color: #fff;
-            border-radius: 0.16rem;
-            display: flex;
-            align-items: center;
-            border: 0.02rem solid #252930;
-        }
-
-        .input_big_box .inp_content_box[data-v-fa37b51c]:focus-within {
-            border: 0.02rem solid var(--themeColor);
-        }
-
-        .input_big_box .inp_content_box .input[data-v-fa37b51c] {
-            flex: 1;
-        }
-
-        .input_big_box .inp_content_box .input input[data-v-fa37b51c] {
-            height: 0.48rem;
-            background: none;
-            border: 0;
-            width: 100%;
-            color: #fff;
-        }
-
-        .input_big_box .inp_content_box .input input[data-v-fa37b51c]::placeholder {
-            color: #4c5361;
-            font-size: 0.28rem;
-        }
-
-        .input_big_box .inp_content_box .inp_right[data-v-fa37b51c] {
-            margin-left: 0.2rem;
-        }
-
-        .user .inp_content_box[data-v-fa37b51c] {
-            background: transparent;
-            position: relative;
-            z-index: 10;
-            border-color: transparent;
-        }
-
-        .user .inp_content_box[data-v-fa37b51c]:before {
-            content: '';
-            display: block;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            border-radius: 0.16rem;
-            background: rgba(255, 255, 255, 0.2);
-            backdrop-filter: blur(0.2rem);
-            z-index: -1;
-        }
-
-        .user .inp_content_box .input input[data-v-fa37b51c]::placeholder {
-            color: rgba(255, 255, 255, 0.4);
-        }
-
-        .wallet .inp_content_box[data-v-fa37b51c] {
-            background: #15181f;
-            border-color: transparent;
-        }
-
-        .wallet .inp_content_box input[data-v-fa37b51c]::placeholder {
-            color: #4C5361 !important;
-        }
-
-        .phone_code[data-v-fa37b51c] {
-            color: #fff;
-            font-size: 0.28rem;
-            display: flex;
-            align-items: center;
-            margin-right: 0.12rem;
-        }
-
-        .phone_code .arrow[data-v-fa37b51c] {
-            margin-left: 0.06rem;
-        }
-
-        .van-field__word-num[data-v-fa37b51c] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-fa37b51c]:active,
-        .van-action-sheet__cancel[data-v-fa37b51c]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-fa37b51c] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-fa37b51c] {
-            max-width: 8.5rem;
-        }
-    </style>
-
+    <script charset="utf-8" src="/js/3.11610479-1728557826908.js"></script>
     <style type="text/css">
         .income-box[data-v-aa0ccfea] {
             display: flex;
@@ -7676,6 +7121,7 @@
         .van-popup--bottom[data-v-aa0ccfea] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .home-router[data-v-1f37bdab] {
@@ -7744,8 +7190,8 @@
         .home-router .router .content .left .bot .move-up[data-v-1f37bdab] {
             width: fit-content;
             border-radius: 0.8rem;
-            border: 0.02rem solid #fff;
-            color: 	#FFFFFF;
+            border: 0.02rem solid #00fc83;
+            color: #00fc83;
             font-size: 0.24rem;
             padding: 0.08rem 0.16rem;
         }
@@ -7785,80 +7231,12 @@
         .van-popup--bottom[data-v-1f37bdab] {
             max-width: 8.5rem;
         }
-    </style>
-    <style type="text/css">
-        .home-task[data-v-0b286867] {
-            border-radius: 0.2rem;
-            background: url({{asset('')}}static/img/bg-task.028669fc.png) no-repeat;
-            background-size: 100% 100%;
-            padding: 0.4rem 0.28rem;
-        }
 
-        .home-task .title[data-v-0b286867] {
-            color: #fff;
-            font-size: 0.28rem;
-        }
-
-        .home-task .task-lis[data-v-0b286867] {
-            margin-top: 0.32rem;
-            display: flex;
-            align-items: center;
-            gap: 0.12rem;
-        }
-
-        .home-task .task-lis .task[data-v-0b286867] {
-            flex: 1;
-            display: flex;
-            align-items: center;
-        }
-
-        .home-task .task-lis .task img[data-v-0b286867] {
-            width: 0.64rem;
-            height: 0.64rem;
-            margin-right: 0.2rem;
-        }
-
-        .home-task .task-lis .task .info .name[data-v-0b286867] {
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.24rem;
-        }
-
-        .home-task .task-lis .task .info .value[data-v-0b286867] {
-            margin-top: 0.12rem;
-            color: #fff;
-            font-size: 0.28rem;
-        }
-
-        .home-task .task-lis .task .info .value span[data-v-0b286867] {
-            color: #00fc83;
-        }
-
-        .van-field__word-num[data-v-0b286867] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-0b286867]:active,
-        .van-action-sheet__cancel[data-v-0b286867]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-0b286867] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-0b286867] {
-            max-width: 8.5rem;
-        }
     </style>
     <style type="text/css">
         .home-team[data-v-7fb36d82] {
             border-radius: 0.2rem;
-            background: #12244a;
+            background: rgba(23, 26, 36, 0.6);
             padding: 0.4rem 0.28rem;
         }
 
@@ -7929,6 +7307,7 @@
         .van-popup--bottom[data-v-7fb36d82] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .home-partner[data-v-4eabb456] {
@@ -7980,7 +7359,7 @@
         }
 
         .home-partner .info-list .info .name[data-v-4eabb456] {
-            /* background: #079987; */
+           
             color: #fff;
             font-size: 0.22rem;
             padding: 0.16rem 0.08rem;
@@ -8007,6 +7386,7 @@
         .van-popup--bottom[data-v-4eabb456] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .skeleton-con[data-v-546bdba2] {
@@ -8018,7 +7398,6 @@
             height: 3rem;
             margin-bottom: 0.3rem;
             padding: 0;
-            overflow: hidden;
         }
 
         .banner[data-v-546bdba2] .van-skeleton__avatar {
@@ -8104,6 +7483,7 @@
         .van-popup--bottom[data-v-546bdba2] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .income-box[data-v-5e50d7ad] {
@@ -8152,9 +7532,9 @@
 
         .income-box .check-btn[data-v-5e50d7ad] {
             border-radius: 1.2rem;
-            background: #022627;
+            background: #00FC83;
             padding: 0.16rem 0.32rem;
-            color: 	#FFFFFF;
+            color: #020202;
             font-size: 0.26rem;
             line-height: 1.2;
         }
@@ -8180,6 +7560,7 @@
         .van-popup--bottom[data-v-5e50d7ad] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
         .homeLoad-enter-active[data-v-5954443c],
@@ -8281,8 +7662,7 @@
 
         .banner img[data-v-5954443c] {
             width: 100%;
-            height:90%;
-            border-radius: 0.4rem;
+            border-radius: 0.1rem;
         }
 
         .banner .one_line[data-v-5954443c] {
@@ -8415,8 +7795,229 @@
         .van-popup--bottom[data-v-5954443c] {
             max-width: 8.5rem;
         }
+
     </style>
- \
+    <script charset="utf-8" src="/js/77.11610479-1728557826908.js"></script>
+    <style type="text/css">
+        .page[data-v-37526a6c] {
+            min-height: 100vh;
+            background-size: cover;
+            background: #04103a;
+        }
+
+        .page .headers[data-v-37526a6c] {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            max-width: 8.5rem;
+            z-index: 100;
+            padding-top: constant(safe-area-inset-top);
+            /* 兼容 iOS<11.2 */
+            padding-top: env(safe-area-inset-top);
+            /* 兼容iOS>= 11.2 */
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .page .headers.fixed[data-v-37526a6c] {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        .page .footer[data-v-37526a6c] {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            max-width: 8.5rem;
+            z-index: 56;
+            background: #020202;
+        }
+
+        .page .content-container[data-v-37526a6c] {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -ms-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+        }
+
+        .page .content-container .content-scroll[data-v-37526a6c] {
+            padding-bottom: 0.24rem;
+        }
+
+        .van-field__word-num[data-v-37526a6c] {
+            color: #fff;
+        }
+
+        .van-action-sheet__item[data-v-37526a6c]:active,
+        .van-action-sheet__cancel[data-v-37526a6c]:active {
+            background-color: #23252e;
+        }
+
+        .van-overlay[data-v-37526a6c] {
+            position: fixed;
+            width: 8.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .van-popup--bottom[data-v-37526a6c] {
+            max-width: 8.5rem;
+        }
+
+    </style>
+    <script charset="utf-8" src="/js/33.11610479-1728557826908.js"></script>
+    <script charset="utf-8" src="/js/21.11610479-1728557826908.js"></script>
+    <style type="text/css">
+        .w856 .head[data-v-0ff1fb10] {
+            width: 100%;
+        }
+
+        .flex[data-v-0ff1fb10] {
+            align-items: center;
+        }
+
+        .head[data-v-0ff1fb10] {
+            background: ##04103a;
+            height: 1.2rem;
+            position: relative;
+            transition: background-color 0.3s;
+        }
+
+        .head.on[data-v-0ff1fb10] {
+            background: ##04103a !important;
+        }
+
+        .head .n_home[data-v-0ff1fb10] {
+            font-size: 0.32rem;
+            line-height: 0.44rem;
+            font-weight: 500;
+            color: #ffffff;
+        }
+
+        .head .name[data-v-0ff1fb10] {
+            font-size: 0.32rem;
+            font-weight: 500;
+            color: #ffffff;
+            position: absolute;
+            width: 70%;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            margin-left: -35%;
+            display: flex;
+            z-index: 0;
+        }
+
+        .head .notice[data-v-0ff1fb10] {
+            position: relative;
+        }
+
+        .head .notice img[data-v-0ff1fb10] {
+            height: 0.4rem;
+        }
+
+        .head .notice span[data-v-0ff1fb10] {
+            position: absolute;
+            background: #ee594b;
+            border-radius: 50%;
+            box-shadow: 0 0.04rem 0.08rem 0 rgba(245, 56, 49, 0.31);
+            color: #fff;
+            font-size: 0.2rem;
+            padding: 0 0.08rem;
+            top: -0.1rem;
+            right: -0.1rem;
+        }
+
+        .head .back img[data-v-0ff1fb10] {
+            height: 0.36rem;
+        }
+
+        .head img[data-v-0ff1fb10] {
+            height: 0.4rem;
+            vertical-align: middle;
+        }
+
+        .head .lang[data-v-0ff1fb10],
+        .head .notice[data-v-0ff1fb10] {
+            margin-left: 0.28rem;
+        }
+
+        .head .notice[data-v-0ff1fb10] {
+            position: relative;
+        }
+
+        .head .notice .count[data-v-0ff1fb10] {
+            min-width: 0.32rem;
+            min-height: 0.32rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            transform: translate(50%, -40%);
+            background: #e72a2a;
+            padding: 0.02rem 0.04rem;
+            line-height: 1.2;
+            border-radius: 50%;
+            color: #fff;
+            font-size: 0.2rem;
+        }
+
+        .head .str[data-v-0ff1fb10] {
+            margin-left: 0.26rem;
+            font-size: 0.28rem;
+            font-weight: 500;
+            color: #fff;
+            line-height: 0.4rem;
+        }
+
+        .head .str[data-v-0ff1fb10] img {
+            height: 0.4rem;
+            vertical-align: top;
+        }
+
+        .logo img[data-v-0ff1fb10] {
+            height: 0.56rem;
+        }
+
+        .van-field__word-num[data-v-0ff1fb10] {
+            color: #fff;
+        }
+
+        .van-action-sheet__item[data-v-0ff1fb10]:active,
+        .van-action-sheet__cancel[data-v-0ff1fb10]:active {
+            background-color: #23252e;
+        }
+
+        .van-overlay[data-v-0ff1fb10] {
+            position: fixed;
+            width: 8.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .van-popup--bottom[data-v-0ff1fb10] {
+            max-width: 8.5rem;
+        }
+
+    </style>
     <style type="text/css">
         .footers[data-v-6c4d8baa] {
             max-width: 10rem;
@@ -8424,7 +8025,7 @@
             height: fit-content;
             background: #201845;
             border-radius: 0.32rem 0.32rem 0 0;
-            border-top: 0.02rem solid #12244a;;
+            border-top: 0.02rem solid #252930;
             z-index: 56;
         }
 
@@ -8482,8 +8083,9 @@
         .van-popup--bottom[data-v-6c4d8baa] {
             max-width: 8.5rem;
         }
+
     </style>
- 
+    <script charset="utf-8" src="/js/59.11610479-1728557826908.js"></script>
     <style type="text/css">
         .popover[data-v-e29c081e] {
             width: 0.28rem;
@@ -8511,45 +8113,43 @@
         .van-popup--bottom[data-v-e29c081e] {
             max-width: 8.5rem;
         }
+
     </style>
-    
+    <script charset="utf-8" src="/js/6.11610479-1728557826908.js"></script>
     <style type="text/css">
-        .popup-box[data-v-3c12fe9a] {
-            width: 6rem;
-        }
-
-        .popup-box .image-box[data-v-3c12fe9a] {
-            max-height: 60vh;
-            overflow-y: scroll;
-            border-radius: 0.32rem;
-        }
-
-        .popup-box .image-box img[data-v-3c12fe9a] {
-            width: 100%;
-        }
-
-        .popup-box .close[data-v-3c12fe9a] {
-            margin-top: 0.32rem;
+        .select-list[data-v-18e3de10] {
+            margin-top: 0.24rem;
+            line-height: 1.2;
             display: flex;
             align-items: center;
-            justify-content: center;
+            gap: 0.24rem;
         }
 
-        .popup-box .close img[data-v-3c12fe9a] {
-            width: 0.56rem;
-            height: 0.56rem;
+        .select-list .select[data-v-18e3de10] {
+            flex: 1;
+            border-radius: 0.08rem;
+            border: 0.02rem solid #252930;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: #FFF;
+            padding: 0.16rem 0.24rem;
         }
 
-        .van-field__word-num[data-v-3c12fe9a] {
+        .select-list .select .text[data-v-18e3de10] {
+            font-size: 0.24rem;
+        }
+
+        .van-field__word-num[data-v-18e3de10] {
             color: #fff;
         }
 
-        .van-action-sheet__item[data-v-3c12fe9a]:active,
-        .van-action-sheet__cancel[data-v-3c12fe9a]:active {
+        .van-action-sheet__item[data-v-18e3de10]:active,
+        .van-action-sheet__cancel[data-v-18e3de10]:active {
             background-color: #23252e;
         }
 
-        .van-overlay[data-v-3c12fe9a] {
+        .van-overlay[data-v-18e3de10] {
             position: fixed;
             width: 8.5rem;
             left: 50%;
@@ -8558,264 +8158,382 @@
             background: rgba(0, 0, 0, 0.6) !important;
         }
 
-        .van-popup--bottom[data-v-3c12fe9a] {
+        .van-popup--bottom[data-v-18e3de10] {
             max-width: 8.5rem;
         }
+
     </style>
     <style type="text/css">
-        .assets[data-v-6e05afb9] {
-            border-radius: 0.2rem;
-            padding: 0.32rem 0.28rem;
+        .title[data-v-65d1ba27] {
             line-height: 1.2;
-        }
-
-        .assets .level-box[data-v-6e05afb9] {
-            display: flex;
-            align-items: center;
-        }
-
-        .assets .level-box img[data-v-6e05afb9] {
-            margin-right: 0.2rem;
-            height: 0.8rem;
-        }
-
-        .assets .level-box .level-info[data-v-6e05afb9] {
-            font-size: 0.24rem;
-            margin-left: 0.16rem;
-        }
-
-        .assets .level-box .level-info .text[data-v-6e05afb9] {
-            color: #fff;
-        }
-
-        .assets .level-box .level-info .level[data-v-6e05afb9] {
-            margin-top: 0.12rem;
-            color: #00fc83;
+            margin-top: 0.32rem;
+            color: #FFF;
             font-size: 0.32rem;
         }
 
-        .assets .info-list[data-v-6e05afb9] {
+        .record-list .record[data-v-65d1ba27] {
+            padding: 0.32rem 0.28rem;
+            border-radius: 0.16rem;
+            background: #0f1117;
             display: flex;
             align-items: center;
-            gap: 0.1rem;
-            margin-top: 0.32rem;
+            justify-content: space-between;
+            margin-top: 0.24rem;
         }
 
-        .assets .info-list .info[data-v-6e05afb9] {
-            flex: 1;
+        .record-list .record .left .name[data-v-65d1ba27] {
+            color: #FFF;
         }
 
-        .assets .info-list .info[data-v-6e05afb9]:nth-of-type(2) {
-            text-align: center;
+        .record-list .record .left .time[data-v-65d1ba27] {
+            margin-top: 0.14rem;
+            color: #787F8E;
+            font-size: 0.24rem;
         }
 
-        .assets .info-list .info[data-v-6e05afb9]:nth-of-type(3) {
+        .record-list .record .right[data-v-65d1ba27] {
             text-align: right;
+            margin-left: auto;
         }
 
-        .assets .info-list .info .name[data-v-6e05afb9] {
+        .record-list .record .right .price[data-v-65d1ba27] {
+            color: #FFF;
+            font-size: 0.24rem;
+        }
+
+        .record-list .record .right .status[data-v-65d1ba27] {
+            width: fit-content;
+            margin-top: 0.1rem;
+            text-align: right;
+            color: #00FC83;
+            font-size: 0.24rem;
+            position: relative;
+            padding-left: 0.2rem;
+            margin-left: auto;
+        }
+
+        .record-list .record .right .status[data-v-65d1ba27]:after {
+            content: "";
+            display: block;
+            width: 0.12rem;
+            height: 0.12rem;
+            border-radius: 50%;
+            background: var(--color1);
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translate(0, -50%);
+        }
+
+        .van-field__word-num[data-v-65d1ba27] {
+            color: #fff;
+        }
+
+        .van-action-sheet__item[data-v-65d1ba27]:active,
+        .van-action-sheet__cancel[data-v-65d1ba27]:active {
+            background-color: #23252e;
+        }
+
+        .van-overlay[data-v-65d1ba27] {
+            position: fixed;
+            width: 8.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .van-popup--bottom[data-v-65d1ba27] {
+            max-width: 8.5rem;
+        }
+
+    </style>
+    <style type="text/css">
+        .tab-list[data-v-14275b54] {
+            margin-bottom: 0.32rem;
+        }
+
+        [data-v-14275b54] .info .name {
             color: rgba(255, 255, 255, 0.6);
             font-size: 0.24rem;
         }
 
-        .assets .info-list .info .value[data-v-6e05afb9] {
-            margin-top: 0.24rem;
+        [data-v-14275b54] .info .value {
+            margin-top: 0.16rem;
             color: #fff;
             font-size: 0.28rem;
         }
 
-        .assets .time-box[data-v-6e05afb9] {
-            padding: 0.24rem;
-            margin-top: 0.32rem;
-            border-radius: 0.16rem;
-            background: rgba(255, 255, 255, 0.08);
+        [data-v-14275b54] .info .value span {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .assets-box[data-v-14275b54] {
+            text-align: center;
+            border-radius: 0.2rem;
+            background: rgba(23, 26, 36, 0.6);
+            position: relative;
+        }
+
+        .assets-box .assets[data-v-14275b54] {
+            padding: 0.4rem;
+            background: url(/static/img/bg-wallet-card.76d786ab.png) no-repeat;
+            background-size: 100% 100%;
+        }
+
+        .assets-box .assets .total .n[data-v-14275b54] {
+            line-height: 0.4rem;
+            color: rgba(255, 255, 255, 0.6);
+            text-align: left;
+        }
+
+        .assets-box .assets .total .am[data-v-14275b54] {
+            font-size: 0.56rem;
+            font-weight: 500;
+            color: #ffffff;
+            line-height: 0.73rem;
+            text-align: left;
+        }
+
+        .assets-box .assets .total .income[data-v-14275b54] {
+            margin-top: 0.1rem;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.24rem;
+            text-align: left;
+        }
+
+        .assets-box .assets .total .income span[data-v-14275b54] {
+            color: var(--color1);
+        }
+
+        .assets-box .assets .total .assets-info[data-v-14275b54] {
+            margin-top: 0.12rem;
             display: flex;
             align-items: center;
+            gap: 0.12rem;
+            text-align: left;
         }
 
-        .assets .time-box img[data-v-6e05afb9] {
-            width: 0.24rem;
-            height: 0.24rem;
-            margin-right: 0.12rem;
+        .assets-box .assets .total .assets-info .info[data-v-14275b54] {
+            width: 50%;
         }
 
-        .assets .time-box span[data-v-6e05afb9] {
-            color: #ff5050;
+        .assets-box .nav-list[data-v-14275b54] {
+            display: flex;
+            align-items: center;
+            justify-content: stretch;
+            gap: 0.12rem;
+            padding: 0.32rem 0.12rem;
+            line-height: 1.2;
+            width: 100%;
+        }
+
+        .assets-box .nav-list .nav[data-v-14275b54] {
+            flex: 1;
+        }
+
+        .assets-box .nav-list .nav img[data-v-14275b54] {
+            width: 0.48rem;
+            height: 0.48rem;
+        }
+
+        .assets-box .nav-list .nav .name[data-v-14275b54] {
+            margin-top: 0.2rem;
+            color: #fff;
             font-size: 0.24rem;
         }
 
-        .van-field__word-num[data-v-6e05afb9] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-6e05afb9]:active,
-        .van-action-sheet__cancel[data-v-6e05afb9]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-6e05afb9] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-6e05afb9] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .list[data-v-6d2d4c36] {
-            line-height: 1.2;
-        }
-
-        .list .item[data-v-6d2d4c36] {
-            border-radius: 0.2rem;
-            border: 0.03rem solid #00fc83;
-            padding: 0.32rem 0.28rem;
-        }
-
-        .list .item .head[data-v-6d2d4c36] {
+        .assets-box .receive-box[data-v-14275b54] {
             display: flex;
             align-items: center;
             justify-content: space-between;
-            padding-bottom: 0.32rem;
-            border-bottom: 0.02rem solid #252930;
+            gap: 0.12rem;
+            padding: 0.32rem;
+            line-height: 1.2;
         }
 
-        .list .item .head .level-box[data-v-6d2d4c36] {
-            display: flex;
-            align-items: center;
+        .assets-box .receive-box .amount-box[data-v-14275b54] {
+            text-align: left;
         }
 
-        .list .item .head .level-box img[data-v-6d2d4c36] {
-            min-width: 0.48rem;
-            height: 0.48rem;
-            margin-right: 0.12rem;
+        .assets-box .receive-box .amount-box .text[data-v-14275b54] {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.24rem;
         }
 
-        .list .item .head .level-box span[data-v-6d2d4c36] {
+        .assets-box .receive-box .amount-box .amount[data-v-14275b54] {
+            margin-top: 0.2rem;
+            color: #fff;
+            font-size: 0.28rem;
+        }
+
+        .assets-box .receive-box .btn-bg[data-v-14275b54] {
+            font-size: 0.24rem;
+            border-radius: 1.8rem;
+            padding: 0.16rem 0.32rem;
+        }
+
+        [data-v-14275b54] .wallet-assets {
+            margin-top: 0.4rem;
+        }
+
+        [data-v-14275b54] .wallet-assets .info-title {
             color: #fff;
             font-size: 0.32rem;
+            margin-bottom: 0.24rem;
         }
 
-        .list .item .head .amount-box[data-v-6d2d4c36] {
+        [data-v-14275b54] .wallet-assets .info-list {
+            background: #0f1016;
+            border-radius: 0.2rem;
+            text-align: center;
+            padding: 0 0.32rem;
+            line-height: 1.2;
             display: flex;
             align-items: center;
-        }
-
-        .list .item .head .amount-box .popover[data-v-6d2d4c36] {
-            width: 0.32rem;
-            height: 0.32rem;
-            margin-right: 0.1rem;
-        }
-
-        .list .item .head .amount-box .amount img[data-v-6d2d4c36] {
-            width: 0.48rem;
-            height: 0.48rem;
-            margin-right: 0.1rem;
-        }
-
-        .list .item .head .amount-box .amount span[data-v-6d2d4c36] {
-            color: #00fc83;
-            font-size: 0.48rem;
-            line-height: 0.48rem;
-        }
-
-        .list .item .info-list[data-v-6d2d4c36] {
-            display: flex;
+            justify-content: space-between;
             flex-wrap: wrap;
         }
 
-        .list .item .info-list .info[data-v-6d2d4c36] {
-            width: 33.33%;
-            padding: 0 0.12rem;
+        [data-v-14275b54] .wallet-assets .info-list .info {
+            flex: 0 0 49%;
+            padding: 0.4rem 0;
+            border-bottom: 0.02rem dashed #252930;
         }
 
-        .list .item .info-list .info[data-v-6d2d4c36]:nth-of-type(3n+2) {
+        [data-v-14275b54] .wallet-assets .info-list .info:nth-last-child(1),
+        [data-v-14275b54] .wallet-assets .info-list .info:nth-last-child(2) {
+            border-bottom: none;
+        }
+
+        .btn[data-v-14275b54] {
+            background: var(--backgroundLinear);
+            background: none !important;
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        .van-field__word-num[data-v-14275b54] {
+            color: #fff;
+        }
+
+        .van-action-sheet__item[data-v-14275b54]:active,
+        .van-action-sheet__cancel[data-v-14275b54]:active {
+            background-color: #23252e;
+        }
+
+        .van-overlay[data-v-14275b54] {
+            position: fixed;
+            width: 8.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 0;
+            background: rgba(0, 0, 0, 0.6) !important;
+        }
+
+        .van-popup--bottom[data-v-14275b54] {
+            max-width: 8.5rem;
+        }
+
+    </style>
+    <script charset="utf-8" src="/js/32.11610479-1728557826908.js"></script>
+    <style type="text/css">
+        .table_list[data-v-555c6fae] {
+            width: 100%;
+            padding: 0.06rem;
+            background: #13161c;
+            border-radius: 0.12rem;
+            overflow: hidden;
+        }
+
+        [data-v-555c6fae] .van-tabs__nav {
+            background-color: #13161c;
+            display: flex;
+            align-items: stretch;
+            justify-content: center;
+        }
+
+        [data-v-555c6fae] .van-tab {
+            font-size: 0.28rem;
+            color: rgba(255, 255, 255, 0.6) !important;
             text-align: center;
         }
 
-        .list .item .info-list .info[data-v-6d2d4c36]:nth-of-type(3n) {
-            text-align: right;
+        [data-v-555c6fae] .van-tab--active {
+            color: #fff !important;
         }
 
-        .list .item .info-list .info .name[data-v-6d2d4c36] {
-            margin-top: 0.32rem;
-            color: #787f8e;
-            font-size: 0.28rem;
+        [data-v-555c6fae] .van-tabs--line .van-tabs__wrap {
+            height: 0.6rem;
         }
 
-        .list .item .info-list .info .value[data-v-6d2d4c36] {
-            margin-top: 0.2rem;
-            color: #fff;
-            font-size: 0.32rem;
+        [data-v-555c6fae] .van-tabs__line {
+            background-color: #00FC83;
+            width: 0.6rem;
+            height: 0.05rem;
         }
 
-        .list .item .info-list .info .value span[data-v-6d2d4c36] {
-            font-size: 0.24rem;
+        [data-v-555c6fae] .van-tab__text--ellipsis {
+            -webkit-line-clamp: 2;
         }
 
-        .list .item .info-list .info .value.min[data-v-6d2d4c36] {
-            font-size: 0.24rem;
+        .crowd[data-v-555c6fae] {
+            background: transparent;
         }
 
-        .list .item .count-down[data-v-6d2d4c36] {
-            margin-top: 0.12rem;
-            padding: 0.24rem 0.28rem;
-            border-radius: 0.16rem;
-            background: #1B1C21;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+        .crowd[data-v-555c6fae] .van-tab {
+            height: 0.5rem;
+            -webkit-box-flex: unset;
+            -webkit-flex: unset;
+            flex: unset;
+            margin-left: 0;
+            padding: 0;
+            white-space: nowrap;
         }
 
-        .list .item .count-down .van-count-down[data-v-6d2d4c36] {
-            font-size: 0.26rem;
-            color: #FF5050;
-            text-align: right;
+        .crowd[data-v-555c6fae] .van-tab:nth-of-type(n+2) {
+            margin-left: 0.24rem !important;
         }
 
-        .list .item .count-down .van-count-down .colon[data-v-6d2d4c36] {
-            color: rgba(255, 255, 255, 0.8);
+        .crowd[data-v-555c6fae] .van-tabs__nav {
+            background-color: transparent;
+            justify-content: start;
         }
 
-        .list .item .bot .btn[data-v-6d2d4c36] {
-            height: 0.72rem !important;
-            margin-top: 0.32rem;
-            border-radius: 0.16rem;
+        .crowd[data-v-555c6fae] .van-tabs__line {
+            bottom: 0.24rem;
+        }
+
+        .solid[data-v-555c6fae] .van-tabs__line {
+            display: none;
+        }
+
+        .solid[data-v-555c6fae] .van-tabs--line .van-tabs__wrap {
+            height: 0.7rem;
+        }
+
+        .solid[data-v-555c6fae] .van-tab--active {
+            color: #020202 !important;
             background: var(--color1);
-            color: #020202;
-            font-size: 0.28rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            border-radius: 0.12rem;
+        }
+
+        .solid[data-v-555c6fae] .van-tabs {
+            border-radius: 0.12rem;
+            overflow: hidden;
             text-align: center;
         }
 
-        .list .item .bot .btn.buy[data-v-6d2d4c36] {
-            color: var(--color1);
-            border: 0.02rem solid var(--color1);
-            background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
-        }
-
-        .list .item .bot .btn.status3[data-v-6d2d4c36] {
-            background: #23252e;
-            color: #FFF;
-        }
-
-        .van-field__word-num[data-v-6d2d4c36] {
+        .van-field__word-num[data-v-555c6fae] {
             color: #fff;
         }
 
-        .van-action-sheet__item[data-v-6d2d4c36]:active,
-        .van-action-sheet__cancel[data-v-6d2d4c36]:active {
+        .van-action-sheet__item[data-v-555c6fae]:active,
+        .van-action-sheet__cancel[data-v-555c6fae]:active {
             background-color: #23252e;
         }
 
-        .van-overlay[data-v-6d2d4c36] {
+        .van-overlay[data-v-555c6fae] {
             position: fixed;
             width: 8.5rem;
             left: 50%;
@@ -8824,828 +8542,214 @@
             background: rgba(0, 0, 0, 0.6) !important;
         }
 
-        .van-popup--bottom[data-v-6d2d4c36] {
+        .van-popup--bottom[data-v-555c6fae] {
             max-width: 8.5rem;
         }
-    </style>
-    <style type="text/css">
-        .popup-box[data-v-c0bb5a0e] {
-            width: 6.4rem;
-            padding-top: 1.4rem;
-            position: relative;
-            line-height: 1.2;
-        }
-
-        .popup-box .icon-logo[data-v-c0bb5a0e] {
-            width: auto;
-            height: 2rem;
-            position: absolute;
-            left: 50%;
-            top: 0.4rem;
-            transform: translate(-50%, 0);
-            z-index: 100;
-        }
-
-        .popup-box .cross[data-v-c0bb5a0e] {
-            font-size: 0.32rem;
-            color: #000;
-            font-weight: bold;
-            position: absolute;
-            right: 0.32rem;
-            top: 0.92rem;
-            cursor: pointer;
-        }
-
-        .popup-box .content[data-v-c0bb5a0e] {
-            border-radius: 0.4rem;
-            padding: 1.2rem 0.32rem 0.48rem;
-            text-align: center;
-            line-height: 1.3;
-        }
-
-        .popup-box .content .title[data-v-c0bb5a0e] {
-            color: #fff;
-            font-size: 0.32rem;
-        }
-
-        .popup-box .content .text[data-v-c0bb5a0e] {
-            margin-top: 0.1rem;
-            color: #00fc83;
-            font-size: 0.48rem;
-        }
-
-        .popup-box .content .btn[data-v-c0bb5a0e] {
-            margin-top: 0.32rem;
-        }
-
-        .van-field__word-num[data-v-c0bb5a0e] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-c0bb5a0e]:active,
-        .van-action-sheet__cancel[data-v-c0bb5a0e]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-c0bb5a0e] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-c0bb5a0e] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .bg1[data-v-e20b77f4] {
-            position: absolute;
-            top: 0;
-            width: 100%;
-            height: auto;
-        }
-
-        .bet li[data-v-e20b77f4] {
-            width: 32.33%;
-        }
-
-        .van-field__word-num[data-v-e20b77f4] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-e20b77f4]:active,
-        .van-action-sheet__cancel[data-v-e20b77f4]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-e20b77f4] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-e20b77f4] {
-            max-width: 8.5rem;
-        }
-    </style>
- 
-    <style type="text/css">
-        [data-v-4f302b61] .van-popup {
-            top: 50% !important;
-            left: 50% !important;
-            transform: translate(-50%, -50%) !important;
-        }
-
-        .van-field__word-num[data-v-4f302b61] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-4f302b61]:active,
-        .van-action-sheet__cancel[data-v-4f302b61]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-4f302b61] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-4f302b61] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .popup-box[data-v-bfe0705e] {
-            width: 6.4rem;
-            position: relative;
-            line-height: 1.2;
-            padding-top: 0.4rem;
-        }
-
-        .popup-box .icon-logo[data-v-bfe0705e] {
-            width: 100%;
-            background: url({{asset('')}}static/img/bg-decoration.267b4e44.png) no-repeat;
-            background-size: 100% 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .popup-box .icon-logo img[data-v-bfe0705e] {
-            width: auto;
-            height: 2rem;
-        }
-
-        .popup-box .cross[data-v-bfe0705e] {
-            font-size: 0.32rem;
-            color: #000;
-            font-weight: bold;
-            position: absolute;
-            right: 0.32rem;
-            top: 0.92rem;
-            cursor: pointer;
-        }
-
-        .popup-box .content[data-v-bfe0705e] {
-            border-radius: 0.4rem;
-            padding: 0.2rem 0.32rem 0.48rem;
-            text-align: center;
-            line-height: 1.3;
-        }
-
-        .popup-box .content .title[data-v-bfe0705e] {
-            color: #fff;
-            font-size: 0.32rem;
-        }
-
-        .popup-box .content .text[data-v-bfe0705e] {
-            line-height: 1.4;
-            font-size: 0.28rem;
-            text-align: left;
-            margin-top: 0.2rem;
-        }
-
-        .popup-box .content .text[data-v-bfe0705e] span {
-            color: #00FC83;
-        }
-
-        .popup-box .content .btn[data-v-bfe0705e] {
-            margin-top: 0.32rem;
-        }
-
-        .van-field__word-num[data-v-bfe0705e] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-bfe0705e]:active,
-        .van-action-sheet__cancel[data-v-bfe0705e]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-bfe0705e] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-bfe0705e] {
-            max-width: 8.5rem;
-        }
-    </style>
-   
-    <style type="text/css">
-        .popup-box[data-v-28719dd2] {
-            width: 6.4rem;
-            padding: 0.48rem;
-            position: relative;
-            border-radius: 0.4rem;
-            line-height: 1.2;
-        }
-
-        .popup-box .title-box[data-v-28719dd2] {
-            height: 0.48rem;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
-        }
-
-        .popup-box .title-box .title[data-v-28719dd2] {
-            color: #fff;
-            font-family: Sora;
-            font-size: 0.32rem;
-            font-style: normal;
-        }
-
-        .popup-box .title-box .cross[data-v-28719dd2] {
-            margin-left: auto;
-            font-size: 0.4rem;
-            color: #fff;
-            cursor: pointer;
-        }
-
-        .popup-box .content[data-v-28719dd2] {
-            border-radius: 0.4rem;
-            padding: 0.4rem 0 0;
-        }
-
-        .popup-box .content .text[data-v-28719dd2] {
-            color: #020202;
-            font-size: 0.32rem;
-        }
-
-        .popup-box .content .bot[data-v-28719dd2] {
-            margin-top: 0.4rem;
-            display: flex;
-            justify-content: space-between;
-            gap: 0.32rem;
-        }
-
-        .popup-box .content .bot .btn[data-v-28719dd2] {
-            background: #23252E;
-            min-height: 0.88rem;
-            color: #FFF;
-            text-align: center;
-            font-family: Sora;
-            font-size: 0.28rem;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 0.36rem;
-            /* 128.571% */
-            display: flex;
-            padding: 0.12rem 0.16rem;
-            justify-content: center;
-            align-items: center;
-            gap: 0.2rem;
-            flex: 1 0 0;
-            border-radius: 0.16rem;
-        }
-
-        .popup-box .content .bot .btn.active[data-v-28719dd2] {
-            background: #00FC83;
-            color: #020202;
-        }
-
-        .van-field__word-num[data-v-28719dd2] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-28719dd2]:active,
-        .van-action-sheet__cancel[data-v-28719dd2]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-28719dd2] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-28719dd2] {
-            max-width: 8.5rem;
-        }
-    </style>
-    <style type="text/css">
-        .btn_box[data-v-f8d1bbb0] {
-            margin-top: 0.48rem;
-        }
-
-        .btn_box.min .btn[data-v-f8d1bbb0] {
-            min-height: 0.72rem;
-            padding: 0.12rem;
-        }
-
-        .btn_box .btn[data-v-f8d1bbb0] {
-            height: 0.88rem;
-            color: #FFF;
-            background: #23252E;
-            line-height: 1.2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.32rem;
-            border-radius: 0.16rem;
-            text-align: center;
-        }
-
-        .btn_box .submit[data-v-f8d1bbb0] {
-            background: #00FC83;
-            color: #020202;
-        }
-
-        .van-field__word-num[data-v-f8d1bbb0] {
-            color: #fff;
-        }
-
-        .van-action-sheet__item[data-v-f8d1bbb0]:active,
-        .van-action-sheet__cancel[data-v-f8d1bbb0]:active {
-            background-color: #23252e;
-        }
-
-        .van-overlay[data-v-f8d1bbb0] {
-            position: fixed;
-            width: 8.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            top: 0;
-            background: rgba(0, 0, 0, 0.6) !important;
-        }
-
-        .van-popup--bottom[data-v-f8d1bbb0] {
-            max-width: 8.5rem;
-        }
-        /* .video-list {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);    
-    transition: transform 0.5s;
-    width: 840px;
-    overflow-x: scroll; 
-    
-}
-
-.video {
-    width: 125px;
-    border-radius: 0.16rem;
-    overflow: hidden;
-    border: 0.02rem solid #252930;
-    text-align: center;
-    flex-shrink: 0;
-} */
-
-.carousel-wrap {
-  margin: 5px auto;
-  padding: 0 5%;
-  /* width: 840px; */
-  position: relative;
-}
-
-/* fix blank or flashing items on carousel */
-.owl-carousel .item {
-  position: relative;
-  z-index: 100;
-  -webkit-backface-visibility: hidden;
-}
-.owl-stage{
-    width:840px;
-}
-.owl-item .active{
-    width:110px;
-}
-/* end fix */
-.owl-nav > div {
-  margin-top: -26px;
-  position: absolute;
-  top: 50%;
-  color: #cdcbcd;
-}
-
-.owl-nav i {
-  font-size: 52px;
-  display:none;
-}
-
-.owl-nav .owl-prev {
-  left: -30px;
-}
-
-.owl-nav .owl-next {
-  right: -30px;
-}
-
-
-
-.main-text, .sub-text, .image-text {
-    position: absolute; /* Position the text over the image */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%);
-    color: white; /* Text color */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
-    padding: 0 10px; /* Add some padding to the text */
-    width: 100%; /* Ensure it spans the width of the image */
-}
-
-.main-text {
-    top: 10%; /* Position the "Premium" text towards the top */
-    font-size: 20px; /* Set font size for main text */
-    font-weight: bold; /* Make it bold for prominence */
-}
-
-.image-text {
-    top: 68%; /* Position this text towards the middle of the image */
-    font-size: 16px; /* Slightly smaller text */
-    font-weight: normal; /* Normal font weight */
-    font-style: italic; /* Italicize the description */
-}
-
-.sub-text {
-    bottom: 12%; /* Position this text towards the bottom */
-    font-size: 14px; /* Smaller font size for the subtitle */
-    font-weight: lighter; /* Lighter weight for a less prominent text */
-}
 
     </style>
-     
 </head>
 
 <body class="mein_cn">
     <div id="startLogo" style="display: none;">
-        <img src="../logo.png" alt="">
+        <img src="/logo.png" alt="">
     </div>
-    <div id="app">
+    <div id="app" style="height: 8.72rem;">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
-            <div data-v-5954443c="" data-v-37526a6c="" class="bg1">
-                <!-- <img data-v-5954443c="" data-v-37526a6c=""src="{{asset('')}}static/img/home-bg.8d740309.png" alt=""> -->
-                </div>
-            <div data-v-37526a6c="" class="page-header">
+            
+            <div data-v-37526a6c="" class="headers on">
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
-                    <div data-v-0ff1fb10="" class="head"><!---->
-                        <div data-v-0ff1fb10="" class="container flex"><!---->
-                            <div data-v-0ff1fb10="" class="logo" style="padding-left: 10px"><img data-v-5954443c="" data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
+                    <div data-v-0ff1fb10="" class="head">
+                        <!---->
+                        <div data-v-0ff1fb10="" class="container flex">
+                            <!---->
+                            <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
+                                    src="/static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
-                            <div data-v-0ff1fb10="" class="notice"></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/Icon/support.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAMCSURBVHgBzZkxc9MwFICfnTLXG6s7M9TwB1AX1mZhJl1ZyMDKJbTHnHLHnvQHcC0/gLM7c1ySjc1mYW1Ye3UeerGDn5XEktrayXenqyw96b3IT9J7LsADQUQhy1CWGAvGeZuAbSGV+7KEqCcmWWgSqTCQ5QbNIdkA7oEDluSrEcris+ZIlitZpvkz9b2ThRs1k+W54zgJ1Ik08FJZnW6FbFeRDaFOMNsQnL7BGNVIAXUhJz9nimKLcSEbdw4WuGDHIatfgDnXrP4SLLA10Gf1MZiTsLoHFuyZCMnXQpP6yuQHFv60r8wn5J+J3NEzeAj5pgixPkJZ3sB9kAMH2BwDW+OG2DxDU+N6ysAYs1dt5dwGejpYDjCIrm6Qh6tRyaMatkbfmOm7qdQnO9vKL/KhZjCLinjg0eH96jkoWP1b7Re7JNcxYU2lqEc1kC/vBJpjyuqlM9P2JqmLjQf2rhi4kaqrrkdHDmyZnV9B1cB92DFKOQlmQaifP36ELNdogjZkOQxBG+ZgJdLJr55GD2mm21N0H68TCtH24n5cI7n+UO30lV8goGFwNSHzeOeIdeiTobuzENLTMdx+0ifjJEOy6dkQsO9pjOR3cp/alruYJzLVydDtaQfozkYnACftgw53PljIInQgddsa6c+svtg0LkUwUE6GRtVzOALsKHaj/vMHT0lp4whaQZ4TRNoIpoVF6okGx9Aci5TTcY+rRPOjJWJNPTKQL/uoaoKFD9HrKmbURzxlGV/nh1B2sUC9SX5DFWlLsKcZPPkQgY5Mhh26e7rEPWF1z1Uaqn0E54I92cSLhexdeqSR9Vk9IQP5Z4lKH5E+xPxvfg2m4Hy6do718AgqIgNHrEFoQixRVN0IjHGv2EOwyQ8xy4991nTh5B1hWfnitfeB+eQX+HH4Nf31/xgYtF61A3j6Fwz4CX+89+n3y+XzW3hx8rr1LGEitKptxYaR3NUnSwPpF40V67dJIssRHXmLXZyfP+S8Np/U6iKCqk/F+aVNd3OMzRHjhn9b/ANqwWEI3dJp0AAAAABJRU5ErkJggg=="
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
-                                     src="{{asset('')}}static/img/Icon/bell.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgB7ZjhdZswEIBP4Pa3uwEbJJ3AygT1BnEmqDNBaDJAvUE7QjqByQSOJ8AbmH99rynvemeEK2RhBMg2P/K9dzYPpNNxpzskCegBIkr6m5JMSCKSsXqUkbySrEmehRAJnBMybEaSojvc9hZODQ0SkaywOynraDOmcG2oPLCA/2EsSUheoAhppt2XUIReGu25zR2F/Rl8QcZNLd5YYjEHm/qy139a+vsJuRpgayifQ0u4j6Fj2zbcdYpTQ/E1dIT7GrpW0AcssrWX5yw6595CbXjvB3hCzd+SFLpAHaXxphF4wqJbQluo00JTsATPGF5c1LULjui40q5fwD+6zkldo2MG6tmagH9eteuortExA8dwWjKXsQJOczwsxAhnBg9JdyUI3VYlEjxjyWQbWw5xBMNlPDJu8Jdira69l5YGbtQ/J+f38qZp4Lpc/Z57GtaNG8DAeTewL+YcvHaeexiPQcQZeEIrZVfmAxdkpdNbLOHv0xb+PM4bXyJ/fNi1fXuSpkEuAwsuhtD8WbvZ721/xxF8CLkERerZhrZeCWD+C1B9vjCIQNDKWwS3oO+Vw/wzeX1TGgjNpWzDIb4neQDXgh0GEqovFJFhM3ow2+8Rxf6nSh5Odi/kBr/sN+dtZwX2YhjGlGKuy/WEvHdXeo8xPUgRstrSzUDQDP0YfiEP8vEHfwFKz252grTmG+ULWzIZBmZk3ycYEmRgrOVC7Vy8ZB3UV9FrGBJYHAbUl7FLg9WjkG7bzlNBBn01vHf6YzlX8PDoYzjes3jOz+FRX9Q3d4mHTF36j8AzKiO5YPOqRIL9APPe6wFmG/A4q4uHtcawdDDZqiUAe2uBPYvwPz83puiqItLgAAAAAElFTkSuQmCC"
+                                    alt=""></div>
+                            <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZjRbYMwEECPKP9lBI+QEegkHSFkgEpUHSB0ApIJ2k7QdgLSCWCDMEDV61ngClwDdoxjKvGkCwk25sWRfeEAJBAxokgpCrweOUVGwaAPagwp9ugf7hAKr0DI0eGNYgPz4ERxGwRBJQT3dIilThXFC7iHTw6fGCadT0lwx+WYYppjuDL8ngqPiDccfMsNSKb8ZN46UYBnsLt7FCvoLoxP8M9H6z1bSY1nmBkrmDlr7Z5fj3f0mkK9LdhQUiSwvj/qdDaZwQTs5TgM6i+qhYngFHKCSrejvuA37qD+eWypaKwH7d7SxpiBZ+TEMftVvAjasgja4iKTlGCQKcZwkUkYGGSKMVxlEu1MMYaLTGKWKcZYMokli+AF3HQ+yU9R4BnJJ+cz+NpqZ56fi7fQrTCcRDULfT+8czmFBxO1Gb7zb6VrSqiLOLqb7jvVUo4DAmFzD6ZojhTnn2i8+Pdi7FYYLiUbEDQp7eXYKsG1JVO0J+sRfNa8Pv0jJw3EF8oB7WY0U4y7wf6qbdGIReACGjjRkfTKf5b0tq8qUUhO9ud1MhrJM9YLjYEFP77mDpPJ5NHvAAAAAElFTkSuQmCC"
                                     alt="">
-                                <div data-v-0ff1fb10="" class="count"> 2 </div>
+                                <div data-v-0ff1fb10="" class="count"> 1 </div>
                             </div>
                             <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
-                                     src="{{asset('')}}static/img/Icon/browser2.png"
-                                    alt=""></div><!---->
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAXQSURBVHgBzVlBaCRFFP3VMyMq6k4WQVhBO6IHQZgZPIgX0zl6MgqKIEsmdyFZEG+700nEgx6SIJ4UM1nByy7M7kUUhWkPsqyXmeBFL04t7MEF2fQi7K5Jusv/p6unq6prJtMhC/vg0101v/7//X/Vr181DI4JIYSHjxoSPetIVUmEEIlL2kUKGGMBPGigUVWkFtKeKI4B0jaSCycNadiGODlsT2som8K4ZXz4kIVPQwj3gYs70Idbo76X2dP8NTjDIQu9DfS7j6HfgeMaSF7Dx4rlp/An8Vfwqfh1IRA3dKUClqByPlBkePhoIs0huRZZm2jkOShiIIUUHx1IFoBmGNLWeweXrlxy/uxoCmPYgUq0AswPR30HvgdOaRGNDqB8fgflNrG3BXlD+0jzaGg4rYE9SMJjF7K/3gYHFjMpog+lCw2N+57vQqU0yITCPHlWzj2Sb4aeVvq80Ydq8sZtWIwD2dfzRdfTjKOwOvHbOe5SRTeAQUuGuwP2eelJ3eNBIZhqCcZ94R1eFHC4TrQ4VuDhelfyDKkb82nEr+jflRnn4qML+vw4J7+2ZdPPcUq6UL2CrwESrZZ0DpGMU5fhj4V3o8teyu+x56HrnAVDPkH1HMmYzc1HNLBtOko1XiSJtjC8aOTpIe2Je9TdRaor8jeNYRumca7BMBCWRPpx/HOvF/8timAzuq4Z+PrBN5umXJFsBObuNJyn6SLxjTGUQLkuxa9+Fl+rN+KvoBF/Dd+J3+n3PhyBD5xXNJ5rcNM1eWQ4t4zu4Vxk8gsoHaQDOQ6YNYUMcxordZWeJuU2OT7dMUYyJIVD5bRYspwa4rgZU7z02ACUggPHzpRFsvRdhTcAK5inNeNod/QLY5M9KeJdYI4nW1WMhosJnWvS8UPQFvJiuiAp7B6F2DPE2fdG5tS09iP+keHNDDQ/oFwbwxkY7ToZqDKHE+q2LLnSzlEIJZ0/imdsXFK3ml6GHnSVjkmKMz6R3zMnIjowc5o7gZsr7zVGyxv0SthqJFYtXvr+LHuKvwQzHAqARZ946fub7EX+vfM+H8OqlmhhGfR9kd492yjaBRS4YC+dpsIz8Lg75fiqAw85yIMU1kIhfpJVwlfhTMGFkkXmgMUc9LmmQgsxM5J0H1dSwzrscD3jE+IqVC4swLTI1YbxKlRavo2V9mnIPqZPIVY94cI4MJGtRMZqUARlQ665jepQa9EbZOAvSkdV7ix5RGJX5YMiEI6rt+0GSt2q7JwHCZ5tMO7aHFQDabvKBFdlRVQnJfJdTex6hV6Oxs3fptEOHEv2XtaEj5Q4/cy6R+GieIfOydtyDlMupSedNbryncqnHlLnNHviLUUS1w5WOuZUPrKtLBvaJg1JqeNrQ0tR4EUvQMt5I82J0yySOlbd9dtwN+th9mJEJCc+V+kK1B+rRrG4p3pRhqwjjgE6v6gFaxvbwrhZEPaK3U2+J2PaxMey8gXDAzX2k6eo/B+3MPqS6EzCZZ8r+Wuz0Rcehzsj5r3SR8MpAsrNAupo47t6+Gpj/5KmRdjL7q7NK3Q6W45+FKcPPx/AJOyvNVXvNaOrVnFGe6B6d7TVybJ71VDhGW3+ofghmI+/hS3xG9yG+y4asQLj4DDtNDgHz61CfgfxjLZ23ND2YvyBwmyeDVJQIdv48r/rS4YRy1buaE2/4mDQXio1fHybh3FFMeo2L5NyxQIykEcCy2ABNK8e8+mCaEtRnOel84tgvtbnRKtSPockDZnoS90aymAHXWVQPlMTbBOS6wl/KGh/De9j2ClUvJMzjpU6oH/aanoGkfPLN/QFUmcOR12/mSs7BZdCd0ZHBDyWQuy00HOaFzzA24TSWR+SuUZepBWvnt62bJ6bykBpZBPsV2Ypwn/gLu+LW+5N+HeUiupYlrroYJlSRrxIs5BtBr2jLjCngkykbXEyKFZoHNPQgSgOyrErRXUeGeIJxnqQzCuqDV3Idg9CCFl1HiDtHvdviP8BE8pAwGCsd88AAAAASUVORK5CYII="
+                                    alt=""></div>
+                            <!---->
                         </div>
                     </div>
                 </div>
             </div>
-            <div data-v-37526a6c="" id="scroll" class="page-container"><!---->
-                <div data-v-5954443c="" class="container">
-                    <div data-v-5954443c="" class="banner" style="height:200px">
-                        <div data-v-5954443c="" class="my-swipe van-swipe">
-                        <div class="van-swipe__track" style="transition-duration: 500ms; width: 1179px;">
-    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
-            <img data-v-5954443c="" src="{{asset('')}}static/img/series1.png" alt="">
-            <div class="overlay"></div>
-            <p class="main-text">Premium</p>
-                            <p class="image-text">Fated Deal with mafia King</p>
-                            <p class="sub-text">A family show</p>
-        </div>
-    </div>
-    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
-            <img data-v-5954443c="" src="{{asset('')}}static/img/series2.png" alt="">
-            <p class="main-text">Premium</p>
-                            <p class="image-text">Fated Deal with mafia King</p>
-                            <p class="sub-text">A family show</p>
-        </div>
-    </div>
-    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
-        <div data-v-5954443c="" class="van-item" style="border-radius:5%">
-            <img data-v-5954443c="" src="{{asset('')}}static/img/series3.png" alt="">
-            <p class="main-text">Premium</p>
-                            <p class="image-text">Fated Deal with mafia King</p>
-                            <p class="sub-text">A family show</p>
-        </div>
-    </div>
-</div>
-
-                            <div class="van-swipe__indicators"><i
-                                    class="van-swipe__indicator van-swipe__indicator--active"
-                                    style="background-color: white;"></i><i class="van-swipe__indicator" style=""></i>
+            <div data-v-37526a6c="" id="scroll" class="content-container"
+                style="padding-top: 60px; padding-bottom: 65px;">
+                <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 65px;">
+                    <!---->
+                    <div data-v-5954443c="" class="container">
+                        <div data-v-5954443c="" class="banner" style="height:35%">
+                            <div data-v-5954443c="" class="my-swipe van-swipe">
+                                <div class="van-swipe__track"
+                                    style="transition-duration: 500ms; transform: translateX(-393px); width: 786px;">
+                                    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+                                        <div data-v-5954443c="" class="item"><img data-v-5954443c=""
+                                                src="https://obs.nedvc.com/upload/20240916/ee5c07b8bed058e5a97a5ec525ab7905.jpg"
+                                                alt=""></div>
+                                    </div>
+                                    <div data-v-5954443c="" class="van-swipe-item" style="width: 393px;">
+                                        <div data-v-5954443c="" class="item"><img data-v-5954443c=""
+                                                src="https://obs.nedvc.com/upload/20240915/b3ebfaa57240ec988a6edf1e3cae9c73.png"
+                                                alt=""></div>
+                                    </div>
+                                </div>
+                                <div class="van-swipe__indicators"><i class="van-swipe__indicator" style=""></i><i
+                                        class="van-swipe__indicator van-swipe__indicator--active"
+                                        style="background-color: white;"></i></div>
                             </div>
                         </div>
-                    </div>
-                    <div data-v-5954443c="" class="module bg-blur">
-                        <div data-v-5954443c="" class="notice">
-                            <div data-v-5954443c="" role="alert" class="van-notice-bar"
-                                style="color: rgb(255, 255, 255); background: none;"><i
-                                    class="van-icon van-notice-bar__left-icon"><img
-                                        src="/static/img/logo1.bed352ca.png"
-                                        class="van-icon__image"><!----></i>
-                                <div role="marquee" class="van-notice-bar__wrap">
-                                    <div class="van-notice-bar__content van-ellipsis" style="transition-duration: 0s;">
-                                        <div data-v-5954443c="" class="notice-swipe van-swipe">
-                                            <div class="van-swipe__track van-swipe__track--vertical"
-                                                style="transition-duration: 0ms; transform: translateY(0px); height: 36px;">
-                                                <div data-v-5954443c="" class="van-swipe-item" style="height: 36px;">
-                                                    Dear VIRERO Users </div>
+                        <div data-v-5954443c="" class="module bg-blur">
+                            <div data-v-5954443c="" class="notice">
+                                <div data-v-5954443c="" role="alert" class="van-notice-bar"
+                                    style="color: rgb(255, 255, 255); background: none;"><i
+                                        class="van-icon van-notice-bar__left-icon"><img
+                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHbSURBVHgB7ZZPTsJAFMa/mRHjzrpyaU9gcKNL6gn0AgZuUDiAWOAC3ECMB9Ab1K0riBcAd7rDlYmhjG/aGmr6b4qtbPglkxLmte+bb6Z9j2EdPh0TNXFLv+o0DBqPEF4HzJmhIAxFCZKPw8RR5iTipKgIXiQY0jHClRsJswaW/IFiTBRAz4GV5ZZWPMMI3OvpuJHvgDewQ8st6CLRgkf3fPXbeaHZDnj9G0jm4C8w6UB0e6nTqTeqlUsMUQZL2cFud6gvIP2kr0vqG5J8BoRwSkwO/1mef4hjxB0IVj9FFQjvgFyYR/+KOyD4JapiwWJvRVwAZxeoCsYbsXQJYXVUhwkNAWUevrUE/CtbAVsBGxewg4IY2IPNTmGxI38oJvIdQ/mMO/mCosRrwWIg04JN7MMVV3RN/lTMqOide/d0/UAqO9e/cq62QPV7qgHJICt5INDwY5RLqSwGzbgAVQFVC5XR/bTYcWbyqIg2bVEGIxIx/WleAwE14SLhMxnFZmfQpRGejQzUgl3lOqfGsYWc5Io6O4QuVr6AQASVZw4BG5uCyjOnfdcqv0/yFbpM8KYbaukGQkrpSH2aKBt6qEFjqpG8mn4yFGHmiFBzJqqGkrRojCOJ3XCLCndT3z/7C/rYFKq5AAAAAElFTkSuQmCC"
+                                            class="van-icon__image">
+                                        <!----></i>
+                                    <div role="marquee" class="van-notice-bar__wrap">
+                                        <div class="van-notice-bar__content van-ellipsis"
+                                            style="transition-duration: 0s;">
+                                            <div data-v-5954443c="" class="notice-swipe van-swipe">
+                                                <div class="van-swipe__track van-swipe__track--vertical"
+                                                    style="transition-duration: 0ms; transform: translateY(0px); height: 0px;">
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <ul data-v-5954443c="" class="nav2">
-                            <li data-v-5954443c="" onclick="location.href='{{route('user.quality')}}'">
-                                <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
+                            <ul data-v-5954443c="" class="nav2">
+                                <li data-v-5954443c="">
+                                    <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                             src="{{asset('')}}static/img/Icon/crowns.png"
-                                        alt=""></div>
-                                <div data-v-5954443c="" class="n">VIP Level</div>
-                            </li>
-                            <li data-v-5954443c="">
-                                <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                         src="{{asset('')}}static/img/Icon/rules.png"
-                                        alt=""></div>
-                                <div data-v-5954443c="" class="n">Platform Rules</div>
-                            </li>
-                            <li data-v-5954443c="" onclick="location.href='{{route('user.tutorial')}}'">
-                                <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                        src="{{asset('')}}static/img/Icon/tutorial.png"
-                                        alt=""></div>
-                                <div data-v-5954443c="" class="n">Tutorial</div>
-                            </li>
-                            <li data-v-5954443c="" onclick="location.href='{{route('user.about')}}'">
-                                <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
-                                       src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
-                                        alt=""></div>
-                                <div data-v-5954443c="" class="n">Company Profile</div>
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- <div data-v-5e50d7ad="" data-v-5954443c="" class="bg-blur income-box mt">
-                        <div data-v-5e50d7ad="" class="income">
-                            <div data-v-5e50d7ad="" class="head"><img data-v-5e50d7ad=""
-                                    src="/static/img/icon/deposit.png"
-                                    alt="">
-                                <div data-v-5e50d7ad="" class="title">Invitation subscription income to be collected
-                                </div>
-                                <div data-v-e29c081e="" data-v-5e50d7ad="" class="popover popover"><span
-                                        data-v-e29c081e="" class="popover van-popover__wrapper"><img data-v-e29c081e=""
-                                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGrSURBVHgBzVctV8MwFH3pmaqkdrNMDjvsbLH8B7BYJBYL/wG72erpymGHLbK2vBsSTpbTwUu/wj3nnZ4ua+7NS/I+FAnRNE3KjxXbkm3BdsGWmuGa7ZPtyHZgK5VStWRe9dcfmDjjx4Zt7RBKsGfbspCKuggwK84NeR8UbLtzHlFnyLHqB7aMhgG88NzmDdVCPufH/YDkrohXFnF0f0w88mwkcjJz3hmOHyiHHHv+SHLyrfd+QzLAE0/2TMycgTyAnHiCnfvOC5AKyAzXG14S87G9alNhY7fCnoGcpodecGL2/pqmxxrc8MCK4kCHdgi4pHhYQsCC4mEOAWMEHSkyCAjJcEMjTSgyIEBUOIyEGgIqiocKuQDpMfgmcBAZInp+QMA7dYuE0uTzGw4QUNL3OQi9DV3TsYtyhrzM7kQBGZQNe6Rjiz247TUsaHpoD2oBplicUkRhC1S3IoJLr0gYmnvcgspwaShv0qHL8Tbyk/L8JBSbgRcaJzjpuf3e4P81Jp6QW4rRmnkibBkdEi1BhthSdG5OW4TY9hwlHHIHhLntOYiQVxDaxe35Fz4cjsPLrr2gAAAAAElFTkSuQmCC"
-                                            alt=""></span></div>
-                            </div>
-                            <div data-v-5e50d7ad="" class="amount theme">{{currency()}}{{number_format($todaysRoiSum,2)}}</div>
-                            <div data-v-5e50d7ad="" class="head"><img data-v-5e50d7ad=""
-                                    src="/static/img/icon/deposit.png"
-                                    alt="">
-                                <div data-v-5e50d7ad="" class="title">Invitation subscription income can be collected
-                                </div>
-                            </div>
-                            <div data-v-5e50d7ad="" class="amount theme">{{number_format(Auth::user()->available_balance(),2)}} USDT</div>
-                        </div>
-                        <div data-v-5e50d7ad="" class="check-btn"onclick="location.href='{{route('user.roi-bonus')}}'">View</div>
-                    </div> -->
-                    <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
-                        <div data-v-aa0ccfea="" class="income">
-                            <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                    src="/static/img/icon/earning.png"
-                                    alt="">
-                                <div data-v-aa0ccfea="" class="title">Today's Earnings</div>
-                            </div>
-                            <div data-v-aa0ccfea="" class="amount theme">0 USDT</div>
-                        </div>
-                        <div data-v-aa0ccfea="" class="income">
-                            <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                    src="/static/img/icon/earning1.png"
-                                    alt="">
-                                <div data-v-aa0ccfea="" class="title">Cumulative Earnings</div>
-                            </div>
-                            <div data-v-aa0ccfea="" class="amount">0 USDT</div>
-                        </div>
-                    </div>
-                    <!-- <div data-v-1f37bdab="" data-v-5954443c="" class="home-router mt">
-                        <div data-v-1f37bdab="" class="router bg-blur">
-                            <div data-v-1f37bdab="" class="title">My level</div>
-                            <div data-v-1f37bdab="" class="content">
-                                <div data-v-1f37bdab="" class="left">
-                                    <div data-v-1f37bdab="" class="level-box"><img data-v-1f37bdab=""
-                                            src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png"
-                                            alt=""><span data-v-1f37bdab="">VIP0</span></div>
-                                    <div data-v-1f37bdab="" class="bot" onclick="location.href='{{route('user.quality')}}'">
-                                        <div data-v-1f37bdab="" class="move-up">Upgrade</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-v-1f37bdab="" class="router bg-blur">
-                            <div data-v-1f37bdab="" class="title">Invite friends</div>
-                            <a href="{{ route('user.share') }}">
-                            <div data-v-1f37bdab="" class="content">
-                                <div data-v-1f37bdab="" class="left">
-                                    <div data-v-1f37bdab="" class="text">Invite friends to earn income</div>
-                                    <div data-v-1f37bdab="" class="bot"><img data-v-1f37bdab=""
-                                            src="{{asset('')}}static/img/icon/arrow-right.png"
                                             alt=""></div>
+                                    <div data-v-5954443c="" class="n">VIP Level</div>
+                                </li>
+                                <li data-v-5954443c="">
+                                    <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
+                                        src="{{asset('')}}static/img/Icon/rules.png"
+                                        alt=""></div>
+                                    <div data-v-5954443c="" class="n">Platform Rules</div>
+                                </li>
+                                <li data-v-5954443c="">
+                                    <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
+                                        src="{{asset('')}}static/img/Icon/tutorial.png"
+                                            alt=""></div>
+                                    <div data-v-5954443c="" class="n">Tutorial</div>
+                                </li>
+                                <li data-v-5954443c="">
+                                    <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
+                                        src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
+                                        alt=""></div>
+                                    <div data-v-5954443c="" class="n">Company Profile</div>
+                                </li>
+                            </ul>
+                        </div>
+                       
+                        <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
+                            <div data-v-aa0ccfea="" class="income">
+                                <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAe/SURBVHgB7VhtUFTXGX7uXVitwrJBJ0ayxA1ppQERpnYEkn6snRZs2gQ6ip1pk5EITD9m2izY6Z8O7kY60x8qmCZ/Uklimo4dFjvK5IdAJwO2CRgnGUmCnWJnZHGJ1SbKLpaCsveevu9h73L3gxXW9l+emTv3+5znvOd9n/e8B/gM9wYF6UJ4ndAtNXRVBgFXAe6z22C127EaVzAdvKzc9EMofnp/GhbtLBSvH2lg5QTvHKyHqux1YZOrVi1EDTbDqdiTfjoirmME19CjXyKWY4P06DgyWl/H/wXzXldu+NC4RzsrpsSsWCnG6a/ntD6RGz4yjnDbXvzPILx2aAc7ajVfUmKhUEgcPtIuvlVVLb74aJE8+NrtbhaBQCAp0b1aj+A2Zdv3hFmvc712+EKH9m5Sq1whAtvLK0Teg46kR3lFhRxAMnTo5wRZclz6cgqoqcjlZq4d+LP6dJlb3Z70E5/Ph8nJySWbCAQm0UXfJINbKccFtcmZq2UPpCKZnCCbPtMy8JblGWcZNiz1L6anp3E3pBpAmbIBb6k/dK7Xs04tNd0ZSf/UVU+HUpWSHMPhcEC3rcJ80TrcqdiIcH72QqOBW7Ce+ycy/3YDxUXFKdtgkr/CV8qa9X4P3TbHv0+UGZKRekvpa6+pT+FuYAs6tRcxZROwDl+NeacRWd1mxbj6M2zKuf+ubX1P78ZpfWwHMlsHU37IUsKRZmBoaIii9Ijo7e1N6uxekh1y9oQAyT5UI1iSlgtWCClBKUHWc5NWGTjg8SZE5UToWkLjO252yvcW/y8l2XW7tgun+ztJifCAd+2ui7b3u2Od8YON0cjYIKEM8VwkYn2+bnR2dsa8Hitfg6+v9cGPoLznKd7X0IixEi/CjoUpZYTZJ7s/QEVlpWzHwAviPL59pg3Dw8PynqPc6/Wir69P3kf6rjf3ueiDJCu11qLxU2qdvC2vqIyJQCZwo+tJaHR2KZswoD4jvxm3zSLkeYyCJA/xWPvqh8h5fhgtLS14pPkJ6Wfq9B3c//gJOt+Ofpef78C5COkd+hsYVC8/bOTuRQtaVFetslle8gjj5eFW8zZJjjEoJvBT32GyZAifEmmDnBLp1DjP7NtKRwna29vReOWEfMZWntm3JaZttqRh1VoUUlpVa413iwRVpaYUD8jL0YsXEY+5KmfMfVdvj3wmSGYY67//Jj7X55fXG0uOI7vjfTrew8aTE/hq589xw5EZ/XemYauUJzOGIgRrVDKSRSlNJKgIJ2sSI16Ab5OFRFyDDBHxOUYGaZ4Z2UffQ9GfruNktw8bq0pj3rEVWTvNmAwszJgTpNe0fEsgSOs5p3G9pThWXFmE41GS/3kpxgY+ObMLd4pjO62kIMnPz0epkij44TiCthwbTFzsCQQfEjnRh9XV1Sg2kTRPRxm5AQfIG01tWHXuKta+8pF8zv4ZLlovr69O/AhTR1w4MdSLKmrrmx+vg0f5Wgyh+bjB7KmrWyRLC1/jOprqgpiL+aG/r1eGP/vj3GNOZKkOlFLq4wiWcAAd5PwekolP+v2Y3b0ZtyvzooE0u7tQHhr5pru5RU51PbbCq/8FH9BC9h+hhYFxumxqbIgxiF1ZjQQUaC9OiTTg8Xiia8E1f3xaCrWt9Ql55sP69k/ku5WgIPzSFOKn+LIIBrFCNJNlXvb9gWQiAJtt0YeySP9WkVUZbFEOulSrmnjIeiaeIHT9rF8sj6ORQU4M98rg+LjhC1ITDYSlPy74mIVWNgyeyuWAaxjomEgkCGWkR1xK+TMLtFvvR/k7B6V/zjSUSAvdcn8Z/3rnB5itdsrvmLThi1mvjsJat1WmOSNFpiRI/glFOZVIUNNPU+WV9Ce2WGv7b/CNYKfs6O9VdplZcp4fkoJsmVywkqGVfOZnuU39pI+fIuDeIgf2sPaSzCippvu0IA5cpkYQux4Mtw1MWX7h4trWjKrqnbhI0fwfisogyYcBK8mMff8gMogMizm/Y8vlNvVhNfmg+ZkB/r7w3RmK6u6EaWcL0yCowdYdiRZk6OL1F/TzMY94Ki9GUt+ak2PSYgY4B/PUFp/ZLzUxOmpaEPyb8q2xuDDAqY/b4NzL0hOPSN/Hzc9iCVoPHP8tzvvNmhgKxaY9TmFsBWNaGQ8WF8jzBlql5G16WZI1p0ZePPA/2UcXB2csDgyw9X4vPvTHF/YJNclNfe7ZZ/HmgLHs2rmzGvGDZSswiVvubTIwnJSEWIjNeDKvVxLLemWUll0fxSyvGLzEMoMF/CbmvFgW5tuOHtUXa+Fjx44tWfvy8fbo+wli+9SBH4sHHn1kyX+6unzRb7kv7jMZleRlZ4bm/bX464gMeUJjYyP2tzQn/ZQt8XjxlxKefzd/W4LVDHBbe/YszNAIrnOE+7lPrAhcuGuHxi/oizUIj9q8k8A1RbLtDQOcAuNrGq5JDFwQ1wQXaXfbXUhJkrcnzNPNGB0dlcdS2xpmcDXIVaGZmDGtvK2SPjkDXPGTf9TTho+5HE0XXF7yRpT0uXvePDKDSlKecrfelxZRJubVzy5M6Xyba7ndpr2BWasUyiKL65gyJfkWCS8+enBJpi/K44NIYwMz/S1g9k+qBLnY4nqmQNznfEjJsQdxG9NiLngZtHxTMAgOVFXrSXcL+DPcK/4LTy0torwk2ZQAAAAASUVORK5CYII="
+                                        alt="">
+                                    <div data-v-aa0ccfea="" class="title">Today's Earnings</div>
                                 </div>
-                                <div data-v-1f37bdab="" class="right"><img data-v-1f37bdab=""
-                                        src="{{asset('')}}static/img/home-invite.a9ec84d6.png" alt=""></div>
+                                <div data-v-aa0ccfea="" class="amount theme">0 USDT</div>
                             </div>
-                            </a>
-                        </div>
-                    </div> -->
-                    <!-- <div data-v-7fb36d82="" data-v-5954443c="" class="home-team mt">
-                        <div data-v-7fb36d82="" class="head">
-                            <div data-v-7fb36d82="" class="title">My team</div>
-                            <a href="{{route('user.task')}}">
-                            <img data-v-7fb36d82=""
-                            src="{{asset('')}}static/img/icon/arrow-right.png"
-                                                            alt="">
-                            </a>
-                        </div>
-                        <div data-v-7fb36d82="" class="info-list">
-                            <div data-v-7fb36d82="" class="info">
-                                <div data-v-7fb36d82="" class="name">Total number of people</div>
-                                <div data-v-7fb36d82="" class="value"><span data-v-7fb36d82="">0</span>/0</div>
-                            </div>
-                            <div data-v-7fb36d82="" class="info">
-                                <div data-v-7fb36d82="" class="name">LV1</div>
-                                <div data-v-7fb36d82="" class="value"><span data-v-7fb36d82="">0</span>/0</div>
-                            </div>
-                            <div data-v-7fb36d82="" class="info">
-                                <div data-v-7fb36d82="" class="name">LV2 + LV3</div>
-                                <div data-v-7fb36d82="" class="value"><span data-v-7fb36d82="">0</span> /0 </div>
+                            <div data-v-aa0ccfea="" class="income">
+                                <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATjSURBVHgB7VjfTyNVFP6mLb8XWgxk2VJkEhW0BFOjUaIP8gRosskmtJAYH3Zh/wBbfKdozD5oS1/cF2BZX4zCmt3EhxV9YBNjXBMMbBZIMCY7SoMxgkBZIEXoeM7AwEynxc6wDRuzX3Iz99450/vdc8537nSAJzgZBDxGkGVZpIuLmiQIwhpOAzU1olhdXeurqam9ODU1FSNSo9Smqa3KRwgjn7hyZVCkRXzULsbj8VhHx9uj7lrPNLVVarK2fRKJyhkwqv5W1hCTEbvaRa6WstwX3W43kbC5BLvgEyA4adZHt8S6Oo9rIBxGe3u7YrsYjyMaiWJsfDzjWmz3wUAYHo9HnZqhdV9KX9CncfcDdStLS0uDHI5ztZ6Y2+25+enVq4fh+H1xUX71tRY53SvZvDM0NJTR7vkXvPKlnl55fX1dNb1p8CBNttJl8pa8gAH5e0za3qVsLVbuBYMh3e5DoRD6QkGln0gkEI1GMTQ8ktE75E3coGdV77A3h4eHUf90vfTMc8/OPOVyrTU3N8/Qrd/Yc9TWtAIxELwu30Mw9R2m7ZchKoLaJ+EPdGFubi7rwmNj4xge2SfZ5PWiwlmRM4njYCCYzZB37vcHFLJ1dXUKCW+TF/7OTqmyslJZ9GBx0yRyAhOUc0OY2gUWyYGQ8gqHpv9mbo8odhK1Vh4QSeQB7P1b3NGGOOeVON8YXV0B5cq5GQz1gVRosO0jQal2nCa9vZcz2nWTDYtPBRHUl8DDCpmakbH7oTyZknRxfUCVxbX7sRxL/aSbn52dVcpEpvIRiUQO7Y4rSf39/YY8UnnZ0nfCpeUCGiFy3U2b9+Es6uHUebKtvUMRTjoGqfSoHmEPs8DoVIHRw0GEqahngzbEqwBySnopuYJvJibQHx7IeJ8X7Qpow9qL9cSGwa47wGEN6uac9pK1SkeppJ4kujg3/vrRdBJ7PvwnwWXkDQW2S2iIXVeHWhVjQUyt5fYGVo38Qa9VGx5zOHBCFP64hNIbCyi8+wcc8Q2kKoqw5zmDZIsbm73N1C/HSWCZoJ3IuPruoOjukm7elkjCNp9EwfwKzly7j433XsFG8GVYhaUQM7mq7q8N5P784R0sf3FeN1cem0L54M+wCksEmRyTVLFLYVzvf53CW4jdpiqlv6sJLZMsG7kPKzBNkPMtndxftzux2dOsjJkk95dv+5V81JIUKPxmYToHy0ZmdWMmIxOR8sGpfUFQlSqekBRyNg0hW2IHpeO/KMLJG0FepGA+c5FOOQux5yyCnUgVfytltMn27LFrmjG2x41nLiuVQ77Z8yKSbaJSXtJz8Oj5h8grwUxQFc0lh/scZg77ypfndTloFaZCvOepQDaSLJ6dlnP7JyWdVluBRmz7G1B27Ui9MgnILEx5kBXKIdSCQ7kaadWFVD44zgXKWS2220WYhWkVbwUadAV629942NQywqpmr2rteAM7aZvLBaZzkIn84606HHN94/wrHV/Y/0HyGp8c1W99pauXVs9lSyL5e6hNF1LOP9f7dxRy9sUNhbS2Bj4kcmohNwtLLwvsCVZp+svC2Tc+N9hyybFKzjJBhkqyhLxXQicHv26pXmPvblOublE6POrXLdNfAlSBPDLYbavaYXoOfobThUT+v6edMP4B2Q6LcNhFnAYcezMQwqfz6fd/i38BsNL0DBjzg/4AAAAASUVORK5CYII="
+                                        alt="">
+                                    <div data-v-aa0ccfea="" class="title">Cumulative Earnings</div>
+                                </div>
+                                <div data-v-aa0ccfea="" class="amount">2.1 USDT</div>
                             </div>
                         </div>
-                    </div> -->
-                    <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
-                        <div data-v-4eabb456="" class="head">
-                            <div data-v-4eabb456="" class="title">Latest Treanding</div>
-                        </div>
-                        <!-- <div class="scroll-container">
-    <div class="video-list" style="transition-duration: 0ms; transform: translate3d(-7px, 0px, 0px); transition-delay: 0ms;">
-        <div class="video">
-            <img src="{{asset('')}}static/img/images1.png" alt="">
-            <div class="name">Don't Change</div>
-        </div>
-        <div class="video">
-            <img src="{{asset('')}}static/img/images2.png" alt="">
-            <div class="name">Aprime Charming</div>
-        </div>
-        <div class="video">
-            <img src="{{asset('')}}static/img/images1.png" alt="">
-            <div class="name">Don't Change</div>
-        </div>
-        <div class="video">
-            <img src="{{asset('')}}static/img/images1.png" alt="">
-            <div class="name">Don't Change</div>
-        </div>
-        <div class="video">
-            <img src="{{asset('')}}static/img/images1.png" alt="">
-            <div class="name">Don't Change</div>
-        </div>
-        <div class="video">
-            <img src="{{asset('')}}static/img/images1.png" alt="">
-            <div class="name">Don't Change</div>
-        </div>
-    </div>
-</div> -->
-<div class="carousel-wrap">
-  <div class="owl-carousel">
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">Don't Challange The Lady Billionaire</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">My Seconds Husbend's A Prince</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">Return of the glam Queen</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">Don't Change</div></div>
-    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
-    font-weight: 100;
-    font-family: garamond;
-    text-align: center;
-    letter-spacing: 1px;">Don't Change</div></div>
-
-  </div>
-</div>
-                    </div>
-                    <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
-                        <div data-v-4eabb456="" class="head">
-                            <div data-v-4eabb456="" class="title">Partners</div>
-                        </div>
-                        <div data-v-4eabb456="" class="info-list">
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/e792176976e5039b2595a48c220144f9.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">disney</div>
+                        
+                        <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
+                            <div data-v-4eabb456="" class="head">
+                                <div data-v-4eabb456="" class="title">Partners</div>
                             </div>
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/22736bb480728b96ed2988c000efdead.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">Universal Pictures</div>
-                            </div>
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/695f8380cd08187e597762f1ebd5daac.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">paramount movies</div>
-                            </div>
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/a2080442bc0325435710b7c51dfaa1f3.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">Warner Bros</div>
-                            </div>
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/52714c42d8e86d7c9a0dacd9660c7eb6.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">20th Century Pictures</div>
-                            </div>
-                            <div data-v-4eabb456="" class="info">
-                                <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                        src="{{asset('')}}static/img/a05a8e47c1051b2eb64534dd0a5e1379.png"
-                                        alt=""></div>
-                                <div data-v-4eabb456="" class="name">sony colombia</div>
+                            <div data-v-4eabb456="" class="info-list">
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/e792176976e5039b2595a48c220144f9.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">disney</div>
+                                </div>
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/22736bb480728b96ed2988c000efdead.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">Universal Pictures</div>
+                                </div>
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/695f8380cd08187e597762f1ebd5daac.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">paramount movies</div>
+                                </div>
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a2080442bc0325435710b7c51dfaa1f3.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">Warner Bros</div>
+                                </div>
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/52714c42d8e86d7c9a0dacd9660c7eb6.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">20th Century Pictures</div>
+                                </div>
+                                <div data-v-4eabb456="" class="info">
+                                    <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
+                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a05a8e47c1051b2eb64534dd0a5e1379.png"
+                                            alt=""></div>
+                                    <div data-v-4eabb456="" class="name">sony colombia</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div data-v-37526a6c="" class="page-footer">
+            <div data-v-37526a6c="" class="footer">
                 <div data-v-6c4d8baa="" data-v-5954443c="" class="footers" data-v-37526a6c="">
                     <ul data-v-6c4d8baa="" class="flex tac">
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.dashboard') }}">
                             <div data-v-6c4d8baa="" class="on"><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/home.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAI6SURBVHgB7ZnRbdswEIb/o+Sib80I7gYZQd2gmaDpBHHfa4SN0ec6E7SZIO0EyQbNCOwETd6C2CRDxZBF2rJDKlJyBvIBMkhZMj6c7kiKBl7pF0JXWLkHI45gqXC9YvHr9sr1p8jHZ+iIboTvTg4h6Ni1hhuuUO6QXYg/TXgmC1BWihaRdyhkNAJ9/YOWtBO++74PYX4gXnSV38j0F5BUSCRNuMzTWTaFwCd0AeEXhP6WIh4nXBfUyPX20DVkpXtiZzHijwvriRN1BdOHaIhCRGFuFl4U1E9srvy+UNgivi6cXvl9oWD0Ad7IK/+kCC7RJ8dO9gIvL1syhMj+Pjh51BFeRPYCHLH4gMH4smzWEV6kAU8ISzc/JQrwZb9qCOwGyyHVF1bgi6oaXg7ba/BFVY1a2JLCDlALG3MDrlBjSoBvShjzr2r6RcdX2NLSbTdyWKBBWBDnCKuq6UVYMxbWDRGeM544Bk0p8ZZx0XmvTt6wJrkKB16rix8FbpBVfpf/as2Go1e+8rVC6kunxSlyLaNSajaZuhn1CClYGywZwgh7U2A0sbLVtcl0nRKzhCdy22pvY0tKUIuiE9m522yZQtvtq72M3rn0GSEVCpcMoXA5BaZvDw6diNtve+RGi3Zk4r/f5T9KzLcVHRkFbuRa+d1QmOd6Iii69cSbT8qc6XunMhblNgXf+yfWc9iaU/BBrp5oLu355Nx9fsRLUs6gg/HaMNg8SuTjAxj7+eFvq+fn0h2HTbKvPAf33Iazqhqp6FIAAAAASUVORK5CYII="
                                     alt=""><span data-v-6c4d8baa=""> Home </span></div>
-                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.task') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/video.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUrSURBVHgB7VldcuJGEO4eiL1vcW6gPYHxCdY+QdYniPchVTbrH3wBMzgHWDAOUJWHJSeIcwLjE4ScwNobsI/Gy/R2CySNBiEkft72q3KVkGamv+np6T8D/MB2gbAmTs/1oQLcJ8RDAKrwgnsw/ROMWIJPhD6S+d8ADHr3egBrYCXCtZreGxt1BUQ1i1xe+Cx2YF5No9fTPhREIcJC9JVUnUxAdAPAflHiuQlXL/9gjRoNaRolGoKCJ0MwBBINJiR4CqECBt4BYiVlaR8R9J939b9hU4Q/Xt1+StHqiIm2dsrQbDb1KM86pzXtqW9QY3v/lQV79jdS2Oy2bq6XrZFJWEzgZYL/8KBDWINo2rpjJs4arztshjuKjrLWLUMGxgYfmax9jL55paNVLouNGSHNGu/jJJDhBR8IKqIgfjpaNFct+iBmIAuEv4losFOig3XJ2ug1tb/LaxK7u/CdnOaZyF6AVJM4vdAn7Fs/g0W2e68X7noTOLtoPNqmR2Cuu+1G0x03p2G5GAgJ2/J3y3AMWwZr+pgg9jAIqi627o6bI4zfQNs3WGx21ctVBCKDSiSnGMrae2Gf745LmETgdib4HL0ganTutYYliCMfbxTNVzOG5qq2Xj1neZb34Hvzi62whIZFu9ZPX1wXLMHvVV0ZyyaJeC6dAOGV+gmfqxe3n09PtQcFMZMZEQzcn4WkSSC+Cx/ZkT/kMYVyKXBDKfkEnTDxx7OLeqEwHshkP29xuoI0wpJ12bZLL6a1ZO25OYDUsi8Ogy+w+lS9aDx/vGz8BjnhnOyeyAGXsLKjGUecXDaIifDqd+50Tfyq2L4z0iOCfl4zmWqZ85JQDFFljjAL34+eDT3BihBhclFNid6y/3YSmsBMniUwpLksZ2zEgc3zEOYIE3rRM8a7WxUSxTjYnBiiI8dM2JFQTcJ+FmljcZACIX6OSXrRYDdFXANSYXTb9bcG6EOCOId91wMkkOQQbUylvdwGem3dl8BAgA/hO4NQyTk9lfDW8cbyrwIk+BkKwia81fB7dq7fc+r4HwK9j14i/ZtzesQtyofZvkazihdU0l2thcBXc6h1igABp5bYXzjR5oCxPZfjd1yXAU4HUW7bWojsghX7OyVznRVJlXCYZTrsab6AS5gXfkKF0+NScYheBdXL2/p4IkQpcZElr+aTbPTu64Plq8QclBVEYsKIwyh1492JhpbmEuJ64nzP40yrKQUmM/OckUFl3GnrXJWxZI0wiU/ZWBVJdOlmHZmFWVIa3pSDnceb4kTFqYYlkWlIaZW3jBeUJspOeHy7W5R0a06WtCx8ygm8ThJJd7wU+1tO/g8kTBcpAESmsT0Jd4ns7wnCbpaUR8t/dfTQSMIjmRrJ0XE3h8Nxt31zvEoSL4VAsuIxiURqrggVO7Ry0JFoaZOVchbmKh7efKd988EeMxfpWMsarLpKkvDlmdX6EBnSo7Be+a52BXOEg2LQJAZ6s+bGVjHrMHnhb/EqaSe7sFXlmIZEwoGU4puuoFPbYXz5+bKm3p/M3prb3IANtapCBD0Qu1U1ZTTs3NUPFs3J7K2JRiXRtkK1F1TEl7d6R5nWWs1AaQtMkg1xiYS7peymTaaGQ7jmMYPPofxhwsVqXo1ndu4zzKAwYYH026SF5fZ1Z6sMpQbLbGhLbrAwqeIgQ+lV+sTASHx9vFwBBDYnrSzE3CX7ZoAP7I8DUylEOERIXBovqRrfAjrtesB1JcI2pv/2gkMCtY9guLeGHmy6PszZ4/uBTeA7XeyTjCXSRf8AAAAASUVORK5CYII="
                                     alt=""><span data-v-6c4d8baa=""> Video </span></div>
-                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.quality') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/vip.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVaSURBVHgB7VjNUhtHEO4eCfAt8i23iDfAVTgVVw5gn3KLeYKIQ6r4NeIJtJAHQJgfU5UD4gkEpyQnKTcnpoJ4AuuYW+RDqozQzqR79m92tatdSUt88VdFsfOj2W97ur/uGYDPeFgg5Ihq1Sr1pdgBparULCmAtrpXq2dnVhdygoAccWeLcyJr0WOJ22SNZTGDN2trVhlyQm6EN17t1xDUy5ihkpjFJlsfckAuhH/csBZcyzpA6FB7z28rWLhTogY5YGrCa1WrXCxg0+jqyr5aOT22LKXUhdeJUlU3X/30A0yJqQmjLQ7IV8tem0juekE2V4QqBV43GJP1af15KsJDfktu8ObYuvSa9brVG9hqhR57bpf2Z5gCBZgQ7Aoo4dLo6pIbrETn/fWu/ffi06U7RPzO7fpy8dmL0vUfrd9gAsTqMEf0v31nm38+tToQR9bGluEKXXmvno/S2/Xt/aa5G+Q6K+ZueO/9aIMzR0H37NhqwyjC/IN7imYltfB76AKKuuzbVx6h9S2rQRbzAwgRKievaxcwArz2nY03xkf26COf8JraAAOwzDW9d0cNgSMWjAE2UEAv9EHkt6wIkAEsfzMFvAmWI/kDvPQyY8LPQqT9oOOUOpqsZleJWj8rWQa7l5JyN1gOFszM6KJHfaYblgWpjdfwCZNPVYJ18HK2oB7Lgpo3tTQC/eUwJt6c7NV5/ZghJrpH750nIzyh50N/xHCVot8X0lJ5yJIEjhxVyMcssGEZAWvePPJba9KiZq4gV8n9Fty1mOjhbJFU0HmnhgS4JGvuuM3SEGFwyOkBIfAL8wVndU2swX9r21ZFKCifHFkXMCGY2NqWtcrFUZRoAnrDhBWrAfmUflaPk355dmQ1IAe4ktVOnIBGPGGQLYNMh8rvJPJl+MQQBgcK9GELKwUf0BM5FF9lWBNoW5f5f5zAx0FL5wCW1QA6Gfzf91tE4c/1LYzhIqUMKdjc2T8QiC3+W9+uVdPmc3Lo2/iekkOTivpW2nwiFBhNyQ8QJSwNP6FFy5ACKYM0iyBquiYeQZZTOQRWK6dVbSR9YW2OEtZBFyD1dIBKXZnzKYM1k0gIic1QUsJ0l0BlcIgNumKYcNqRhsSda9220VXGGTyPzmPX0RktgC7wIQ2GSkgVQ/iRYXaGV62NgiqoVbNAZ11dZ4IuuF6OpHJIq+oM+AazZYxLGJlNY6aIqUrBCSVSoOujEAfh0DkPOHbkbhay7PNmuxBH2FnRcIsRycOEW9DsmX0chJFznnMaoToiy5owCO+u+ZFhwhMmD03ELFZoOyPnvPY4VV0EIVcNEebk4TcyJg8PMUHooUuJYhXGQUJaZkRcwqhDUSXqahKiQQjOqeL5uFVdUlrWY6GZiN3g7ePXE14QuqR75AoT3aspxCWfEsCtOTZ0pqP0+Y/Xloqsk7FOyAsuh/fgyRrCy9PXNT9JhSzM0mb6IaXoXK6XxoF7avY1eFao383x4YsUKf2v4UTgVWT/B3TNAaaRsBEt7ocIz81gwwwcqsbO87p5TIM+6htyKO/D+q75RDv0F9H9mNFV7ktsPTRpfe1l3kuQrscFbOIN/MaWVScn3jG6upNIVBqcIBMHfIVgvuv0qDYfNz/xbu3dn+1fF79enqev9vS4hAWsPP3mxaNvny3dvn3b/ghTguPDVvgLx4rRrQ1zfd2OPZgipCDG0oyee2PTkaBuYRxQFhN82FV6+0uRsQ6XnqN2MZUwY32zVkWhb9Afzo+duwkr7cifiTBjxIXdVODCiFRpL2uCykzYg65V+RZIie8R6LAa+Hg2gkAVoRIdunpty4G6yjuIP2Na/AfDQbMkgMZzqgAAAABJRU5ErkJggg=="
                                     alt=""><span data-v-6c4d8baa=""> VIP </span></div>
-                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.asset') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/wallet.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgB7ZjfcdpAEMZ3LzivoQTcQVKBcQd0YHgjnjCQBqJLKtCExNFbcAdOBeAK4lQQleBXG6PNrtE/giQksE6yR78ZRjppBR+nve/2DqCh4XmD/1+YTHT73lNjIuryzS6UAAFe0dL76DjahYJsCB5OdAdXOOeLHSifW29J74qKVvGGQbFCG4/wJxSkFZwMR7q/KRZnRN4v4p6AJ4R7qAeI48dfAHgLBQkFK+IvCRMEZxfTTwMogeEHLaLHfrMNBYlSAqN/65F3CTUl7NPz0WeCqkC4YSH296/W5e5Qn0oFR7jsHKdZzqGgXnTUEc5lLkgLaCVeJZh4QH/AEPya+4h45jc79w8w4aNOik0ULGKdb3oB5li8Z/cIRBPiSVpgnVLiKjjJKglqIzjvBFW3QbeTZye4BRWxq4yVeYHTZEFLGsR9uZIeljL2boW/gUhnDTC5x778l+uPMKYSwUXLWLY7Kzg3nhJ5y1glPe8Ljb8F44LzlrF+GWptPQ+mObCMrdTWlMI3UBDjgsWqogb2oCDGcxiJrnkwddct6p+PviSmhlLqBGi7RDcu+HUL7LsVnEVOQX2F2N8KjInlyWURnBtPCdvWt/SKTlmOm/cZeoDQSSoZdI6t3R9T65jr7gF3301anPSsR5tLpspqCcGZ6hkf5CO+2+XUmAf3LqYWJj3TlJdlkyh4H0M3RSj4UEM/FFk5xxqpAzEcdHkN/anB9f5aL7bMl2t2RvwaWQFIUW1wuzUNlx3iOO1mmBL7GHoJPG5VZQUkep0U2Yp4SxSx8P7tPsgEwUKuZdqWjoOGhhfMPww07DiKFGxtAAAAAElFTkSuQmCC"
                                     alt=""><span data-v-6c4d8baa=""> Assets </span></div>
-                                </a>
                         </li>
                         <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.profile') }}">
                             <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARgSURBVHgB7VlLctNAEO0em2RJuIFuEAMFxQ7nBMAJYEOVMYSYC+AxHAAHQuwdZskKbhCzY8HCnABxAsKOfDxNt6zPSJZkyZ+YRV5VKqPRaOa51dPT/QRwidUCYUE0num6AtwmxDoA1XjCLZj8CY55BZcIXSTzwwAM+wd6CAtgLsKtlt46NWoPiFoWuaJwedmhOTOdfl+7UBKlCAvRM1JtMh7RJQAHZYkXJtx8/potajSkWZRoBAq+GoIRkFgwtoKjEGpg4C4g1lKmdhFBv3/b/gjLIvx079WbFKseM9H9jSp0u119XGSeRks76hxa7O/3eGHHvkcKu739ly9mzZFLWFzgZIyfeVAdFiCaNu8pE2eLtxNsRhuKdvLmrUIOTg0eMVn7NbrmjHbm2Sw2fEKaLT7AsbeG490gqImBuLWT9azKuiFuIBME10Q03KjQ9UXJ2uh3tbvJcxKHu6BP3uYTWTsDqS7R2NWPOLZ+AIts70Bn/upl4Mlu58h2PQLzoveu002Om7KwbAyEmG+5m1V4ACsGW/oBQRRhEFRbfD05boownoO2d7D47LybqwxkDaqQvMVgra0TjvnJcTHCnnURH4YdRJ1l+uwsiE9LBAqukUNp0soxwmJd69KV0JWcNO01ZaHM2AD+muEb9cKfhbhLIN4NmhzIvyRdofn8Vft0jL+bu52fj5u6BjmwxzYa2oGC8Na0rMyc9lIJS9Zl+y6dmP2p2Qzd91vOlYragzwQ6WCsqkKp3CPxZreEGyQJK/s04xMnzXcJozyCyDhQFKiuQglMrMx5SfA4Uc3iGZLcDtuGvsLaEXFg96wH7YgwoRO2Mfp164KxOEiBELUDoBV7kyniOhDnELqiSuv8D5FKuBR4A/6ZMSQKiWRmjS0MlbpABgio45/3LpzlhyoypgOT3HlkzqcPoJIIuVUjMnDsV7ygMF4NBOi/0wP+N4AC6L33Mq35idocMPJnFfVRFBkIarBmKIuDIfoV9gcNsmOvio7o9SHioMgOcT64MIxZeJ7EZVmQrBHQsrBVkYSEfUUmM0u6SFTGsTzFtdWieFhLZEnrsLKsaSBMsoTI0L4fI5zMktZhZZHA4hWPFx5DVOyLb9+Gf2/drl9j697xOlipuXmj/un79+HKSySBV/EY+BL14KB3GFeEpk46trIGq65SV/DoIlxD1hCNwupyk9YVTBH2ikETG+j44sZK4StMTnAteltaTp4pVTWf6a5dnojYIaX4sivoVDmMN//hgU7dP7naWlLcgCVJVQE8n7Wlqgmj0eHb9vWsZ3K1NbGo6GvWUe2wT//kAlNvKLO/kBgogvg4LoiLwrRZyRdtCsmtSffw4SJX1mMuVotaPFe5z3GD0oQForeJhJXUdf1ZRlKD5QrakhukJ1XeJvezu5ko9cnA8zmRsmx1aBFMdGZdxrXm+igTEBfhJdXi+VhIEF/SZy+oE6htBNYqEB2wPntxlcIE1Yjz7SHnCD8W/ex1iVXjHzYJEer1ZwIHAAAAAElFTkSuQmCC"
                                     alt=""><span data-v-6c4d8baa=""> mine </span></div>
-                                </a>
                         </li>
                     </ul>
                 </div>
@@ -9656,139 +8760,23 @@
             <p data-v-15b106f9="">Loading...</p>
         </div>
     </div>
-    
+    <script type="text/javascript" src="/js/chunk-vue.11610479-1728557826908.js"></script>
+    <script type="text/javascript" src="/js/chunk-echarts.11610479-1728557826908.js"></script>
+    <script type="text/javascript" src="/js/chunk-vant.11610479-1728557826908.js"></script>
+    <script type="text/javascript" src="/js/chunk-moment.11610479-1728557826908.js"></script>
+    <script type="text/javascript" src="/js/vendors~app.11610479-1728557826908.js"></script>
+    <script type="text/javascript" src="/js/app.11610479-1728557826908.js"></script>
     <script>
-        let standalone = document.getElementById('startLogo')
+        let standalone = document.getElementById('startLogo1')
         standalone.style.display = 'flex'
         setTimeout(() => {
             standalone.style.display = 'none'
         }, 3000)
+
     </script>
     <!---->
-    <div class="van-toast van-toast--middle van-toast--success" style="z-index: 2001; display: none;"><i
-            class="van-icon van-icon-success van-toast__icon"><!----></i>
-        <div class="van-toast__text">Login successful</div>
-    </div>
-    <div class="van-overlay" style="z-index: 2004; display: none;"></div>
-    <div data-v-5954443c="" class="van-popup van-popup--round van-popup--center"
-        style="background: none; z-index: 2005; display: none;">
-        <div data-v-5954443c="" class="modal-notice-box">
-            <div data-v-5954443c="" class="modal-notice">
-                <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                        src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
-                <div data-v-5954443c="" class="notice-title"> Dear VIRERO Users </div>
-                <div data-v-5954443c="" class="notice-desc">
-                    <p>Latest Activity Notification</p>
-
-                    <p>From September 26 00:00 to September 30 23:59 (France time) inviting new friends to subscribe to
-                        VIP membership will earn an additional reward of 3 USDT while new VIP members will receive an
-                        additional reward of 5 USDT Please contact the manager to claim your rewards</p>
-                </div>
-            </div>
-            <div data-v-5954443c="" class="close"><img data-v-5954443c=""
-                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADgAAAA4CAYAAACohjseAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAUgSURBVHgB1VuxUhsxEN3zZEgTN4GGNLk00MBMBioqXKVKQZsq0OQ78idxqrQpqKhMRWUmE2igidNAAzSmgcbZZ++edfLdWdLJcHkz4izdnaR3u9KupCWhyBiNRi/5sszpNacV+b3EqW09OuR0z+mB0xWnuyRJrigyEooAIbXKaYMmhF5SGED2mtOAyV5SBNQiKMQ2JNmk0FlI6JYm0kL+Ue4tyfP6MVYLqsc7INtnskMKRBDBCmLoCL68qtyDR50g+Y7TW5pV5z7qDSHqTZA7kvJll/LEQOqCO3BNESBk1zmtGcUg1/dVXWeCIrUtTptG8YDTSR0VmtMmJLlNeaJnNCH66FKHE0Fp6ANNxgwAQr1YEnNoHxLt0FR10f6hy4edS1DIfTQqxxc89RlfMcD9wMQEaaoGOZFM5lRqk4M6ntEzgvsEktuSnUsyqajIJnfMFV1QA8B9w5jsSLaSZKukAkwojSQHyEzak+x4fhAVnkGrpI4tmpLrN4mcQkieSBaT33bRczMERfw6kM+4oj41FDIf6JywKTY6hxxBw+4A0OlTaj4gAB1/O7aq2hKE9FQ1e09tCkIgBr8nWfTddESmBC3pXT6VEY8B6etAspumFE0JmoO0seOuAjrhgFwmRZOgLlmCvHb+ah1OXzm9p0AYdaTkCemzOuI5KY5nTk5fJL0hT6BDozw+kyfwjlVHhzwBn9XgkaJMJZjKdRi4bbBv5bs+JOXZrlXcIU/IWFTtG6upElT1HFAYegVlTiRLyAE/KQyqpstQ05YsRXTx+pcCwF+ux5eDgluVJCvIHXCdvygMqoEYgyuQ4IreqbOrxe92yYPkHHJF5a7AHpDa72UQVPWsbfdcSS6QnBr+e8kuv6CpejptATg0ADL4+c26peXj3wWv1iZnAFKEAz4m+EoKbygSqkiWvBKTHKAz6RJUVH3PKBJUVKirjdjkAOXSNj2Z6I61A8lFkAMyLi1aPEaB96LAJBh6nlCKitlS4eXxeCDjAoLZgKSIcCCnWARJ5TIEwWxAUiRU2TkK8HgCoBvU9zATmc2gCHAx4lV2kp/5TvWR2XZI8FYy7bKtN1e4eii+bl0A1Du7AkE18GPnlALh634tiqQsHhS3KkG1G6sUAFnFdwtuVdq5OSQ7FIZUro9YPLTEOb2TwjUKw15BmZMRryDZoTCkch0vHtQO/pZrO2TLgmYXvF4eSgnJLnlC1FOtwR/8eSEZsIWaYvaBFL3WhVjwcuU4ft6nyX5qjzwhDjoWuXtSx4D8sS7XoZ4EZ6dL1rHUj0Wd2i4Ksq/7SbKX+pFNVw17/DrZ7ND/h8J93YygTDbnkk0Dx+KzQPqqE2Qu7MReTZhS3K1r+J8Ccpa5K1lz83eMHMGCg4xtaj7ss8zc3DGzHuQHsHVonrltUkMhE6N5ljkTQ1O24MUgVR91Rw5FGwXuE0zC3LPMQoKiqkc0XSt2mkRSyJnj7rDsLNM3jKT/3EfaMmTUjIWHkRgVFgUCOYdSxUJBKFn9QCCjcpskKj1OFhDAWtI+7Nyu0T7mh6MooVxGI3YoFYBZq1Y855w2QQjqmBrFXqFkIeGUmGxA1NzDAdHLWBI1PBNzYgOhY18nPDQgti2N244AJAk7OvAhO5rGea9SPtIDADG4kOdJQNRH3ZBm9XbMdZgJXYbproEd0ox3QOwVFYdEBxNTRAlKB0R1U5qQrROUjo8BYtdJhDidaARNyMoaksFYAllIqOjfCiBRELqR610SOfjoH2I9hEu3ystMAAAAAElFTkSuQmCC"
-                    alt=""></div>
-        </div>
-    </div><!----><!----><!----><!----><!----><!---->
-    @include('partials.notify');
-
-    <!-- jQuery (make sure this is loaded first) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Owl Carousel CSS -->
-<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
-<link rel="stylesheet" href="/assets/owl.carousel.min.css">
-<!-- Owl Carousel Default Theme CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
-<!-- Owl Carousel JS (make sure this is loaded AFTER jQuery) -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-
-
-    <script>
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 1,
-  nav: true,
-  navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>"
-  ],
-  autoplay: true,
-  autoplayHoverPause: true,
-  responsive: {
-    0: {
-      items: 3
-    },
-    600: {
-      items: 3
-    },
-    1000: {
-      items: 3
-    }
-  }
-});
-
-</script>
-<script>
-// This function initializes the swipe effect
-function initializeSwipe() {
-    const swipeContainer = document.querySelector('.van-swipe__track');
-    const swipeItems = document.querySelectorAll('.van-swipe-item');
-    const indicators = document.querySelectorAll('.van-swipe__indicator');
-
-    let currentIndex = 0;
-    let swipeInterval;
-
-    function goToSlide(index) {
-        const slideWidth = swipeItems[0].offsetWidth;
-        swipeContainer.style.transition = 'transform 0.5s ease';
-        swipeContainer.style.transform = `translateX(${-slideWidth * index}px)`;
-
-        // Update active indicator
-        indicators.forEach((indicator, i) => {
-            if (i === index) {
-                indicator.classList.add('van-swipe__indicator--active');
-            } else {
-                indicator.classList.remove('van-swipe__indicator--active');
-            }
-        });
-
-        currentIndex = index;
-    }
-
-    function nextSlide() {
-        const nextIndex = (currentIndex + 1) % swipeItems.length;
-        goToSlide(nextIndex);
-    }
-
-    function previousSlide() {
-        const prevIndex = (currentIndex - 1 + swipeItems.length) % swipeItems.length;
-        goToSlide(prevIndex);
-    }
-
-    // Automatically move to the next slide every 3 seconds
-    function startAutoSwipe() {
-        swipeInterval = setInterval(nextSlide, 3000); // Adjust the interval as needed
-    }
-
-    // Stop auto swipe on user interaction (swipe)
-    swipeContainer.addEventListener('touchstart', () => {
-        clearInterval(swipeInterval);
-    });
-
-    swipeContainer.addEventListener('touchend', startAutoSwipe);
-
-    // Initialize first slide
-    goToSlide(currentIndex);
-    startAutoSwipe();
-}
-
-// Initialize the swipe carousel when the page loads
-document.addEventListener('DOMContentLoaded', initializeSwipe);
-</script>
-
-
+    <!---->
+    <!---->
 </body>
 
 </html>
