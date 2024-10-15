@@ -27,6 +27,7 @@ Route::get('/', function () {
     return view('auth.login');
 });
 
+
 Auth::routes();
 
 Route::get('/dltPayout', [App\Http\Controllers\Cron::class, 'dltPayout'])->name('dltPayout');

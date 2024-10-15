@@ -2378,7 +2378,7 @@ type="text/javascript"
       margin: 0;
       padding: 0;
       box-sizing: inherit;
-      color: #022627;
+      /* color: #022627; */
     }
 
     input[type='text'],
@@ -9844,7 +9844,13 @@ type="text/javascript"
     .van-popup--bottom[data-v-f8d1bbb0] {
       max-width: 8.5rem;
     }
+    .van-picker-column__wrapper {
+  transition: transform 0.3s ease-in-out;
+}
+
   </style>
+  
+
 </head>
 
 <body class="mein_cn">
@@ -9874,11 +9880,11 @@ type="text/javascript"
           <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
             <div data-v-6cf94806="" data-v-37526a6c="" class="container">
               <div data-v-6cf94806="" data-v-37526a6c="" class="record_hdrecord_hd db">
-                <div data-v-6cf94806="" data-v-37526a6c="" class="le"> Asset Details </div>
+                <div data-v-6cf94806="" data-v-37526a6c="" class="le" style="color:#000"> Asset Details </div>
                 <div data-v-6cf94806="" data-v-37526a6c="" class="ri">
-                  <div data-v-6cf94806="" data-v-37526a6c="" class="set"> All </div>
-                  <div data-v-6cf94806="" data-v-37526a6c="" class="set"><span data-v-6cf94806=""
-                      data-v-37526a6c="">Select time range </span></div>
+                  <div data-v-6cf94806="" data-v-37526a6c="" class="set" id="all" style="color:#000"> All </div>
+                  <div data-v-6cf94806="" data-v-37526a6c="" class="set" id="select"><span data-v-6cf94806=""
+                      data-v-37526a6c="" style="color:#000" >Select time range </span></div>
                 </div>
               </div>
               <div data-v-6cf94806="" data-v-37526a6c="" class="empty db" style="display: none;">
@@ -9927,7 +9933,88 @@ type="text/javascript"
                 </div>
               </div>
             </div><!----><!---->
+
+
           </div>
+          <div class="van-overlay" id="overlay" style="z-index: 2015; display: none;"></div>
+                        <div data-v-6cf94806="" class="van-popup van-popup--round van-popup--bottom"  id="popup"style="z-index: 2016; display:none;">
+                            <div data-v-6cf94806="" class="van-picker">
+                                <div class="van-picker__toolbar">
+                                    <button type="button" class="van-picker__cancel">Cancel</button>
+                                    <div class="van-ellipsis van-picker__title">Select Category</div>
+                                    <button type="button" class="van-picker__confirm">Confirm</button>
+                                </div>
+                                <!---->
+                                <div class="van-picker__columns" style="height: 264px;">
+                                    <div class="van-picker-column">
+                                        <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, 110px, 0px); transition-duration: 0ms; transition-property: none;">
+                                            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">Recharge</div></li>
+                                            <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">Withdraw</div></li>
+                                        </ul>
+                                    </div>
+                                    <div class="van-picker__mask" style="background-size: 100% 110px;"></div>
+                                    <div class="van-hairline-unset--top-bottom van-picker__frame" style="height: 44px;"></div>
+                                </div>
+                                <!---->
+                            </div>
+                        </div>
+                        <div class="van-overlay" style="z-index: 2017; display: none;" id="overlay2"></div>
+                        <div data-v-6cf94806="" class="van-popup van-popup--bottom" id="popup2"style="background: none; z-index: 2018; display: none; ">
+                            <div data-v-6cf94806="" class="popup_box">
+                                <div data-v-6cf94806="" class="title_box">
+                                    <div data-v-6cf94806="" class="title" >Select time</div>
+                                    <i data-v-6cf94806="" class="cross van-icon van-icon-cross"><!----></i>
+                                </div>
+                                <div data-v-6cf94806="" class="time_list">
+                                    <div data-v-6cf94806="" class="time_box active">2024-10-01</div>
+                                    <div data-v-6cf94806="" class="line"></div>
+                                    <div data-v-6cf94806="" class="time_box">2024-10-14</div>
+                                </div>
+                                <div data-v-6cf94806="" class="picker van-picker van-datetime-picker">
+                                    <!---->
+                                    <div class="van-picker__columns" style="height: 220px;">
+                                        <div class="van-picker-column">
+                                            <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, 88px, 0px); transition-duration: 0ms; transition-property: none;">
+                                                <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;"><div class="van-ellipsis">2024</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="van-picker-column">
+                                            <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, -88px, 0px); transition-duration: 0ms; transition-property: none;">
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">06</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">07</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">08</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">09</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;"><div class="van-ellipsis">10</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="van-picker-column">
+                                            <ul class="van-picker-column__wrapper" style="transform: translate3d(0px, 88px, 0px); transition-duration: 0ms; transition-property: none;">
+                                                <li role="button" tabindex="0" class="van-picker-column__item van-picker-column__item--selected" style="height: 44px;"><div class="van-ellipsis">01</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">02</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">03</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">04</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">05</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">06</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">07</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">08</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">09</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">10</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">11</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">12</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">13</div></li>
+                                                <li role="button" tabindex="0" class="van-picker-column__item" style="height: 44px;"><div class="van-ellipsis">14</div></li>
+                                            </ul>
+                                        </div>
+                                        <div class="van-picker__mask" style="background-size: 100% 88px;"></div>
+                                        <div class="van-hairline-unset--top-bottom van-picker__frame" style="height: 44px;"></div>
+                                    </div>
+                                    <!---->
+                                </div>
+                                <div data-v-f8d1bbb0="" data-v-6cf94806="" class="btn_box"><div data-v-f8d1bbb0="" class="btn submit">OK</div></div>
+                            </div>
+                        </div>
+                       
+
         </div><!---->
       </div>
     </div>
@@ -9936,9 +10023,9 @@ type="text/javascript"
       <p data-v-15b106f9="">Loading...</p>
     </div>
   </div>
- 
+  <div id="routeDisplay" class="route-display" style="padding: 10px; font-size: 14px;"></div>
   <script>
-    let standalone = document.getElementById('startLogo')
+    let standalone = document.getElementById('startLogo1')
     standalone.style.display = 'flex'
     setTimeout(() => {
       standalone.style.display = 'none'
@@ -9952,6 +10039,163 @@ type="text/javascript"
       class="van-icon van-icon-success van-toast__icon"><!----></i>
     <div class="van-toast__text">Login successful</div>
   </div><!----><!---->
+
+  <script>
+   
+   document.addEventListener('DOMContentLoaded', function () {
+       const overlay = document.getElementById('overlay');
+       const popup = document.getElementById('popup');
+       const cancelBtn = document.querySelector('.van-picker__cancel');
+       const confirmBtn = document.querySelector('.van-picker__confirm');
+       const items = document.querySelectorAll('.van-picker-column__item');
+       const routeDisplay = document.getElementById('routeDisplay');
+
+       const routes = {
+           depositHistory: '{{ route("user.DepositHistory") }}',
+           withdrawHistory: '{{ route("user.Withdraw-History") }}',
+          // Add this if needed
+       };
+
+       // Function to open the popup
+       function openPopup() {
+           overlay.style.display = 'block';
+           popup.style.display = 'block';
+           routeDisplay.textContent = ''; // Clear route display when opening popup
+       }
+
+       // Function to close the popup
+       function closePopup() {
+           overlay.style.display = 'none';
+           popup.style.display = 'none';
+       }
+
+       // Function to move the selected item to the top
+       function moveToTop(selectedItem) {
+           const parent = selectedItem.parentNode; // Get the parent <ul>
+           parent.insertBefore(selectedItem, parent.firstChild); // Move selected item to the top
+       }
+
+       // Function to show route based on selection
+       function showRoute(selectedItem) {
+           const category = selectedItem.textContent.trim();
+           let route = routes.depositHistory;
+
+           switch (category) {
+               case 'Recharge':
+                   route = routes.depositHistory;
+                   break;
+               case 'Withdraw':
+                   route = routes.withdrawHistory;
+                   break;
+              
+           }
+
+           routeDisplay.textContent = route; // Display the route
+           return route; // Return the route for confirmation
+       }
+
+       // Event listeners for category selection
+       items.forEach(item => {
+           item.addEventListener('click', function () {
+               // Remove selection from all items
+               items.forEach(i => i.classList.remove('van-picker-column__item--selected'));
+               // Add selection to the clicked item
+               this.classList.add('van-picker-column__item--selected');
+               // Move selected item to the top
+               moveToTop(this);
+               // Show route for the selected category
+               showRoute(this);
+           });
+       });
+
+       // Event listener for the "All" category
+       const allItem = document.getElementById('all'); // Select the "All" item
+       allItem.addEventListener('click', openPopup);
+
+       // Event listeners for cancel and confirm buttons
+       cancelBtn.addEventListener('click', closePopup);
+       confirmBtn.addEventListener('click', function () {
+           const selectedItem = document.querySelector('.van-picker-column__item--selected');
+           const selectedRoute = showRoute(selectedItem); // Get the route for the selected item
+           
+           if (selectedRoute !== 'Route not defined') {
+               document.location.href = selectedRoute; // Redirect to the route
+               cancelBtn.addEventListener('click', closePopup);
+           } else {
+               alert('Please select a valid category.'); // Alert for invalid selection
+           }
+
+        
+       });
+   });
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const overlay2 = document.getElementById('overlay2');
+  const popup2 = document.getElementById('popup2');
+  const select = document.getElementById('select');
+  const closeButton = document.querySelector('.cross');
+  const okButton = document.querySelector('.submit');
+  
+  let selectedYear = '2024';
+  let selectedMonth = '10';
+  let selectedDay = '01';
+
+  // Elements representing the picker columns
+  const yearPicker = document.querySelector('.van-picker-column:nth-child(1)');
+  const monthPicker = document.querySelector('.van-picker-column:nth-child(2)');
+  const dayPicker = document.querySelector('.van-picker-column:nth-child(3)');
+
+  // Open the popup
+  function openPopup() {
+    overlay2.style.display = 'block';
+    popup2.style.display = 'block';
+  }
+
+  // Close the popup
+  function closePopup() {
+    overlay2.style.display = 'none';
+    popup2.style.display = 'none';
+  }
+
+  // Update the year, month, and day based on the picker selections
+  function updateYear(event) {
+    selectedYear = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  function updateMonth(event) {
+    selectedMonth = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  function updateDay(event) {
+    selectedDay = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  // Handle "OK" button click
+  function confirmSelection() {
+    const selectedDate = `${selectedYear}-${selectedMonth}-${selectedDay}`;
+    alert(`Selected Date: ${selectedDate}`);
+    closePopup();
+  }
+
+  // Event Listeners
+  closeButton.addEventListener('click', closePopup);
+  okButton.addEventListener('click', confirmSelection);
+  select.addEventListener('click',openPopup);
+  yearPicker.addEventListener('click', updateYear);
+  monthPicker.addEventListener('click', updateMonth);
+  dayPicker.addEventListener('click', updateDay);
+
+
+});
+
+</script>
 </body>
 
 </html>

@@ -1,8 +1,13 @@
+<<<<<<< HEAD
+
+<html style="font-size: 50px;">
+=======
 <html style="font-size: 50px;"><head><style class="vjs-styles-defaults">
       .video-js {
         width: 300px;
         height: 150px;
       }
+>>>>>>> f756634324194f8506751d8771e9ab4e19921584
 
       .vjs-fluid {
         padding-top: 56.25%
@@ -11182,7 +11187,7 @@ video::-webkit-media-text-track-display {
   </div>
 <script type="text/javascript" src="/js/chunk-vue.11610479-1728557826908.js"></script><script type="text/javascript" src="/js/chunk-echarts.11610479-1728557826908.js"></script><script type="text/javascript" src="/js/chunk-vant.11610479-1728557826908.js"></script><script type="text/javascript" src="/js/chunk-moment.11610479-1728557826908.js"></script><script type="text/javascript" src="/js/vendors~app.11610479-1728557826908.js"></script><script type="text/javascript" src="/js/app.11610479-1728557826908.js"></script>
 <script>
-  let standalone=document.getElementById('startLogo')
+  let standalone=document.getElementById('startLogo1')
   standalone.style.display='flex'
   setTimeout(() =>{
     standalone.style.display='none'

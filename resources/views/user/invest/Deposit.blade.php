@@ -7174,7 +7174,7 @@
   <script type="text/javascript" src="/js/vendors~app.35b764a7-1727614688907.js"></script>
   <script type="text/javascript" src="/js/app.35b764a7-1727614688907.js"></script>
   <script>
-    let standalone=document.getElementById('startLogo')
+    let standalone=document.getElementById('startLogo1')
     standalone.style.display='flex'
     setTimeout(() =>{
       standalone.style.display='none'
