@@ -2844,7 +2844,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #12244a;
+            background: #223f7a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -2864,7 +2864,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #12244a;
+            background: #223f7a;
             backdrop-filter: blur(0.3rem);
             z-index: -1;
         }
@@ -7201,7 +7201,7 @@
             min-height: 2rem;
             max-width: 8.5rem;
             z-index: 58;
-            background: ##12244a;
+            background: ##223f7a;
             padding-bottom: constant(safe-area-inset-bottom);
             padding-bottom: env(safe-area-inset-bottom);
         }
@@ -8548,10 +8548,10 @@
             max-width: 10rem;
             width: 100%;
             height: fit-content;
-            background: #12244a;
+            background: #223f7a;
             ;
             border-radius: 0.32rem 0.32rem 0 0;
-            border-top: 0.02rem solid #12244a;
+            border-top: 0.02rem solid #223f7a;
             z-index: 56;
         }
 
