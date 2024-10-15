@@ -2838,7 +2838,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #12244a;
+            background: #223f7a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -7336,7 +7336,7 @@
         }
 
         .home-partner .info-list .info[data-v-4eabb456] {
-            background: #12244a;
+            background: #223f7a;
             width: 32%;
             border-radius: 0.16rem;
             overflow: hidden;
@@ -8555,6 +8555,8 @@
     </div>
     <div id="app" style="height: 8.72rem;">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
+
+            {{-- <div data-v-5954443c="" data-v-37526a6c="" class="bg1"><img data-v-5954443c="" data-v-37526a6c="" src="/static/img/04.png" alt=""></div> --}}
             
             <div data-v-37526a6c="" class="headers on">
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
