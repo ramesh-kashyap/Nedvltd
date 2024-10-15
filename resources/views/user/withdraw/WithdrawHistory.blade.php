@@ -10025,7 +10025,7 @@ type="text/javascript"
   </div>
   <div id="routeDisplay" class="route-display" style="padding: 10px; font-size: 14px;"></div>
   <script>
-    let standalone = document.getElementById('startLogo')
+    let standalone = document.getElementById('startLogo1')
     standalone.style.display = 'flex'
     setTimeout(() => {
       standalone.style.display = 'none'
