@@ -9849,6 +9849,8 @@ type="text/javascript"
 }
 
   </style>
+  
+
 </head>
 
 <body class="mein_cn">
@@ -10127,62 +10129,73 @@ type="text/javascript"
        });
    });
 </script>
-
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const overlay2 = document.getElementById('overlay2');
-        const popup2 = document.getElementById('popup2');
-        const closeButton2 = document.querySelector('.cross'); // Close button in the title
-        const okButton = document.querySelector('.btn.submit'); // OK button
-        const timeBoxes = document.querySelectorAll('.time_box'); // Time boxes
-        const selectedDateDisplay = document.getElementById('selectedDateDisplay'); // Element to show selected date
+  document.addEventListener('DOMContentLoaded', function () {
+  const overlay2 = document.getElementById('overlay2');
+  const popup2 = document.getElementById('popup2');
+  const select = document.getElementById('select');
+  const closeButton = document.querySelector('.cross');
+  const okButton = document.querySelector('.submit');
+  
+  let selectedYear = '2024';
+  let selectedMonth = '10';
+  let selectedDay = '01';
 
-        let selectedDate = '2024-10-01'; // Default selected date
+  // Elements representing the picker columns
+  const yearPicker = document.querySelector('.van-picker-column:nth-child(1)');
+  const monthPicker = document.querySelector('.van-picker-column:nth-child(2)');
+  const dayPicker = document.querySelector('.van-picker-column:nth-child(3)');
 
-        // Function to open the popup
-        function openPopup2() {
-            overlay2.style.display = 'block';
-            popup2.style.display = 'block';
-        }
+  // Open the popup
+  function openPopup() {
+    overlay2.style.display = 'block';
+    popup2.style.display = 'block';
+  }
 
-        // Function to close the popup
-        function closePopup2() {
-            overlay2.style.display = 'none';
-            popup2.style.display = 'none';
-        }
-        const selectItem = document.getElementById('select'); // Select the "All" item
-       selectItem.addEventListener('click', openPopup2);
+  // Close the popup
+  function closePopup() {
+    overlay2.style.display = 'none';
+    popup2.style.display = 'none';
+  }
+
+  // Update the year, month, and day based on the picker selections
+  function updateYear(event) {
+    selectedYear = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  function updateMonth(event) {
+    selectedMonth = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  function updateDay(event) {
+    selectedDay = event.target.innerText;
+    document.querySelectorAll('.van-picker-column__item--selected').forEach(item => item.classList.remove('van-picker-column__item--selected'));
+    event.target.classList.add('van-picker-column__item--selected');
+  }
+
+  // Handle "OK" button click
+  function confirmSelection() {
+    const selectedDate = `${selectedYear}-${selectedMonth}-${selectedDay}`;
+    alert(`Selected Date: ${selectedDate}`);
+    closePopup();
+  }
+
+  // Event Listeners
+  closeButton.addEventListener('click', closePopup);
+  okButton.addEventListener('click', confirmSelection);
+  select.addEventListener('click',openPopup);
+  yearPicker.addEventListener('click', updateYear);
+  monthPicker.addEventListener('click', updateMonth);
+  dayPicker.addEventListener('click', updateDay);
 
 
-        // Event listener for time box selection
-        timeBoxes.forEach(box => {
-            box.addEventListener('click', function () {
-                // Remove active class from all boxes
-                timeBoxes.forEach(b => b.classList.remove('active'));
-                // Add active class to the clicked box
-                this.classList.add('active');
-                // Update the selected date
-                selectedDate = this.textContent.trim();
-            });
-        });
+});
 
-        // Event listener for the OK button
-        okButton.addEventListener('click', function () {
-            // Update the display of the selected date
-            selectedDateDisplay.textContent = `Selected Date: ${selectedDate}`;
-            closePopup(); // Close the popup after selection
-        });
-
-        // Event listener for the close button
-        closeButton2.addEventListener('click', closePopup2);
-
-        // Example of opening the popup
-        // Call this function when you want to show the time selection popup
-        // openPopup();
-    });
 </script>
-
-
 </body>
 
 </html>
