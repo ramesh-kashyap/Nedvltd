@@ -238,7 +238,7 @@ opacity: 0;
 padding-top: constant(safe-area-inset-top);
 padding-top: env(safe-area-inset-top);
 max-height: 100vh;
-background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+background: #04103a;
 position: relative;
 word-wrap: break-word;
 word-break: normal;
@@ -3034,7 +3034,7 @@ overflow: hidden;
 color: #f3f3f3;
 font-size: 0.28rem;
 line-height: 0.48rem;
-/* background-color: #068475; */
+/* background-color: #12244a; */
 }
 .van-cell::after {
 position: absolute;
@@ -7581,7 +7581,7 @@ margin-top: 0.12rem;
 }
 .url .flex[data-v-2a224bbc] {
 border-radius: 0.16rem;
-background: #068475;
+background: #12244a;
 padding: 0.24rem 0.28rem;
 margin-top: 0.2rem;
 font-size: 0.24rem;

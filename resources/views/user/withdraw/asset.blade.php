@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: #068475;
+background: #12244a;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -8049,7 +8049,7 @@ max-width: 8.5rem;
 </style><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
-background: linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+background: #04103a;
 
 
 
@@ -8128,10 +8128,10 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #068475;
+background: #12244a;
 
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #068475;
+border-top: 0.02rem solid #12244a;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
@@ -8622,7 +8622,7 @@ height: 0.4rem;
 vertical-align: top;
 }
 .logo img[data-v-0ff1fb10] {
-height: 60px;
+height: 30px;
 }
 .van-field__word-num[data-v-0ff1fb10] {
 color: #fff;
@@ -8982,7 +8982,7 @@ color: rgba(255, 255, 255, 0.6);
 .assets-box[data-v-14275b54] {
 text-align: center;
 border-radius: 0.2rem;
-background: #068475;
+background: #12244a;
 position: relative;
 }
 .assets-box .assets[data-v-14275b54] {
@@ -9076,7 +9076,7 @@ font-size: 0.32rem;
 margin-bottom: 0.24rem;
 }
 [data-v-14275b54] .wallet-assets .info-list {
-background: #068475;
+background: #12244a;
 border-radius: 0.2rem;
 text-align: center;
 padding: 0 0.32rem;
@@ -9121,12 +9121,12 @@ max-width: 8.5rem;
 </style><style type="text/css">.table_list[data-v-555c6fae] {
 width: 100%;
 padding: 0.06rem;
-background: #068475;
+background: #12244a;
 border-radius: 0.12rem;
 overflow: hidden;
 }
 [data-v-555c6fae] .van-tabs__nav {
-background-color: #068475;;
+background-color: #12244a;;
 display: flex;
 align-items: stretch;
 justify-content: center;

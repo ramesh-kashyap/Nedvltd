@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: #068475;
+background: #12244a;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -8049,7 +8049,7 @@ max-width: 8.5rem;
 </style></script><style type="text/css">.page[data-v-37526a6c] {
 min-height: 100vh;
 background-size: cover;
-background: linear-gradient(0.99deg, #00ab82 12.12%, #f1f1f1 97.22%);
+background: #04103a;
 }
 .page .headers[data-v-37526a6c] {
 position: fixed;
@@ -8079,7 +8079,7 @@ bottom: 0;
 width: 100%;
 max-width: 8.5rem;
 z-index: 56;
-background: #068475;
+background: #12244a;
 }
 .page .content-container[data-v-37526a6c] {
 width: 100%;
@@ -8125,7 +8125,7 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #068475;
+background: #12244a;
 border-radius: 0.32rem 0.32rem 0 0;
 border-top: 0.02rem solid #ffffff;
 z-index: 56;
@@ -8618,7 +8618,7 @@ height: 0.4rem;
 vertical-align: top;
 }
 .logo img[data-v-0ff1fb10] {
-height: 60px;
+height: 30px;
 }
 .van-field__word-num[data-v-0ff1fb10] {
 color: #fff;

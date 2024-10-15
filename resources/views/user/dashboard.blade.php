@@ -13,7 +13,7 @@
     </style>
     <meta charset="utf-8">
     <!--    <link rel="icon" href="/logo.ico" />-->
-    <title>NEDVLTD</title>
+    <title>VIRERO</title>
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!--  <meta name="theme-color" content="#fff" />-->
     <meta http-equiv="pragma" content="no-cache">
@@ -2770,7 +2770,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #068475;
+            background:#12244a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -7072,7 +7072,7 @@
             height: 100%;
             display: flex;
             flex-direction: column;
-            background:  linear-gradient(8.99deg, #00ab82 10.12%, #f1f1f1 62.22%);
+            background: #04103a;
         }
 
         .page-header[data-v-37526a6c] {
@@ -7247,7 +7247,7 @@
         }
 
         .logo img[data-v-0ff1fb10] {
-            height: 60px;
+            height: 30px;
         }
 
         .van-field__word-num[data-v-0ff1fb10] {
@@ -7858,7 +7858,7 @@
     <style type="text/css">
         .home-team[data-v-7fb36d82] {
             border-radius: 0.2rem;
-            background: #068475;
+            background: #12244a;
             padding: 0.4rem 0.28rem;
         }
 
@@ -7957,7 +7957,7 @@
         }
 
         .home-partner .info-list .info[data-v-4eabb456] {
-            background: #068475;
+            background: #12244a;
             width: 32%;
             border-radius: 0.16rem;
             overflow: hidden;
@@ -7980,7 +7980,7 @@
         }
 
         .home-partner .info-list .info .name[data-v-4eabb456] {
-            background: #079987;
+            /* background: #079987; */
             color: #fff;
             font-size: 0.22rem;
             padding: 0.16rem 0.08rem;
@@ -8422,9 +8422,9 @@
             max-width: 10rem;
             width: 100%;
             height: fit-content;
-            background: #068475;
+            background: #201845;
             border-radius: 0.32rem 0.32rem 0 0;
-            border-top: 0.02rem solid #068475;;
+            border-top: 0.02rem solid #12244a;;
             z-index: 56;
         }
 
@@ -9211,7 +9211,7 @@
 .carousel-wrap {
   margin: 5px auto;
   padding: 0 5%;
-  width: 840px;
+  /* width: 840px; */
   position: relative;
 }
 
@@ -9225,7 +9225,7 @@
     width:840px;
 }
 .owl-item .active{
-    width:125px;
+    width:110px;
 }
 /* end fix */
 .owl-nav > div {
@@ -9296,8 +9296,8 @@
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head"><!---->
                         <div data-v-0ff1fb10="" class="container flex"><!---->
-                            <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/logo2.png" alt="" class="logo"></div>
+                            <div data-v-0ff1fb10="" class="logo" style="padding-left: 10px"><img data-v-5954443c="" data-v-0ff1fb10=""
+                                    src="{{asset('')}}static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
                             <div data-v-0ff1fb10="" class="n_home"></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             <div data-v-0ff1fb10="" class="notice"></div>
@@ -9359,7 +9359,7 @@
                             <div data-v-5954443c="" role="alert" class="van-notice-bar"
                                 style="color: rgb(255, 255, 255); background: none;"><i
                                     class="van-icon van-notice-bar__left-icon"><img
-                                        src="/static/img/icon/icons8-bell-100.png"
+                                        src="/static/img/logo1.bed352ca.png"
                                         class="van-icon__image"><!----></i>
                                 <div role="marquee" class="van-notice-bar__wrap">
                                     <div class="van-notice-bar__content van-ellipsis" style="transition-duration: 0s;">
@@ -9367,7 +9367,7 @@
                                             <div class="van-swipe__track van-swipe__track--vertical"
                                                 style="transition-duration: 0ms; transform: translateY(0px); height: 36px;">
                                                 <div data-v-5954443c="" class="van-swipe-item" style="height: 36px;">
-                                                    Dear NEDVLTD Users </div>
+                                                    Dear VIRERO Users </div>
                                             </div>
                                         </div>
                                     </div>
@@ -9528,16 +9528,39 @@
         </div>
     </div>
 </div> -->
-<div class="carousel-wrap"style="overflow:hidden !importent">
+<div class="carousel-wrap">
   <div class="owl-carousel">
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
-    <div class="item" style="width:125px"><img src="{{asset('')}}static/img/images1.png"></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Challange The Lady Billionaire</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">My Seconds Husbend's A Prince</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Return of the glam Queen</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
+    <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+    font-weight: 100;
+    font-family: garamond;
+    text-align: center;
+    letter-spacing: 1px;">Don't Change</div></div>
+
   </div>
 </div>
                     </div>
@@ -9653,7 +9676,7 @@
             <div data-v-5954443c="" class="modal-notice">
                 <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
                         src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
-                <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
+                <div data-v-5954443c="" class="notice-title"> Dear VIRERO Users </div>
                 <div data-v-5954443c="" class="notice-desc">
                     <p>Latest Activity Notification</p>
 
@@ -9673,8 +9696,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
+<link rel="stylesheet" href="/assets/owl.carousel.min.css">
 <!-- Owl Carousel Default Theme CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
@@ -9695,13 +9718,13 @@ $(".owl-carousel").owlCarousel({
   autoplayHoverPause: true,
   responsive: {
     0: {
-      items: 6
+      items: 3
     },
     600: {
-      items: 6
+      items: 3
     },
     1000: {
-      items: 6
+      items: 3
     }
   }
 });
