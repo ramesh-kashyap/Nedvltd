@@ -8762,6 +8762,75 @@
     </div>
                         </div>
                         
+                        
+                        <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
+                            <div data-v-4eabb456="" class="head">
+                                <div data-v-4eabb456="" class="title">Most Recent Treanding</div>
+                            </div>
+                            <!-- <div class="scroll-container">
+        <div class="video-list" style="transition-duration: 0ms; transform: translate3d(-7px, 0px, 0px); transition-delay: 0ms;">
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images2.png" alt="">
+                <div class="name">Aprime Charming</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+            <div class="video">
+                <img src="{{asset('')}}static/img/images1.png" alt="">
+                <div class="name">Don't Change</div>
+            </div>
+        </div>
+    </div> -->
+    <div class="carousel-wrap">
+      <div class="owl-carousel">
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name" style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Challange The Lady Billionaire</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">My Seconds Husbend's A Prince</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Return of the glam Queen</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images1.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images2.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+        <div class="item" style="width:110px"><img src="{{asset('')}}static/img/images4.png"><div class="name"  style="    font-size: 11px;
+        font-weight: 100;
+        font-family: garamond;
+        text-align: center;
+        letter-spacing: 1px;">Don't Change</div></div>
+    
+      </div>
+    </div>
+                        </div>
                         <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
                             <div data-v-4eabb456="" class="head">
                                 <div data-v-4eabb456="" class="title">Partners</div>
