@@ -595,7 +595,7 @@ if ($accelerator && $vip < $accelerator['min_level']) {
             
 
         $notify[] = ['success','Deposit request submitted successfully'];
-        return redirect()->route('user.invest')->withNotify($notify);
+        return redirect()->route('user.confirmDeposit')->withNotify($notify);
 
    
 
