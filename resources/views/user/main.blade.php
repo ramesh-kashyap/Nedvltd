@@ -9,4 +9,4 @@
 		@include($page)
 	@endif
 	<!--end page-wrapper-->
-	@include('layouts.upnl.footer')
+	<!-- @include('layouts.upnl.footer') -->

@@ -86,7 +86,7 @@ class Bonus extends Controller
           $limit = $request->limit ? $request->limit : paginationLimit();
             $status = $request->status ? $request->status : null;
             $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->where('remarks','Activities Bonus')->orderBy('id', 'DESC');
+            $notes = Income::where('user_id',$user->id)->where('remarks','Task Income')->orderBy('id', 'DESC');
            if($search <> null && $request->reset!="Reset"){
             $notes = $notes->where(function($q) use($search){
               $q->Where('rname', 'LIKE', '%' . $search . '%')
@@ -101,7 +101,13 @@ class Bonus extends Controller
                 ->appends([
                     'limit' => $limit
                 ]);
-        $this->data['level_income'] =$notes;
+
+         $total_income=Income::where('user_id',$user->id)->sum('comm');
+         $total_task_income=Income::where('user_id',$user->id)->where('remarks','Task Income')->sum('comm'); 
+         
+         $this->data['total_income'] =$total_income;
+        $this->data['total_task_income'] = $total_task_income;
+        $this->data['task_income'] =$notes;
         $this->data['search'] =$search;
         $this->data['page'] = 'user.bonus.activitiesBonus';
         return $this->dashboard_layout();
@@ -228,27 +234,41 @@ class Bonus extends Controller
            $user=Auth::user();
 
 
-          $limit = $request->limit ? $request->limit :  paginationLimit();
-            $status = $request->status ? $request->status : null;
-            $search = $request->search ? $request->search : null;
-            $notes = Income::where('user_id',$user->id)->orderBy('created_at', 'DESC');
-           if($search <> null && $request->reset!="Reset"){
-            $notes = $notes->where(function($q) use($search){
-              $q->Where('ttime', 'LIKE', '%' . $search . '%')
-              ->orWhere('amt', 'LIKE', '%' . $search . '%')
-              ->orWhere('rname', 'LIKE', '%' . $search . '%')
-              ->orWhere('comm', 'LIKE', '%' . $search . '%');
-            });
+    //       $limit = $request->limit ? $request->limit :  paginationLimit();
+    //         $status = $request->status ? $request->status : null;
+    //         $search = $request->search ? $request->search : null;
+    //         $notes = Income::where('user_id',$user->id)->orderBy('created_at', 'DESC');
+    //        if($search <> null && $request->reset!="Reset"){
+    //         $notes = $notes->where(function($q) use($search){
+    //           $q->Where('ttime', 'LIKE', '%' . $search . '%')
+    //           ->orWhere('amt', 'LIKE', '%' . $search . '%')
+    //           ->orWhere('rname', 'LIKE', '%' . $search . '%')
+    //           ->orWhere('comm', 'LIKE', '%' . $search . '%');
+    //         });
 
-      }
+    //   }
 
-            $notes = $notes->paginate($limit)
-                ->appends([
-                    'limit' => $limit
-                ]);
+    //         $notes = $notes->paginate($limit)
+    //             ->appends([
+    //                 'limit' => $limit
+    //             ]);
 
-    $this->data['level_income'] =$notes;
-    $this->data['search'] =$search;
+    // $this->data['level_income'] =$notes;
+    // $this->data['search'] =$search;
+
+    
+    // $totalIncome = Income::where('user_id',$user->id)->sum('comm');
+
+    //   $transaction_data = Income::where('user_id',$user->id)->orderBy('id', 'desc')->take(10)->get();
+    //     $this->data['todaysRoiSum'] = \DB::table('contract')->where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('c_status','-1')->sum('profit');
+      $today_level_income=Income::where('user_id',$user->id)->where('ttime',date('Y-m-d'))->where('remarks','Quantify Level Income')->sum('comm');
+      $total_level_income=Income::where('user_id',$user->id)->where('remarks','Quantify Level Income')->sum('comm');
+
+      
+      $this->data['today_level_income'] = $today_level_income;
+          $this->data['total_level_income'] =$total_level_income;
+     
+
     $this->data['page'] = 'user.bonus.roi-bonus';
     return $this->dashboard_layout();
 

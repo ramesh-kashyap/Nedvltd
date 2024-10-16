@@ -347,103 +347,146 @@ return true;
 
 
 
- function add_level_income($id,$amt)
-        {
+// function add_level_income($id, $amt)
+// {
+//     // Get user details
+//     $user = User::where('id', $id)->first();
+//     if (!$user) {
+//         return false;  // User not found, handle error
+//     }
 
-          //$user_id =$this->session->userdata('user_id_session')
-      $data = User::where('id',$id)->orderBy('id','desc')->first();
+//     $username = $user->username;
+//     $fullname = $user->name;
+//     $user_id = $user->id;
+//     $amount = $amt / 100;
+//     $cnt = 1;  // Start with level 1
+    
+//     while ($user_id != "" && $user_id != "1" && $cnt <= 3) {
+//       // Get sponsor details for the current user
+//       $sponsorData = User::where('id', $user_id)->first();
+//       if ($sponsorData) {
+//           $sponsorId = $sponsorData->sponsor; // Current user's sponsor
+//           $sponsorStatus = $sponsorData->active_status;
+//           $rank = $sponsorData->rank;
+//           $sponsorUsername = $sponsorData->username;
+  
+//           // Get the last active package of the sponsor
+//           $lastPackage = \DB::table('investments')
+//               ->where('user_id', $sponsorData->id)
+//               ->where('status', 'Active')
+//               ->orderBy('id', 'desc')
+//               ->first();
+  
+//           $plan = ($lastPackage) ? $lastPackage->plan : 0;
+//       } else {
+//           // Handle case where sponsor is not found
+//           $sponsorId = null;
+//           $sponsorStatus = "Pending";
+//           $rank = 0;
+//       }
+  
+//       // Process level income distribution if sponsor is active
+//       if ($sponsorStatus === "Active") {
+//           $commission = processLevelIncomeDistribution($user_id, $amt, $cnt, $amount); // Pass $sponsorId
+//       } else {
+//           $commission = 0;  // No commission if sponsor is not active
+//       }
+  
+//       // Save commission data if the sponsor exists and level is within the first three levels
+//       if ($sponsorId && $commission > 0) {
+//           saveIncomeData($user_id, $sponsorUsername, $amt, $commission, $cnt, $username, $fullname); // Save data with $sponsorId
+//       }
+  
+//       // Move to the next sponsor
+//       $user_id = $sponsorId;  // Move to the next level by setting the current sponsor's ID as the next user
+//       $cnt++;  // Increment the level counter
+//   }
+  
+//     return true;  // Successfully processed
+// }
 
-        $user_id = $data->username;
-        $fullname=$data->name;
+// // Function to handle level income distribution logic
+// function processLevelIncomeDistribution($userId, $amt, $cnt, $amount)
+// {
+//     $user = User::where('id', $userId)->first();
+//     if (!$user) {
+//         return 0;  // Return 0 if user not found
+//     }
 
-        $rname = $data->username;
-        $user_mid = $data->id;
+//     $firstLevelUserCount = User::where('sponsor', $user->id)
+//         ->where('active_status', 'Active')
+//         ->count();
+
+//     // Count second and third level users
+//     $secondLevelUserCount = 0;
+//     $thirdLevelUserCount = 0;              
+
+//     if ($firstLevelUserCount > 0) {
+//         $firstLevelUserIds = User::where('sponsor', $user->id)
+//             ->where(column: 'active_status', 'Active')
+//             ->pluck('id');
+
+//         $secondLevelUserCount = User::whereIn('sponsor', $firstLevelUserIds)
+//             ->where('active_status', 'Active')
+//             ->count();
+
+//         if ($secondLevelUserCount > 0) {
+//             $secondLevelUserIds = User::whereIn('sponsor', $firstLevelUserIds)
+//                 ->where('active_status', 'Active')
+//                 ->pluck('id');
+
+//             $thirdLevelUserCount = User::whereIn('sponsor', $secondLevelUserIds)
+//                 ->where('active_status', 'Active')
+//                 ->count();
+//         }
+//     }
+
+//     $combineTwoThree = $thirdLevelUserCount + $secondLevelUserCount;
+
+//     // Calculate commission based on amount and level
+//     $commission = 0;
+//     if ($amt == 50) {
+//         $commission = calculateCommission($cnt, $amount, [0, 0, 0]);
+//     } elseif ($amt == 100) {
+//         $commission = calculateCommission($cnt, $amount, [5, 3, 1]);
+//     } elseif ($amt == 200 && $firstLevelUserCount == 3) {
+//         $commission = calculateCommission($cnt, $amount, [6, 4, 2]);
+//     } elseif ($amt == 600 && $firstLevelUserCount == 5 && $combineTwoThree == 15) {
+//         $commission = calculateCommission($cnt, $amount, [7, 5, 3]);
+//     } elseif ($amt == 1200 && $firstLevelUserCount == 10 && $combineTwoThree == 30) {
+//         $commission = calculateCommission($cnt, $amount, [8, 6, 4]);
+//     } elseif ($amt == 3000 && $firstLevelUserCount == 20 && $combineTwoThree == 60) {
+//         $commission = calculateCommission($cnt, $amount, [9, 7, 5]);
+//     } elseif ($amt == 6000 && $firstLevelUserCount == 30 && $combineTwoThree == 100) {
+//         $commission = calculateCommission($cnt, $amount, [10, 8, 6]);
+//     }
+
+//     return $commission;
+// }
+
+// // Helper function to calculate commission based on count
+//  function calculateCommission($cnt, $amount, $multipliers)
+// {
+//     return isset($multipliers[$cnt - 1]) ? $amount * $multipliers[$cnt - 1] : 0;
+// }
+
+// Helper function to save income data
+ function saveIncomeData($userId, $username, $amt, $commission, $level, $rname, $fullname)
+{
+    Income::create([
+        'user_id' => $userId,
+        'user_id_fk' => $username,
+        'amt' => $amt,
+        'comm' => $commission,
+        'remarks' => 'Quantify Level Income',
+        'level' => $level,
+        'rname' => $rname,
+        'fullname' => $fullname,
+        'ttime' => now(),
+    ]);
+}
 
 
-              $cnt = 1;
-
-              $amount = $amt/100;
-
-
-                while ($user_mid!="" && $user_mid!="1"){
-
-                      $Sposnor_id = User::where('id',$user_mid)->orderBy('id','desc')->first();
-                      $sponsor=$Sposnor_id->sponsor;
-                      if (!empty($sponsor))
-                       {
-                        $Sposnor_status = User::where('id',$sponsor)->orderBy('id','desc')->first();
-                        $Sposnor_cnt = User::where('sponsor',$sponsor)->where('active_status','Active')->count("id");
-                        $sp_status=$Sposnor_status->active_status;
-                        $rank=$Sposnor_status->rank;
-                        $lastPackage = \DB::table('investments')->where('user_id',$Sposnor_status->id)->where('status','Active')->orderBy('id','DESC')->limit(1)->first();
-                        $plan = ($lastPackage)?$lastPackage->plan:0;
-                      }
-                      else
-                      {
-                        $Sposnor_status =array();
-                        $sp_status="Pending";
-                        $Sposnor_cnt=0;
-                        $rank=0;
-                      }
-
-                      $pp=0;
-                       if($sp_status=="Active")
-                       {
-                         if($cnt==1)
-                          {
-                            $pp= $amount*12;
-
-                          } if($cnt==2)
-                          {
-                            $pp= $amount*4;
-
-                          } if($cnt==3)
-                          {
-                            $pp= $amount*2;
-
-                          }  
-                          
-                       
-
-                        }
-                        else
-                        {
-                          $pp=0;
-                        }
-
-
-
-                      $user_mid = @$Sposnor_status->id;
-                      $spid = @$Sposnor_status->id;
-                      $idate = date("Y-m-d");
-
-                      $user_id_fk=$sponsor;
-                      if($spid>0 && $cnt<=3){
-                        if($pp>0){
-
-                         $data = [
-                        'user_id' => $user_mid,
-                        'user_id_fk' =>$Sposnor_status->username,
-                        'amt' => $amt,
-                        'comm' => $pp,
-                        'remarks' =>'Quantify Level Income',
-                        'level' => $cnt,
-                        'rname' => $rname,
-                        'fullname' => $fullname,
-                        'ttime' => Date("Y-m-d"),
-
-                    ];
-                     $user_data =  Income::create($data);
-
-
-                }
-               }
-
-                $cnt++;
-     }
-
-     return true;
-  }
 
 
 
