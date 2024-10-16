@@ -309,7 +309,7 @@ public function viewdetail($txnId)
         ];
         $payment =  Investment::insert($data);
 
-        add_level_income2($user->id, $amountTotal);
+        // add_level_income2($user->id, $amountTotal);
     
     $this->data['walletAddress'] =$resultAarray['data']['wallet_hash'];
     $this->data['paymentMode'] =$paymentMode;
