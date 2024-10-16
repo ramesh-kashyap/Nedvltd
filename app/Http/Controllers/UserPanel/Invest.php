@@ -390,6 +390,7 @@ public function viewdetail($txnId)
   // Find the accelerator that matches the amount
 $accelerator = collect($accelerators)->firstWhere('amount', $amount);
 
+
 // Check if the user's VIP level is sufficient
 if ($accelerator && $vip < $accelerator['min_level']) {
      return Redirect::back()->withErrors(array('Level not met for this package'));

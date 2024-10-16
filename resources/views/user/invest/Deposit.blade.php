@@ -7046,9 +7046,9 @@
                     </div>                  
                     <div data-v-37526a6c="" class="page-recharge-info" style="
     background: #223f7a;">
-                    <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
+                    <form method="post" name="add" action="{{ route('user.confirmDeposit_new') }}">
                     {{ csrf_field() }}
-                    
+                    <input type="hidden" name="vip" value={{ $vip }}></input>
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
                             <dt data-v-37526a6c=""style="margin-bottom: 10px;">Recharge currency </dt>                            
                             <input data-v-37526a6c="" 
@@ -7067,13 +7067,13 @@
   style="height: 0.8rem; border-radius: 0.16rem; color:#fff; padding: 0 0.3rem; 
   line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;">
   <option value="">Select your amount</option>
-  <option value="50">$50</option>
-  <option value="100">$100</option>
-  <option value="200">$200</option>
-  <option value="600">$600</option>
+  <option value="30">$30</option>
+  <option value="120">$120</option>
+  <option value="300">$300</option>
   <option value="1200">$1200</option>
-  <option value="3000">$3000</option>
+  <option value="3600">$3600</option>
   <option value="6000">$6000</option>
+  <option value="15000">$15000</option>
 </select>                              
                             
                         </dl>                      
