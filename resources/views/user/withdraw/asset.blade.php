@@ -9242,8 +9242,8 @@ max-width: 8.5rem;
                 alt="">
               <div data-v-0ff1fb10="" class="count"> 2 </div>
             </div>
-            <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
-                 src="{{asset('')}}static/img/Icon/browser2.png"
+            <div data-v-0ff1fb10="" class="lang" onclick="location.href='{{route('user.reward-bonus')}}'"><img data-v-0ff1fb10=""
+              src="{{asset('')}}static/img/Icon/gift2.png"
             alt=""></div>
             <!---->
           </div>

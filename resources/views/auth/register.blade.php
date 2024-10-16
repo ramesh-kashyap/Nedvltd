@@ -12014,7 +12014,62 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-3670e178] {
 max-width: 8.5rem;
 }
-</style></head>
+</style>
+<style>
+    .form-control2 {
+        display: block;
+        width: 100%;
+        padding: 0.175rem .75rem;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--bs-body-bg);
+        background-clip: padding-box;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        border-radius: 10px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        /* border: 1px solid #887f7f; */
+        
+    }
+    
+        .iti {
+            width: 100%; /* Make the telephone input span the full width of its container */
+        }
+
+        .iti__flag-container {
+            width: 24.67%; /* Adjust the width of the country code dropdown to be about 1/6 */
+            
+        }.iti--separate-dial-code .iti__selected-flag {
+    background-color: rgb(255 255 255);
+}
+
+        .iti input[type="tel"] {
+            width: 83.33%; /* Remaining width for the input field */
+        }
+        .iti--separate-dial-code .iti__selected-dial-code{
+            margin-left: -1px;
+        }
+        .iti__selected-flag {
+            z-index: 1;
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    height: 100%;
+    padding: 0px;
+    /* width: 189px; */
+    margin-left: -24px;
+    padding-left: 12px;
+            }
+            
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
 
 <body class="mein_cn">
 <div id="startLogo" style="display: none;">
@@ -12070,7 +12125,12 @@ max-width: 8.5rem;
                                 <div data-v-fa37b51c="" class="title">Mobile</div>
                             </div>
                             <div data-v-fa37b51c="" class="inp_content_box">
-                                <div data-v-fa37b51c="" class="phone_code"><span data-v-fa37b51c="">+1</span><i
+                                               <input type="hidden"  id="country-name" name ="country" value="" >
+                                               <input type="hidden"  id="dial-code" name ="dialCode" value="" >
+                                               <input type="hidden"  id="country_iso" name ="country_iso" value="" >
+                                <div data-v-fa37b51c="" class="phone_code">
+                                  
+                                <span data-v-fa37b51c="" class="set_area">+1</span><i
                                         data-v-fa37b51c="" class="arrow van-icon van-icon-arrow-down">
                                         <!----></i></div>
                                 <div data-v-fa37b51c="" class="input">
