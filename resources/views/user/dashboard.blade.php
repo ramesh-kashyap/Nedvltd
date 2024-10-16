@@ -492,7 +492,7 @@
 
 .sub-text {
     bottom: 12%; /* Position this text towards the bottom */
-    font-size: 14px; /* Smaller font size for the subtitle */
+    font-size: 14px; /* Smaller font size for the subtitle */  
     font-weight: lighter; /* Lighter weight for a less prominent text */
 }
 
