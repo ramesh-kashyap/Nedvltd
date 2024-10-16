@@ -66,6 +66,84 @@ class Invest extends Controller
         $invest_check=Investment::where('user_id',$user->id)->where('status','!=','Decline')->orderBy('id','desc')->limit(1)->first();
 
         $this->data['last_package'] = ($invest_check)?$invest_check->amount:0;
+
+        $my_level_team=$this->my_level_team_count($user->id);
+        $gen_team1 =  (array_key_exists(1,$my_level_team) ? $my_level_team[1]:array());
+        $gen_team2 =  (array_key_exists(2,$my_level_team) ? $my_level_team[2]:array());
+        $gen_team3 =  (array_key_exists(3,$my_level_team) ? $my_level_team[3]:array());
+      
+        $gen_team1 = User::where(function($query) use($gen_team1)
+                {
+                  if(!empty($gen_team1)){
+                    foreach ($gen_team1 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+                
+          $gen_team2 = User::where(function($query) use($gen_team2)
+                {
+                  if(!empty($gen_team2)){
+                    foreach ($gen_team2 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+           $gen_team3 = User::where(function($query) use($gen_team3)
+                {
+                  if(!empty($gen_team3)){
+                    foreach ($gen_team3 as $key => $value) {
+                    //   $f = explode(",", $value);
+                    //   print_r($f)."<br>";
+                      $query->orWhere('id', $value);
+                    }
+                  }else{$query->where('id',null);}
+                })->orderBy('id', 'DESC')->get();
+  
+  
+        
+  // Calculate totals
+$gen_team1total = $gen_team1->count();
+$active_gen_team1total = $gen_team1->where('active_status', 'Active')->count();
+
+$gen_team2total = $gen_team2->count();
+$active_gen_team2total = $gen_team2->where('active_status', 'Active')->count();
+
+$gen_team3total = $gen_team3->count();
+$active_gen_team3total = $gen_team3->where('active_status', 'Active')->count();
+
+// Combine totals for team 2 and team 3
+$active_gen_team23total = $active_gen_team2total + $active_gen_team3total;
+
+// Initialize VIP status
+$vip = 1;
+
+// Determine VIP level based on conditions
+if ($active_gen_team1total >= 30 && $active_gen_team23total >= 40) {
+    $vip = 7;
+} elseif ($active_gen_team1total >= 15 && $active_gen_team23total >= 20) {
+  $vip = 6;
+} elseif ($active_gen_team1total >= 8 && $active_gen_team23total >= 15) {
+    $vip = 5;
+} elseif ($active_gen_team1total >= 5 && $active_gen_team23total >= 10) {
+    $vip = 4;
+} elseif ($active_gen_team1total >= 3 && $active_gen_team23total >= 5) {
+    $vip = 3;
+} elseif ($active_gen_team1total >= 2) {
+    $vip = 2;
+} elseif ($active_gen_team1total > 0 || $active_gen_team2total > 0 || $active_gen_team3total > 0) {
+    $vip = 1;
+}
+
+// Assign VIP value to the data array
+$this->data['vip'] = $vip;
+
+
+
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }
@@ -139,12 +217,12 @@ public function viewdetail($txnId)
         'PSys' => 'required',       
      ]);
      $amountToLevel = [
-      50 =>  'Accelerators_1',
-      100 => 'Accelerators_2',
-      200 => 'Accelerators_3',
-      600 => 'Accelerators_4',
-      1200 => 'Accelerators_5',
-      3000 => 'Accelerators_6',
+      30 =>  'Accelerators_1',
+      120 => 'Accelerators_2',
+      300 => 'Accelerators_3',
+      1200 => 'Accelerators_4',
+      3600 => 'Accelerators_5',
+      6000 => 'Accelerators_6',
       6000 => 'Accelerators_7',
   ];
   $selectedSum = $request->input('Sum');
@@ -231,7 +309,7 @@ public function viewdetail($txnId)
         ];
         $payment =  Investment::insert($data);
 
-        add_level_income2($user->id, $amountTotal);
+        // add_level_income2($user->id, $amountTotal);
     
     $this->data['walletAddress'] =$resultAarray['data']['wallet_hash'];
     $this->data['paymentMode'] =$paymentMode;
@@ -268,6 +346,8 @@ public function viewdetail($txnId)
      $validation =  Validator::make($request->all(), [
         'Sum' => 'required|numeric|min:2',
         'PSys' => 'required',
+        'vip' => 'required',
+
      ]);
 
 
@@ -290,49 +370,67 @@ public function viewdetail($txnId)
     }
    
 
-    $min_amount = $request->minimum_deposit;
-    $max_amount = $request->maximum_deposit;
-    $plan = $request->Plan;
+    // $min_amount = $request->minimum_deposit;
+    // $max_amount = $request->maximum_deposit;
+    $vip = $request->vip;
     $paymentMode = $request->PSys;
     $amount = $request->Sum;
 
-   
+    $accelerators = [
+      ['amount' => 30, 'min_level' => 1],
+      ['amount' => 120, 'min_level' => 2],
+      ['amount' => 300, 'min_level' => 3],
+      ['amount' => 1200, 'min_level' => 4],
+      ['amount' => 3600, 'min_level' => 5],
+      ['amount' => 6000, 'min_level' => 6],
+      ['amount' => 15000, 'min_level' => 7],
+  ];
+  
+
+  // Find the accelerator that matches the amount
+$accelerator = collect($accelerators)->firstWhere('amount', $amount);
+
+
+// Check if the user's VIP level is sufficient
+if ($accelerator && $vip < $accelerator['min_level']) {
+     return Redirect::back()->withErrors(array('Level not met for this package'));
+  } 
        
-    if ($amount<$min_amount || $amount>$max_amount) 
-    {
-      return Redirect::back()->withErrors(array('minimum deposit is $ '.$min_amount.' and maximum is $ '.$max_amount));
-    }
+    // if ($amount<$min_amount || $amount>$max_amount) 
+    // {
+    //   return Redirect::back()->withErrors(array('minimum deposit is $ '.$min_amount.' and maximum is $ '.$max_amount));
+    // }
     
     
-        $plan ='BEGINNER';
-      if ($amount>=50 && $amount<=200) 
-       {
-        $plan ='BEGINNER';
-       }
-       elseif($amount>=400 && $amount<=800)
-       {
-        $plan ='STANDARD';
-       }
-       elseif($amount>=1000 && $amount<=2000)
-       {
-        $plan ='EXCLUSIVE';
-       }
-       elseif($amount>=2500 && $amount<=5000)
-       {
-        $plan ='ULTIMATE';
-       }
+        // $plan ='BEGINNER';
+      // if ($amount>=50 && $amount<=200) 
+      //  {
+      //   $plan ='BEGINNER';
+      //  }
+      //  elseif($amount>=400 && $amount<=800)
+      //  {
+      //   $plan ='STANDARD';
+      //  }
+      //  elseif($amount>=1000 && $amount<=2000)
+      //  {
+      //   $plan ='EXCLUSIVE';
+      //  }
+      //  elseif($amount>=2500 && $amount<=5000)
+      //  {
+      //   $plan ='ULTIMATE';
+      //  }
 
-       elseif($amount>=5000 && $amount<=10000)
-       {
-        $plan ='PREMIUM';
-       }
+      //  elseif($amount>=5000 && $amount<=10000)
+      //  {
+      //   $plan ='PREMIUM';
+      //  }
 
-       elseif($amount>=5000)
-       {
-        $plan ='PREMIUM';
-       }
+      //  elseif($amount>=5000)
+      //  {
+      //   $plan ='PREMIUM';
+      //  }
        
-    $invest_check=Investment::where('user_id',$user->id)->where('plan',$plan)->where('status','!=','Decline')->orderBy('id','desc')->limit(1)->first();
+    $invest_check=Investment::where('user_id',$user->id)->where('amount',$amount)->where('roiCandition',0)->orderBy('id','desc')->limit(1)->first();
     
     if($invest_check)
     {
@@ -378,7 +476,6 @@ public function viewdetail($txnId)
     {
 
        $data = [
-            'plan' => $plan,
             'orderId' => $invoice,
             'transaction_id' =>$resultAarray['data']['txn_id'],
             'user_id' => $user->id,
@@ -401,7 +498,7 @@ public function viewdetail($txnId)
     $this->data['amount'] =$amount;
     $this->data['invoice_total_sum'] =$resultAarray['data']['invoice_total_sum'];
     $this->data['page'] = 'user.invest.confirmDeposit';
-    return $this->dashboard_layout();
+    return $this->dashboard_layout(); 
 
   }
   else
@@ -499,7 +596,7 @@ public function viewdetail($txnId)
             
 
         $notify[] = ['success','Deposit request submitted successfully'];
-        return redirect()->route('user.invest')->withNotify($notify);
+        return redirect()->route('user.confirmDeposit')->withNotify($notify);
 
    
 

@@ -137,7 +137,7 @@
     display: inline-block;
     padding: 0;
     border-radius: 100%;
-    border: 0.25em solid #00fc83;
+    border: 0.25em solid #fff;
     border-right-color: rgba(0, 252, 131, 0.1);
     border-bottom-color: rgba(0, 252, 131, 0.1);
     animation: loading-animation-15b106f9 1s ease-in-out infinite;
@@ -147,7 +147,7 @@
     white-space: nowrap;
     font-size: 0.7em;
     line-height: 0.7em;
-    color: #00fc83;
+    color: #fff;
   }
   .overlay[data-v-15b106f9] {
     z-index: 999;
@@ -311,10 +311,10 @@
     margin: 0;
   }
   .password_pop .van-password-input__cursor {
-    background: #00fc83;
+    background: #fff;
   }
   .password_pop .van-password-input__item--focus {
-    border: 0.02rem solid #00fc83;
+    border: 0.02rem solid #fff;
   }
   .password_pop .van-number-keyboard {
     background: none;
@@ -337,7 +337,7 @@
     height: 0.94rem;
     border-radius: 0.2rem;
     color: #020202;
-    background: #00fc83;
+    background: #fff;
   }
   .password_pop .pass .box {
     padding: 0.3rem 0;
@@ -373,7 +373,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #00fc83;
+    --color1: #fff;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -1901,8 +1901,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    color: #022627;
-  }
+    color: #fff  }
   
   input[type='text'],
   textarea {
@@ -2195,7 +2194,7 @@
     color: #fff;
   }
   .theme {
-    color: #00fc83 !important;
+    color: #fff !important;
   }
   
   i.iconfont {
@@ -2211,7 +2210,7 @@
     border: 0.08rem solid transparent;
     width: 0;
     height: 0;
-    border-top-color: #000;
+    border-top-color: #fff;
     display: inline-block;
     vertical-align: middle;
   }
@@ -2222,8 +2221,7 @@
             border: 0;
             height: 0.88rem;
             border-radius: 0.16rem;
-            background: #022627;
-        }
+            background: #fff        }
   
   .btn.on {
     background: #cda349;
@@ -2383,7 +2381,7 @@
     width: 0.12rem;
     height: 0.12rem;
     border-radius: 50%;
-    background: #00fc83;
+    background: #fff;
     position: absolute;
     top: 50%;
     left: 0;
@@ -2400,7 +2398,7 @@
     color: #fff;
   }
   .btn-bg.active {
-    background: #00fc83;
+    background: #fff;
     color: #020202;
   }
   .w-full {
@@ -2468,7 +2466,7 @@
   }
   .text-primary,
   .text-success {
-    color: #00fc83;
+    color: #fff;
   }
   .text-warn {
     color: #EEA20C;
@@ -2484,8 +2482,7 @@
     color: rgba(255, 255, 255, 0.6);
   }
   .text-gray {
-    color:#022627;
-  }
+    color:#fff  }
   .text-light {
     color: #CFD5E2;
   }
@@ -2500,7 +2497,7 @@
   }
   .bg-primary,
   .bg-success {
-    background: #00fc83;
+    background: #fff;
   }
   .bg-success-opacity {
     background: rgba(0, 252, 131, 0.08);
@@ -2689,10 +2686,10 @@
     border-radius: 19.98rem;
   }
   .border-solid-dark {
-    border: 0.02rem solid #252930;
+    border: 0.02rem solid #fff;
   }
   .border-dashed-dark {
-    border: 0.02rem dashed #252930;
+    border: 0.02rem dashed #fff;
   }
   .overflow-hidden {
     overflow: hidden;
@@ -2745,9 +2742,9 @@
     left: 50%;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: #fff;
     border: inherit;
-    border-color: #000;
+    border-color: #fff;
     border-radius: inherit;
     color: #ffffff;
     /* inherit parent's border radius */
@@ -2769,8 +2766,7 @@
   }
   .van-button--primary {
     color: #ffffff;
-    background-color: #022627;
-    border: 0.02rem solid #07c160;
+    background-color: #fff    border: 0.02rem solid #07c160;
   }
   .van-button--info {
     color: #fff;
@@ -2791,7 +2787,7 @@
     background-color: #fff;
   }
   .van-button--plain.van-button--primary {
-    color: #00fc83;
+    color: #fff;
   }
   .van-button--plain.van-button--info {
     color: #1989fa;
@@ -2958,7 +2954,7 @@
     color: #969799;
     font-size: 0.28rem;
     line-height: 0.48rem;
-    border-color: #252930;
+    border-color: #fff;
     border-style: solid;
     border-width: 0;
   }
@@ -3700,7 +3696,7 @@
     opacity: 0.7;
   }
   .van-picker__confirm {
-    color: #00FC83;
+    color: #fff;
   }
   .van-picker__cancel {
     color: #969799;
@@ -4468,19 +4464,19 @@
     box-sizing: border-box;
     height: 0.8rem;
     margin: 0 0.32rem;
-    border: 0.02rem solid #00fc83;
+    border: 0.02rem solid #fff;
     border-radius: 0.04rem;
   }
   .van-tabs__nav--card .van-tab {
-    color: #00fc83;
-    border-right: 0.02rem solid #00fc83;
+    color: #fff;
+    border-right: 0.02rem solid #fff;
   }
   .van-tabs__nav--card .van-tab:last-child {
     border-right: none;
   }
   .van-tabs__nav--card .van-tab.van-tab--active {
     color: #fff;
-    background-color: #00fc83;
+    background-color: #fff;
   }
   .van-tabs__nav--card .van-tab--disabled {
     color: #c8c9cc;
@@ -4492,7 +4488,7 @@
     z-index: 1;
     width: 0.8rem;
     height: 0.06rem;
-    background-color: #00fc83;
+    background-color: #fff;
     border-radius: 0.06rem;
   }
   .van-tabs__track {
@@ -4572,7 +4568,7 @@
     left: 50%;
     width: 0.2rem;
     height: 0.2rem;
-    background-color: #000;
+    background-color: #fff;
     border-radius: 100%;
     transform: translate(-50%, -50%);
     visibility: hidden;
@@ -5785,7 +5781,7 @@
     border-radius: 1.2rem;
     background: linear-gradient(270deg, #FFD7A2 0%, #FFF2DE 103.57%);
     padding: 0.06rem 0.12rem;
-    color: #000;
+    color: #fff;
     font-size: 0.2rem;
   }
   .level-info .info .time[data-v-5a5733d2] {
@@ -5799,7 +5795,7 @@
     min-height: 0.52rem;
     padding: 0 0.12rem;
     border-radius: 1.2rem;
-    background: #00FC83;
+    background: #fff;
     color: #020202;
     font-size: 0.24rem;
     display: flex;
@@ -5914,8 +5910,8 @@
   .my-router .router .content .left .bot .move-up[data-v-afc48976] {
     width: fit-content;
     border-radius: 0.8rem;
-    border: 0.02rem solid #00fc83;
-    color: #00fc83;
+    border: 0.02rem solid #fff;
+    color: #fff;
     font-size: 0.24rem;
     padding: 0.08rem 0.16rem;
   }
@@ -5976,7 +5972,7 @@
     display: block;
     width: 0.56rem;
     height: 0.06rem;
-    background: #00FC83;
+    background: #fff;
     border-radius: 0.04rem;
     position: absolute;
     bottom: -0.24rem;
@@ -6043,7 +6039,7 @@
     margin-left: auto;
   }
   .video-card .release-box .release span[data-v-03dbdb2b] {
-    color: #00FC83;
+    color: #fff;
     font-size: 0.24rem;
     position: relative;
   }
@@ -6355,7 +6351,7 @@
     height: fit-content;
     background: #020202;
     border-radius: 0.32rem 0.32rem 0 0;
-    border-top: 0.02rem solid #252930;
+    border-top: 0.02rem solid #fff;
     z-index: 56;
   }
   .footers ul[data-v-6c4d8baa] {
@@ -6427,8 +6423,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #022627;
-    position: absolute;
+    color: #fff    position: absolute;
     width: 70%;
     text-align: center;
     align-items: center;
@@ -6530,7 +6525,7 @@
   .select-list .select[data-v-18e3de10] {
     flex: 1;
     border-radius: 0.08rem;
-    border: 0.02rem solid #252930;
+    border: 0.02rem solid #fff;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6593,7 +6588,7 @@
     width: fit-content;
     margin-top: 0.1rem;
     text-align: right;
-    color: #00FC83;
+    color: #fff;
     font-size: 0.24rem;
     position: relative;
     padding-left: 0.2rem;
@@ -6754,7 +6749,7 @@
   [data-v-14275b54] .wallet-assets .info-list .info {
     flex: 0 0 49%;
     padding: 0.4rem 0;
-    border-bottom: 0.02rem dashed #252930;
+    border-bottom: 0.02rem dashed #fff;
   }
   [data-v-14275b54] .wallet-assets .info-list .info:nth-last-child(1),[data-v-14275b54] .wallet-assets .info-list .info:nth-last-child(2) {
     border-bottom: none;
@@ -6808,7 +6803,7 @@
     height: 0.6rem;
   }
   [data-v-555c6fae] .van-tabs__line {
-    background-color: #00FC83;
+    background-color: #fff;
     width: 0.6rem;
     height: 0.05rem;
   }
@@ -6884,9 +6879,9 @@
   }
   .page-recharge-info {
     margin-top: 0.4rem;
-    padding: 2rem 0.32rem 0.32rem;
+    padding: 1rem 0.32rem 0.32rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid #252930;
+    border: 0.02rem solid #fff;
   }
   .page-recharge-info-item {
     margin-bottom: 0.32rem;
@@ -6900,7 +6895,7 @@
     align-items: center;
     min-height: 0.88rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid #252930;
+    border: 0.02rem solid #fff;
   }
   .page-recharge-info-address {
     flex: 1;
@@ -6910,7 +6905,7 @@
   .page-recharge-info-usdc {
     padding: 0.32rem 0.28rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid #252930;
+    border: 0.02rem solid #fff;
   }
   .page-recharge-tips {
     margin-top: 0.4rem;
@@ -6974,11 +6969,11 @@
     margin-bottom: 0.32rem;
     padding: 0.32rem;
     border-radius: 0.16rem;
-    border: 0.02rem solid #000000;
+    border: 0.02rem solid #fff000;
     /* background-color: #13161c; */
   }
   .chain-select-popup .chain-item.active {
-    border-color: #00fc83;
+    border-color: #fff;
     background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
   }
   .chain-select-popup .chain-item.active::after {
@@ -7020,7 +7015,8 @@
             <div data-v-37526a6c="" class="page-header">
                 <div data-v-0ff1fb10="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head">
-                        <div data-v-0ff1fb10="" class="name"> Recharge </div>
+                     
+                    <center><div data-v-0ff1fb10="" class="name" style="margin-left: 4px;"> Recharge </div></center>
                         <div data-v-0ff1fb10="" class="container flex">
                             
                             <div data-v-0ff1fb10="" class="logo"></div>
@@ -7048,15 +7044,16 @@
 
                                 ></canva></div>
                     </div>                  
-                    <div data-v-37526a6c="" class="page-recharge-info">
-                    <form method="post" name="add" action="{{ route('user.confirmDeposit') }}">
+                    <div data-v-37526a6c="" class="page-recharge-info" style="
+    background: #223f7a;">
+                    <form method="post" name="add" action="{{ route('user.confirmDeposit_new') }}">
                     {{ csrf_field() }}
-                    
+                    <input type="hidden" name="vip" value={{ $vip }}></input>
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
                             <dt data-v-37526a6c=""style="margin-bottom: 10px;">Recharge currency </dt>                            
                             <input data-v-37526a6c="" 
        class="flex items-center" 
-       style="height: 0.8rem; border-radius: 0.16rem; color: #000; padding: 0 0.3rem; line-height: 0.8rem; width: 100%; border: 0.02rem solid #252930; background: transparent;" 
+       style="height: 0.8rem; border-radius: 0.16rem; color: #fff; padding: 0 0.3rem; line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;" 
        readonly 
        id="currencyInput" 
        value="Choose Currency"
@@ -7067,16 +7064,16 @@
                             <dt data-v-37526a6c="" style="margin-bottom: 10px;">Amount</dt>
                             
                             <select data-v-37526a6c="" name="Sum" id="amountSelect"
-  style="height: 0.8rem; border-radius: 0.16rem; color:#000; padding: 0 0.3rem; 
-  line-height: 0.8rem; width: 100%; border: 0.02rem solid #252930; background: transparent;">
+  style="height: 0.8rem; border-radius: 0.16rem; color:#fff; padding: 0 0.3rem; 
+  line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;">
   <option value="">Select your amount</option>
-  <option value="50">$50</option>
-  <option value="100">$100</option>
-  <option value="200">$200</option>
-  <option value="600">$600</option>
+  <option value="30">$30</option>
+  <option value="120">$120</option>
+  <option value="300">$300</option>
   <option value="1200">$1200</option>
-  <option value="3000">$3000</option>
+  <option value="3600">$3600</option>
   <option value="6000">$6000</option>
+  <option value="15000">$15000</option>
 </select>                              
                             
                         </dl>                      
@@ -7084,7 +7081,7 @@
                             <div data-v-37526a6c="" class="text-gray">Minimum recharge </div>
                             <div data-v-37526a6c="">1USDT</div>
                         </div>
-                        <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px; ">
+                        <button class="rounded-8px van-button van-button--primary van-button--normal van-button--block"style="margin-top: 10px; background:#223f7a;">
                                 <div class="van-button__content"><span class="van-button__text" style="color: #fff;">Sure</span></div>
                             </button>
                             </form>
@@ -7114,7 +7111,8 @@
                     <div class="chain-select-popup van-popup van-popup--round van-popup--bottom" rounded=""
                         style="z-index: 2031; display: none;" id="currencyPopup">
                         <div class="text-16px p-20px text-center">Currency &amp; network</div>
-                        <div class="px-16px">
+                        <div class="px-16px" style="
+    background: #223f7a;">
                             <ul class="chain-select-popup-tab-nav">
                                 <li class="active">
                                     <div class="flex items-center">
@@ -7149,14 +7147,19 @@
                             </div>
                             <!-- Confirm Button -->
                             <button
-                                class="rounded-8px van-button van-button--primary van-button--normal van-button--block"
+                                class="rounded-8px van-button van-button--primary van-button--normal van-button--block" style="
+    background: #12244a;
+"
                                 onclick="confirmSelection()">
-                                <div class="van-button__content"><span class="van-button__text"style="color: #fff;">Sure</span></div>
+                                <div class="van-button__content"><span class="van-button__text"style="color: white">Sure</span></div>
                             </button>
                         </div>
+
+
+
                         <i role="button" tabindex="0"
                             class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right"
-                            onclick="hidePopup()">×</i>
+                            onclick="hidePopup()"></i>
                     </div>
                     </div>
   </div>
