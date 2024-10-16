@@ -2220,7 +2220,7 @@
             border: 0;
             height: 0.88rem;
             border-radius: 0.16rem;
-            background: #022627;
+            background: #fff;
         }
   
   .btn.on {
@@ -5927,7 +5927,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #022627;
+    color: #fff;
     position: absolute;
     width: 70%;
     text-align: center;
@@ -7627,8 +7627,8 @@
   .old-email[data-v-3db22916] {
     padding: 0.28rem 0.32rem;
     border-radius: 0 0 0.32rem 0.32rem;
-    background: rgba(0, 252, 131, 0.1);
-    color: #022627;
+    background: rgb(34 63 122);
+    color: #fff;
     font-size: 0.24rem;
   }
   .mt[data-v-3db22916] {
@@ -7654,7 +7654,7 @@
   }
   </style><style type="text/css">.input_big_box[data-v-3cceea5e] {
     position: relative;
-    --themeColor: #022627;
+    --themeColor: #fff;
   }
   .input_big_box .title_box[data-v-3cceea5e] {
     background: transparent;
@@ -7663,7 +7663,7 @@
   .input_big_box .title_box .title[data-v-3cceea5e] {
     line-height: 1.1;
     font-size: 0.28rem;
-    color: #000;
+    color: #ffff;
   }
   .input_big_box .inp_content_box[data-v-3cceea5e] {
     margin-top: 0.2rem;
@@ -7761,7 +7761,7 @@
   .input_big_box .title_box .title[data-v-3670e178] {
     line-height: 1.1;
     font-size: 0.28rem;
-    color: #022627;
+    color: #fff;
   }
   .input_big_box .inp_content_box[data-v-3670e178] {
     margin-top: 0.2rem;
@@ -7865,7 +7865,7 @@
     border: 0;
   }
   .big_btn_box .btn_box .on[data-v-e9acc21a] {
-    background: #022627;
+    background: #223f7a;
     color: #ffffff;
   }
   .van-field__word-num[data-v-e9acc21a] {
@@ -8281,10 +8281,11 @@
                 <div data-v-0ff1fb10="" data-v-3db22916="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head">
                         <div data-v-0ff1fb10="" class="name"> Change email </div>
-                        <div data-v-0ff1fb10="" class="container flex">
+                        <div data-v-0ff1fb10="" class="container flex" style="
+    background: #04103a;">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
-                            <<a href="{{route('user.profile')}}">
+                            <a href="{{route('user.profile')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
                                     src="{{asset('')}}static/img/icon/leftarrow.png"
                                     alt=""></div>
