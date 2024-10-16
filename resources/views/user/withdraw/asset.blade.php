@@ -2342,7 +2342,7 @@ position: absolute;
 top: 0;
 left: 0;
 border-radius: 0.2rem;
-background: #12244a;
+background: #223f7a;
 backdrop-filter: blur(0.08rem);
 z-index: -1;
 }
@@ -8128,10 +8128,10 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #12244a;
+background: #223f7a;
 
 border-radius: 0.32rem 0.32rem 0 0;
-border-top: 0.02rem solid #12244a;
+border-top: 0.02rem solid #223f7a;
 z-index: 56;
 }
 .footers ul[data-v-6c4d8baa] {
@@ -8982,7 +8982,7 @@ color: rgba(255, 255, 255, 0.6);
 .assets-box[data-v-14275b54] {
 text-align: center;
 border-radius: 0.2rem;
-background: #12244a;
+background: #223f7a;
 position: relative;
 }
 .assets-box .assets[data-v-14275b54] {
@@ -9076,7 +9076,7 @@ font-size: 0.32rem;
 margin-bottom: 0.24rem;
 }
 [data-v-14275b54] .wallet-assets .info-list {
-background: #12244a;
+background: #223f7a;
 border-radius: 0.2rem;
 text-align: center;
 padding: 0 0.32rem;
@@ -9121,12 +9121,12 @@ max-width: 8.5rem;
 </style><style type="text/css">.table_list[data-v-555c6fae] {
 width: 100%;
 padding: 0.06rem;
-background: #12244a;
+background: #223f7a;
 border-radius: 0.12rem;
 overflow: hidden;
 }
 [data-v-555c6fae] .van-tabs__nav {
-background-color: #12244a;;
+background-color: #223f7a;;
 display: flex;
 align-items: stretch;
 justify-content: center;

@@ -467,6 +467,35 @@
             background: rgba(0, 0, 0, 0.6) !important;
         }
 
+        .main-text, .sub-text, .image-text {
+    position: absolute; /* Position the text over the image */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%);
+    color: white; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add a shadow for readability */
+    padding: 0 10px; /* Add some padding to the text */
+    width: 100%; /* Ensure it spans the width of the image */
+}
+
+.main-text {
+    top: 10%; /* Position the "Premium" text towards the top */
+    font-size: 20px; /* Set font size for main text */
+    font-weight: bold; /* Make it bold for prominence */
+}
+
+.image-text {
+    top: 68%; /* Position this text towards the middle of the image */
+    font-size: 16px; /* Slightly smaller text */
+    font-weight: normal; /* Normal font weight */
+    font-style: italic; /* Italicize the description */
+}
+
+.sub-text {
+    bottom: 12%; /* Position this text towards the bottom */
+    font-size: 14px; /* Smaller font size for the subtitle */
+    font-weight: lighter; /* Lighter weight for a less prominent text */
+}
+
         .van-popup--bottom {
             max-width: 8.5rem;
         }
@@ -2838,7 +2867,7 @@
             top: 0;
             left: 0;
             border-radius: 0.2rem;
-            background: #12244a;
+            background: #223f7a;
             backdrop-filter: blur(0.08rem);
             z-index: -1;
         }
@@ -7336,7 +7365,7 @@
         }
 
         .home-partner .info-list .info[data-v-4eabb456] {
-            background: #12244a;
+            background: #223f7a;
             width: 32%;
             border-radius: 0.16rem;
             overflow: hidden;
@@ -8555,6 +8584,8 @@
     </div>
     <div id="app" style="height: 8.72rem;">
         <div data-v-37526a6c="" data-v-5954443c="" class="page h-full">
+
+            {{-- <div data-v-5954443c="" data-v-37526a6c="" class="bg1"><img data-v-5954443c="" data-v-37526a6c="" src="/static/img/04.png" alt=""></div> --}}
             
             <div data-v-37526a6c="" class="headers on">
                 <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
@@ -8677,16 +8708,16 @@
                         <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
                             <div data-v-aa0ccfea="" class="income">
                                 <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAe/SURBVHgB7VhtUFTXGX7uXVitwrJBJ0ayxA1ppQERpnYEkn6snRZs2gQ6ip1pk5EITD9m2izY6Z8O7kY60x8qmCZ/Uklimo4dFjvK5IdAJwO2CRgnGUmCnWJnZHGJ1SbKLpaCsveevu9h73L3gxXW9l+emTv3+5znvOd9n/e8B/gM9wYF6UJ4ndAtNXRVBgFXAe6z22C127EaVzAdvKzc9EMofnp/GhbtLBSvH2lg5QTvHKyHqux1YZOrVi1EDTbDqdiTfjoirmME19CjXyKWY4P06DgyWl/H/wXzXldu+NC4RzsrpsSsWCnG6a/ntD6RGz4yjnDbXvzPILx2aAc7ajVfUmKhUEgcPtIuvlVVLb74aJE8+NrtbhaBQCAp0b1aj+A2Zdv3hFmvc712+EKH9m5Sq1whAtvLK0Teg46kR3lFhRxAMnTo5wRZclz6cgqoqcjlZq4d+LP6dJlb3Z70E5/Ph8nJySWbCAQm0UXfJINbKccFtcmZq2UPpCKZnCCbPtMy8JblGWcZNiz1L6anp3E3pBpAmbIBb6k/dK7Xs04tNd0ZSf/UVU+HUpWSHMPhcEC3rcJ80TrcqdiIcH72QqOBW7Ce+ycy/3YDxUXFKdtgkr/CV8qa9X4P3TbHv0+UGZKRekvpa6+pT+FuYAs6tRcxZROwDl+NeacRWd1mxbj6M2zKuf+ubX1P78ZpfWwHMlsHU37IUsKRZmBoaIii9Ijo7e1N6uxekh1y9oQAyT5UI1iSlgtWCClBKUHWc5NWGTjg8SZE5UToWkLjO252yvcW/y8l2XW7tgun+ztJifCAd+2ui7b3u2Od8YON0cjYIKEM8VwkYn2+bnR2dsa8Hitfg6+v9cGPoLznKd7X0IixEi/CjoUpZYTZJ7s/QEVlpWzHwAviPL59pg3Dw8PynqPc6/Wir69P3kf6rjf3ueiDJCu11qLxU2qdvC2vqIyJQCZwo+tJaHR2KZswoD4jvxm3zSLkeYyCJA/xWPvqh8h5fhgtLS14pPkJ6Wfq9B3c//gJOt+Ofpef78C5COkd+hsYVC8/bOTuRQtaVFetslle8gjj5eFW8zZJjjEoJvBT32GyZAifEmmDnBLp1DjP7NtKRwna29vReOWEfMZWntm3JaZttqRh1VoUUlpVa413iwRVpaYUD8jL0YsXEY+5KmfMfVdvj3wmSGYY67//Jj7X55fXG0uOI7vjfTrew8aTE/hq589xw5EZ/XemYauUJzOGIgRrVDKSRSlNJKgIJ2sSI16Ab5OFRFyDDBHxOUYGaZ4Z2UffQ9GfruNktw8bq0pj3rEVWTvNmAwszJgTpNe0fEsgSOs5p3G9pThWXFmE41GS/3kpxgY+ObMLd4pjO62kIMnPz0epkij44TiCthwbTFzsCQQfEjnRh9XV1Sg2kTRPRxm5AQfIG01tWHXuKta+8pF8zv4ZLlovr69O/AhTR1w4MdSLKmrrmx+vg0f5Wgyh+bjB7KmrWyRLC1/jOprqgpiL+aG/r1eGP/vj3GNOZKkOlFLq4wiWcAAd5PwekolP+v2Y3b0ZtyvzooE0u7tQHhr5pru5RU51PbbCq/8FH9BC9h+hhYFxumxqbIgxiF1ZjQQUaC9OiTTg8Xiia8E1f3xaCrWt9Ql55sP69k/ku5WgIPzSFOKn+LIIBrFCNJNlXvb9gWQiAJtt0YeySP9WkVUZbFEOulSrmnjIeiaeIHT9rF8sj6ORQU4M98rg+LjhC1ITDYSlPy74mIVWNgyeyuWAaxjomEgkCGWkR1xK+TMLtFvvR/k7B6V/zjSUSAvdcn8Z/3rnB5itdsrvmLThi1mvjsJat1WmOSNFpiRI/glFOZVIUNNPU+WV9Ce2WGv7b/CNYKfs6O9VdplZcp4fkoJsmVywkqGVfOZnuU39pI+fIuDeIgf2sPaSzCippvu0IA5cpkYQux4Mtw1MWX7h4trWjKrqnbhI0fwfisogyYcBK8mMff8gMogMizm/Y8vlNvVhNfmg+ZkB/r7w3RmK6u6EaWcL0yCowdYdiRZk6OL1F/TzMY94Ki9GUt+ak2PSYgY4B/PUFp/ZLzUxOmpaEPyb8q2xuDDAqY/b4NzL0hOPSN/Hzc9iCVoPHP8tzvvNmhgKxaY9TmFsBWNaGQ8WF8jzBlql5G16WZI1p0ZePPA/2UcXB2csDgyw9X4vPvTHF/YJNclNfe7ZZ/HmgLHs2rmzGvGDZSswiVvubTIwnJSEWIjNeDKvVxLLemWUll0fxSyvGLzEMoMF/CbmvFgW5tuOHtUXa+Fjx44tWfvy8fbo+wli+9SBH4sHHn1kyX+6unzRb7kv7jMZleRlZ4bm/bX464gMeUJjYyP2tzQn/ZQt8XjxlxKefzd/W4LVDHBbe/YszNAIrnOE+7lPrAhcuGuHxi/oizUIj9q8k8A1RbLtDQOcAuNrGq5JDFwQ1wQXaXfbXUhJkrcnzNPNGB0dlcdS2xpmcDXIVaGZmDGtvK2SPjkDXPGTf9TTho+5HE0XXF7yRpT0uXvePDKDSlKecrfelxZRJubVzy5M6Xyba7ndpr2BWasUyiKL65gyJfkWCS8+enBJpi/K44NIYwMz/S1g9k+qBLnY4nqmQNznfEjJsQdxG9NiLngZtHxTMAgOVFXrSXcL+DPcK/4LTy0torwk2ZQAAAAASUVORK5CYII="
-                                        alt="">
+                                    src="{{asset('')}}static/img/today.png"
+                                    alt="">
                                     <div data-v-aa0ccfea="" class="title">Today's Earnings</div>
                                 </div>
                                 <div data-v-aa0ccfea="" class="amount theme">0 USDT</div>
                             </div>
                             <div data-v-aa0ccfea="" class="income">
                                 <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAATjSURBVHgB7VjfTyNVFP6mLb8XWgxk2VJkEhW0BFOjUaIP8gRosskmtJAYH3Zh/wBbfKdozD5oS1/cF2BZX4zCmt3EhxV9YBNjXBMMbBZIMCY7SoMxgkBZIEXoeM7AwEynxc6wDRuzX3Iz99450/vdc8537nSAJzgZBDxGkGVZpIuLmiQIwhpOAzU1olhdXeurqam9ODU1FSNSo9Smqa3KRwgjn7hyZVCkRXzULsbj8VhHx9uj7lrPNLVVarK2fRKJyhkwqv5W1hCTEbvaRa6WstwX3W43kbC5BLvgEyA4adZHt8S6Oo9rIBxGe3u7YrsYjyMaiWJsfDzjWmz3wUAYHo9HnZqhdV9KX9CncfcDdStLS0uDHI5ztZ6Y2+25+enVq4fh+H1xUX71tRY53SvZvDM0NJTR7vkXvPKlnl55fX1dNb1p8CBNttJl8pa8gAH5e0za3qVsLVbuBYMh3e5DoRD6QkGln0gkEI1GMTQ8ktE75E3coGdV77A3h4eHUf90vfTMc8/OPOVyrTU3N8/Qrd/Yc9TWtAIxELwu30Mw9R2m7ZchKoLaJ+EPdGFubi7rwmNj4xge2SfZ5PWiwlmRM4njYCCYzZB37vcHFLJ1dXUKCW+TF/7OTqmyslJZ9GBx0yRyAhOUc0OY2gUWyYGQ8gqHpv9mbo8odhK1Vh4QSeQB7P1b3NGGOOeVON8YXV0B5cq5GQz1gVRosO0jQal2nCa9vZcz2nWTDYtPBRHUl8DDCpmakbH7oTyZknRxfUCVxbX7sRxL/aSbn52dVcpEpvIRiUQO7Y4rSf39/YY8UnnZ0nfCpeUCGiFy3U2b9+Es6uHUebKtvUMRTjoGqfSoHmEPs8DoVIHRw0GEqahngzbEqwBySnopuYJvJibQHx7IeJ8X7Qpow9qL9cSGwa47wGEN6uac9pK1SkeppJ4kujg3/vrRdBJ7PvwnwWXkDQW2S2iIXVeHWhVjQUyt5fYGVo38Qa9VGx5zOHBCFP64hNIbCyi8+wcc8Q2kKoqw5zmDZIsbm73N1C/HSWCZoJ3IuPruoOjukm7elkjCNp9EwfwKzly7j433XsFG8GVYhaUQM7mq7q8N5P784R0sf3FeN1cem0L54M+wCksEmRyTVLFLYVzvf53CW4jdpiqlv6sJLZMsG7kPKzBNkPMtndxftzux2dOsjJkk95dv+5V81JIUKPxmYToHy0ZmdWMmIxOR8sGpfUFQlSqekBRyNg0hW2IHpeO/KMLJG0FepGA+c5FOOQux5yyCnUgVfytltMn27LFrmjG2x41nLiuVQ77Z8yKSbaJSXtJz8Oj5h8grwUxQFc0lh/scZg77ypfndTloFaZCvOepQDaSLJ6dlnP7JyWdVluBRmz7G1B27Ui9MgnILEx5kBXKIdSCQ7kaadWFVD44zgXKWS2220WYhWkVbwUadAV629942NQywqpmr2rteAM7aZvLBaZzkIn84606HHN94/wrHV/Y/0HyGp8c1W99pauXVs9lSyL5e6hNF1LOP9f7dxRy9sUNhbS2Bj4kcmohNwtLLwvsCVZp+svC2Tc+N9hyybFKzjJBhkqyhLxXQicHv26pXmPvblOublE6POrXLdNfAlSBPDLYbavaYXoOfobThUT+v6edMP4B2Q6LcNhFnAYcezMQwqfz6fd/i38BsNL0DBjzg/4AAAAASUVORK5CYII="
-                                        alt="">
+                                    src="{{asset('')}}static/img/ball.png"
+                                    alt="">
                                     <div data-v-aa0ccfea="" class="title">Cumulative Earnings</div>
                                 </div>
                                 <div data-v-aa0ccfea="" class="amount">2.1 USDT</div>
@@ -8695,7 +8726,7 @@
 
                         <div data-v-4eabb456="" data-v-5954443c="" class="home-partner mt">
                             <div data-v-4eabb456="" class="head">
-                                <div data-v-4eabb456="" class="title">Latest Treanding</div>
+                                <div data-v-4eabb456="" class="title">Latest Trending</div>
                             </div>
                             <!-- <div class="scroll-container">
         <div class="video-list" style="transition-duration: 0ms; transform: translate3d(-7px, 0px, 0px); transition-delay: 0ms;">

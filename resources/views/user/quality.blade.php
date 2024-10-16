@@ -2369,7 +2369,7 @@
                 top: 0;
                 left: 0;
                 border-radius: 0.2rem;
-                background: #12244a;
+                background: #223f7a;
                 backdrop-filter: blur(0.08rem);
                 z-index: -1;
             }
@@ -2387,7 +2387,7 @@
                 top: 0;
                 left: 0;
                 border-radius: 0.2rem;
-                background: #12244a;
+                background: #223f7a;
                 backdrop-filter: blur(0.3rem);
                 z-index: -1;
             }
@@ -7658,7 +7658,7 @@
                 height: auto;
             }
             .page-income-banner[data-v-e20b77f4] {
-              background-color: #12244a;
+              background-color: #223f7a;
                 margin-top: 0.24rem;
                 height: 1.8rem;
                 padding: 0.48rem 0.32rem;
