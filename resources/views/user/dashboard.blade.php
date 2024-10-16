@@ -7346,6 +7346,7 @@
         }
 
         .home-partner .head[data-v-4eabb456] {
+            padding-bottom: 10px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -7917,7 +7918,7 @@
         }
 
         .head[data-v-0ff1fb10] {
-            background: ##04103a;
+            background: #04103a;
             height: 1.2rem;
             position: relative;
             transition: background-color 0.3s;
@@ -8574,6 +8575,9 @@
         .van-popup--bottom[data-v-555c6fae] {
             max-width: 8.5rem;
         }
+        .carousel-wrap .owl-carousel .item .name{
+            padding-top: 10px;
+        }
 
     </style>
 </head>
@@ -8989,8 +8993,7 @@ $(".owl-carousel").owlCarousel({
   margin: 1,
   nav: true,
   navText: [
-    "<i class='fa fa-caret-left'></i>",
-    "<i class='fa fa-caret-right'></i>"
+   
   ],
   autoplay: true,
   autoplayHoverPause: true,
