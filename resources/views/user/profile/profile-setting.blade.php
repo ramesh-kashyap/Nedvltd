@@ -9865,10 +9865,10 @@ max-width: 8.5rem;
                   alt="">
                   @if (empty(Auth::user()->email))
               <a href="{{route('user.bindMail')}}">
-              <div data-v-43c0c5d6="" class="name">Email</div>
+              <div data-v-43c0c5d6="" class="name">Bind Email</div>
               @else
                <a href="{{route('user.ChangeMail')}}">
-                <div data-v-43c0c5d6="" class="name">Email</div>
+                <div data-v-43c0c5d6="" class="name">Change Email</div>
                 </a>
                 @endif
               </div>             
