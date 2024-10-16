@@ -499,7 +499,7 @@ public function viewdetail($txnId)
             
 
         $notify[] = ['success','Deposit request submitted successfully'];
-        return redirect()->route('user.invest')->withNotify($notify);
+        return redirect()->route('user.confirmDeposit')->withNotify($notify);
 
    
 
