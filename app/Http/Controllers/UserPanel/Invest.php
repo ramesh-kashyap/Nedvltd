@@ -438,9 +438,9 @@ if ($accelerator && $vip < $accelerator['min_level']) {
     }
    
     $amountTotal= $request->Sum;
+
   
-  
-    if($paymentMode=="USDT.BEP20")
+    if($paymentMode=="BSC (BEP20)")
     {
        $paymentMode= "USDT_BSC"; 
     }
@@ -448,6 +448,7 @@ if ($accelerator && $vip < $accelerator['min_level']) {
     {
       $paymentMode= "USDT_TRX";    
     }
+
     
        $invoice = substr(str_shuffle("0123456789"), 0, 7);
        $apiURL = 'https://plisio.net/api/v1/invoices/new';

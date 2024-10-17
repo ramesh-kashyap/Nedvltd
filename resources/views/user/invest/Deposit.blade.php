@@ -7004,6 +7004,9 @@
   .van-popup--bottom {
     max-width: 8.5rem;
   }
+  option{
+    color:#000;
+  }
   </style></head>
   
   <body class="mein_cn">
@@ -7012,30 +7015,24 @@
     </div>
     <div id="app" style="height: 7.82rem;">
         <div data-v-37526a6c="" class="page h-full">
-            <div data-v-37526a6c="" class="page-header">
-                <div data-v-0ff1fb10="" data-v-37526a6c="">
-                    <div data-v-0ff1fb10="" class="head">
-                     
-                    <center><div data-v-0ff1fb10="" class="name" style="margin-left: 4px;"> Recharge </div></center>
-                        <div data-v-0ff1fb10="" class="container flex">
-                            
-                            <div data-v-0ff1fb10="" class="logo"></div>
-                            <a href="{{route('user.asset')}}">
-                            <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/icon/leftarrow.png"
-                                    alt=""></div>
-                                    </a>
-                            <div data-v-0ff1fb10="" class="flex1"></div>
-                            
-                            <div data-v-0ff1fb10="" class="str"><img
-                              src="{{asset('')}}static/img/Icon/mine_icon/task-record.png"
-                            >
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div data-v-37526a6c="" class="page-header">
+    <div data-v-0ff1fb10="" data-v-37526a6c="" style="display: flex; align-items: center; justify-content: center; position: relative;     padding-top: 15px;">
+        <div data-v-0ff1fb10="" class="logo" style="margin-right: auto;"></div>
+        <a href="{{route('user.asset')}}">
+            <div data-v-0ff1fb10="" class="back" style="display: flex; align-items: center; padding-left:13px">
+                <img data-v-0ff1fb10="" src="{{asset('')}}static/img/icon/leftarrow.png" alt="">
             </div>
-            <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
+        </a>
+        <div style="flex-grow: 1; text-align: center;">
+            <div class="name" style="display: inline-block;">Recharge</div>
+        </div>
+        <div data-v-0ff1fb10="" class="str"  style="padding-right:10px">
+            <img src="{{asset('')}}static/img/Icon/mine_icon/task-record.png" style="width: 24px; height: 24px;">
+        </div>
+    </div>
+</div>
+
+  <div data-v-37526a6c="" id="scroll" class="page-container" style="padding-bottom: 0px;">
                 <div data-v-37526a6c="" class="container page-recharge">  
                 <div data-v-37526a6c="" class="page-recharge-qrcode"style="display: none;">
                         <div data-v-37526a6c="" id="qrcode" title="TDeGHqboAobat8G7ggQPGFnxMLhjLyq2cg"><canva
@@ -7050,13 +7047,13 @@
                     {{ csrf_field() }}
                     <input type="hidden" name="vip" value={{ $vip }}></input>
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
-                            <dt data-v-37526a6c=""style="margin-bottom: 10px;">Recharge currency </dt>                            
+                            <dt data-v-37526a6c=""style="margin-bottom: 10px;">Choose Currency </dt>                            
                             <input data-v-37526a6c="" 
        class="flex items-center" 
        style="height: 0.8rem; border-radius: 0.16rem; color: #fff; padding: 0 0.3rem; line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;" 
        readonly 
        id="currencyInput" 
-       value="Choose Currency"
+       value="TRX (TRC20)"
        type="text"  name="PSys" 
        onClick="showPopup()">
                         </dl>
@@ -7066,7 +7063,7 @@
                             <select data-v-37526a6c="" name="Sum" id="amountSelect"
   style="height: 0.8rem; border-radius: 0.16rem; color:#fff; padding: 0 0.3rem; 
   line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;">
-  <option value="">Select your amount</option>
+  <option style="color:#000" value="">Select your amount</option>
   <option value="30">$30</option>
   <option value="120">$120</option>
   <option value="300">$300</option>
@@ -7184,7 +7181,7 @@
     },3000)
   </script>
   <script>  
-    let chosenCurrency = ''; // Store the chosen currency
+    let chosenCurrency = 'TRX (TRC20)'; // Store the chosen currency
 
 // Show the popup
 function showPopup() {
