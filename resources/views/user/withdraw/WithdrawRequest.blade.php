@@ -6416,6 +6416,7 @@
     padding: 0.32rem;
     border-radius: 0.16rem;
     border: 0.02rem solid #252930;
+    background-color: #223f7a;;
   }
   .page-withdraw-info-item {
     margin-bottom: 0.32rem;
@@ -6478,6 +6479,7 @@
     background: rgba(0, 0, 0, 0.6) !important;
   }
   .van-popup--bottom {
+    background-color: #223f7a;;
     max-width: 8.5rem;
   }
   </style><style type="text/css">.chain-select-popup {
@@ -6500,7 +6502,7 @@
   }
   .chain-select-popup-tab-nav li.active {
     color: #020202;
-    background-color: #fff;
+    background-color:#00ab82;
   }
   .chain-select-popup .chain-item {
     position: relative;
@@ -6797,7 +6799,7 @@
                         <div data-v-0ff1fb10="" class="container flex">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
-                            <div data-v-0ff1fb10="" onclick="window.history.go(-1); return false;" class="back"><img data-v-0ff1fb10=""
+                            <div data-v-0ff1fb10="" onclick="location.href='{{route('user.asset')}}'" class="back"><img data-v-0ff1fb10=""
                                     src="{{asset('')}}static/img/icon/leftarrow.png"
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
@@ -6805,8 +6807,7 @@
                             <!---->
                             <!---->
                             <!---->
-                            <div data-v-0ff1fb10="" class="str"><img
-                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKiSURBVHgBzZjtcdswDIah5HrX/lM3UCawu4G6QTeoO0GzQbRB0gnUTtAR7E5QZwJpA7u/2rteDgEkKKFpUgIpKpf3DkdbIagnAA1+ZBApRCypWZFxuybLxVhHslbsnmyXZdkOlhZB5WQ3ZAcMV0NWkxWQWgJ2i+lUa0EzBdxXaip4Tp+tIZ1749mQ7vWIH/tUlPofEKuRqHGKK+zn4dQYJdl3SbFLtxAqSel2BCyHCJHfxgP6O2hMcbB1FwtmjV1IRG1ttQO40noNicVjYmi6JQW2NrCQPO+79nXm0Deqzmkh7UgenFPJMS9qeCFhP7/9qZbomWowpuL/rQpAsnDAHM9Xpy6KF9Knsny4gLYQIoZ7c7mFB7JASHoXF/tv1uNuemXyHzTUFPKHlhyuIAbOGAMuHz5CVrXaISRizPG04SCO9xfYrwaF0XcHITqHg+5zYCQdUeS0l5zi0uqrXxvdcNGQcB6cNQOujAdH9b7NDdeKRUHKu4/Goy6ChfFgDxr54Hje/SebAWn5rmzAPzAHjn8U78jmQd4bn3MGNKv2AebADZoPeQL4qkTzcJMZYsCj2lsbGW2kNcBWkd4T9IdJrzGAf/QpEdwA+JPaT/K9q94qT3+ZgVRwLE7xL+N7jopzRidfuhPCDYB27StBKzckpIJjDZsFLi/mrcCVrI06Jdgs+DSUmZNFGmSro9ZpJJPBsYYIMpRZpMOjyOJIvuVRp+GCd+yT2+7EQqVMB9e2e7FDEyplO7nOqp9hAaFSLsc7R7/Fj59BQve9TI1L3O3FCPv56LqfaZZKeZQ86R5Aa9QuizOkucDcUHMD7oMRi2vlXlrebHyB8fHS31ig/8ps+ld3PlaQIEQGaPNSgJMpHnlRCf3Oh4+thVjO2/QJv6CoPAI0F/TSq4xL7wAAAABJRU5ErkJggg==">
+                            <div data-v-0ff1fb10="" class="str">            <img src="{{asset('')}}static/img/Icon/mine_icon/task-record.png" style="width: 24px; height: 24px;">
                             </div>
                         </div>
                     </div>
@@ -6832,18 +6833,19 @@
                             </dd>
                         </dl>                       
                         <dl data-v-37526a6c="" class="page-withdraw-info-item">
-                            <dt data-v-37526a6c="" class="flex-between-center"> @lang('Select Mainnet') </dt>
+                            <dt data-v-37526a6c="" class="flex-between-center"> @lang('Choose Currency') </dt>
                             <dd data-v-37526a6c=""><input data-v-37526a6c="" type="text" readonly="readonly"
                                     placeholder="Please add the address before you withdraw the currency"
                                     class="page-withdraw-info-input" id="currencyInput" readonly 
-       value="Choose Currency"
+       value="TRX (TRC20)"
        type="text"  name="PSys" 
        onClick="showPopup()"></dd>
                         </dl>
 
                         <dl data-v-37526a6c="" class="page-withdraw-info-item">
                             <dt data-v-37526a6c="" class="flex-between-center"> Withdrawal address </dt>
-                            <dd data-v-37526a6c=""><input data-v-37526a6c=""  type="text"  id="walletAddress" name="walletAddress"  value="{{Auth::user()->usdtBep20}}"
+                            <dd data-v-37526a6c=""><input data-v-37526a6c=""  type="text"  id="walletAddress" name="walletAddress" 
+                             value="{{Auth::user()->usdtTrc20}}"
                                     placeholder=""
                                     class="page-withdraw-info-input"></dd>
                         </dl>
@@ -6863,10 +6865,11 @@
                     <div data-v-37526a6c="" class="page-withdraw-info">
                   
                         <dl data-v-37526a6c="" class="page-withdraw-info-item"  style="display :none">
-                            <dd data-v-37526a6c=""><input data-v-37526a6c="" type="hidden" name="" id="emailId" value="{{ Auth::user()->email }}"
-                                    class="page-withdraw-info-input"></dd>
+                            <dd data-v-37526a6c=""></dd>
                         </dl>
                         <dl data-v-37526a6c="" class="page-withdraw-info-item">
+                        <input data-v-37526a6c="" type="hidden" name="" id="emailId" value="{{ Auth::user()->email }}"
+                        class="page-withdraw-info-input">
                             <dt data-v-37526a6c="" class="flex-between-center"> Varification Code </dt>
                             <dd data-v-37526a6c=""><input data-v-37526a6c="" name="code" type="text" placeholder="Enter verification code" 
                                                                         class="page-withdraw-info-input">
@@ -7009,7 +7012,7 @@
     },3000)
   </script>
    <script>  
-    let chosenCurrency = ''; // Store the chosen currency
+    let chosenCurrency = 'TRX (TRC20)'; // Store the chosen currency
 
 // Show the popup
 function showPopup() {
@@ -7035,11 +7038,14 @@ function chooseCurrency(currency) {
     // Add 'active' class to the selected currency
     if(currency === "BSC (BEP20)") {
         items[1].classList.add('active'); // BSC is the second item
-    } else if(currency === "TRX (TRC20)") {
+        document.getElementById('walletAddress').value = @json(Auth::user()->usdtBep20);
+      } else if(currency === "TRX (TRC20)") {
         items[0].classList.add('active'); // TRX is the first item
+        document.getElementById('walletAddress').value = @json(Auth::user()->usdtTrc20);
     }
     // Optionally highlight the selected currency (if needed)
     console.log('Selected Currency:', chosenCurrency);
+    console.log( @json(Auth::user()->usdtBep20));
 }
 
 // Confirm the selection and paste it into the input field
@@ -7089,6 +7095,19 @@ function confirmSelection() {
             });
         });
             </script> 
+            <script>
+                 $('input[name="PSys"]').change(function () {
+                       
+                       let icon = $(this).data('icon');
+                       if (icon=="usdtTrc20") {
+                           $('#walletAddress').val('{{Auth::user()->usdtTrc20}}');
+                           
+                       }else{
+                           $('#walletAddress').val('{{Auth::user()->usdtBep20}}');
+                       }
+                       
+                   });
+            </script>
             <script>
     document.addEventListener("DOMContentLoaded", function() {
     const togglePassword = document.getElementById('toggle-password');

@@ -5927,7 +5927,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #022627;
+    /* color: #022627; */
     position: absolute;
     width: 70%;
     text-align: center;
@@ -7888,6 +7888,8 @@
   }
   </style><style type="text/css">.btn[data-v-7317d559] {
     border-radius: 0.16rem;
+    background-color: #223f7a;
+    
   }
   .box[data-v-7317d559] {
     padding-top: 0.3rem;
@@ -7981,7 +7983,7 @@
     margin-bottom: 0.16rem;
     font-size: 0.26rem;
     font-weight: 500;
-    color: #022627;
+    /* color: #022627; */
   }
   .bot[data-v-7317d559] {
     padding-top: 0.3rem;
@@ -7999,7 +8001,7 @@
   .doc[data-v-7317d559] {
     line-height: 1.4;
     margin-top: 0.2rem;
-    color: #022627;
+    /* color: #022627; */
   }
   .doc[data-v-7317d559] span {
     color: var(--color1);
@@ -8333,7 +8335,7 @@
                                             <span data-v-40856e44="" data-v-37526a6c="" class="code-btn" style="    padding: 0 0.3rem;
     border-radius: 0;
     background: none;
-    color: #022627;
+    color: #fff;
     border: 0;  height: 0.88rem;">Send</span>
                                             </div>
                                             <!-- <div data-v-7317d559="" data-v-37526a6c="" class="b" style="display: none;">
@@ -8427,7 +8429,7 @@
             type: "POST"
             , url: "{{ route('user.send_code') }}"
             , data: {
-                "emailId": "emails"
+                "emailId": ""
                 , "_token": "{{ csrf_token() }}"
             , }
             , success: function(response) {
@@ -8448,8 +8450,8 @@
             }
         });
     });
-        </script>   
-         <script>
+        </script>
+        <script>
     document.addEventListener("DOMContentLoaded", function() {
     const togglePassword = document.getElementById('toggle-password');
     const passwordInput = document.getElementById('test-input');
@@ -8470,11 +8472,7 @@
     });
 
     togglecPassword.addEventListener('click', function() {
-        // 
-        
-        
-        
-        Toggle the input type between password and text
+        // Toggle the input type between password and text
         const type = passwordcInput.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordcInput.setAttribute('type', type);
       

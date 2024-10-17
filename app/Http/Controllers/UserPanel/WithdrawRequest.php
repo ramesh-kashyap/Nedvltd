@@ -117,8 +117,8 @@ class WithdrawRequest extends Controller
           $account =  $request->walletAddress;
       
         $password=$request->transaction_password;
-        
-         if($request->PSys=="USDT.BEP20")
+       
+         if($request->PSys=="BSC (BEP20)")
          {
           \DB::table('users')->where('id',$user->id)->update(['usdtBep20' =>$account]);  
          }

@@ -474,13 +474,13 @@ public function BankDetail()
         $password->created_at = \Carbon\Carbon::now();
         $password->save();
 
-           sendEmail($emailId, 'Your One-Time Password', [
-            'name' => $user->name,
-            'code' => $code,
-            'purpose' => 'Change Password',
-            'viewpage' => 'one_time_password',
+        //    sendEmail($emailId, 'Your One-Time Password', [
+        //     'name' => $user->name,
+        //     'code' => $code,
+        //     'purpose' => 'Change Password',
+        //     'viewpage' => 'one_time_password',
 
-         ]);
+        //  ]);
 
        return true;
     }

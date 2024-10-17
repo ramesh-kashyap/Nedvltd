@@ -7929,7 +7929,7 @@ type="text/javascript"
     .head .name[data-v-0ff1fb10] {
       font-size: 0.32rem;
       font-weight: 500;
-      color: #000000;
+      /* color: #000000; */
       position: absolute;
       width: 70%;
       text-align: center;
@@ -9715,7 +9715,7 @@ type="text/javascript"
     .itemBox li .time[data-v-6cf94806],
     .itemBox li .status[data-v-6cf94806] {
       font-size: 0.24rem;
-      color: #022627;
+      /* color: #022627; */
     }
 
     .itemBox li .time[data-v-6cf94806],
@@ -9880,11 +9880,11 @@ type="text/javascript"
           <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
             <div data-v-6cf94806="" data-v-37526a6c="" class="container">
               <div data-v-6cf94806="" data-v-37526a6c="" class="record_hdrecord_hd db">
-                <div data-v-6cf94806="" data-v-37526a6c="" class="le" style="color:#000"> Asset Details </div>
+                <div data-v-6cf94806="" data-v-37526a6c="" class="le" > Asset Details </div>
                 <div data-v-6cf94806="" data-v-37526a6c="" class="ri">
-                  <div data-v-6cf94806="" data-v-37526a6c="" class="set" id="all" style="color:#000"> All </div>
+                  <div data-v-6cf94806="" data-v-37526a6c="" class="set" id="all" > All </div>
                   <div data-v-6cf94806="" data-v-37526a6c="" class="set" id="select"><span data-v-6cf94806=""
-                      data-v-37526a6c="" style="color:#000" >Select time range </span></div>
+                      data-v-37526a6c=""  >Select time range </span></div>
                 </div>
               </div>
               <div data-v-6cf94806="" data-v-37526a6c="" class="empty db" style="display: none;">
