@@ -8076,43 +8076,44 @@
         </div>
         <div id="app" style="height: 16.2308rem;">
             <div data-v-37526a6c="" data-v-e20b77f4="" class="page h-full">
-                <div data-v-37526a6c="" class="headers on">
-                    <div data-v-0ff1fb10="" data-v-e20b77f4="" data-v-37526a6c="">
-                        <div data-v-0ff1fb10="" class="head">
+            <div data-v-37526a6c="" class="headers on">
+                <div data-v-0ff1fb10="" data-v-5954443c="" data-v-37526a6c="">
+                    <div data-v-0ff1fb10="" class="head">
+                        <!---->
+                        <div data-v-0ff1fb10="" class="container flex">
                             <!---->
-                            <div data-v-0ff1fb10="" class="container flex">
-                                <!---->
-                                <div data-v-0ff1fb10="" class="logo"><img data-v-e20b77f4="" data-v-0ff1fb10="" src="/static/img/logo-home.ad9a10ca.png" alt="" class="logo" /></div>
-                                <div data-v-0ff1fb10="" class="n_home"></div>
-                                <div data-v-0ff1fb10="" class="flex1"></div>
-                                <!---->
-                                <div data-v-0ff1fb10="" class="notice">
-                                    <img
-                                        data-v-0ff1fb10=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAKASURBVHgB7ZjhdZswEIBP4Pa3uwEbJJ3AygT1BnEmqDNBaDJAvUE7QjqByQSOJ8AbmH99rynvemeEK2RhBMg2P/K9dzYPpNNxpzskCegBIkr6m5JMSCKSsXqUkbySrEmehRAJnBMybEaSojvc9hZODQ0SkaywOynraDOmcG2oPLCA/2EsSUheoAhppt2XUIReGu25zR2F/Rl8QcZNLd5YYjEHm/qy139a+vsJuRpgayifQ0u4j6Fj2zbcdYpTQ/E1dIT7GrpW0AcssrWX5yw6595CbXjvB3hCzd+SFLpAHaXxphF4wqJbQluo00JTsATPGF5c1LULjui40q5fwD+6zkldo2MG6tmagH9eteuortExA8dwWjKXsQJOczwsxAhnBg9JdyUI3VYlEjxjyWQbWw5xBMNlPDJu8Jdira69l5YGbtQ/J+f38qZp4Lpc/Z57GtaNG8DAeTewL+YcvHaeexiPQcQZeEIrZVfmAxdkpdNbLOHv0xb+PM4bXyJ/fNi1fXuSpkEuAwsuhtD8WbvZ721/xxF8CLkERerZhrZeCWD+C1B9vjCIQNDKWwS3oO+Vw/wzeX1TGgjNpWzDIb4neQDXgh0GEqovFJFhM3ow2+8Rxf6nSh5Odi/kBr/sN+dtZwX2YhjGlGKuy/WEvHdXeo8xPUgRstrSzUDQDP0YfiEP8vEHfwFKz252grTmG+ULWzIZBmZk3ycYEmRgrOVC7Vy8ZB3UV9FrGBJYHAbUl7FLg9WjkG7bzlNBBn01vHf6YzlX8PDoYzjes3jOz+FRX9Q3d4mHTF36j8AzKiO5YPOqRIL9APPe6wFmG/A4q4uHtcawdDDZqiUAe2uBPYvwPz83puiqItLgAAAAAElFTkSuQmCC"
-                                        alt=""
-                                    />
-                                </div>
-                                <div data-v-0ff1fb10="" class="notice">
-                                    <img
-                                        data-v-0ff1fb10=""
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAGuSURBVHgB7ZjRbYMwEECPKP9lBI+QEegkHSFkgEpUHSB0ApIJ2k7QdgLSCWCDMEDV61ngClwDdoxjKvGkCwk25sWRfeEAJBAxokgpCrweOUVGwaAPagwp9ugf7hAKr0DI0eGNYgPz4ERxGwRBJQT3dIilThXFC7iHTw6fGCadT0lwx+WYYppjuDL8ngqPiDccfMsNSKb8ZN46UYBnsLt7FCvoLoxP8M9H6z1bSY1nmBkrmDlr7Z5fj3f0mkK9LdhQUiSwvj/qdDaZwQTs5TgM6i+qhYngFHKCSrejvuA37qD+eWypaKwH7d7SxpiBZ+TEMftVvAjasgja4iKTlGCQKcZwkUkYGGSKMVxlEu1MMYaLTGKWKcZYMokli+AF3HQ+yU9R4BnJJ+cz+NpqZ56fi7fQrTCcRDULfT+8czmFBxO1Gb7zb6VrSqiLOLqb7jvVUo4DAmFzD6ZojhTnn2i8+Pdi7FYYLiUbEDQp7eXYKsG1JVO0J+sRfNa8Pv0jJw3EF8oB7WY0U4y7wf6qbdGIReACGjjRkfTKf5b0tq8qUUhO9ud1MhrJM9YLjYEFP77mDpPJ5NHvAAAAAElFTkSuQmCC"
-                                        alt=""
-                                    />
-                                    <!---->
-                                </div>
-                                <div data-v-0ff1fb10="" class="lang">
-                                    <img
-                                        data-v-0ff1fb10=""
-                                        src="data:image/png;base64,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"
-                                        alt=""
-                                    />
-                                </div>
-                                <!---->
+                            <div data-v-0ff1fb10="" class="logo"><img data-v-5954443c="" data-v-0ff1fb10=""
+                                    src="/static/img/logo-home.ad9a10ca.png" alt="" class="logo"></div>
+                            <div data-v-0ff1fb10="" class="n_home"></div>
+                            <div data-v-0ff1fb10="" class="flex1"></div>
+                            <!-- <a href="{{route('user.dashboard')}}">
+                            <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
+                                    src="{{asset('')}}static/img/Icon/bell.png"
+                                    alt=""></div></a> -->
+                                    <a href="{{route('user.dashboard')}}">
+
+                            <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
+                                    src="{{asset('')}}static/img/Icon/support.png"
+                                    alt=""></div></a>
+
+                                    <a href="{{route('user.GenerateTicket')}}">
+                            <div data-v-0ff1fb10="" class="notice"><img data-v-0ff1fb10=""
+                                    src="{{asset('')}}static/img/Icon/m.png"
+                                    alt="">
+    </a>
+                                <div data-v-0ff1fb10="" class="count"> 1 </div>
                             </div>
+                            
+                            <a href="{{route('user.lang')}}">
+
+                            <div data-v-0ff1fb10="" class="lang"><img data-v-0ff1fb10=""
+                                    src="{{asset('')}}static/img/Icon/browser2.png"
+                                    alt=""></div></a>
+                            <!---->
                         </div>
                     </div>
                 </div>
+            </div>
                 <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 60px; padding-bottom: 64px;">
                     <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 64px;">
                         <div data-v-e20b77f4="" data-v-37526a6c="" class="container">

@@ -8267,8 +8267,8 @@
 
                   <div data-v-1029ea9a=""  class="tab on" id="commonProblem">
                     <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 15px;">
-                      <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
-                        <div data-v-3996854c="" data-v-37526a6c="" class="container">
+                      <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;" >
+                        <div data-v-3996854c="" data-v-37526a6c="" class="container" style="color: white;">
                           <div data-v-3996854c="" data-v-37526a6c="" class="p">
                             <p style="text-align:justify"><span style="font-size:10.5pt"><span
                                   style="font-family:Calibri,sans-serif"><strong><span style="font-family:宋体">Withdrawal
@@ -8354,7 +8354,8 @@
                   </div>
 
                   <div data-v-1029ea9a=""  class="tab" id="walletRelated" style="display: none;">
-                    <div data-v-3996854c="" data-v-37526a6c="" class="container">
+                    <div data-v-3996854c="" data-v-37526a6c="" class="container" style="color: white;
+">
                       <div data-v-3996854c="" data-v-37526a6c="" class="p">
                         <p><span style="font-size:12.0pt"><span style="font-family:宋体"> NEDVLTD </span></span><span
                             style="font-size:12.0pt"><span style="font-family:宋体">Supports many well-known exchanges,
@@ -8368,7 +8369,7 @@
 
 
                   <div data-v-1029ea9a="" role="feed" class="tab" id="incomeRelated" style="display: none;">
-                  <div data-v-3996854c="" data-v-37526a6c="" class="container">
+                  <div data-v-3996854c="" data-v-37526a6c="" class="container"  style="color: white;>
                     <div data-v-3996854c="" data-v-37526a6c="" class="p">
                       <p><span style="font-size:12pt"><span style="font-family:Calibri,sans-serif"><span
                               style="font-family:宋体">All</span> NEDVLTD <span style="font-family:宋体">users can earn
@@ -8433,7 +8434,7 @@
 
 
                 <div data-v-1029ea9a="" role="feed" class="tab" id="accountRelated" style="display: none;">
-                <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 10px;"><div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;"><div data-v-3996854c="" data-v-37526a6c="" class="container"><div data-v-3996854c="" data-v-37526a6c="" class="p"><p style="margin-left:48px"><span style="font-size:12pt"><span style="font-family:Calibri,sans -serif"><strong><span style="font-family:宋体">Use your real number to register</span></strong><span style="font-family:宋体">：</span></span></span></p>
+                <div data-v-37526a6c="" id="scroll" class="content-container" style="padding-top: 10px;" style="color: white;"><div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;" style="color: white;margin-top: -452px; "><div data-v-3996854c="" data-v-37526a6c="" class="container" style="color: white; margin-top: -700px;"><div data-v-3996854c="" data-v-37526a6c="" class="p"><p style="margin-left:48px"><span style="font-size:12pt"><span style="font-family:Calibri,sans -serif"><strong><span style="font-family:宋体">Use your real number to register</span></strong><span style="font-family:宋体">：</span></span></span></p>
 
                   <ol>
                     <li style="list-style-type:none">

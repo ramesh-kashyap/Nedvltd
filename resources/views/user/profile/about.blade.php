@@ -8327,7 +8327,9 @@
             <div data-v-37526a6c="" class="headers on">
                 <div data-v-0ff1fb10="" data-v-5a857e84="" data-v-37526a6c="">
                     <div data-v-0ff1fb10="" class="head">
-                        <div data-v-0ff1fb10="" class="name"> About Us </div>
+                        <div data-v-0ff1fb10="" class="name" style="
+    color: white;
+"> About Us </div>
                         <div data-v-0ff1fb10="" class="container flex">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
