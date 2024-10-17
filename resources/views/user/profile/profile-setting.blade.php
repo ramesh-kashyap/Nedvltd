@@ -8125,7 +8125,7 @@ max-width: 8.5rem;
 max-width: 10rem;
 width: 100%;
 height: fit-content;
-background: #223f7a;
+background: #201845;
 border-radius: 0.32rem 0.32rem 0 0;
 border-top: 0.02rem solid #ffffff;
 z-index: 56;

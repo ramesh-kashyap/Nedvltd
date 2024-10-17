@@ -137,7 +137,7 @@
     display: inline-block;
     padding: 0;
     border-radius: 100%;
-    border: 0.25em solid #00fc83;
+    border: 0.25em solid #fff;
     border-right-color: rgba(0, 252, 131, 0.1);
     border-bottom-color: rgba(0, 252, 131, 0.1);
     animation: loading-animation-15b106f9 1s ease-in-out infinite;
@@ -147,7 +147,7 @@
     white-space: nowrap;
     font-size: 0.7em;
     line-height: 0.7em;
-    color: #00fc83;
+    color: #fff;
   }
   .overlay[data-v-15b106f9] {
     z-index: 999;
@@ -310,10 +310,10 @@
     margin: 0;
   }
   .password_pop .van-password-input__cursor {
-    background: #00fc83;
+    background: #fff;
   }
   .password_pop .van-password-input__item--focus {
-    border: 0.02rem solid #00fc83;
+    border: 0.02rem solid #fff;
   }
   .password_pop .van-number-keyboard {
     background: none;
@@ -336,7 +336,7 @@
     height: 0.94rem;
     border-radius: 0.2rem;
     color: #020202;
-    background: #00fc83;
+    background: #fff;
   }
   .password_pop .pass .box {
     padding: 0.3rem 0;
@@ -372,7 +372,7 @@
   }
   :root {
     --color: #ffffff;
-    --color1: #00fc83;
+    --color1: #fff;
     --color2: #8f9aae;
     --border-bottom: 0.02rem solid #47464a;
     --border: 0.02rem solid #5952f5;
@@ -1900,7 +1900,7 @@
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    color: #022627;
+    color: #fff;
   }
   
   input[type='text'],
@@ -2194,7 +2194,7 @@
     color: #fff;
   }
   .theme {
-    color: #00fc83 !important;
+    color: #fff !important;
   }
   
   i.iconfont {
@@ -2221,7 +2221,7 @@
             border: 0;
             height: 0.88rem;
             border-radius: 0.16rem;
-            background: #022627;
+            background: #fff;
         }
   
   .btn.on {
@@ -2382,7 +2382,7 @@
     width: 0.12rem;
     height: 0.12rem;
     border-radius: 50%;
-    background: #00fc83;
+    background: #fff;
     position: absolute;
     top: 50%;
     left: 0;
@@ -2399,7 +2399,7 @@
     color: #fff;
   }
   .btn-bg.active {
-    background: #00fc83;
+    background: #fff;
     color: #020202;
   }
   .w-full {
@@ -2499,7 +2499,7 @@
   }
   .bg-primary,
   .bg-success {
-    background: #00fc83;
+    background: #fff;
   }
   .bg-success-opacity {
     background: rgba(0, 252, 131, 0.08);
@@ -2767,8 +2767,8 @@
   }
   .van-button--primary {
     color: #ffffff;
-    background-color: #022627;
-    border: 0.02rem solid #022627;
+    background-color: #223f7a;
+    border: 0.02rem solid #fff;
   }
   .van-button--info {
     color: #fff;
@@ -2789,7 +2789,7 @@
     background-color: #fff;
   }
   .van-button--plain.van-button--primary {
-    color: #00fc83;
+    color: #fff;
   }
   .van-button--plain.van-button--info {
     color: #1989fa;
@@ -3698,7 +3698,7 @@
     opacity: 0.7;
   }
   .van-picker__confirm {
-    color: #00FC83;
+    color: #fff;
   }
   .van-picker__cancel {
     color: #969799;
@@ -4466,19 +4466,19 @@
     box-sizing: border-box;
     height: 0.8rem;
     margin: 0 0.32rem;
-    border: 0.02rem solid #00fc83;
+    border: 0.02rem solid #fff;
     border-radius: 0.04rem;
   }
   .van-tabs__nav--card .van-tab {
-    color: #00fc83;
-    border-right: 0.02rem solid #00fc83;
+    color: #fff;
+    border-right: 0.02rem solid #fff;
   }
   .van-tabs__nav--card .van-tab:last-child {
     border-right: none;
   }
   .van-tabs__nav--card .van-tab.van-tab--active {
     color: #fff;
-    background-color: #00fc83;
+    background-color: #fff;
   }
   .van-tabs__nav--card .van-tab--disabled {
     color: #c8c9cc;
@@ -4490,7 +4490,7 @@
     z-index: 1;
     width: 0.8rem;
     height: 0.06rem;
-    background-color: #00fc83;
+    background-color: #fff;
     border-radius: 0.06rem;
   }
   .van-tabs__track {
@@ -5827,7 +5827,7 @@
     width: fit-content;
     margin-top: 0.1rem;
     text-align: right;
-    color: #00FC83;
+    color: #fff;
     font-size: 0.24rem;
     position: relative;
     padding-left: 0.2rem;
@@ -6045,7 +6045,8 @@
     min-height: 2rem;
     max-width: 8.5rem;
     z-index: 58;
-    background: #12244a;
+    background: #04103a;
+    ;
     padding-bottom: constant(safe-area-inset-bottom);
     padding-bottom: env(safe-area-inset-bottom);
   }
@@ -6160,7 +6161,7 @@
   .head .name[data-v-0ff1fb10] {
     font-size: 0.32rem;
     font-weight: 500;
-    color: #022627;
+    color: #fff;
     position: absolute;
     width: 70%;
     text-align: center;
@@ -6278,7 +6279,7 @@
     height: 0.6rem;
   }
   [data-v-555c6fae] .van-tabs__line {
-    background-color: #00FC83;
+    background-color: #fff;
     width: 0.6rem;
     height: 0.05rem;
   }
@@ -6390,7 +6391,7 @@
     margin-right: 0.12rem;
   }
   .popup-box .content .tips span[data-v-283789fa] {
-    color: #00fc83;
+    color: #fff;
     font-size: 0.24rem;
   }
   .van-field__word-num[data-v-283789fa] {
@@ -6456,7 +6457,7 @@
     display: flex;
     align-items: center;
     font-size: 0.3rem;
-    color: #022627;
+    color: #fff;
   }
   .page-withdraw-tips-title img {
     margin-right: 0.16rem;
@@ -6499,7 +6500,7 @@
   }
   .chain-select-popup-tab-nav li.active {
     color: #020202;
-    background-color: #00FC83;
+    background-color: #fff;
   }
   .chain-select-popup .chain-item {
     position: relative;
@@ -6510,7 +6511,7 @@
     /* background-color: #13161c; */
   }
   .chain-select-popup .chain-item.active {
-    border-color: #00fc83;
+    border-color: #fff;
     background: linear-gradient(0deg, rgba(0, 252, 131, 0.1) 0%, rgba(0, 252, 131, 0) 100%);
   }
   .chain-select-popup .chain-item.active::after {
@@ -6601,7 +6602,7 @@
     border-radius: 0.16rem;
   }
   .popup-box .content .bot .btn.active[data-v-28719dd2] {
-    background: #00FC83;
+    background: #fff;
     color: #020202;
   }
   .van-field__word-num[data-v-28719dd2] {
@@ -6648,7 +6649,7 @@
   }
   </style><style type="text/css">.input_big_box[data-v-3670e178] {
     position: relative;
-    --themeColor: #00fc83;
+    --themeColor: #fff;
   }
   .input_big_box .title_box[data-v-3670e178] {
     background: transparent;
@@ -6756,7 +6757,7 @@
     text-align: center;
   }
   .btn_box .submit[data-v-f8d1bbb0] {
-    background: #00FC83;
+    background: #fff;
     color: #020202;
   }
   .van-field__word-num[data-v-f8d1bbb0] {
@@ -6936,8 +6937,8 @@
           <div data-v-37526a6c="" class="mb-16px flex-between-center"><span data-v-37526a6c="" class="text-gray">Actual
                   arrival</span><span data-v-37526a6c="" class="text-primary"> 0 USDT </span></div><button
               data-v-37526a6c=""
-              class="rounded-8px van-button van-button--primary van-button--normal van-button--block">
-              <div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text" style="color: #ffffff">
+              class="rounded-8px van-button van-button--primary van-button--normal van-button--block" >
+              <div data-v-37526a6c="" class="van-button__content"><span data-v-37526a6c="" class="van-button__text" style="background:#223f7a">
                       Sure </span></div>
           </button>
       </div>
@@ -6985,13 +6986,13 @@
                             <!-- Confirm Button -->
                             <button
                                 class="rounded-8px van-button van-button--primary van-button--normal van-button--block"
-                                onclick="confirmSelection()">
+                                onclick="confirmSelection()" style="background:#223f7a">
                                 <div class="van-button__content"><span class="van-button__text">Sure</span></div>
                             </button>
                         </div>
                         <i role="button" tabindex="0"
                             class="van-icon van-icon-cross van-popup__close-icon van-popup__close-icon--top-right"
-                            onclick="hidePopup()">×</i>
+                            onclick="hidePopup()"></i>
                     </div>
 
   <div data-v-15b106f9="" class="page-loading-con" style="display: none;">
