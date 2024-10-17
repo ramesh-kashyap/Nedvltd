@@ -30,6 +30,15 @@ class Invest extends Controller
         $this->data['page'] = 'user.invest.Deposit';
         return $this->dashboard_layout();
     }  
+
+    public function taskCenter()
+    {
+        $user=Auth::user();
+       
+        $this->data['page'] = 'user.taskCenter';
+        return $this->dashboard_layout();
+    }  
+
     public function showrecord(Request $request)
     {
       $user=Auth::user();

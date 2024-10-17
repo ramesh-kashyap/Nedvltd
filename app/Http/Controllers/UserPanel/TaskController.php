@@ -5,13 +5,21 @@ namespace App\Http\Controllers\UserPanel;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
+
 use App\Models\Task; // Import the Task model
 
 class TaskController extends Controller // Renamed to TaskController to avoid conflicts
 {
     //
     public function index(){
-        return view('user/task/task'); // Removed the leading slash
+
+           // Fetch the videos from the database (you can modify this query as needed)
+           $video = DB::table('videos')->orderBy('created_at', 'desc')->first();
+
+    // Pass the videos to the Blade view
+
+        return view('user/task/task',compact('video')); // Removed the leading slash
     }
 
     public function product(){
