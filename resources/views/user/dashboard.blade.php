@@ -8697,11 +8697,11 @@
                                             alt=""></div>
                                     <div data-v-5954443c="" class="n">VIP Level</div>
                                 </li>
-                                <li data-v-5954443c="">
+                                <li data-v-5954443c="" onclick="location.href='{{route('user.taskCenter')}}'">
                                     <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
                                         src="{{asset('')}}static/img/Icon/rules.png"
                                         alt=""></div>
-                                    <div data-v-5954443c="" class="n">Platform Rules</div>
+                                    <div data-v-5954443c="" class="n">Task Center</div>
                                 </li>
                                 <li data-v-5954443c="" onclick="location.href='{{route('user.tutorial')}}'">
                                     <div data-v-5954443c="" class="ico"><img data-v-5954443c=""
