@@ -13587,9 +13587,11 @@ type="text/javascript"
                               </div>
                             </div>
                         </div>
-                        <div class="page-video-float-task" data-v-37526a6c=""><span class="mr-6px">Video promotion
-                                tasks</span><i class="van-icon van-icon-arrow">
-                                <!----></i></div>
+                        <div class="page-video-float-task" data-v-37526a6c=""><span class="mr-6px" >Video promotion
+                                tasks</span>
+                                <a href="{{route('user.taskCenter')}}">
+                                <i class="van-icon van-icon-arrow">
+                                <!----></i></a></div>   
                         <div data-v-37526a6c="" class="page-video-float-right">
                             <div id="1353" class="action-flat" data-v-37526a6c="">
                                 <div id="anime-btn" class="pumping action-flat-item"><img
