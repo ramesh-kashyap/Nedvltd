@@ -2639,6 +2639,7 @@ type="text/javascript"
 
         .video-js .vjs-tech {
             object-fit: cover !important;
+            height: 100vh !important;
         }
 
         .scaled {
