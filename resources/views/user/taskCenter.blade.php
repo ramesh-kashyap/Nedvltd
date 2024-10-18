@@ -8117,7 +8117,8 @@
 }
 
 .span {
-  font-size: 10px;
+    font-size: 16px;
+    padding-top: 12px;
 }
 
 .h1 {
@@ -8232,7 +8233,7 @@
             <div class="textBox">
                 <div class="textContent">
                     <p class="h1">{{ $video->title }}</p>
-                    <span class="span" style="padding-right: 5px">Day {{ $key + 1 }}</span>
+                    <span class="span" style="padding-right: 15px">Day {{ $key + 1 }}</span>
                 </div>
                 <p class="p">{{ $video->description }}</p>
             </div> 
