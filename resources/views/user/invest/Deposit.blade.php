@@ -7040,9 +7040,19 @@
                                 src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=TYqW7dSArJmd8XRGjFuQg3MbP4VgXH4h9Y" style="width: 160px"
 
                                 ></canva></div>
-                    </div>                  
+                    </div>  
+                    
+                    
+
+
+                    
                     <div data-v-37526a6c="" class="page-recharge-info" style="
     background: #223f7a;">
+
+
+
+
+
                     <form method="post" name="add" action="{{ route('user.confirmDeposit_new') }}">
                     {{ csrf_field() }}
                     <input type="hidden" name="vip" value={{ $vip }}></input>
