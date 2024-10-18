@@ -8,11 +8,14 @@ use App\Models\User;
 use App\Models\Investment;
 use App\Models\Income;
 use App\Models\Contract;
+use App\Models\DailyTask;
+use App\Models\UserTask;
+use App\Models\Video;
+use Log;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Http;
-use Log;
 use Redirect;
 use Hash;
 use Helper;
@@ -33,11 +36,132 @@ class Invest extends Controller
 
     public function taskCenter()
     {
-        $user=Auth::user();
-       
+        // Get the authenticated user
+        $user = Auth::user();
+        
+        // User's joining date (jdate)
+        $jdate = \Carbon\Carbon::parse($user->adate)->format('Y-m-d');
+        
+        // Get today's date in the same format (YYYY-MM-DD)
+        $today = date('Y-m-d');
+        
+        // Calculate the number of days from joining date to today
+        $daysDifference = \Carbon\Carbon::parse($jdate)->diffInDays($today);
+        
+        // Add 1 to represent the task's current day (e.g., if it's 0 days, it's day 1)
+        $currentDay = $daysDifference + 1;
+        
+        // Fetch the data from daily_tasks where the day is less than or equal to the current day
+        $dailyTasks = DailyTask::where('day', '<=', $currentDay)->get();
+        
+        // Pass this data to your view
+        $this->data['dailyTasks'] = $dailyTasks;
         $this->data['page'] = 'user.taskCenter';
+    
         return $this->dashboard_layout();
-    }  
+    }
+
+    public function completeTask(Request $request)
+    {
+        // Validate the request to ensure we have both taskId and isUnlocked
+        $request->validate([
+            'taskId' => 'required|integer',
+            'isUnlocked' => 'required|boolean',
+        ]);
+    
+        // Get the authenticated user
+        $user = Auth::user();
+        $taskId = $request->input('taskId');
+        $isUnlocked = $request->input('isUnlocked');
+    
+        // Find the task based on taskId
+        $task = DailyTask::find($taskId);
+    
+        // If no task is found, return with an error
+        if (!$task) {
+            return response()->json(['success' => false, 'message' => 'Task not found.'], 404);
+        }
+
+        // Check if the user has already completed the task
+    $check_task = UserTask::where('task_id', $taskId)
+    ->where('user_id', $user->id)
+    ->first();
+
+if ($check_task) {
+    // Find the video associated with this task
+    $video = Video::find($task->video_id);
+
+    // If no video is found, return with an error
+    if (!$video) {
+        return response()->json(['success' => false, 'message' => 'Video not found for this task.'], 404);
+    }
+
+    // Return success response with video info
+    return response()->json(['success' => true, 'video' => $video]);
+}
+
+    
+        // If the task is unlocked, proceed to check for the associated video
+        if ($isUnlocked) {
+            // Find the video associated with this task
+            $video = Video::find($task->video_id);
+    
+            // If no video is found, return with an error
+            if (!$video) {
+                return response()->json(['success' => false, 'message' => 'Video not found for this task.'], 404);
+            }
+    
+            // Return success response with video info
+            return response()->json(['success' => true, 'video' => $video]);
+        } else {
+            // Get today's date
+            $today = date('Y-m-d');
+    
+            // Get the user's joining date (assuming it's in the 'adate' field)
+            $jdate = \Carbon\Carbon::parse($user->adate)->format('Y-m-d');
+            Log::info($jdate);
+
+    
+            // Calculate the number of days since joining date
+            $daysDifference = \Carbon\Carbon::parse($jdate)->diffInDays($today);
+            Log::info($daysDifference);
+
+
+            // Add 1 to represent the current day of the task
+            $currentDay = $daysDifference + 1;
+
+           Log::info($currentDay);
+            
+            // If the current day does not match the task day, return with an error
+            if ($currentDay != $task->day) {
+                return response()->json(['success' => false, 'message' => "Can't unlock this video."], 403);
+            }
+    
+            // If validation passes, insert into UserTask to mark the task as completed
+            UserTask::create([
+                'user_id' => $user->id,
+                'task_id' => $taskId,
+                'sdate' => \Carbon\Carbon::now(),
+            ]);
+    
+            // Call the generate_roi function for the user
+            // $this->generate_roi($user->id);
+    
+            // Find the video associated with this task
+            $video = Video::find($task->video_id);
+    
+            // If no video is found, return with an error
+            if (!$video) {
+                return response()->json(['success' => false, 'message' => 'Video not found for this task.'], 404);
+            }
+    
+            // Return a success response with video info
+            return response()->json(['success' => true, 'video' => $video]);
+        }
+    }
+    
+
+    
 
     public function showrecord(Request $request)
     {

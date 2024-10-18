@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
-
+use App\Models\Video; // Import the Task model
 use App\Models\Task; // Import the Task model
 
 class TaskController extends Controller // Renamed to TaskController to avoid conflicts
@@ -21,6 +21,23 @@ class TaskController extends Controller // Renamed to TaskController to avoid co
 
         return view('user/task/task',compact('video')); // Removed the leading slash
     }
+
+    public function TaskVideo(Request $request)
+{
+    $vid = $request->input('vid');
+
+    // Fetch the video from the database
+    $video = Video::where('id', $vid)->first();
+
+    // If the video doesn't exist, return an error or handle it
+    if (!$video) {
+        return back()->withErrors(['Video not found.']);
+    }
+
+    // Pass the video to the Blade view
+    return view('user/task/TaskVideo', compact('video'));
+}
+
 
     public function product(){
         return view('user/task/productDetail');

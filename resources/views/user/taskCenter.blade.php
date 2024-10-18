@@ -14,6 +14,8 @@
         <!--    <link rel="icon" href="/logo.ico" />-->
         <title>Member Center</title>
         <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
         <!--  <meta name="theme-color" content="#fff" />-->
         <meta http-equiv="pragma" content="no-cache" />
         <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
@@ -8201,21 +8203,46 @@
                                     </div>
                                 </div>
                             </div>
-<div style="margin:10px 0px">
-     <div class="card">
-        <div class="img-logo"><center><img src="{{ asset('')}}static/img/lock1.png "  style="max-width:40%"></center></div>
-         <div class="img"> <img src="{{ asset('')}}static/img/images4.png "></div>
-           <div class="textBox">
-               <div class="textContent">
-                        <p class="h1">Series 1</p>
-                        <span class="span" style="padding-right: 5px">Day 1</span>
+
+      
+                            @foreach($dailyTasks as $key => $value)
+    @php
+        $vid = $value->video_id;
+        $video = App\Models\Video::where('id', $vid)->first();
+        $isUnlocked = App\Models\UserTask::where('user_id', Auth::user()->id)->where('task_id', $value->id)->first();
+        $isUnlockedValue = $isUnlocked ? 1 : 0;
+    @endphp
+     @if(Auth::user()->adate)
+    <div style="margin:10px 0px"> 
+        <div class="card" 
+            data-task-id="{{ $value->id }}" 
+            data-is-unlocked="{{ $isUnlockedValue }}" 
+            onclick="completeTask({{ $value->id }}, {{ $isUnlockedValue }})"
+            style="cursor: pointer;">
+            <div class="img-logo">
+                @if($isUnlocked)
+                    <center><img src="{{ asset('static/img/unlock1.png') }}" style="max-width:40%"></center>
+                @else
+                    <center><img src="{{ asset('static/img/lock1.png') }}" style="max-width:40%"></center>
+                @endif
+            </div>
+            <div class="img">
+                <img src="{{ asset($video->background) }}">
+            </div>
+            <div class="textBox">
+                <div class="textContent">
+                    <p class="h1">{{ $video->title }}</p>
+                    <span class="span" style="padding-right: 5px">Day {{ $key + 1 }}</span>
                 </div>
-               <p class="p">Xhattmahs is not attacking your base!</p>
-         <div>
-          </div>
-          </div>
-     </div>
-</div>       
+                <p class="p">{{ $video->description }}</p>
+            </div> 
+        </div>
+    </div>
+    @endif
+    
+@endforeach
+
+
                             <!-- <dl data-v-e20b77f4="" data-v-37526a6c="" class="page-income-banner" >
                                 <dt data-v-e20b77f4="" data-v-37526a6c="">Video Promotion</dt>
                                 <dd data-v-e20b77f4="" data-v-37526a6c="">
@@ -8336,5 +8363,44 @@
             </div>
         </div>
         <!---->
+        <script>
+  function completeTask(taskId, isUnlocked) {
+    const csrfTokenMeta = document.querySelector('meta[name="csrf-token"]');
+    const csrfToken = csrfTokenMeta ? csrfTokenMeta.getAttribute('content') : '';
+
+    fetch('/user/complete-task', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': csrfToken
+        },
+        body: JSON.stringify({
+            taskId: taskId,
+            isUnlocked: isUnlocked
+        })
+    })
+    .then(response => {
+        if (!response.ok) {
+            return response.json().then(errData => {
+                throw new Error(errData.message); // Use the message from the server
+            });
+        }
+        return response.json();
+    })
+    .then(data => {
+        if (data.success) {
+            window.location.href = `/user/TaskVideo?vid=${data.video.id}`;
+
+        } else {
+            alert("Failed to complete task.");
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert(error.message); // Show the error message from the server
+    });
+}
+
+        </script>
     </body>
 </html>
