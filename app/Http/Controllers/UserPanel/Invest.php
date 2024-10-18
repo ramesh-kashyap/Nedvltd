@@ -73,7 +73,7 @@ class Invest extends Controller
     {
         $user=Auth::user();
         $invest_check=Investment::where('user_id',$user->id)->where('status','!=','Decline')->orderBy('id','desc')->limit(1)->first();
-
+    
         $this->data['last_package'] = ($invest_check)?$invest_check->amount:0;
 
         $my_level_team=$this->my_level_team_count($user->id);
@@ -166,7 +166,7 @@ public function cancel_payment($id)
          Investment::where('orderId',$id)->update(['status' => 'Decline']);
      
         $notify[] = ['success','Deposit canceled successfully'];
-        return redirect()->route('user.invest')->withNotify($notify);
+        return redirect()->route('user.deposit')->withNotify($notify);
     
 }
 
@@ -378,10 +378,12 @@ public function viewdetail($txnId)
       return Redirect::back()->withErrors(array('your deposit already pending'));
     }
    
-
+        
     // $min_amount = $request->minimum_deposit;
     // $max_amount = $request->maximum_deposit;
     $vip = $request->vip;
+
+    
     $paymentMode = $request->PSys;
     $amount = $request->Sum;
 

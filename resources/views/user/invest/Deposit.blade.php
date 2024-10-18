@@ -7058,13 +7058,13 @@
        onClick="showPopup()">
                         </dl>
                         <dl data-v-37526a6c="" class="page-recharge-info-item">
-                            <dt data-v-37526a6c="" style="margin-bottom: 10px;">Amount</dt>
+                            <dt data-v-37526a6c="" style="margin-bottom: 10px;">Select Amount</dt>
                             
                             <select data-v-37526a6c="" name="Sum" id="amountSelect"
   style="height: 0.8rem; border-radius: 0.16rem; color:#fff; padding: 0 0.3rem; 
   line-height: 0.8rem; width: 100%; border: 0.02rem solid #fff; background: transparent;">
-  <option style="color:#000" value="">Select your amount</option>
-  <option value="30">$30</option>
+ 
+  <option  style="color:#000" value="30">$30</option>
   <option value="120">$120</option>
   <option value="300">$300</option>
   <option value="1200">$1200</option>
