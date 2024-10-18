@@ -12614,7 +12614,7 @@ type="text/javascript"
         .video-player-muted {
             position: absolute;
             z-index: 99;
-            right: 0.2rem;
+            /* right: 0.2rem; */
             bottom: 1rem;
             height: 0.8rem;
             min-width: 0.8rem;
@@ -12626,6 +12626,7 @@ type="text/javascript"
             color: #23252e;
             background-color: #fff;
             border-radius: 0.8rem;
+            margin-bottom: -106px;
         }
 
         .video-player-info {
@@ -12644,14 +12645,14 @@ type="text/javascript"
         }
 
         .video-player-info-content {
-            line-height: 1.2em;
+            line-height: 6.2em;
             font-size: 0.28rem;
         }
 
         .video-player-progress {
             position: absolute;
             z-index: 99;
-            bottom: 0;
+            bottom: 20;
             left: 0;
             width: 100%;
             height: 0.12rem;
@@ -13544,16 +13545,17 @@ type="text/javascript"
 
 
 
-
+<!-- 
     <div class="video-player-muted" id="muteButton">
       <img id="muteImage" width="24" src="{{ asset('static/img/unmute.png') }}" alt="Unmute">
-    </div>
+    </div> -->
                                 <div class="video-player-info">
                                     <div class="video-player-info-title">
                                         <div style="overflow: hidden;"><span
                                                 style="box-shadow: transparent 0px 0px;"><span
                                                     aria-label="Water slides">{{ $video->title }}</span></span></div>
-                                    </div>
+                                                   
+                                  
                                     <div class="video-player-info-content">
                                         <div style="overflow: hidden;"><span
                                                 style="box-shadow: transparent 0px 0px;"><span
@@ -13595,38 +13597,36 @@ type="text/javascript"
                                         alt="like">
                                     <p class="text-12px">{{ $video->likes }}</p>
                                 </div>
+
+
+                                <div class="video-player-muted" id="muteButton">
+      <img id="muteImage" width="24" src="{{ asset('static/img/unmute.png') }}" alt="Unmute">
+    </div>
+              
+                 
                                 <div class="action-flat-item" id="commentButton"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgBxZbhUYNAEIX3GAugBOwAK9AOjBVIB7EDU4IlpAPsgLGCpAJJBSY/nCECd+suHMxJIEAC55fZuSELee/2uM0B/DNizM2I6NNwT8Gjq6NiR7Gl+BBCbGEqSNSlWFHscTixfsaDa7hAuI0VjIWdU2xwOmIcWg0tHuP0xL0mZhTvNCEaBmIaPJiXLe2Su+rCMcQDC+KMT1qv1YUwDNiYfcWB4pYqcXC0+MKiOMMNjBtavQSPYB+eNNzoC7/jph3FO5SOg0aOy7i+IAcnmti+9f5sGX5xjNy+kQsaz5q5h64t2WcgNO1i2SMqouZ0BuZODDjQTXNZPDNHP+AaAv6ZnAftHEyHYYfLUJcwaKnSudxG5xbY3VlD08AS7fPM2kIb4JLxmrhgD25Eu+Id4I5EwxvYY83ihXb1ja0qKERwhLitDNS7QFfhCWYmx7yefStUiReciUSm8T5JPOgDy+1z7VmwRimFx6HihgnufBFeiSTxYubptw+XgGWjiXAkUklMlVSJSuMER8y8pyLcsLgDnpyYFX0kRaZyTEn+R2V4VFmERluenIRMpSRYiOrIipBftOZLmBuuSk6vGAlijmWQgWiSkg81UJReFeX/pD2+AJvw+pKBSJaHFZv/I9PxC/kdUyQLXV7cAAAAAElFTkSuQmCC"
                                         alt="comment">
                                     <p class="text-12px">{{ $video->comments }}</p>
                                 </div>
-
-                                
-                                
-                                <!-- <div id="anime-btn" class="pumping action-flat-item"><img
-                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEzSURBVHgB7ZaBjcIwDEV/mICb4LrBdYODCWAD2ACYgNUYASZINygbGEdNRRRRN61pQIInWUU0wd8m/i3wRQERLTjWeAWceEt39sgNJ7WBgJpjjlxE1bfskIuo+haLHHRU37LB1HRUn6cLPdVP0wX+wYKjdIeMmtPeR+3XOo/onQwTJHKLnan8chQcpb9qx+vKUfk4c1zc1RhTxQKsT5iDEwtYug+z4Mt8RtJ0F7GAA/Lx2LoTT7kWeUomFpE2ohOJGOYPvGFNaXP//OSBiAXpEZ+SJkEEQccPz/y16+YMcvISegrppigAz3HGPygE/ENPqRHw9n9B5UNiXBF8AOfCaNlwtqkxLiusH/6g6/CAmgRTEYQM74LvQB0kPqZWEglxewuMgZrXsQ2NaKHfuxqd/GO4AWwAdfpSO6IGAAAAAElFTkSuQmCC"
-                                        alt="star">
-
-
-
-
-
-                                    <p class="text-12px">791</p>
-                                </div> -->
-                                <div class="action-flat-item"><img
+                                   
+                                <div class="action-flat-item" style="
+    margin-bottom: -6px;"> <img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHqSURBVHgB7ZbxUYMwFMbfi9Q7Pe9kgzJCNxA3cIN2g7oB5wSdwQl0A0bQDewG5c7eWdsmzxcIGChgQA//4euF0DQv3y/hkRRg1Kg/EhH5XAL4L7H5G2Waw9Bi05DKGhaiBmBYiAaA4SBaADZcZm2xHvQQj+qDfA8BvelBqWBL++AKz+u6+lxihrhFxNe6DgiO0q/ZVn3OJdEdAYUKSLfpK3h4Bv7ZRVt4wqUWwglgK3f3BBixmX7XQZunAAZiwgDX7QCNEKIt4oM3lp06xALECrPlNNSYkudXAiflj2PmBKB3NUEy5tvw25gLlhcNocNzrIEQDea+BIp54MA2QWOlGQSK7BueQjlArFoBdId0X0ez2Lq2TSiFLO57yG8E4IEXnGALbYhm8NzaXm5hMqHj7HM9NAKwosIIbXMs6tQU83YoQB2lJ/dcC6Bnz1Vgm1k/WhBg1dglC7X5o91QXYHy3m1M7aXGrLn0IjoSnJifRFKRWVlu6Y1Gmd1Of2R6DwkhrTlP1qQo4fVPPOH5lzBZQEfzymTLB4rij+Ry5OteHeMdySU3T11ie52I3DGqRjJEzNWNQ+zvj2Pu/FQJXnaIrQNwjs8HeTGBP57hDgARdBUHxb3IofhHvOltbg3UaeaV2IAaknTUqDZ9Aas88GgTkKw5AAAAAElFTkSuQmCC"
                                         alt="share">
                                     <p class="text-12px">228</p>
                                 </div>
-                                <div class="action-flat-item"><img
+
+
+                                <!-- <div class="action-flat-item"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgBzVc9TBRREJ55uxjtzk4bWRtjBUenjQeJJHZASUMwwYKCEGJlQRDRWBlFLUkgWqoBbWxMDmww0QSwMrHgsJHy6Ajs7Tjz3t7d3u3u3WPvCr/kcj/7br9533wzOw/BFrSQg4ozyp8KgJgHAo8/58KrZUAoAdEuAG6C438EXCzb3BbbrqCnHgSns0A4GSG0iXgNTiuLcGGxBJkCkB377kNeMQudAOkFKA4kRZHkAPSu/WIocxdAJVZjKEkNFVt78iTfXXIBetDjFPW9m680fOv6zpsRV6IegOQ8cHe6Rl4+Nu+58/EgnMpA1RP1FIjhukHOxPioCOrac8B76wkLkFV2FmrfTFAsfcXfhw4hxPj6W233NHId6N148uJT/6qkwtVfAn8BOgC+2QFc2gQ4aKq0vkvpfzrnSHnPKZ17gknIQry1D+r2KuDUBtDRcT3fvbnG9yRIY2NuFbbXbMTDa0A/DyGYHzJSs/TEpDRhqo28i61uw63dHXG5rxdYAWtiLfVXbvu8W2JimLmhidXwqiH/chfw5bb5Q6sUmBAHxQP5tsylMqipdU0sCGZuAswPGslDcsk/fZ82sle9ECvB5h1h3m1ZelJS9z8Dvt018bK0eteR3KIExoSSBug3O0YOmPrb7V5uCJ4okOiUaElRwTPEt7z4mk+/6opU8YcVKHhggZyb+PPeX8DHmyZIziOtjMUcLXmWNXIdnt2pX5AeIK8rdk9u6YTxx2T/ZQjYTHJzZJdrx/Nua+2VJdbkYroPjY0GOXgNzyqAstKTTBJYbvoxDcHKqC4SIcRX28aQ4nj+TRwfq/XQgMSbaAvmlhSIw9IrYWKAzccvqQBRZKloHC91n9RoqhXQa6EAj3DcCWkLbCAGlLI6CtPAJqulJtqC9w7tA+D5UfGjcQOSfGABOjBeiAZiXYICHl6Vfi4jD5BnhXTC33MNHpFAdAm2a0Am/DXhNvOA6lmGrBB/RALRldJnoYBMzFAdSPBBSU+vlqCk/FYDeT9umlYrCFc4lmUbycrHljInIW0kkx+UO5TaF6LohFyG0sgZoXEsl1RU1JhVEFnIA2es+WzwHx5MdFishPIHzmLMVMg9JOcpZ0TLwykPrWebG01vOaksZz+cxgIJj+cywsmzI+147vDxHOyP5/8AoX6fXdu6+v4AAAAASUVORK5CYII="
-                                        alt="publish"></div>
+                                        alt="publish"></div> -->
                                 <!---->
                             </div>
                         </div>
                     </div>
                 </div>
-              
+                                    </br></br></br></br>
             </div>
             <div data-v-37526a6c="" class="footer">
                 <div data-v-6c4d8baa="" data-v-5954443c="" class="footers" data-v-37526a6c="">
