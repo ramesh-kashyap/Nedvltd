@@ -12614,7 +12614,7 @@ type="text/javascript"
         .video-player-muted {
             position: absolute;
             z-index: 99;
-            /* right: 0.2rem; */
+            right: 0.2rem;
             bottom: 1rem;
             height: 0.8rem;
             min-width: 0.8rem;
@@ -12626,7 +12626,6 @@ type="text/javascript"
             color: #23252e;
             background-color: #fff;
             border-radius: 0.8rem;
-            margin-bottom: -106px;
         }
 
         .video-player-info {
@@ -12645,14 +12644,14 @@ type="text/javascript"
         }
 
         .video-player-info-content {
-            line-height: 6.2em;
+            line-height: 1.2em;
             font-size: 0.28rem;
         }
 
         .video-player-progress {
             position: absolute;
             z-index: 99;
-            bottom: 20;
+            bottom: 0;
             left: 0;
             width: 100%;
             height: 0.12rem;
@@ -13541,21 +13540,15 @@ type="text/javascript"
                                     </div>
                                 </div>
                                  <!-- Mute/Unmute Button -->
-
-
-
-
-<!-- 
     <div class="video-player-muted" id="muteButton">
       <img id="muteImage" width="24" src="{{ asset('static/img/unmute.png') }}" alt="Unmute">
-    </div> -->
+    </div>
                                 <div class="video-player-info">
                                     <div class="video-player-info-title">
                                         <div style="overflow: hidden;"><span
                                                 style="box-shadow: transparent 0px 0px;"><span
                                                     aria-label="Water slides">{{ $video->title }}</span></span></div>
-                                                   
-                                  
+                                    </div>
                                     <div class="video-player-info-content">
                                         <div style="overflow: hidden;"><span
                                                 style="box-shadow: transparent 0px 0px;"><span
@@ -13587,11 +13580,9 @@ type="text/javascript"
                               </div>
                             </div>
                         </div>
-                        <div class="page-video-float-task" data-v-37526a6c=""><span class="mr-6px" >Video promotion
-                                tasks</span>
-                                <a href="{{route('user.taskCenter')}}">
-                                <i class="van-icon van-icon-arrow">
-                                <!----></i></a></div>   
+                        <div class="page-video-float-task" data-v-37526a6c=""><span class="mr-6px">Video promotion
+                                tasks</span><i class="van-icon van-icon-arrow">
+                                <!----></i></div>
                         <div data-v-37526a6c="" class="page-video-float-right">
                             <div id="1353" class="action-flat" data-v-37526a6c="">
                                 <div id="anime-btn" class="pumping action-flat-item"><img
@@ -13599,76 +13590,62 @@ type="text/javascript"
                                         alt="like">
                                     <p class="text-12px">{{ $video->likes }}</p>
                                 </div>
-
-
-                                <div class="video-player-muted" id="muteButton">
-      <img id="muteImage" width="24" src="{{ asset('static/img/unmute.png') }}" alt="Unmute">
-    </div>
-              
-                 
                                 <div class="action-flat-item" id="commentButton"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHhSURBVHgBxZbhUYNAEIX3GAugBOwAK9AOjBVIB7EDU4IlpAPsgLGCpAJJBSY/nCECd+suHMxJIEAC55fZuSELee/2uM0B/DNizM2I6NNwT8Gjq6NiR7Gl+BBCbGEqSNSlWFHscTixfsaDa7hAuI0VjIWdU2xwOmIcWg0tHuP0xL0mZhTvNCEaBmIaPJiXLe2Su+rCMcQDC+KMT1qv1YUwDNiYfcWB4pYqcXC0+MKiOMMNjBtavQSPYB+eNNzoC7/jph3FO5SOg0aOy7i+IAcnmti+9f5sGX5xjNy+kQsaz5q5h64t2WcgNO1i2SMqouZ0BuZODDjQTXNZPDNHP+AaAv6ZnAftHEyHYYfLUJcwaKnSudxG5xbY3VlD08AS7fPM2kIb4JLxmrhgD25Eu+Id4I5EwxvYY83ihXb1ja0qKERwhLitDNS7QFfhCWYmx7yefStUiReciUSm8T5JPOgDy+1z7VmwRimFx6HihgnufBFeiSTxYubptw+XgGWjiXAkUklMlVSJSuMER8y8pyLcsLgDnpyYFX0kRaZyTEn+R2V4VFmERluenIRMpSRYiOrIipBftOZLmBuuSk6vGAlijmWQgWiSkg81UJReFeX/pD2+AJvw+pKBSJaHFZv/I9PxC/kdUyQLXV7cAAAAAElFTkSuQmCC"
                                         alt="comment">
                                     <p class="text-12px">{{ $video->comments }}</p>
                                 </div>
-                                   
-                                <div class="action-flat-item" style="
-    margin-bottom: -6px;"> <img
+                                <div id="anime-btn" class="pumping action-flat-item"><img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEzSURBVHgB7ZaBjcIwDEV/mICb4LrBdYODCWAD2ACYgNUYASZINygbGEdNRRRRN61pQIInWUU0wd8m/i3wRQERLTjWeAWceEt39sgNJ7WBgJpjjlxE1bfskIuo+haLHHRU37LB1HRUn6cLPdVP0wX+wYKjdIeMmtPeR+3XOo/onQwTJHKLnan8chQcpb9qx+vKUfk4c1zc1RhTxQKsT5iDEwtYug+z4Mt8RtJ0F7GAA/Lx2LoTT7kWeUomFpE2ohOJGOYPvGFNaXP//OSBiAXpEZ+SJkEEQccPz/y16+YMcvISegrppigAz3HGPygE/ENPqRHw9n9B5UNiXBF8AOfCaNlwtqkxLiusH/6g6/CAmgRTEYQM74LvQB0kPqZWEglxewuMgZrXsQ2NaKHfuxqd/GO4AWwAdfpSO6IGAAAAAElFTkSuQmCC"
+                                        alt="star">
+                                    <p class="text-12px">791</p>
+                                </div>
+                                <div class="action-flat-item"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAHqSURBVHgB7ZbxUYMwFMbfi9Q7Pe9kgzJCNxA3cIN2g7oB5wSdwQl0A0bQDewG5c7eWdsmzxcIGChgQA//4euF0DQv3y/hkRRg1Kg/EhH5XAL4L7H5G2Waw9Bi05DKGhaiBmBYiAaA4SBaADZcZm2xHvQQj+qDfA8BvelBqWBL++AKz+u6+lxihrhFxNe6DgiO0q/ZVn3OJdEdAYUKSLfpK3h4Bv7ZRVt4wqUWwglgK3f3BBixmX7XQZunAAZiwgDX7QCNEKIt4oM3lp06xALECrPlNNSYkudXAiflj2PmBKB3NUEy5tvw25gLlhcNocNzrIEQDea+BIp54MA2QWOlGQSK7BueQjlArFoBdId0X0ez2Lq2TSiFLO57yG8E4IEXnGALbYhm8NzaXm5hMqHj7HM9NAKwosIIbXMs6tQU83YoQB2lJ/dcC6Bnz1Vgm1k/WhBg1dglC7X5o91QXYHy3m1M7aXGrLn0IjoSnJifRFKRWVlu6Y1Gmd1Of2R6DwkhrTlP1qQo4fVPPOH5lzBZQEfzymTLB4rij+Ry5OteHeMdySU3T11ie52I3DGqRjJEzNWNQ+zvj2Pu/FQJXnaIrQNwjs8HeTGBP57hDgARdBUHxb3IofhHvOltbg3UaeaV2IAaknTUqDZ9Aas88GgTkKw5AAAAAElFTkSuQmCC"
                                         alt="share">
                                     <p class="text-12px">228</p>
                                 </div>
-
-
-                                <!-- <div class="action-flat-item"><img
+                                <div class="action-flat-item"><img
                                         src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAANmSURBVHgBzVc9TBRREJ55uxjtzk4bWRtjBUenjQeJJHZASUMwwYKCEGJlQRDRWBlFLUkgWqoBbWxMDmww0QSwMrHgsJHy6Ajs7Tjz3t7d3u3u3WPvCr/kcj/7br9533wzOw/BFrSQg4ozyp8KgJgHAo8/58KrZUAoAdEuAG6C438EXCzb3BbbrqCnHgSns0A4GSG0iXgNTiuLcGGxBJkCkB377kNeMQudAOkFKA4kRZHkAPSu/WIocxdAJVZjKEkNFVt78iTfXXIBetDjFPW9m680fOv6zpsRV6IegOQ8cHe6Rl4+Nu+58/EgnMpA1RP1FIjhukHOxPioCOrac8B76wkLkFV2FmrfTFAsfcXfhw4hxPj6W233NHId6N148uJT/6qkwtVfAn8BOgC+2QFc2gQ4aKq0vkvpfzrnSHnPKZ17gknIQry1D+r2KuDUBtDRcT3fvbnG9yRIY2NuFbbXbMTDa0A/DyGYHzJSs/TEpDRhqo28i61uw63dHXG5rxdYAWtiLfVXbvu8W2JimLmhidXwqiH/chfw5bb5Q6sUmBAHxQP5tsylMqipdU0sCGZuAswPGslDcsk/fZ82sle9ECvB5h1h3m1ZelJS9z8Dvt018bK0eteR3KIExoSSBug3O0YOmPrb7V5uCJ4okOiUaElRwTPEt7z4mk+/6opU8YcVKHhggZyb+PPeX8DHmyZIziOtjMUcLXmWNXIdnt2pX5AeIK8rdk9u6YTxx2T/ZQjYTHJzZJdrx/Nua+2VJdbkYroPjY0GOXgNzyqAstKTTBJYbvoxDcHKqC4SIcRX28aQ4nj+TRwfq/XQgMSbaAvmlhSIw9IrYWKAzccvqQBRZKloHC91n9RoqhXQa6EAj3DcCWkLbCAGlLI6CtPAJqulJtqC9w7tA+D5UfGjcQOSfGABOjBeiAZiXYICHl6Vfi4jD5BnhXTC33MNHpFAdAm2a0Am/DXhNvOA6lmGrBB/RALRldJnoYBMzFAdSPBBSU+vlqCk/FYDeT9umlYrCFc4lmUbycrHljInIW0kkx+UO5TaF6LohFyG0sgZoXEsl1RU1JhVEFnIA2es+WzwHx5MdFishPIHzmLMVMg9JOcpZ0TLwykPrWebG01vOaksZz+cxgIJj+cywsmzI+147vDxHOyP5/8AoX6fXdu6+v4AAAAASUVORK5CYII="
-                                        alt="publish"></div> -->
+                                        alt="publish"></div>
                                 <!---->
                             </div>
                         </div>
                     </div>
                 </div>
-                                    </br></br></br></br>
+              
             </div>
             <div data-v-37526a6c="" class="footer">
-                <div data-v-6c4d8baa="" data-v-5954443c="" class="footers" data-v-37526a6c="">
-                    <ul data-v-6c4d8baa="" class="flex tac">
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.dashboard') }}">
-                            <div data-v-6c4d8baa="" class="on"><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/home.png"
-                                    alt=""><span data-v-6c4d8baa=""> Home </span></div>
-                                </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.task') }}">
-                            <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/video.png"
-                                    alt=""><span data-v-6c4d8baa=""> Video </span></div>
-                                </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.quality') }}">
-                            <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/vip.png"
-                                    alt=""><span data-v-6c4d8baa=""> VIP </span></div>
-                                </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.asset') }}">
-                            <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/wallet.png"
-                                    alt=""><span data-v-6c4d8baa=""> Assets </span></div>
-                                </a>
-                        </li>
-                        <li data-v-6c4d8baa="" class="item">
-                            <a href="{{ route('user.profile') }}">
-                            <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
-                                    src="{{asset('')}}static/img/Icon/Home_icon/profile.png"
-                                    alt=""><span data-v-6c4d8baa=""> mine </span></div>
-                                </a>
-                        </li>
-                    </ul>
+                <div data-v-37526a6c="" class="footerheight">
+                    <div data-v-6c4d8baa="" class="footers" data-v-37526a6c="">
+                        <ul data-v-6c4d8baa="" class="flex tac">
+                            <li data-v-6c4d8baa="" class="item">
+                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOTSURBVHgB7VixctNAEN29eJh0iI4O01FmhmFonT8gX0AomMl4kmD/AD5DRRUTg/EMBUlJR74A19DkE5QvIOmCY9+ycizp7iTZZ0fxUeRVp9Pp9HT3du9pAe5wu0AoCY2GDIZKvCGiGk9am85+yu3O58PWMZSEUgjv7MltBGzxZNWCISEiyDKI34jwzq6sIU6I1hwfCfmNjd5h6wSWxFKEX9flRmUND/KJ4hGROiGAc76/zR/00h5BgD/oSjX7fRnCgliIcKTTvyPo5JIgGjDJdv+THOj9Ow1ZFWM44Fe9yHn9kbpS7UWIOxGOA4pZNfgysGY4VYqaNlEbM3WOKNVQHbsQn0u4vv+eiSqZIRptOetx0UCaQdwpMAsJTwPqW87E57zSH+9VoNPpyHNYEvVdKYmltShxLCCaH/nXROVNiBrvYn3jCGReTDDCqzFtfe3JUygiXN9/12JSEjI8OaBG8GqZqHbBTOKs797h23ZymTzEKysQf4JNNCfybwvXxFmGaO6uItqMOVTizkgG2piJjnpdWdqR6oJ+Z7KDm3ZgTrkNoraIB+uaLesYXRb9rjzi7W3G18xtI26LvAfGis7AM6KTUrtMUqrQBoRJJxaamJUBzbwfxo1UEgSlpKrSQFRNmxTG7VQSmHbyclfBMzjQgrz+VBIEF1p/AJ5B2gmIKMK4rWeJVBIo7oNncKZKOZBKkoCeJRLC7Ger4BnsmZNdZg0n3BLCCtNIRIHeJQG6JARmCRtZgvxrWE9rinLSmpWoq+AfCeGxguwKs6sI9dHRXwZ4QmSC9Ou1PMLr5grD5aVHWYzMHdZtbUI4Y8or/4UsIhi8DPNj+AmB/nKx7mXQlKoofIjoAXiC0KwBKTJWuGKNDSHOEI5+YsZfdQYEqvml2+7AfKSHBhqWwVphMnywW9A5ko2AIFpOU+r+l1wl4eonrAnnwM3CIj4qesaQBGpBp0A5aVhVaEsoaADN+UBUF2oILnKITt0g+T22gs4gHPmJeMmF+ZWFmP44NqBEsG6D5Hce8Y9+b0aW8Hdw6NUgrtvNCjpj+b0QzliC0aygM/1E4MNPDIdmOl1fN4MuU1ur77UjzQTTu5NSKqwIE0uJk0J5ddoV9rqtx/qYSuYpLvhBXAUi2LDLV6tEVNCx+9bsjt+/BoNnz2tcacEn4BO8cFwq+2B3r+WNZdLfnz6vnWF0PCM+hBUiKkCy8ZJ5ZO+wCvwDg/VuTYkQ5BwAAAAASUVORK5CYII="
+                                        alt=""><span data-v-6c4d8baa=""> Home </span></div>
+                            </li>
+                            <li data-v-6c4d8baa="" class="item">
+                                <div data-v-6c4d8baa="" class="on"><img data-v-6c4d8baa=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAOWSURBVHgB7ZnbUdtAFIb/lWTP5ClOB6ICoIKICgIVYCoAnhM7AhcQUwGkgrgDlAoCFeBUgN8ygy1tzllZN1s2u5Ys88A3oxldLOmfo7PnZuCd7SJQlanvwbL3IeHR0QFtnfnGTCDkGFLQFj0CMkDLD1CBzQRLv4PIOichFzlxuozprQGs8ArCH8MQM8Gx0O9zodURuDMVri84HJBF4cPcoq8xps2H0/up82M9weH1j9qsulKJHMLuX776s7VX2QVC+xfteWgCIR9gRUfkIpNVP7HWPiCy7tGUWEaKg7mBVrJacOwGB2geT717BeUu8XLdhSVusUsieYl2f7h4elnwP99Fy2ZXcLFbJrDDvUV/XnYJ2/axe7FMHPMXKFo4tu4TzJlQjL6BpDRsi4+0zyHQRR3Y4ae8lZ3iRWVdM8pD0c18HbCFXFRhpuK/nxwWXcLCZ5hiRSelcbPdv8M0PFKWr4KgmiX/unSPqy5zawSFOkClb3KrhA90rdW7IOF7iKCVekvoYDrwkoOchYUHU4SqA2LY/yWGFPj/UBwtLhYW3u51KVSdAbl7dJEyzQeZYGHtox46lHB8zAZPtJ0WrrCbOD2ytuCaYaL9RJFl25xg6aJeXNruSPR9wU2Y9rchhawj6IoWIjVmJlgKF9uBUi2FynBwWxDe/vpAXYjugkxLWqvs5FaQ6JLw+/wCIjd80Ly7VHATdMgfM8PIUN+P5+QFG99syIiy1iEtulH2dueL5r2lmY5PbsMtAnKHK4rHQeGsCoOyq/UE7rzn5AWzP7mojwmFrysVERaJ0zbXvHoGivA32c0ER/I3PeQYdcAWdcIhnIWUzdlU2JxUPBgh08WZCRZCd8XmhbnpPmezl+tLtKLRUtvOn58LK4FTbIQVJHvF8nI2eIaZH5cW2SnVBi4JY5Ud5xTDmn4gT+ioRpWFLTIbHKu6gtN0lcXMU6LCYZ64rX+GOTx+onQbPkJaLq0F/vQe6iD+guPkcLmnmw6GdPYcbwEeZdm9s/yp5UznhD62n0R0GKu52wLLgnkBcfzcPX7ZkLC8luBgX7W1qQK/e8VwcP1sjWvZJkdVDDe1dv9w1eX11ZodnqgHNEegOvA16I1bm4gc7AbcsL6C/kC7rjlDOSOqjcvXjKSI1fbTr2z2l0FSE1ib1gQbM6JFeMI7ZoITMuE8eHHRBE5Pad1McB7Vo0WeGhNw5x03s/U2AnED4OOdBvgPjps+0WZvF7UAAAAASUVORK5CYII="
+                                        alt=""><span data-v-6c4d8baa=""> Video </span></div>
+                            </li>
+                            <li data-v-6c4d8baa="" class="item">
+                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAVaSURBVHgB7VjNUhtHEO4eCfAt8i23iDfAVTgVVw5gn3KLeYKIQ6r4NeIJtJAHQJgfU5UD4gkEpyQnKTcnpoJ4AuuYW+RDqozQzqR79m92tatdSUt88VdFsfOj2W97ur/uGYDPeFgg5Ihq1Sr1pdgBparULCmAtrpXq2dnVhdygoAccWeLcyJr0WOJ22SNZTGDN2trVhlyQm6EN17t1xDUy5ihkpjFJlsfckAuhH/csBZcyzpA6FB7z28rWLhTogY5YGrCa1WrXCxg0+jqyr5aOT22LKXUhdeJUlU3X/30A0yJqQmjLQ7IV8tem0juekE2V4QqBV43GJP1af15KsJDfktu8ObYuvSa9brVG9hqhR57bpf2Z5gCBZgQ7Aoo4dLo6pIbrETn/fWu/ffi06U7RPzO7fpy8dmL0vUfrd9gAsTqMEf0v31nm38+tToQR9bGluEKXXmvno/S2/Xt/aa5G+Q6K+ZueO/9aIMzR0H37NhqwyjC/IN7imYltfB76AKKuuzbVx6h9S2rQRbzAwgRKievaxcwArz2nY03xkf26COf8JraAAOwzDW9d0cNgSMWjAE2UEAv9EHkt6wIkAEsfzMFvAmWI/kDvPQyY8LPQqT9oOOUOpqsZleJWj8rWQa7l5JyN1gOFszM6KJHfaYblgWpjdfwCZNPVYJ18HK2oB7Lgpo3tTQC/eUwJt6c7NV5/ZghJrpH750nIzyh50N/xHCVot8X0lJ5yJIEjhxVyMcssGEZAWvePPJba9KiZq4gV8n9Fty1mOjhbJFU0HmnhgS4JGvuuM3SEGFwyOkBIfAL8wVndU2swX9r21ZFKCifHFkXMCGY2NqWtcrFUZRoAnrDhBWrAfmUflaPk355dmQ1IAe4ktVOnIBGPGGQLYNMh8rvJPJl+MQQBgcK9GELKwUf0BM5FF9lWBNoW5f5f5zAx0FL5wCW1QA6Gfzf91tE4c/1LYzhIqUMKdjc2T8QiC3+W9+uVdPmc3Lo2/iekkOTivpW2nwiFBhNyQ8QJSwNP6FFy5ACKYM0iyBquiYeQZZTOQRWK6dVbSR9YW2OEtZBFyD1dIBKXZnzKYM1k0gIic1QUsJ0l0BlcIgNumKYcNqRhsSda9220VXGGTyPzmPX0RktgC7wIQ2GSkgVQ/iRYXaGV62NgiqoVbNAZ11dZ4IuuF6OpHJIq+oM+AazZYxLGJlNY6aIqUrBCSVSoOujEAfh0DkPOHbkbhay7PNmuxBH2FnRcIsRycOEW9DsmX0chJFznnMaoToiy5owCO+u+ZFhwhMmD03ELFZoOyPnvPY4VV0EIVcNEebk4TcyJg8PMUHooUuJYhXGQUJaZkRcwqhDUSXqahKiQQjOqeL5uFVdUlrWY6GZiN3g7ePXE14QuqR75AoT3aspxCWfEsCtOTZ0pqP0+Y/Xloqsk7FOyAsuh/fgyRrCy9PXNT9JhSzM0mb6IaXoXK6XxoF7avY1eFao383x4YsUKf2v4UTgVWT/B3TNAaaRsBEt7ocIz81gwwwcqsbO87p5TIM+6htyKO/D+q75RDv0F9H9mNFV7ktsPTRpfe1l3kuQrscFbOIN/MaWVScn3jG6upNIVBqcIBMHfIVgvuv0qDYfNz/xbu3dn+1fF79enqev9vS4hAWsPP3mxaNvny3dvn3b/ghTguPDVvgLx4rRrQ1zfd2OPZgipCDG0oyee2PTkaBuYRxQFhN82FV6+0uRsQ6XnqN2MZUwY32zVkWhb9Afzo+duwkr7cifiTBjxIXdVODCiFRpL2uCykzYg65V+RZIie8R6LAa+Hg2gkAVoRIdunpty4G6yjuIP2Na/AfDQbMkgMZzqgAAAABJRU5ErkJggg=="
+                                        alt=""><span data-v-6c4d8baa=""> VIP </span></div>
+                            </li>
+                            <li data-v-6c4d8baa="" class="item">
+                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAJiSURBVHgB7ZjfcdpAEMZ3LzivoQTcQVKBcQd0YHgjnjCQBqJLKtCExNFbcAdOBeAK4lQQleBXG6PNrtE/giQksE6yR78ZRjppBR+nve/2DqCh4XmD/1+YTHT73lNjIuryzS6UAAFe0dL76DjahYJsCB5OdAdXOOeLHSifW29J74qKVvGGQbFCG4/wJxSkFZwMR7q/KRZnRN4v4p6AJ4R7qAeI48dfAHgLBQkFK+IvCRMEZxfTTwMogeEHLaLHfrMNBYlSAqN/65F3CTUl7NPz0WeCqkC4YSH296/W5e5Qn0oFR7jsHKdZzqGgXnTUEc5lLkgLaCVeJZh4QH/AEPya+4h45jc79w8w4aNOik0ULGKdb3oB5li8Z/cIRBPiSVpgnVLiKjjJKglqIzjvBFW3QbeTZye4BRWxq4yVeYHTZEFLGsR9uZIeljL2boW/gUhnDTC5x778l+uPMKYSwUXLWLY7Kzg3nhJ5y1glPe8Ljb8F44LzlrF+GWptPQ+mObCMrdTWlMI3UBDjgsWqogb2oCDGcxiJrnkwddct6p+PviSmhlLqBGi7RDcu+HUL7LsVnEVOQX2F2N8KjInlyWURnBtPCdvWt/SKTlmOm/cZeoDQSSoZdI6t3R9T65jr7gF3301anPSsR5tLpspqCcGZ6hkf5CO+2+XUmAf3LqYWJj3TlJdlkyh4H0M3RSj4UEM/FFk5xxqpAzEcdHkN/anB9f5aL7bMl2t2RvwaWQFIUW1wuzUNlx3iOO1mmBL7GHoJPG5VZQUkep0U2Yp4SxSx8P7tPsgEwUKuZdqWjoOGhhfMPww07DiKFGxtAAAAAElFTkSuQmCC"
+                                        alt=""><span data-v-6c4d8baa=""> Assets </span></div>
+                            </li>
+                            <li data-v-6c4d8baa="" class="item">
+                                <div data-v-6c4d8baa="" class=""><img data-v-6c4d8baa=""
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAARgSURBVHgB7VlLctNAEO0em2RJuIFuEAMFxQ7nBMAJYEOVMYSYC+AxHAAHQuwdZskKbhCzY8HCnABxAsKOfDxNt6zPSJZkyZ+YRV5VKqPRaOa51dPT/QRwidUCYUE0num6AtwmxDoA1XjCLZj8CY55BZcIXSTzwwAM+wd6CAtgLsKtlt46NWoPiFoWuaJwedmhOTOdfl+7UBKlCAvRM1JtMh7RJQAHZYkXJtx8/potajSkWZRoBAq+GoIRkFgwtoKjEGpg4C4g1lKmdhFBv3/b/gjLIvx079WbFKseM9H9jSp0u119XGSeRks76hxa7O/3eGHHvkcKu739ly9mzZFLWFzgZIyfeVAdFiCaNu8pE2eLtxNsRhuKdvLmrUIOTg0eMVn7NbrmjHbm2Sw2fEKaLT7AsbeG490gqImBuLWT9azKuiFuIBME10Q03KjQ9UXJ2uh3tbvJcxKHu6BP3uYTWTsDqS7R2NWPOLZ+AIts70Bn/upl4Mlu58h2PQLzoveu002Om7KwbAyEmG+5m1V4ACsGW/oBQRRhEFRbfD05boownoO2d7D47LybqwxkDaqQvMVgra0TjvnJcTHCnnURH4YdRJ1l+uwsiE9LBAqukUNp0soxwmJd69KV0JWcNO01ZaHM2AD+muEb9cKfhbhLIN4NmhzIvyRdofn8Vft0jL+bu52fj5u6BjmwxzYa2oGC8Na0rMyc9lIJS9Zl+y6dmP2p2Qzd91vOlYragzwQ6WCsqkKp3CPxZreEGyQJK/s04xMnzXcJozyCyDhQFKiuQglMrMx5SfA4Uc3iGZLcDtuGvsLaEXFg96wH7YgwoRO2Mfp164KxOEiBELUDoBV7kyniOhDnELqiSuv8D5FKuBR4A/6ZMSQKiWRmjS0MlbpABgio45/3LpzlhyoypgOT3HlkzqcPoJIIuVUjMnDsV7ygMF4NBOi/0wP+N4AC6L33Mq35idocMPJnFfVRFBkIarBmKIuDIfoV9gcNsmOvio7o9SHioMgOcT64MIxZeJ7EZVmQrBHQsrBVkYSEfUUmM0u6SFTGsTzFtdWieFhLZEnrsLKsaSBMsoTI0L4fI5zMktZhZZHA4hWPFx5DVOyLb9+Gf2/drl9j697xOlipuXmj/un79+HKSySBV/EY+BL14KB3GFeEpk46trIGq65SV/DoIlxD1hCNwupyk9YVTBH2ikETG+j44sZK4StMTnAteltaTp4pVTWf6a5dnojYIaX4sivoVDmMN//hgU7dP7naWlLcgCVJVQE8n7Wlqgmj0eHb9vWsZ3K1NbGo6GvWUe2wT//kAlNvKLO/kBgogvg4LoiLwrRZyRdtCsmtSffw4SJX1mMuVotaPFe5z3GD0oQForeJhJXUdf1ZRlKD5QrakhukJ1XeJvezu5ko9cnA8zmRsmx1aBFMdGZdxrXm+igTEBfhJdXi+VhIEF/SZy+oE6htBNYqEB2wPntxlcIE1Yjz7SHnCD8W/ex1iVXjHzYJEer1ZwIHAAAAAElFTkSuQmCC"
+                                        alt=""><span data-v-6c4d8baa=""> mine </span></div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

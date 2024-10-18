@@ -129,6 +129,9 @@ Route::post('/change-trxpasswword', [App\Http\Controllers\UserPanel\Profile::cla
 Route::get('/quality', [App\Http\Controllers\UserPanel\Invest::class, 'quality'])->name('user.quality');
 Route::get('/taskCenter', [App\Http\Controllers\UserPanel\Invest::class, 'taskCenter'])->name('user.taskCenter');
 Route::get('/quality/records', [App\Http\Controllers\UserPanel\Invest::class, 'records'])->name('user.record');
+
+Route::post('/complete-task', [App\Http\Controllers\UserPanel\Invest::class, 'completeTask'])->name('user.complete-task');
+
 // add fund
 
 Route::get('/AddFund', [App\Http\Controllers\UserPanel\AddFund::class, 'index'])->name('user.AddFund');
@@ -170,6 +173,8 @@ Route::get('/WithdrawHistory', [App\Http\Controllers\UserPanel\WithdrawRequest::
 
 //Task
 Route::get('/Task', [App\Http\Controllers\UserPanel\TaskController::class, 'index'])->name('user.task');
+Route::get('/TaskVideo', [App\Http\Controllers\UserPanel\TaskController::class, 'TaskVideo'])->name('user.TaskVideo');
+
 Route::get('/productDetail', [App\Http\Controllers\UserPanel\TaskController::class, 'product'])->name('user.productDetail');
 Route::post('/productDetails', [App\Http\Controllers\UserPanel\TaskController::class, 'productinfo'])->name('user.productDetails');
 Route::post('/update-task-status', [App\Http\Controllers\UserPanel\TaskController::class, 'updateTaskStatus'])->name('update.task.status');
