@@ -250,7 +250,7 @@ background-size: 100% 100%;
 overflow: hidden;
 }
 #app .Top {
-position: fixed;
+/* position: fixed; */
 right: 0.2rem;
 bottom: 1.54rem;
 }
@@ -9204,12 +9204,15 @@ max-width: 8.5rem;
 }
 </style><style type="text/css">.level-info[data-v-5a5733d2] {
 margin-top: 0.48rem;
-background: url(/static/img/bg-level-card.8bcd51f7.png) no-repeat;
+/* background: url(/static/img/bg-level-card.8bcd51f7.png) no-repeat; */
 background-size: 100% 100%;
 padding: 0.32rem 0.24rem;
 display: flex;
 align-items: center;
 line-height: 1.2;
+background-color: #223f7a;
+border-radius: 0.2rem;
+
 }
 .level-info .level-icon[data-v-5a5733d2] {
 margin-right: 0.1rem;
@@ -9246,7 +9249,7 @@ min-height: 0.52rem;
 padding: 0 0.12rem;
 border-radius: 1.2rem;
 /* background: #fff; */
-color: #022627;
+/* color: #022627; */
 font-size: 0.24rem;
 display: flex;
 align-items: center;
