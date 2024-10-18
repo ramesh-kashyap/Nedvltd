@@ -2153,14 +2153,14 @@
                 max-width: 8.5rem !important;
             }
             .video-js .vjs-tech {
-                object-fit: contain !important;
+                object-fit: cover;
             }
             .scaled {
                 height: 30vh;
                 transition-duration: 0.3s;
             }
             .scaled > .video-js .vjs-tech {
-                object-fit: contain !important;
+                object-fit: cover !important;
             }
             /*移动端点击的时候有背景问题*/
             /* * {

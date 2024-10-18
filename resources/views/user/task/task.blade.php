@@ -2638,7 +2638,8 @@ type="text/javascript"
         }
 
         .video-js .vjs-tech {
-            object-fit: contain !important;
+            object-fit: cover !important;
+            height: 100vh !important;
         }
 
         .scaled {
@@ -2647,7 +2648,7 @@ type="text/javascript"
         }
 
         .scaled>.video-js .vjs-tech {
-            object-fit: contain !important;
+            object-fit: cover !important;
         }
 
         /*移动端点击的时候有背景问题*/
@@ -13553,7 +13554,7 @@ type="text/javascript"
                                                 style="box-shadow: transparent 0px 0px;"><span
                                                     aria-label="My landing though">{{ $video->description }}</span></span></div>
                                     </div>
-                                    <div role="button" tabindex="0"
+                                    {{-- <div role="button" tabindex="0"
                                         class="page-video-float-bottom-notice van-cell van-cell--clickable van-cell--borderless"
                                         fdprocessedid="zu29oi">
                                         <div class="van-cell__title">
@@ -13563,7 +13564,7 @@ type="text/javascript"
                                                 membership， </span><span>Like and comment to earn money</span>
                                         </div><i class="van-icon van-icon-arrow van-cell__right-icon">
                                             <!----></i>
-                                    </div>
+                                    </div> --}}
                                 </div>
                                 <div class="video-player-progress">
                                   <div class="van-slider" style="background: rgb(35, 37, 46); height: 6px;">
