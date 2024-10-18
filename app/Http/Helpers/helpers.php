@@ -470,6 +470,104 @@ return true;
 //     return isset($multipliers[$cnt - 1]) ? $amount * $multipliers[$cnt - 1] : 0;
 // }
 
+function add_level_income($id,$amt)
+        {
+
+          //$user_id =$this->session->userdata('user_id_session')
+      $data = User::where('id',$id)->orderBy('id','desc')->first();
+
+        $user_id = $data->username;
+        $fullname=$data->name;
+
+        $rname = $data->username;
+        $user_mid = $data->id;
+
+
+              $cnt = 1;
+
+              $amount = $amt/100;
+
+
+                while ($user_mid!="" && $user_mid!="1"){
+
+                      $Sposnor_id = User::where('id',$user_mid)->orderBy('id','desc')->first();
+                      $sponsor=$Sposnor_id->sponsor; 
+                      if (!empty($sponsor))
+                       {
+                        $Sposnor_status = User::where('id',$sponsor)->orderBy('id','desc')->first();
+                        $Sposnor_cnt = User::where('sponsor',$sponsor)->where('active_status','Active')->count("id");
+                        $sp_status=$Sposnor_status->active_status;
+                        $rank=$Sposnor_status->rank;
+                        $lastPackage = \DB::table('investments')->where('user_id',$Sposnor_status->id)->where('status','Active')->orderBy('id','DESC')->limit(1)->first();
+                        $plan = ($lastPackage)?$lastPackage->plan:0;
+                      }
+                      else
+                      {
+                        $Sposnor_status =array();
+                        $sp_status="Pending";
+                        $Sposnor_cnt=0;
+                        $rank=0;
+                      }
+
+                      $pp=0;
+                       if($sp_status=="Active")
+                       {
+                         if($cnt==1)
+                          {
+                            $pp= $amount*12;
+
+                          } if($cnt==2)
+                          {
+                            $pp= $amount*4;
+
+                          } if($cnt==3)
+                          {
+                            $pp= $amount*2;
+
+                          }  
+                          
+                       
+
+                        }
+                        else
+                        {
+                          $pp=0;
+                        }
+
+
+
+                      $user_mid = @$Sposnor_status->id;
+                      $spid = @$Sposnor_status->id;
+                      $idate = date("Y-m-d");
+
+                      $user_id_fk=$sponsor;
+                      if($spid>0 && $cnt<=3){
+                        if($pp>0){
+
+                         $data = [
+                        'user_id' => $user_mid,
+                        'user_id_fk' =>$Sposnor_status->username,
+                        'amt' => $amt,
+                        'comm' => $pp,
+                        'remarks' =>'Quantify Level Income',
+                        'level' => $cnt,
+                        'rname' => $rname,
+                        'fullname' => $fullname,
+                        'ttime' => Date("Y-m-d"),
+
+                    ];
+                     $user_data =  Income::create($data);
+
+
+                }
+               }
+
+                $cnt++;
+     }
+
+     return true;
+  }
+
 // Helper function to save income data
  function saveIncomeData($userId, $username, $amt, $commission, $level, $rname, $fullname)
 {
