@@ -11715,7 +11715,7 @@ margin-left: 0.2rem;
 .user .inp_content_box[data-v-63783c8c] {
 background: transparent;
 position: relative;
-z-index: 10;
+z-index: 7;
 border-color: transparent;
 }
 .user .inp_content_box[data-v-63783c8c]:before {
@@ -12014,7 +12014,61 @@ background: rgba(0, 0, 0, 0.6) !important;
 .van-popup--bottom[data-v-3670e178] {
 max-width: 8.5rem;
 }
-</style></head>
+</style>
+<style>
+    .form-control2 {
+        display: block;
+        width: 100%;
+        padding: 0.175rem .75rem;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: var(--bs-body-color);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-color: var(--bs-body-bg);
+        background-clip: padding-box;
+        border: var(--bs-border-width) solid var(--bs-border-color);
+        border-radius: 10px;
+        transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    }
+        /* border: 1px solid #887f7f; */
+        .iti {
+            width: 100%; /* Make the telephone input span the full width of its container */
+        }
+
+        .iti__flag-container {
+            width:24.67%;  /* Adjust the width of the country code dropdown to be about 1/6 */
+            
+        }
+        .iti--separate-dial-code .iti__selected-flag {
+    background-color: rgb(255 255 255);
+}
+        .iti input[type="tel"] {
+            width: 83.33%; /* Remaining width for the input field */
+        }
+        .iti--separate-dial-code .iti__selected-dial-code{
+            margin-left: 0px;
+        }
+        .iti__flag-box, .iti__country-name{
+          color:black;
+        }
+        .iti__selected-flag {
+                z-index: 1;
+                position: relative;
+                display: flex;
+                align-items: center;
+                height: 100%;
+                padding: 0;
+            }
+        
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js"></script>
+</head>
 
 <body class="mein_cn">
 <div id="startLogo" style="display: none;">
@@ -12051,9 +12105,7 @@ max-width: 8.5rem;
             <div data-v-37526a6c="" id="content" class="content-scroll" style="padding-bottom: 0.3rem;">
                 <form action="{{ route('loginAction') }}" method="POST" name="login_frm"  id="form-id">
                 {{ csrf_field() }}
-                <input type="hidden"  id="country-name" name ="country" value="" >
-                <input type="hidden"  id="dial-code" name ="dialCode" value="" >
-                <input type="hidden"  id="country_iso" name ="country_iso" value="" >
+                
 
 
                 <div data-v-b149b182="" data-v-37526a6c="" class="container">
@@ -12064,13 +12116,23 @@ max-width: 8.5rem;
                             <div data-v-fa37b51c="" class="title_box">
                                 <div data-v-fa37b51c="" class="title">Mobile</div>
                             </div>
+
+
                             <div data-v-fa37b51c="" class="inp_content_box">
-                                <div data-v-fa37b51c="" class="phone_code"><span data-v-fa37b51c="">+1</span><i
+                            <input type="hidden"  id="country-name" name ="country" value="" >
+                <input type="hidden"  id="dial-code" name ="dialCode" value="" >
+                <input type="hidden"  id="country_iso" name ="country_iso" value="" >
+                                <!-- <div data-v-fa37b51c="" class="phone_code"><span data-v-fa37b51c="">+1</span><i
                                         data-v-fa37b51c="" class="arrow van-icon van-icon-arrow-down">
-                                        <!----></i></div>
+                                        </i></div> -->
+                                        <div data-v-3976fdc1="" class="set_area">
+
+                                            </div>
                                 <div data-v-fa37b51c="" class="input"><input data-v-fa37b51c="" id="phone" name="phone" type="text" 
                                         placeholder="Enter phone number"></div>
                             </div>
+
+
                             <div data-v-a84105cc="" data-v-fa37b51c=""></div>
                         </div>
                         <div data-v-63783c8c="" data-v-b149b182="" class="input_big_box user mt" data-v-37526a6c="">
@@ -12385,5 +12447,44 @@ setTimeout(() =>{
   
 });
 </script>
+
+<script src="https://code.jquery.com//jquery-3.3.1.min.js"></script>
+<script>
+        var input = document.querySelector('#phone');
+        var info = document.querySelector('#info');
+        var status = document.getElementById('status');
+        var iti = window.intlTelInput(input, {
+            initialCountry: "in",
+            utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js" // Load the utilities script
+        });
+
+        input.addEventListener('blur', function() {
+            if (iti.isValidNumber()) {
+                status.textContent = 'Valid number';
+                status.className = 'valid-number';
+            } else {
+                status.textContent = 'Invalid number';
+                status.className = 'invalid-number';
+            }
+        });
+
+        input.addEventListener('countrychange', function() {
+            updateCountryInfo(); // Update the information displayed when the country changes
+        });
+
+        function updateCountryInfo() {
+            var countryData = iti.getSelectedCountryData();
+            console.log(countryData)
+            
+            $('#country-name').val(countryData.name)
+            $('#dial-code').val(countryData.dialCode)
+            $('#country_iso').val(countryData.iso2)
+           
+        }
+
+        // Initialize with the current selected country's info
+        document.addEventListener('DOMContentLoaded', updateCountryInfo);
+    </script>
+
 </body>
 </html>
