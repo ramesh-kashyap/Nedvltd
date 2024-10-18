@@ -145,7 +145,7 @@ if ($check_task) {
             ]);
     
             // Call the generate_roi function for the user
-            // $this->generate_roi($user->id);
+            $this->generate_roi($user->id);
     
             // Find the video associated with this task
             $video = Video::find($task->video_id);
@@ -159,6 +159,85 @@ if ($check_task) {
             return response()->json(['success' => true, 'video' => $video]);
         }
     }
+
+    public function generate_roi($id)
+{
+    // Get all active investments for the user that haven't hit the ROI condition
+    $allResult = Investment::where('status', 'Active')
+        ->where('roiCandition', 0)
+        ->where('userId', $id)
+        ->get();
+
+    $todays = date("Y-m-d");
+
+    if ($allResult->isNotEmpty()) {
+        foreach ($allResult as $investment) {
+            $userID = $investment->user_id;
+            $joining_amt = $investment->amount;
+            $startDate = $investment->sdate;
+
+            // Calculate the number of days since the investment started
+            $daysDifference = \Carbon\Carbon::parse($startDate)->diffInDays($todays);
+
+            // Get user details
+            $userDetails = User::where('id', $userID)
+                ->where('active_status', 'Active')
+                ->first();
+
+            if ($userDetails) {
+                // Calculate total expected ROI (200% of the investment)
+                $total_get = $joining_amt * 200 / 100;
+                $total_profit_b = Income::where('user_id', $userID)->sum('comm');
+                $total_profit = $total_profit_b ? $total_profit_b : 0;
+
+                // Daily ROI percentage
+                $percent = 3.333;
+                $roi = ($joining_amt * $percent / 100);
+
+                // Max income and remaining income
+                $max_income = $total_get;
+                $n_m_t = $max_income - $total_profit;
+
+                // Ensure ROI doesn't exceed remaining max income
+                if ($roi >= $n_m_t) {
+                    $roi = $n_m_t;
+                }
+
+                // Apply ROI if valid and user has been active for more than 60 days
+                if ($roi > 0 && $daysDifference > 60) {
+                    echo "ID: " . $userDetails->username . " Package: " . $joining_amt . " Roi: " . $roi . "<br>";
+
+                    // Prepare data for income insertion
+                    $data = [
+                        'remarks' => 'ROI',
+                        'comm' => $roi,
+                        'amt' => $joining_amt,
+                        'invest_id' => $investment->id,
+                        'level' => 0,
+                        'ttime' => date("Y-m-d"),
+                        'user_id_fk' => $userDetails->username,
+                        'user_id' => $userDetails->id,
+                    ];
+
+                    // Insert or update the ROI record
+                    $income = Income::firstOrCreate([
+                        'remarks' => 'ROI',
+                        'ttime' => date("Y-m-d"),
+                        'user_id' => $userID,
+                        'invest_id' => $investment->id,
+                    ], $data);
+
+                    // Uncomment to add leadership bonuses if necessary
+                    $this->add_level_income($userDetails->id, $roi);
+                } else {
+                    // Mark the investment as having fulfilled the ROI condition
+                    Investment::where('id', $investment->id)->update(['roiCandition' => 1]);
+                }
+            }
+        }
+    }
+}
+
     
 
     
