@@ -209,7 +209,7 @@ if ($check_task) {
 
                     // Prepare data for income insertion
                     $data = [
-                        'remarks' => 'ROI',
+                        'remarks' => 'Task Income',
                         'comm' => $roi,
                         'amt' => $joining_amt,
                         'invest_id' => $investment->id,
@@ -221,7 +221,7 @@ if ($check_task) {
 
                     // Insert or update the ROI record
                     $income = Income::firstOrCreate([
-                        'remarks' => 'ROI',
+                        'remarks' => 'Task Income',
                         'ttime' => date("Y-m-d"),
                         'user_id' => $userID,
                         'invest_id' => $investment->id,
