@@ -9860,32 +9860,38 @@ max-width: 8.5rem;
                   alt="">
                 <div data-v-43c0c5d6="" class="name">Task Record</div>
               </div>              
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              
+                  @if (empty(Auth::user()->email))
+                  <div data-v-43c0c5d6="" onclick="location.href='{{route('user.bindMail')}}'"class="nav"><img data-v-43c0c5d6=""
                     src="{{asset('')}}static/img/Icon/mine_icon/email.png"
                   alt="">
-                  @if (empty(Auth::user()->email))
-              <a href="{{route('user.bindMail')}}">
+              
               <div data-v-43c0c5d6="" class="name">Bind Email</div>
+              </div>   
               @else
-               <a href="{{route('user.ChangeMail')}}">
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.ChangeMail')}}'"><img data-v-43c0c5d6=""
+                    src="{{asset('')}}static/img/Icon/mine_icon/email.png"
+                  alt="">
+             
                 <div data-v-43c0c5d6="" class="name">Change Email</div>
-                </a>
+                
+              </div>
                 @endif
-              </div>             
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+                        
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.change-trx-password')}}'"><img data-v-43c0c5d6=""
                    src="{{asset('')}}static/img/Icon/mine_icon/funding-pass.png"
                   alt="">
-                  <a href="{{route('user.change-trx-password')}}">
+                 
                 <div data-v-43c0c5d6="" class="name">Funding Password</div>
-                  </a>
+                
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              <!-- <div data-v-43c0c5d6="" class="nav"  onclick="location.href='{{route('user.ChangePass')}}'"><img data-v-43c0c5d6=""
                    src="{{asset('')}}static/img/Icon/mine_icon/login-key.png"
                   alt="">
-                  <a href="{{route('user.ChangePass')}}">
+                 
                 <div data-v-43c0c5d6="" class="name">Login Password</div>
-                  </a>
-              </div>
+                  
+              </div> -->
               <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('user.tutorial')}}'"><img data-v-43c0c5d6=""
                      src="{{asset('')}}static/img/Icon/mine_icon/tutorial.png"
                   alt="">
@@ -9916,13 +9922,15 @@ max-width: 8.5rem;
                   alt="">
                 <div data-v-43c0c5d6="" class="name">APP download</div>
               </div>
-              <div data-v-43c0c5d6="" class="nav"><img data-v-43c0c5d6=""
+              
+              <div data-v-43c0c5d6="" class="nav" onclick="location.href='{{route('logout')}}'"><img data-v-43c0c5d6=""
                   src="{{asset('')}}static/img/Icon/mine_icon/logout.png"
                   alt="">
-                  <a href="{{route('logout')}}">
+                  
                 <div data-v-43c0c5d6="" class="name">Logout</div>
-                   </a>
+                  
               </div>
+            
             </div>
           </div>
           <!---->
