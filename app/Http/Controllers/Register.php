@@ -88,7 +88,7 @@ class Register extends Controller
            $tpassword =substr(time(),-2).substr(rand(),-2).substr(mt_rand(),-1);
             $post_array  = $request->all();
                 //  
-          
+        
             $data['phone'] = $post_array['phone'];
             $data['username'] = $username;
             $data['password'] =   Hash::make($post_array['password']);

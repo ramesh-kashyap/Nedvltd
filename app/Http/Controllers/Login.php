@@ -32,11 +32,19 @@ class Login extends Controller
                 }
             }
             
+            $user = User::where('phone', $request->phone)->first();          
             $post_array  = $request->all();
+           
             $credentials = $request->only('phone', 'password');
-
-
-
+            
+            $credential_phone=User::where('phone', $request->phone)->exists();
+            if( $credential_phone){
+                $credential=User::where('phone', $request->phone)->where('dialCode', $post_array['dialCode'])->where('country', $post_array['country'])->where('country_iso', $post_array['country_iso'])->exists(); 
+            }
+            else{
+                return Redirect::back()->withErrors(array('Invalid Username & Password !'));
+            }
+            if($credential){
             if (Auth::attempt($credentials)) {
                 $user = Auth::user();
 
@@ -59,6 +67,9 @@ class Login extends Controller
             {
                 // echo "credentials are invalid"; die;
                 return Redirect::back()->withErrors(array('Invalid Username & Password !'));
+            }}
+            else{
+                return Redirect::back()->withErrors(array("Country Code Doesn't Match"));
             }
 
         }
