@@ -8882,37 +8882,37 @@
                             <div data-v-4eabb456="" class="info-list">
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/e792176976e5039b2595a48c220144f9.png"
+                                            src="{{asset('')}}static/img/e792176976e5039b2595a48c220144f9.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">disney</div>
                                 </div>
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/22736bb480728b96ed2988c000efdead.png"
+                                            src="{{asset('')}}static/img/22736bb480728b96ed2988c000efdead.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">Universal Pictures</div>
                                 </div>
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/695f8380cd08187e597762f1ebd5daac.png"
+                                            src="{{asset('')}}static/img/695f8380cd08187e597762f1ebd5daac.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">paramount movies</div>
                                 </div>
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a2080442bc0325435710b7c51dfaa1f3.png"
+                                            src="{{asset('')}}static/img/a2080442bc0325435710b7c51dfaa1f3.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">Warner Bros</div>
                                 </div>
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/52714c42d8e86d7c9a0dacd9660c7eb6.png"
+                                            src="{{asset('')}}static/img/52714c42d8e86d7c9a0dacd9660c7eb6.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">20th Century Pictures</div>
                                 </div>
                                 <div data-v-4eabb456="" class="info">
                                     <div data-v-4eabb456="" class="icon"><img data-v-4eabb456=""
-                                            src="http://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240719/a05a8e47c1051b2eb64534dd0a5e1379.png"
+                                            src="{{asset('')}}static/img/a05a8e47c1051b2eb64534dd0a5e1379.png"
                                             alt=""></div>
                                     <div data-v-4eabb456="" class="name">sony colombia</div>
                                 </div>
@@ -8974,6 +8974,7 @@
     <script type="text/javascript" src="/js/chunk-moment.11610479-1728557826908.js"></script>
     <script type="text/javascript" src="/js/vendors~app.11610479-1728557826908.js"></script>
     <script type="text/javascript" src="/js/app.11610479-1728557826908.js"></script>
+   
     <script>
         let standalone = document.getElementById('startLogo1')
         standalone.style.display = 'flex'

@@ -12262,7 +12262,7 @@ max-width: 8.5rem;
                         <div data-v-4b91ba6a="" data-v-37526a6c="" class="txt" style="margin: 0.44rem 0rem;">
                             <p data-v-4b91ba6a="" data-v-37526a6c=""
                                 style="text-align: center; color: rgba(255, 255, 255, 0.6);"> Already have an account?
-                                <span data-v-4b91ba6a="" data-v-37526a6c="" class="theme">Login now</span></p>
+                                <a data-v-4b91ba6a="" data-v-37526a6c="" class="theme" href="{{route('login')}}">Login now</a></p>
                             <div data-v-4b91ba6a="" role="checkbox" tabindex="0" aria-checked="true"
                                 class="van-checkbox" data-v-37526a6c="">
                                 <div class="van-checkbox__icon van-checkbox__icon--round van-checkbox__icon--checked"><input

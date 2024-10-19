@@ -8183,7 +8183,7 @@
                         <div data-v-e20b77f4="" data-v-37526a6c="" class="container">
                             <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
                                 <div data-v-6e05afb9="" class="level-box">
-                                    <img data-v-6e05afb9="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/1641f8d0d8cccc0073b670899da8fb06.png" alt="" />
+                                    <img data-v-6e05afb9="" src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png" alt="" />
                                     <div data-v-6e05afb9="" class="level-info">
                                         <div data-v-6e05afb9="" class="text">My level</div>
                                         <div data-v-6e05afb9="" class="level">VIP0</div>

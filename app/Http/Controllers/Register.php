@@ -115,7 +115,9 @@ class Register extends Controller
           
          
 
-            return redirect()->route('home');
+            // return redirect()->route('home');
+            $notify[] = ['success', 'Registration Successfully'];
+            return redirect()->route('home')->withNotify($notify);
             //  return redirect()->route('register_sucess')->with('messages', $user);
 
         }

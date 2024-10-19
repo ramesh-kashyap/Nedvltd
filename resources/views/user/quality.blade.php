@@ -8119,7 +8119,7 @@
                         <div data-v-e20b77f4="" data-v-37526a6c="" class="container">
                             <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
                                 <div data-v-6e05afb9="" class="level-box">
-                                    <img data-v-6e05afb9="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/1641f8d0d8cccc0073b670899da8fb06.png" alt="" />
+                                    <img data-v-6e05afb9="" src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png" alt="" />
                                     <div data-v-6e05afb9="" class="level-info">
                                         <div data-v-6e05afb9="" class="text">My level</div>
                                         <div data-v-6e05afb9="" class="level">VIP0</div>
@@ -8162,7 +8162,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/548366aab95b030be94e636c3b5aa202.png" alt="" /><span data-v-6d2d4c36="">VIP1</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/548366aab95b030be94e636c3b5aa202.png" alt="" /><span data-v-6d2d4c36="">VIP1</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8200,7 +8200,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/a023bb83f4b9d8cb240d893f9ef784f6.png" alt="" /><span data-v-6d2d4c36="">VIP2</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/a023bb83f4b9d8cb240d893f9ef784f6.png" alt="" /><span data-v-6d2d4c36="">VIP2</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8238,7 +8238,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/81a1efcffcc253521dcd995c5853ad66.png" alt="" /><span data-v-6d2d4c36="">VIP3</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/81a1efcffcc253521dcd995c5853ad66.png" alt="" /><span data-v-6d2d4c36="">VIP3</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8276,7 +8276,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/846d5a108bc7d8ce48142c9bbce8bfd9.png" alt="" /><span data-v-6d2d4c36="">VIP4</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/846d5a108bc7d8ce48142c9bbce8bfd9.png" alt="" /><span data-v-6d2d4c36="">VIP4</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8317,7 +8317,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/7eb59eeaa5eab28a36858f3d17f891c4.png" alt="" /><span data-v-6d2d4c36="">VIP5</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/7eb59eeaa5eab28a36858f3d17f891c4.png" alt="" /><span data-v-6d2d4c36="">VIP5</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8358,7 +8358,7 @@
                                     <div data-v-6d2d4c36="" class="item bg-blur mt">
                                         <div data-v-6d2d4c36="" class="head">
                                             <div data-v-6d2d4c36="" class="level-box">
-                                                <img data-v-6d2d4c36="" src="https://nedvc-all.s3.ap-northeast-3.amazonaws.com/upload/20240726/ce807b55858408c1447508c719d6e637.png" alt="" /><span data-v-6d2d4c36="">VIP6</span>
+                                                <img data-v-6d2d4c36="" src="{{asset('')}}static/img/ce807b55858408c1447508c719d6e637.png" alt="" /><span data-v-6d2d4c36="">VIP6</span>
                                             </div>
                                             <div data-v-6d2d4c36="" class="amount-box">
                                                 <div data-v-6d2d4c36="" class="amount">
@@ -8472,6 +8472,7 @@
   document.querySelectorAll('.btn').forEach(function(button) {
     button.addEventListener('click', function() {
       var amount = this.getAttribute('data-amount');
+      
       // Redirect to /user/deposit with the amount as a query parameter
       window.location.href = '/user/deposit?amount=' + amount;
     });
