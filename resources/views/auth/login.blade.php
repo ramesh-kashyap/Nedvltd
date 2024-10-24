@@ -58,7 +58,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: rgba(6, 132, 117, 0.8);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12262,13 +12262,13 @@ setTimeout(() =>{
                     alt="WhatsApp">
                 <p>WhatsApp</p>
             </li>
-            <li><img src="/static/img/icon-facebook.39c9db42.png" alt="Facebook">
+            <li><img src="{{asset('')}}static/img/Icon/-facebook.39c9db42.png" alt="Facebook">
                 <p>Facebook</p>
             </li>
-            <li><img src="/static/img/icon-telegram.02602aee.png" alt="Telegram">
+            <li><img src="{{asset('')}}static/img/Icon/-telegram.02602aee.png" alt="Telegram">
                 <p>Telegram</p>
             </li>
-            <li><img src="/static/img/icon-instagram.afaf020a.png" alt="Instagram">
+            <li><img src="{{asset('')}}static/img/Icon/-instagram.afaf020a.png" alt="Instagram">
                 <p>Instagram</p>
             </li>
             <li><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAT8SURBVHgB7V2LddowFL2dIGxQbdBsgDconcDeoGwAG5ANlE6QbuB0AtIJzAYkE7h6rp1jFH8k++ljyD3nHkILfubydPUXXxAWK8VE8avivaKoidZjg5Pia82X+vnf+u9X3AgawQ6KhWLJxGN9zQRXikRRKp7BJ1ofizpWgoWDsm0P3kybImaKhaERzke2XZ2QCcJm3GKFFIo54hVOp8THWj4YNoiruC4qGx+wLNG6uEcAUEWRY7mi6aR2pIAnCMRdUUxlAQ8iClyneF5EFLhu8ZyKKHAb4rVFXIERRwDljTEHE/YAyhvlASP4MvL/Gf632juxWq0ghKgebfH8/AyfuL+/v7jP0+lU0QA/FH9jAgRGfE/dVHk+n8spOBwO3jJpv99fxC6KolRimr6felmT/FCaBNhut+VUbDabIOKpUmN7nSdYIrMJ8PT0VE4BZe+ED2PMLMs4xGuYwAKFzcWpONDNtUHFu+u19O9tHI9HJ+JRdjOKV9aaGGE/JYCNMHqx5/ZD3Zvp774v1JJbjGCFGQ1mG2H0Ys/lh5RlpqVhAkcrlGxukDzPjYTRiz2HH3aJl6Ypl3gNUwygmBvARhhOP+wSb7fbcYtHzPvE23AFSZLk4oNQVva9lsMPuyoxR+I1TLoElJxBfPkhiUeZ61E84ocu3spFIN0PKTNhkEE2fqiL76mH86EyYSu+U4Xp8sOx7tbj4+PFe6SUPsRrmLQFlK4CufLDh4eHD4J7Eq7hRTF2Ot43xw/pvfprZg4OcLFoxHPifzrn+GG7Icw0OMDFygcTH8Hm+GGTYZGJV9baYecr4Bw/1McdIxCP+JMElD6D6sJQVvW9tm+YzPUwmAUlCZj7DjzVD8uSdWSFg9VAq/cZN73fOlQcdT8cKvYBWJCAQVZW+e4vuxQw2A2QEKZ+aFrsAzDsDegDAS76y1ctIInQbqIM+aFNsb8ZAYm6xy3MD+NYNKQ3Vxbih+coBNS7aAvyQ2oChl2q2yde44d9oyyR+GFOAsoAgTvFI8H0pk3kfihJwJ+eg1YcWnZhMibYMLAfVoMJG/gLWHFs2UVXHzhSP1yTgMJTsIqmyy662ocR+uH7xFLhI2DX5Pd6ve59vZ6pQ8LQVKZnP6xq4AbScbDJyy70SiUiP5RtATOHgWYvuzAVRo/j2A+/twWksuxkWItj2UWEflj1QHTkLsTjWnZhI4xe7B34oewSMGEOwr7sIiI/XKMHbMVYXznAtezCxg/15hKTHxYYwI7jQ+pdNM5lFxH4YYoBzK5MfCy7sGkf2kwbGLCAAXac4rlqRtj4oem0gQFTGGBSFjLvyTCiLkzffLHNtAFmZl+Drc3Fda/xtexCF4ZAzyl+w76taBP8MIUlcpMLO9yTYUTdD20wVOw1SkyAwEhRth0ccEXdD21g8GUXGNjBPrbdlYpy755Z2kJ6d3f3/vzt7Q0vLy8IAfXFwRZ0v7Tl9fV18PS8TPEXZoAELG+UoxuuTUC18i1u+b8Y75sLgds7dEKAGQKfx57MhsDnwTuzIfB59NNsCFyXiF4PH2vjGpo49BlYTymyBTW2l3gAI91ztbIgBggs6zzBHBEdAdpGhri9kbIuReQgP9khLiHP9T0F9TpbCITPyEUK1wWaxaddPb5EyzEw9bhkUCaQmBK8mVnU1/wOz9k2Nh7oGkLxGy5/CmPVemzj1HokNj+J8QcBfw7jHz5hzj+236nuAAAAAElFTkSuQmCC"
@@ -12303,7 +12303,7 @@ setTimeout(() =>{
 <div class="van-overlay" style="z-index: 2022; display: none;"></div>
 <div role="dialog" tabindex="0" class="confirm-card-dialog van-dialog" style="z-index: 2023; display: none;">
     <div class="van-dialog__content">
-        <div class="confirm-card-icon"><img src="/static/img/icon-task-done.0eb84c03.png" alt="success"></div>
+        <div class="confirm-card-icon"><img src="{{asset('')}}static/img/Icon/-task-done.0eb84c03.png" alt="success"></div>
         <div class="confirm-card-content success">
             <div class="mb-12px text-16px"> Successfully received the income! </div>
             <div class="text-primary text-24px"> USDT </div>
@@ -12348,7 +12348,7 @@ setTimeout(() =>{
     <div data-v-5954443c="" class="modal-notice-box">
         <div data-v-5954443c="" class="modal-notice">
             <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                    src="/static/img/noticetopbg.69a72412.png" alt=""></div>
+                    src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
             <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
             <div data-v-5954443c="" class="notice-desc">
                 <p>Latest Activity Notification</p>

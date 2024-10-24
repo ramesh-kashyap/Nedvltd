@@ -43,7 +43,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: rgba(6, 132, 117, 0.8);
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -9396,7 +9396,7 @@
                             <a href="{{route('user.level-team')}}">
                             <div data-v-0ff1fb10="" class="back">
                                 <img data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/icon/leftarrow.png"
+                                    src="{{asset('')}}static/img/Icon/leftarrow.png"
                                     alt=""></div>
                             </a>
                             <div data-v-0ff1fb10="" class="flex1"></div>
@@ -9515,7 +9515,7 @@
         <div data-v-5954443c="" class="modal-notice-box">
             <div data-v-5954443c="" class="modal-notice">
                 <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                        src="/static/img/noticetopbg.69a72412.png" alt=""></div>
+                        src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
                 <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
                 <div data-v-5954443c="" class="notice-desc">
                     <p>Version Update Announcement: The system will undergo an upgrade in the early hours of October

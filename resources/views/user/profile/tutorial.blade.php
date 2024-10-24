@@ -43,7 +43,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1000000;
-      background: rgba(6, 132, 117, 0.8);
+      background: transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -8234,7 +8234,7 @@
             <div data-v-0ff1fb10="" class="container flex"><!---->
               <div data-v-0ff1fb10="" class="logo"></div>
               <div data-v-0ff1fb10=""   onclick="window.history.go(-1); return false;" class="back"><img data-v-0ff1fb10=""
-                  src="{{asset('')}}static/img/icon/leftarrow.png"
+                  src="{{asset('')}}static/img/Icon/leftarrow.png"
                   alt=""></div>
               <div data-v-0ff1fb10="" class="flex1"></div><!----><!----><!----><!----><!---->
             </div>
@@ -8254,7 +8254,7 @@
               <div data-v-1029ea9a="" data-v-37526a6c="" class="empty db rel" style="z-index: 3; display: none;">
                 <div data-v-1029ea9a="" data-v-37526a6c="" class="flexs">
                   <div data-v-1029ea9a="" class="custom-image van-empty" data-v-37526a6c="">
-                    <div class="van-empty__image"><img src="/static/img/none.9c737031.png"></div>
+                    <div class="van-empty__image"><img src="{{asset('')}}static/img/none.9c737031.png"></div>
                     <p class="van-empty__description">No data yet</p>
                    
                   </div>
@@ -8484,7 +8484,7 @@
     style="background: none; z-index: 2002; display: none;">
     <div data-v-5954443c="" class="modal-notice-box">
       <div data-v-5954443c="" class="modal-notice">
-        <div data-v-5954443c="" class="notice-top"><img data-v-5954443c="" src="/static/img/noticetopbg.69a72412.png"
+        <div data-v-5954443c="" class="notice-top"><img data-v-5954443c="" src="{{asset('')}}static/img/noticetopbg.69a72412.png"
             alt=""></div>
         <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
         <div data-v-5954443c="" class="notice-desc">

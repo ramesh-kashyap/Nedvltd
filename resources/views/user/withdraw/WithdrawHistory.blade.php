@@ -53,7 +53,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1000000;
-      background:rgba(6, 132, 117, 0.8);
+      background:transparent;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -9862,7 +9862,7 @@ type="text/javascript"
                 <div data-v-0ff1fb10="" class="logo"></div>
                 <a href="{{route('user.asset')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/icon/leftarrow.png"
+                                    src="{{asset('')}}static/img/Icon/leftarrow.png"
                                     alt=""></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             </a>
@@ -9884,7 +9884,7 @@ type="text/javascript"
               <div data-v-6cf94806="" data-v-37526a6c="" class="empty db" style="display: none;">
                 <div data-v-6cf94806="" data-v-37526a6c="" class="flexs">
                   <div data-v-6cf94806="" class="custom-image van-empty" data-v-37526a6c="">
-                    <div class="van-empty__image"><img src="/static/img/none.9c737031.png"></div>
+                    <div class="van-empty__image"><img src="{{asset('')}}static/img/none.9c737031.png"></div>
                     <p class="van-empty__description">No data yet</p>
                   </div>
                 </div>

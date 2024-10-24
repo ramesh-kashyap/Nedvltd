@@ -40,7 +40,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         z-index: 1000000;
-        background: rgba(6, 132, 117, 0.8);
+        background: transparent;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -7026,7 +7026,7 @@
                             <div data-v-0ff1fb10="" class="logo"></div>
                             <a href="{{route('user.asset')}}">
                             <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                    src="{{asset('')}}static/img/icon/leftarrow.png"
+                                    src="{{asset('')}}static/img/Icon/leftarrow.png"
                                     alt=""></div>
                                     </a>
                             <div data-v-0ff1fb10="" class="flex1"></div>

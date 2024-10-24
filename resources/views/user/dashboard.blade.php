@@ -53,7 +53,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: rgba(6, 132, 117, 0.8);
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -9359,7 +9359,7 @@
                             <div data-v-5954443c="" role="alert" class="van-notice-bar"
                                 style="color: rgb(255, 255, 255); background: none;"><i
                                     class="van-icon van-notice-bar__left-icon"><img
-                                        src="/static/img/logo1.bed352ca.png"
+                                        src="{{asset('')}}static/img/logo1.bed352ca.png"
                                         class="van-icon__image"><!----></i>
                                 <div role="marquee" class="van-notice-bar__wrap">
                                     <div class="van-notice-bar__content van-ellipsis" style="transition-duration: 0s;">
@@ -9404,7 +9404,7 @@
                     <!-- <div data-v-5e50d7ad="" data-v-5954443c="" class="bg-blur income-box mt">
                         <div data-v-5e50d7ad="" class="income">
                             <div data-v-5e50d7ad="" class="head"><img data-v-5e50d7ad=""
-                                    src="/static/img/icon/deposit.png"
+                                    src="{{asset('')}}static/img/Icon/deposit.png"
                                     alt="">
                                 <div data-v-5e50d7ad="" class="title">Invitation subscription income to be collected
                                 </div>
@@ -9415,7 +9415,7 @@
                             </div>
                             <div data-v-5e50d7ad="" class="amount theme">{{currency()}}{{number_format($todaysRoiSum,2)}}</div>
                             <div data-v-5e50d7ad="" class="head"><img data-v-5e50d7ad=""
-                                    src="/static/img/icon/deposit.png"
+                                    src="{{asset('')}}static/img/Icon/deposit.png"
                                     alt="">
                                 <div data-v-5e50d7ad="" class="title">Invitation subscription income can be collected
                                 </div>
@@ -9427,7 +9427,7 @@
                     <div data-v-aa0ccfea="" data-v-5954443c="" class="bg-blur income-box mt">
                         <div data-v-aa0ccfea="" class="income">
                             <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                    src="/static/img/icon/earning.png"
+                                    src="{{asset('')}}static/img/Icon/earning.png"
                                     alt="">
                                 <div data-v-aa0ccfea="" class="title">Today's Earnings</div>
                             </div>
@@ -9435,7 +9435,7 @@
                         </div>
                         <div data-v-aa0ccfea="" class="income">
                             <div data-v-aa0ccfea="" class="head"><img data-v-aa0ccfea=""
-                                    src="/static/img/icon/earning1.png"
+                                    src="{{asset('')}}static/img/Icon/earning1.png"
                                     alt="">
                                 <div data-v-aa0ccfea="" class="title">Cumulative Earnings</div>
                             </div>
@@ -9463,7 +9463,7 @@
                                 <div data-v-1f37bdab="" class="left">
                                     <div data-v-1f37bdab="" class="text">Invite friends to earn income</div>
                                     <div data-v-1f37bdab="" class="bot"><img data-v-1f37bdab=""
-                                            src="{{asset('')}}static/img/icon/arrow-right.png"
+                                            src="{{asset('')}}static/img/Icon/arrow-right.png"
                                             alt=""></div>
                                 </div>
                                 <div data-v-1f37bdab="" class="right"><img data-v-1f37bdab=""
@@ -9477,7 +9477,7 @@
                             <div data-v-7fb36d82="" class="title">My team</div>
                             <a href="{{route('user.task')}}">
                             <img data-v-7fb36d82=""
-                            src="{{asset('')}}static/img/icon/arrow-right.png"
+                            src="{{asset('')}}static/img/Icon/arrow-right.png"
                                                             alt="">
                             </a>
                         </div>

@@ -8094,7 +8094,7 @@
                                 <div data-v-0ff1fb10="" class="back">
                                 <a href="{{route('user.profile')}}">    
                                 <img data-v-0ff1fb10=""
-                                        src="{{asset('')}}static/img/icon/leftarrow.png"
+                                        src="{{asset('')}}static/img/Icon/leftarrow.png"
                                         alt="" >
                                 </a>
                                     </div>

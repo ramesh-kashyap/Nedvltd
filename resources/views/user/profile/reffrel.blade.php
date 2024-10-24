@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background:rgba(6, 132, 117, 0.8);
+    background:transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7706,7 +7706,7 @@ max-width: 8.5rem;
                         <div data-v-0ff1fb10="" class="logo"></div>
                         <a href="{{route('user.dashboard')}}">
                         <div data-v-0ff1fb10="" class="back"><img data-v-0ff1fb10=""
-                                src="{{asset('')}}static/img/icon/leftarrow.png"
+                                src="{{asset('')}}static/img/Icon/leftarrow.png"
                                 alt=""></div>
                         <div data-v-0ff1fb10="" class="flex1"></div>
                         </a>
@@ -7733,7 +7733,7 @@ max-width: 8.5rem;
                     </div>
                     <input type="text" value="{{asset('')}}register?ref={{ Auth::user()->username}}" style="display:none" name="link" readonly id="clipboardright">
                     <div data-v-2a224bbc="" data-v-37526a6c="" class="box rel"><img data-v-2a224bbc=""
-                            data-v-37526a6c="" src="/static/img/invate_en_US.48cb7ade.png" alt="">
+                            data-v-37526a6c="" src="{{asset('')}}static/img/invate_en_US.48cb7ade.png" alt="">
                         <div data-v-2a224bbc="" data-v-37526a6c="" class="abs">
                             <div data-v-2a224bbc="" data-v-37526a6c="" class="db bg-blur3">
                                 <div data-v-2a224bbc="" data-v-37526a6c="" class="ico"><img data-v-2a224bbc=""
@@ -7824,7 +7824,7 @@ setTimeout(() =>{
     <div data-v-5954443c="" class="modal-notice-box">
         <div data-v-5954443c="" class="modal-notice">
             <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                    src="/static/img/noticetopbg.69a72412.png" alt=""></div>
+                    src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
             <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
             <div data-v-5954443c="" class="notice-desc">
                 <p>Latest Activity Notification</p>

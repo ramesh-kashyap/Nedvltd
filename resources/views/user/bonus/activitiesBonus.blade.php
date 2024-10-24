@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: rgba(6, 132, 117, 0.8);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8493,7 +8493,7 @@ max-width: 8.5rem;
                         <div data-v-0ff1fb10="" class="container flex">
                             <!---->
                             <div data-v-0ff1fb10="" class="logo"></div>
-                            <div data-v-0ff1fb10="" onclick="window.history.go(-1); return false;" class="back"><img data-v-0ff1fb10="" src="{{asset('')}}static/img/icon/leftarrow.png" alt="" /></div>
+                            <div data-v-0ff1fb10="" onclick="window.history.go(-1); return false;" class="back"><img data-v-0ff1fb10="" src="{{asset('')}}static/img/Icon/leftarrow.png" alt="" /></div>
                             <div data-v-0ff1fb10="" class="flex1"></div>
                             <!----><!----><!----><!----><!---->
                         </div>
@@ -8518,7 +8518,7 @@ max-width: 8.5rem;
                         <div data-v-6c3551e3="" data-v-0d4b9075="" class="empty db" data-v-37526a6c="" style="display: none;">
                             <div data-v-6c3551e3="" class="flexs">
                                 <div data-v-6c3551e3="" class="custom-image van-empty">
-                                    <div class="van-empty__image"><img src="/static/img/none.9c737031.png" /></div>
+                                    <div class="van-empty__image"><img src="{{asset('')}}static/img/none.9c737031.png" /></div>
                                     <p class="van-empty__description">No data yet</p>
                                 </div>
                             </div>

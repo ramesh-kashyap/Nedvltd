@@ -49,7 +49,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1000000;
-    background: rgba(6, 132, 117, 0.8);
+    background: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9746,7 +9746,7 @@ max-width: 8.5rem;
             <!---->
             <div data-v-0ff1fb10="" class="logo">
               <img data-v-7a3d5949="" data-v-37526a6c=""
-                  src="/static/img/logo2.png"
+                  src="{{asset('')}}static/img/logo2.png"
                   alt="" style="width:150px;height:auto">
             </div>
             <div data-v-0ff1fb10="" class="n_home"></div>
@@ -9774,7 +9774,7 @@ max-width: 8.5rem;
           <div data-v-7a3d5949="" data-v-37526a6c="" class="head1">
             <div data-v-7a3d5949="" data-v-37526a6c="" class="db">
               <div data-v-7a3d5949="" data-v-37526a6c="" class="photo rel"><img data-v-7a3d5949="" data-v-37526a6c=""
-                  src="/static/img/logo1.bed352ca.png"
+                  src="{{asset('')}}static/img/logo1.bed352ca.png"
                   alt=""></div>
               <div data-v-7a3d5949="" data-v-37526a6c="" class="flexs">
                 <div data-v-7a3d5949="" data-v-37526a6c="" class="n">{{Auth::user()->username}}</div>
@@ -9810,7 +9810,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Invite friends to mine together</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="{{asset('')}}static/img/icon/arrow-right.png"
+                      src="{{asset('')}}static/img/Icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976="" src="../static/img/home-invite.a9ec84d6.png"
@@ -9825,7 +9825,7 @@ max-width: 8.5rem;
                 <div data-v-afc48976="" class="left">
                   <div data-v-afc48976="" class="text">Team member list</div>
                   <div data-v-afc48976="" class="bot"><img data-v-afc48976=""
-                      src="{{asset('')}}static/img/icon/arrow-right.png"
+                      src="{{asset('')}}static/img/Icon/arrow-right.png"
                       alt=""></div>
                 </div>
                 <div data-v-afc48976="" class="right"><img data-v-afc48976=""

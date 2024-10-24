@@ -67,7 +67,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 1000000;
-            background: rgba(6, 132, 117, 0.8);
+            background: transparent;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -12842,7 +12842,7 @@
                 <div data-v-e20b77f4="" data-v-37526a6c="" class="container">
                     <!-- <div data-v-6e05afb9="" data-v-e20b77f4="" class="assets bg-blur3" data-v-37526a6c="">
                         <div data-v-6e05afb9="" class="level-box"><img data-v-6e05afb9=""
-                                src="/static/img/1641f8d0d8cccc0073b670899da8fb06.png" alt="">
+                                src="{{asset('')}}static/img/1641f8d0d8cccc0073b670899da8fb06.png" alt="">
                             <div data-v-6e05afb9="" class="level-info">
                                 <div data-v-6e05afb9="" class="text">My level</div>
                                 <div data-v-6e05afb9="" class="level">VIP0</div>
@@ -12957,7 +12957,7 @@
         <div data-v-5954443c="" class="modal-notice-box">
             <div data-v-5954443c="" class="modal-notice">
                 <div data-v-5954443c="" class="notice-top"><img data-v-5954443c=""
-                        src="/static/img/noticetopbg.69a72412.png" alt=""></div>
+                        src="{{asset('')}}static/img/noticetopbg.69a72412.png" alt=""></div>
                 <div data-v-5954443c="" class="notice-title"> Dear NEDVLTD Users </div>
                 <div data-v-5954443c="" class="notice-desc">
                     <p>Latest Activity Notification</p>

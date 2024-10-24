@@ -281,7 +281,7 @@ eval("module.exports = __webpack_require__.p + \"static/img/home-bg.8d740309.png
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("module.exports = __webpack_require__.p + \"static/img/icon-success.cda005ca.png\";\n\n//# sourceURL=webpack:///./src/assets/images1/income/icon-success.png?");
+eval("module.exports = __webpack_require__.p + \"static/img/Icon/-success.cda005ca.png\";\n\n//# sourceURL=webpack:///./src/assets/images1/income/icon-success.png?");
 
 /***/ }),
 
